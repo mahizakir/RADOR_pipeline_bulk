@@ -24,11 +24,11 @@ print("Driver will generate triples for ", len(disease_names), "diseases.")
 print(f"Selected {len(disease_names)} diseases (rows {start_index} to {end_index-1}):")
 
 
-# TEST CASE: List of disease names as example
-disease_names = [
-    "1q44_microdeletion_syndrome",
-    "GNE_myopathy",
-]
+# # TEST CASE: List of disease names as example
+# disease_names = [
+#     "1q44_microdeletion_syndrome",
+#     "GNE_myopathy",
+# ]
 
 # Path to your pipeline script
 pipeline_script = "pipeline_code_with_vllm.py"
