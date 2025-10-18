@@ -1,0 +1,96 @@
+Only a few long-term longitudinal natural history studies of GNE myopathy have been conducted to date.
+
+Manual muscle testing (which can be limited to a few muscles), gross-motor function measure, pinch power and % forced vital capacity were found to be parameters useful for the long-term evaluation of GNE myopathy patients, including non-ambulant patients.
+
+These parameters are easy to measure during clinical visits and do not overly burden evaluators and patients.
+
+GNE myopathy (OMIN 605820), also known as distal myopathy with rimmed vacuoles or Nonaka myopathy, is an early adult-onset myopathy with slow progression that preferentially affects the tibialis anterior muscle and commonly spares the quadriceps femoris muscle.1 2 The disease is caused by a mutation in the GNE gene, which encodes a bifunctional enzyme (uridinediphosphate-N-acetylglucosamine 2-epimerase and N-acetylmannosamine kinase) that catalyses two rate-limiting reactions in cytosolic sialic acid synthesis.3–7
+
+Oral sialic acid metabolite treatment can prevent muscle atrophy and weakness in a mouse GNE myopathy model.8Although a recent clinical trial (phase 3 Randomised, Double-Blind, Placebo-Controlled Study to Evaluate Sialic Acid; ClinicalTrials.gov; identifier: NCT02377921) failed to demonstrate the efficacy of sialic acid to treat GNE myopathy, another clinical trial is currently underway in the United States to test ManNAc, an uncharged precursor of sialic acid (Multi-Center Study of ManNAc for GNE Myopathy (MAGiNE); ClinicalTrials.gov; identifier: NCT04231266). One of our research interests is the identification of clinically useful parameters for evaluation both in clinical trials and for long-term follow-up after new medications become available for GNE myopathy. We previously published a 1-year natural history study of 27 Japanese GNE myopathy patients and detected significant progression of the disease using Manual Muscle Testing (MMT), grip power and % forced vital capacity (FVC).9 10 On the other hand, the 6 m walk test (6MWT), Gross Motor Function Measure (GMFM), hand-held dynamometer (HHD) measurements of quadriceps strength, pinch power, lean body mass, creatine kinase (CK) and activities of daily living (ADL) (eg, as assessed by the modified Rankin scale (mRS) and Barthel Index (BI)) failed to detect significant changes during the 1-year period, possibly due to the small sample size or relatively short observation period.
+
+This study followed the progress of GNE myopathy patients for a longer period of 5 years to assess changes in clinical parameters with the aim of identifying evaluation parameters, which could be useful for postmarketing surveysand long-term clinical observation.
+
+This study used prospective data fromgenetically-confirmedJapanese GNE myopathy patients who were evaluated at least twice (at baseline and at least one of the annual follow-up evaluations during the 5-year follow-up period) at the National Center of Neurology and Psychiatry Hospital. Genetic information was acquired from available medical records. Inclusion criteria included the ability to perform repeat testing. Data from patients who were able to attend at least one annual follow-upevaluation were included in the analysis. Patients who attended the fifth year evaluation were requested to answer the 36-item Short Form Survey (SF-36) and provide updates on their ADL and ambulation status. The first patients were enrolled in April 2009, and the last data analysed were from 30 November 2019.
+
+Knee extension (HHD; myu-Tas F-1, Anima, Japan), grip power (Dynamometer; TTM Japan), pinch power (PinchTrack; JTECH, Japan) and occlusal force (GM10; NAGANO KEIKI, Japan) were measured three timeseach for both right and left sides.
+
+Muscle strength tests, including MMT and GMFM (Japanese version; range 0%–100%), were performed.11 The following 17 muscle parameters were examined: neck flexion, truncal flexion, shoulder abduction, shoulder adduction, shoulder flexion, shoulder extension, elbow ﬂexion, elbow extension, wrist flexion, wrist extension, hip flexion, hip extension, hip abduction, knee extension, knee ﬂexion, ankle dorsiﬂexion and ankle plantarflexion. Right and left MMT scores were averaged, except for those corresponding to neck and truncal flexion. The summed MMT score (range 0–85) was obtained by adding together scores of the 17 muscle parameters. 6MWT was administered to patients who were able to walk without assistance (including a cane or brace).
+
+Patient condition was assessed by physical examination, pulmonary function tests %VC and %FVC, leanbodymass (whole body, arms and legs) as assessed by dual-energy X-ray absorptiometry (DEXA; Discovery bone densitometer, Hologic, Bedford, Massachusetts, USA) and skeletal muscle mass index.12 Blood and urine were collected to measure CK. BI (range 0–100), mRS (Japanese version; range 1–5), and SF-36 (Japanese version) national standard scoreswere used to assess ADL and quality of life (QOL).13 14
+
+Data were summarised using descriptive statistics and presented as mean±SD, median, range, frequency or percentage. The Mann-Whitney U test and Kruskal-Wallis test were used for continuous data, and Fisher’s exact test was used for binary data. The paired t-test was used to compare differences between baseline and follow-up data. The Bonferroni method was used to adjust for statistical multiplicity. Spearman’s rank correlation coefficients were used to examine correlations between variables. Data of patients for whom meaningful measurements could not be made at baseline were excluded from the analysis. All analyses were performed using SPSS for Macintosh (V.23; SPSS).
+
+Patient characteristics are summarised in table 1. A total of 33 Japanese GNE myopathy patients (12 males and 22 females) participated in this study. Two female patients were siblings, and all other patients were unrelated to each other. Mean age at the time of data collection was 43.2±13.4 years (mean±SD), and mean age at disease onset was 26.6±11.5 years. Thirty per cent (12/33) of patients were ambulant and completed the 6MWT without assistance, 6.1% (2/33) required assistance (eg, cane and/or brace, one patient with daily assistance who could complete 6MWT without assistance), and 60.6% (20/33) had lost ambulation. Among non-ambulant participants, mean age at loss of ambulation was 35.8±12.4 years. Seventeen patients required assistance (cane and/or brace), and the age at requiring assistance was 29.2±11.1 (18-59) years. Twenty-three patients were wheelchair users, and the age at starting use ofa wheelchair was 33.4±13.3(17–64) years (table 1).
+
+Patient characteristics
+
+Of the 33 patients included in this study, 27% (9/33) harboured the p.V603L homozygous mutation, while 73% (24/33) harboured a compound heterozygous mutation. Of these heterozygotes, 12% (4/33) had the p.D207V/p.V603L genotype. Frequent alleles were V603L (39%, 26/66), D207V (18%, 12/66) and C44S (3%, 2/66) (online supplemental tables 1; 2).
+
+
+
+
+
+Two patients lost ambulation, and one patient started using a wheelchair during the follow-up period. Kaplan-Meier analysis revealed a median proportional age for loss of ambulation of 46.4 years, and a median proportional duration from onset to loss of ambulation of 19.0 years. mRS scores increased in four patients and BI scores decreased in eight patients, suggesting a deterioration of ADL. One patient newly developed multiple sclerosis and nephrotic syndrome during the follow-up period (table 2, online supplemental table 3).
+
+
+
+Results of initial and annual evaluations
+
+P values are calculated relative to baseline data.
+
+*p<0.05, **p<0.01.
+
+CK, creatine kinase; FVC, forced vital capacity; GMFM, Gross Motor Function Measure; HHD, hand-held dynamometer; MMT, manual muscle testing; PF, physical functioning; SF-36, 36-item Short Form Survey; VC, vital capacity.
+
+Correlations between SF-36 and other parameters at initial visit
+
+Numbers in red indicate significant correlations.
+
+*Very strong correlation ρ≥0.8.
+
+†Strong correlation 0.6≤ρ<0.8.
+
+‡Moderate correlation 0.4≤ρ<0.6.
+
+BI, Barthel Index; CK, creatine kinase; DEXA, dual-energy X-ray absorptiometry; %FVC, percent forced vital capacity; GMFM, Gross Motor Function Measure; HHD, hand-held dynamometer; MMT, manual muscle testing; mRS, modified Rankin scale; 6MWT, 6-m walk test; VC, vital capacity.
+
+Follow-up was disrupted for five ambulant patients due to their participation in phase II/III clinical trials of SA, and nine patients due to personal reasons (mainly difficulty visiting the hospital due to disease progression). The remaining 22 patients were followed for 5 years, although 9 of these patients missed some of the annual visits. For patients unable to attend all annual visits, we requested that they prioritise attending the first year and fifth year evaluations. Of patients who completed the fifth year evaluation, only four were able to complete the 6MWT.
+
+Measurement results are shown in table 2. A total of 30 patients participated in the first year follow-up visit. For physical evaluation, 2, 21, 10, 10 and 5 patients were unable to complete the GMFM, 6MWT, HHD, grip power and pinch powertests at baseline and thus were excluded from the analysis. For 6MWT, HHD, grip power and pinch power tests, 1, 2, 2 and 6 patients, respectively, scored 0 for these measurements during the 5-year follow-up period. Summed MMT score, 6MWT, GMFM, %FVC, %VC and grip power significantly differed at the first year evaluation compared with baseline (table 2, online supplemental table 3).
+
+At the fifth year evaluation, significant reductions in summed MMT (p=0.015), GMFM (p=0.035), pinch power (p<0.001), %FVC (p=0.005) and %VC (p=0.025) were observed compared with baseline (table 2, figure 1). Two patients received non-invasive positive pressure ventilation due to severe nocturnal respiratory failure.
+
+Annual changes in assessed parameters. Manual muscle testing (MMT) at baseline and annual follow-ups. *p<0.05.
+
+Among the muscle parameters assessed, shoulder extension, shoulder flexion, shoulder abduction, elbow extension, hip flexion and knee extension showed significant changes at the fifth year evaluation compared with baseline.
+
+We also analysed data for non-ambulant participants. At the fifth year evaluation, significant reductions in summed MMT (p=0.030), %FVC (p=0.005), and %VC (p=0.025) compared with baseline were observed among 20 non-ambulant patients. No significant change in GMFM (p=0.235) orgrip power (p=0.925) was observed relative to baseline, although these parameters were significantly reduced for the entire population. No significant change was detected in SF-36 (figure 2, online supplemental table 4).
+
+
+
+Annual changes in summed MMT, GMFM, hand-held dynamometer (HHD) of knee extension, grip power, pinch power, %FVC, CK, DEXA (whole body) and DEXA (legs) of ambulant (grey line) and non-ambulant (black line) participants. *p<0.05 of baseline. CK, creatine kinase; DEXA, dual-energy X-ray absorptiometry; %FVC, percent forced vital capacity; GMFM, Gross Motor Function Measure; MMT, manual muscle testing.
+
+No significant changes were observed in mRS and BI during the 5 year follow-up period. The decrease in mRS score was strongly correlated with a decrease in grip power (ρ=0.573), but not with any of the other assessed parameters. Among the subscales of SF-36, scores for Physical Functioning werereduced (although not significantly) at the third, fourth and fifth year evaluations compared with baseline (table 2). Other subscales showed no significant changes (tables 2 and 3, online supplemental table 5).
+
+
+
+National standard scores for SF-36 were used to evaluate QOL. All assessed subscales had significantly lower scores than the national standard index (score=50). Motor function measures (summed MMT, GMFM, 6MWT, grip power and pinch power), respiratory function (%VC and FVC) and ADL scores (BI) were strongly correlated with the Physical Functioning subscale (table 3).
+
+All assessed subscales had significantly lower scores than the national standard index (score=50). Motor function measures (summed MMT, GMFM, 6MWT, grip and pinch power), respiratory function and ADL scores were significantly correlated with the Physical Functioning subscale.
+
+Summed MMT and GMFM were well correlated with pinch power, grip power, %VC or %FVC, CK and DEXA (legs). These items were also correlated with certain muscle MMT scores (eg, elbow flexion and knee extension) (online supplemental table 4).
+
+To our knowledge, this study is the first to assess the 5-year natural history of GNE myopathy. In our previous 1-year observational study, not all parameters assessed at the first year evaluation were significantly different compared with baseline.8 Thus, in this study, the follow-up period was extended to 5 years. MMT, GMFM, pinch power, %FVC and %VC showed significant changes at the fifth year evaluation compared with baseline. On the other hand, no significant changes were observed fo 6MWT, HHD, lean body mass (arm, leg and truncal body mass), BI, mRS and SF-36subscales. The lack of change in the 6MWT during the follow-up period could be explained by the small number of patients who could be tested and the exclusion of patients due to their participation in clinical trials. Among the muscles evaluated by MMT, shoulder girdle muscles showed continuous significant changes, even as early as at the first year evaluation, suggesting that MMT of shoulder girdle muscles may be useful to include in evaluations for clinical trials and natural history studies.
+
+While a previous observational study of GNE myopathy patients assessed HHD over the course of 3 years,15 the quantitative measurement of many musclesis not realistic for routine clinical visits. In contrast, our study clearly demonstrated the utility of summed MMT score as well as shoulder muscle MMT scores, in addition to other laboratory parameters. Importantly, these items are easy to measure during clinical visits and do not overly burden evaluators and patients.
+
+For severely affected, non-ambulant patients, walking parameters and grip power are not always useful. We evaluated clinical parameters in non-ambulant patients and found significant reductions in all items, except for pinch power, which showed significant reductions in the analysis of the entire population at the fifth year evaluation. As 43% of the Japanese patients were non-ambulant, items for non-ambulant patients were quite important. Although we did not analyse data from ambulant patients due to the small sample size, the simplified items identified in this study may be useful in clinical practice, even in outpatient settings with limited labour force.
+
+Physical functioning subscales of SF-36 were significantly correlated to other evaluation items. Therapeutic approach could be ameliorated QOL of GNE myopathy patients, and SF-36 physical functioning can be useful for self-reporting evaluation.
+
+For patients unable to attend all annual visits, we requested that they prioritise attending the first year and fifth year evaluations. As a result, milder patients with high social activity tended to avoid fourth year visits, then the averaged physical evaluation results seemed to be recovered fifth year visit, although individual data showed deteriorated constantly.
+
+This study has some limitations. First, the small number of patients, especially ambulant patients, did not allow us to draw conclusions regarding the utility of 6MWT. Second, the evaluation of ADL was limited to the use of mRS and BI, which are not sensitive enoughto detect temporal disease progression. Using disease-specific scales, such as the GNE Myopathy Functional Activity Scale, may be an alternative, but it was not used from the beginning of our study period.
+
+In conclusion, MMT, GMFM, pinch power, CK, %FVC, %VC, DEXA lean body mass and the Physical Functioning subscale of the SF-36 may be useful for the long-term evaluation of GNE myopathy patients.
+

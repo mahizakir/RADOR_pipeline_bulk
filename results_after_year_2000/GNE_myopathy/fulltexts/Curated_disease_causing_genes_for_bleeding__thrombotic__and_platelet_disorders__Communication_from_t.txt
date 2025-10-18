@@ -1,0 +1,133 @@
+Inherited bleeding, thrombotic, and platelet disorders (BTPD) are a heterogeneous set of diseases. The most common inherited bleeding disorders are von Willebrand disease (VWD) and hemophilia, although all other BTPDs are globally very rare, with mostly an unknown prevalence. Over the past five decades, the genetic basis of some of these disorders has been identified. Most of the genes harboring variants responsible for BTPD have been identified through linkage studies across informative pedigrees or using candidate gene Sanger sequencing following thorough clinical and laboratory workup.1 However, over the past decade, high‐throughput sequencing has become the primary means of identifying disease‐causing genetic variants.2 Different diagnostic gene panel tests for BTPD have been developed using targeted or exome sequencing.1, 3, 4, 5, 6, 7, 8, 9 Interestingly, when comparing the gene content of these different genetic panel tests, significant differences were observed. A first level of difference was created by the choice of genes tested for BTPD. These included established genes, known for decades to play a role in many families with BTPD (e.g., F8, F9, VWF, PROS1, PROC, ITGA2B, ITGB3, amongst many others), genes with limited evidence from publications of single pedigrees, and, finally, genes identified through functional studies and/or knockout mice but without a known defined role in human pathology. The first group of genes are the diagnostic‐grade (hereafter named TIER1) genes, whereas the others are referred to as TIER2 and TIER3 genes, respectively. A second level of difference is that some panels contain genes that are related to bleeding but are not considered classical coagulation or platelet regulatory genes, such as those for hereditary hemorrhagic telangiectasia (ENG, SMAD4, ACVRL11), Ehlers Danlos syndrome (e.g., COL1A1, COL3A1, COL5A1, COL5A2, CHST14), Gaucher syndrome (GBA), or Noonan syndrome (e.g., PTPN11). These genes are TIER1 genes for disorders that are often associated with primary phenotypes such as arteriovenous malformations, joint hypermobility, skin hyperextensibility, tissue fragility, and complex syndromic features that result in an increased bleeding tendency. These primary symptoms are typically recognized by a clinical expert, but systematic screening of these genes in a patient population with unexplained bleeding symptoms has not been performed; therefore, inclusion of an “extended” TIER1 BTPD gene list can be considered.
+
+Providing a molecular diagnosis to BTPD patients is highly desirable because it aids prognostication, may alter therapy, and provides important information for counseling. Making incorrect assumptions about variants could be harmful, however.10 There are potential pitfalls when interpreting the role of genetic variants in genes related to BTPD. The published literature, disease (Online Mendelian Inheritance in Man [OMIM]; http://omim.org) and variant databases (ClinVar; https://www.ncbi.nlm.nih.gov/clinvar/ and the Human Gene Mutation Database) are incomplete and littered with misinformation about gene‐disease associations and erroneous interpretation of the pathogenicity of variants. It is essential when assigning pathogenicity that rigorous standards are applied to variants in fully evidenced TIER1 genes. The first step in providing diagnostic‐grade genetic reports is gene curation. Gene curation is intended to help physicians and clinical geneticists decide a gene's role in a disease and provide information on the mode of inheritance and mutational disease mechanism. The process of selecting TIER1 core genes for BTPD was taken up by the Scientific and Standardization Committee (SSC) for Genetics in Thrombosis and Haemostasis (GinTH). The current study explains the different aspects related to this curation process and presents an up‐to‐date TIER1 gene‐disease list for BTPD, useful for clinical genetic testing, the design of gene panel tests, or for filtering whole exome or whole genome sequencing data.
+
+We have assembled a list of 91 TIER1 genes that are germline mutated (except one, PIGA) and are causally implicated in BTPD (Table 1; for the full version, see Table S1). The gene curation project was initiated by the SSC‐GinTH in 2014 when 63 genes and transcripts were suggested by experts of the clinical and scientific community (Table S2) to be used for genetic testing of BTPDs. New genes and modes of inheritance have been curated and discussed at four subsequent SSC‐GinTH meetings before designation to TIER1 status. These new genes required a status of strong evidence as specified later in more detail. Genes were grouped in three main categories: 21 genes mostly related to coagulation deficiencies implicated in bleeding, 9 genes known to be associated with thrombosis, and 61 genes involved in defects related to platelet function and their formation by blood stem cells. Four genes could have been assigned to multiple categories; F2, F5, and THBD to bleeding and thrombosis, and VWF to bleeding, but also VWD type 2B, which is considered a platelet disorder. Here the difference in clinical phenotype is caused by the variant type (inactivation vs activating) or location within the gene. This information is encoded in Table S1 as “Mutational mechanism for the disease.” The predicted effect of a gene variant often indicates the impact of a disease; therefore, we have curated the categories of variants that occur in BTPD TIER1 genes that cause disease. Most BTPDs are caused by inactivating missense or loss‐of‐function (LoF) variants that are distributed throughout the gene, whereas others are exclusively caused by LoF variants (e.g., PIGA, BLOC1S3, BLOC1S6, DTNBP1, FYB1). In contrast, some BTPDs are the result of activating missense or LoF variants that mostly occur in specific protein domains (e.g., THBD, DIAPH1, SRC, F5, F2). Finally, noncoding variants have also been shown to cause BTPDs (e.g., 3′UTR variant in F2, 5′UTR variants in ANKRD26, variants in the noncoding gene RNU4ATAC). Genes with multiple disorders associated with different clinical or laboratory phenotypes (e.g., GP1BA, GP1BB, ITGA2B, ITGB3) have been represented as independent rows in Table S1, and multiple modes of inheritance (e.g., VWF, FLI1, GFI1B, PROC) are encoded within the “Inheritance” column.
+
+Curated gene‐disease associations and transcripts for bleeding, thrombotic, and platelet disorders
+
+Coagulation
+
+Angioedema
+
+Factor XII deficiency
+
+Angioedema
+
+AR (coagulation)
+
+AD (angioedema)
+
+Prothrombin deficiency
+
+Thrombophilia resulting from thrombin defect
+
+AR (bleeding/coagulation)
+
+AD (thrombosis)
+
+Factor V deficiency
+
+Thrombophilia resulting from activated protein C resistance
+
+AR (bleeding/coagulation)
+
+AD (thrombosis)
+
+AR (afibrinogenemia)
+
+AD (hypo/dysfibrinogenemia)
+
+AR (afibrinogenemia)
+
+AD (hypo/dysfibrinogenemia)
+
+AR (afibrinogenemia)
+
+AD (hypo/dysfibrinogenemia)
+
+Bleeding
+
+Platelet
+
+AD (VWD type 1 and 2)
+
+AR (VWD type 3)
+
+AD (VWD type 2B)
+
+Thrombosis
+
+Bleeding
+
+Thrombomodulin deficiency;
+
+Bleeding resulting from high soluble thrombomodulin
+
+BSS
+
+Mild macrothrombocytopenia
+
+Platelet‐type VWD
+
+AR (BSS)
+
+AD (mild macrothrombocytopenia)
+
+AD (platelet‐type VWD)
+
+BSS
+
+Mild macroTP
+
+AR (BSS)
+
+AD (mild macrothrombocytopenia)
+
+GT
+
+Platelet‐type bleeding disorder 16
+
+AR (GT)
+
+AD (bleeding disorder)
+
+GT
+
+Platelet‐type bleeding disorder 16
+
+AR (GT)
+
+AD (bleeding disorder)
+
+For each gene is indicated the HGNC symbol, OMIM associated disorder(s), mode(s) of inheritance, LRG reference transcript, and cytogenetic location.
+
+Categories in italics indicate a rarer occurrence for a specific gene.
+
+Abbreviations: AD, autosomal dominant; AR, autosomal recessive; BSS, Bernard‐Soulier syndrome; GT, Glanzmann thrombasthenia; HPS, Hermansky‐Pudlak syndrome; VWD, von Willebrand Disease; XLD, X‐linked dominant; XLR, X‐linked recessive.
+
+To curate each gene‐disease pair, three layers of evidence were collated that provide support for disease association, mode of inheritance and disease‐causing “mutational mechanism.” The first level of evidence was provided by reviewing the primary literature using PubMed searches, OMIM, and gene‐specific databases (e.g., Medical College of Wisconsin‐maintained database for Glanzmann thrombasthenia and European Association for Hemophilia and Allied Disorders‐maintained databases for F7, F8, F9, and VWF) to evaluate the genetic confidence for a gene being disease‐causing (“Level 1 evidence” in Table S1). For each gene‐disease pair, genotype‐phenotype cosegregation data, the mode of inheritance and the disease‐causing mutation mechanism were reviewed in at least three independent families. For six genes (AP3D1, BLOC1S3, FYB1, HOXA11, NBEA, and SRC), only two unrelated families, whereas for PLAU, a single but very large pedigree with 28 affected patients and a significant linkage association signal (logarithm of odds score +11) for the PLAU locus, were reported.11 The second layer of evidence was provided by knowledge from specific hemostasis, platelet, or molecular assays or phenotypes that support gene‐disease associations (“Level 2 evidence” in Table S1). A third layer of evidence consisted of the existence of a mouse model affecting the ortholog of the human gene and presenting with the same phenotype as the associated human disease. This information was taken from the Mouse Genome Informatics ( http://www.informatics.jax.org) database or a PubMed reference (“Level 3 evidence” in Table S1). Twenty of the genes had a mouse model that did not mimic the human disease, whereas for five genes, no model has been developed.
+
+In summary, evidence‐based curation resulted in a total of 91 genes that reached a TIER1 status (Table 1). These were gene‐disease association identified in at least three genetically independent families with supportive genotype‐phenotype cosegregation data or with robust support from functional studies and/or a mouse phenocopy matching the human disease where less than three families are known in combination with linkage analysis data for large pedigrees. The list is versioned and will be reassessed by the SSC‐GinTH at the yearly International Society on Thrombosis and Haemostasis meeting.
+
+When reporting likely pathogenic and pathogenic variants, it is essential to report on a fixed, evidenced‐based transcript. For each TIER1 gene, the curated transcript was selected, in collaboration with the Locus Reference Genomic project (LRG; http://www.lrg‐sequence.org/),12 based on recommendations by members of the SSC‐GinTH community, previously reported causal variants in Human Gene Mutation Database and ClinVar, transcript and protein lengths, and considering RNA‐sequencing expression data in blood cells, other relevant tissues, and cap analysis gene expression data for defining the most common transcription start site (Table 1 and Table S1). For some genes, more than one transcript was included in the LRG record. In general, these transcripts include additional and well‐supported protein‐coding exons not present in the transcript highlighted in the tables. The TIER1 BTPD gene and transcript list is accessible at https://www.isth.org/page/GinTh_GeneLists.
+
+Although specific guidelines for variant interpretation in TIER1 genes have been published by the American College of Medical Genetics and Genomics,13 guidelines for assessing the association of a specific gene with a specific disease are still nascent. The Clinical Genome Resource, ClinGen, is coordinating expert analysis of gene‐disease associations using a comprehensive and publicly available criteria using evidence including the number of reported patients with variants in the gene and supporting experimental data for all rare diseases.14 A ClinGen clinical domain working group for thrombosis and hemostasis has been initiated ( https://www.clinicalgenome.org/working-groups/clinical-domain/hemostasis-thrombosis-clinical-domain-working-group/;) in 2017. Curating the links between genes and disease is a complex and demanding task. ClinGen gene curation efforts for different disease working groups (e.g., epilepsy, RASopathies) have applied detailed scoring system using association's strength classified as definitive, strong, moderate, limited, disputed, or no evidence to systematically evaluate gene‐disease relationships.15, 16 Because of the urgent need in diagnostic genetic laboratories, the SSC‐GinTH has already applied a simplified scoring system to specify the definitive gene‐disease pairs relevant for BTPD. Our experience highlights the importance of careful literature curation and evaluation by experts in the field. Our scoring system is simple enough to be quickly implemented while updating the TIER1 gene database with the latest findings and it can specifically guide diagnostic laboratories. Further, we find that review of previous cases while updating clinical validity of gene‐disease relationships can contribute to increased diagnostic rates resulting in improved patient care.
+
+When implementing the BTPD gene list for diagnostics, good practice suggests that gene panels are applied, either through the testing of specific genes using targeted panels or through the application of virtual panels to whole genome and exome data, limiting the number of potentially pathogenic variants to those in genes relevant to a patient's condition, and reducing the possibility of identifying incidental pathogenic variants. Incidental findings associated with BTPD can include the identification of variants known to be associated with hemophilia in unaffected female carriers and variants associated with mild to moderate thrombocytopenia but also causing an increased risk of malignancy (RUNX1, ANKRD26, and ETV6). Concerns regarding these findings have recently been discussed and solutions include the necessity of discussing these risks with patients before consenting and performing a genetic test or that virtual subpanels of genes are created (with or without genes with risk for incidental findings) that would allow a patient to choose.17, 18 Future discussion must center on the consent process that must also consider the local laws of the country, the risks of discrimination, the policy of the genetic testing service, and the age of the individual being tested. Our main goal was to deliver a curated BTPD disease‐causing gene list for use by diagnostic laboratories; however, as genetic testing becomes more common through biobanking studies and direct‐to‐consumer testing, this list may also be used in research studies and to aid appropriate feedback of genetic information to participants.
+
+The rapid pace of gene discovery using whole exome sequencing or whole genome sequencing approaches also emphasizes a need for data sharing. Many recent putative discoveries were made for single small pedigrees, sometimes accompanied by limited functional studies and no mouse model; therefore, without further evidence, these genes are designated TIER2. These include macrothrombocytopenia resulting from a recessive missense variant in PRKACG,
+19 macrothrombocytopenia from dominant loss‐of‐function variant in TPM4,
+20 macrothrombocytopenia from a dominant missense variant in TRPM7,21 a platelet function defect from recessive EPHB2 variants,22 and thrombocytopenia from a recessive PTPRJ LoF variants.23 Such TIER2 genes are relevant for BPTD diagnostics but still require confirmation studies in independent pedigrees and therefore, the SSC‐GinTH encourages the publication of such short confirmation reports.
+
+In conclusion, recent curation efforts by membership of the SSC‐GinTH now provide a well‐curated and evidence‐based catalog of TIER1 gene‐disease associations that can be used for diagnostic genetic screening of BTPD patients.
+
+All authors reviewed the manuscript and have no conflict of interest. All authors have curated the gene and transcript list and participated in the writing of this manuscript.
+
+
+
+Click here for additional data file.
+
+
+
+Click here for additional data file.

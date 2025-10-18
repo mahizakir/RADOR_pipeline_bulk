@@ -1,0 +1,125 @@
+Currently, both the discovery of new and the reappraisal of existing data on metabolism and functions of sialic acids are actively taking place.
+
+The term “sialic acid” first appeared in 1952 to describe N-acetylneuraminic acid as the main product released during mild acid hydrolysis of brain glycolipids or salivary mucins [1, 2].
+
+Sialic acids (SA) are of neuraminic acid derivatives; they occupy a terminal position in the chains of monosaccharide residues of various glycoconjugates. More than 80 members of the SC family, which have various substituents in the amino or hydroxyl groups, are known in nature (Fig. 1) [2–4].
+
+Members of the sialic acid family. Adapted from [5]. Explanations are given in the text. Neu5Ac—N-acetylneuraminic acid.
+
+Modifications are most often found in positions 4, 5, 7, 8, and 9, with the primary forms of SA being determined in position 5. These include N-acetylneuraminic acid (Neu5Ac), N-glycolylneuraminic acid (Neu5Gc), and 2-keto-3-deoxynononic acid (KDN) (Fig. 2).
+
+Neuraminic acid and primary sialic acids. Neu—neuraminic acid; Neu5Ac—N-acetylneuraminic acid; Neu5Gc—N-glycolylneuraminic acid; KDN—2-keto-3-deoxynononic acid.
+
+In humans, the number of SA types is less: Neu5Ac predominates, followed by O-acetylated and O-lactylated derivatives in the SA side chain [5].
+
+Thus, glycosylation in general and sialylation in particular provide a huge variety of glycoconjugates and features of their interaction with receptors. SA are ideal mediators of fine tuning of cell behavior.
+
+For example, influenza D virus (IDV), found predominantly in cattle, recognizes 9-O-acetylated N‑acetylneuraminic acid (Neu5,9Ac2) and 9-O-acetylated N-glycolylneuraminic acid (Neu5Gc9Ac). Influenza C virus (ICV), which is a human pathogen, prefers Neu5,9Ac2 rather than Neu5Gc9Ac [6].
+
+SA are polyfunctional compounds with pronounced acidity (pKa = 2.6). The negative charge of SA determines the degree of hydrophilicity of molecules, thermal stability, resistance to proteolytic degradation, facilitates binding and transport of ions, increases the viscosity of mucins, and stabilizes the structures of proteins and membranes [7, 8]. The presence and amount of these terminal monosaccharide residues determine the structure, physicochemical properties, and functions of sialo-containing compounds.
+
+Sialoglycoconjugates (glycoproteins and glycolipids) are abundant in membranes, where they form a dense network of sialylated glycans on the surface and playing an important role in cellular interactions. The inner surfaces of lysosomal and endosomal membranes are also sialylated [2, 9]. Most soluble secreted and lysosomal proteins also contain sialic acid residues at the ends of glycan chains.
+
+According to one of the classifications of the biological functions of carbohydrates, four groups are distinguished [10]: the first is structural and modulating roles, the second includes external (interspecific) recognition, the third is internal (intraspecific) recognition, the fourth is molecular mimicry, in which microbial pathogens “decorate” themselves with SA (this helps them to escape host immunity). And in all these processes SA are involved.
+
+Being located on the cell surface, SA protect macromolecules and cells from enzymatic and immunological attacks. The serum half-life period is regulated by the expression of liver asioglycoprotein receptors. These receptors bind non-sialylated glycoproteins, which are then removed from the serum by endocytosis [8]. Human asialoceruloplasmin disappeared from the bloodstream within a few minutes, while the half-life of native ceruloplasmin under the same experimental conditions was approximately 56 h. The same effect of SA removal (followed by appearance of galactose as a terminal residue in the glycan chain) was observed in the case of other serum glycoproteins: haptoglobin, fetuin, orosomucoid [11]. The hepatocyte plasma membranes contain C-type lectin receptors (asialoglycoprotein receptors), which selectively bind unprotected galactose or N-acetylgalactosamine residues in glycoproteins. The conjugates then enter the endosome via a clathrin-dependent mechanism [12].
+
+On the other hand, N-glycosylation of growth hormone (GH) prolongs its circulation in vivo and enhances the pharmacodynamic effect. At the same time, the higher the degree of GH sialylation, the longer its half-life is [13]. Glycosylation, including sialylation, is one of the main directions in the production and optimization of biopharmaceutical protein preparations for in vivo prolongation of their half-lives, including erythropoietin (EPO), FSH, and interferon (IFN)-α2 [13–15].
+
+Treatment of animal erythrocytes with sialidase leads to their destruction within a few hours. In humans, under these conditions, the lifespan of erythrocytes decreases from 120 days to 2 h. The loss of SA affects the lifespan of platelets, exposing galactose (Gal) residues and facilitating the recognition of asialoglycoproteins by receptors and their further phagocytosis. Like erythrocytes, desialated platelets are rapidly cleared from circulation in vitro [11, 16]. During Streptococcus pneumoniae infection, a large number of desialated platelets accumulate in the bloodstream under the action of bacterial neuraminidase. Such platelets, potentially contributing to formation of blood clots in the vessels, are removed using a special AMR receptor (Aschwell-Morell-Receptor) into the lysosomes of parenchymal liver cells, where they are destroyed, thus preventing sepsis and increasing the survival of infected animals [17]. Prolonged cooling of platelets may be also accompanied by an increase in the number of galactose residues exposed on their surface; therefore, hepatocyte-dependent clearance reduces platelet count recovery and survival after transfusion [18].
+
+In contrast to this masking role, which provides longer lifespan for blood cells and serum glycoproteins, SA also represent the sites for recognition of various receptors such as selectins and siglecs, as well as toxins and microorganisms. Two inhibitory receptors for the CK-binding immunoglobulin-like lectin (Siglec) are expressed by natural killer (NK) cells: Siglec-7 and Siglec-9. It is suggested that SA on the surface of tumor cells regulate NK-mediated cytotoxicity by interacting with Siglec-7 and Siglec-9 and causing a weakening of the NK cell activation pathways. Therefore, the effect on Siglec-7 and Siglec-9, as well as the surface of tumor cells coated with SA, is studied as a new therapeutic approach to enhance the response of NK cells against cancer [19].
+
+Thus, SA are universal molecules that very finely modulate biological and pathological cellular processes. Therefore, SA are the most prominent representatives of mediators of molecular and cellular recognition.
+
+The biological role of SA can be considered in terms of their dual role, i.e., they either mask recognition sites or, on the contrary, represent a biological target, recognized by the receptor protein and acting as a ligand [5]. During synthesis of the carbohydrate moiety of the sialoglycoconjugate, the addition of SA or fucose to the terminal galactose residue or its derivative signals the completion of the synthesis and prevents further chain elongation. These mature carbohydrate-containing structures are recognized by specialized lectins, including the large siglec family [14]. The processes of receptor desialylation have a significant impact on the receptor ability to interact with signaling molecules. For example, desialylation of the insulin receptor (IR) leads to an increase in its activity (Fig. 3) [20]. Aberrantly glycosylated IR does not form dimers and does not undergo insulin-sensitive autophosphorylation [21]. These signaling cascades are being intensively studied in search of new therapeutic targets for the treatment of diabetes mellitus and its complications.
+
+Desialylation of the insulin receptor by NEU1 sialidase induces formation of the active dimer. Adapted from [20].
+
+Thus, the processes of desialylation/sialylation can be considered as a dynamic modification regulated by sialyltransferases and sialidases in response to external or internal stimuli [22].
+
+Sialyltransferases (ST, EC 2.4.99) are required for the attachment of terminal SA residues to oligo- and polysaccharide chains of glycoproteins or glycolipids (gangliosides). There are 20 STs (Table 1), which are divided into 4 groups depending on the type of the glycosidic bond (α2-3, α2-6, α2-8) or the preterminal monosaccharide residue (galactose, N-acetylgalactosamine or other Neu5Ac residues) [5].
+
+Classification of sialyl transferases (ST)
+
+For example, β-galactoside-α2-6-sialyltransferase (EC 2.4.99.1) catalyses the addition of Neu5Ac to the terminal non-reducing β-D-galactosyl residue of the oligosaccharide fragment of glycoproteins and glycolipids: CMP-N-acetyl-β-neuraminate + β-D-galactosyl-R → CMP + N-acetyl-α-neuraminyl-(2→6)-β-D-galactosyl-R. β-D-galactosyl-(1→3)-N-acetyl-β-D-galactosaminide-α2-3-sialyltransferase (EC 2.4.99.2) is involved in the formation of gangliosides [23].
+
+Sialidase (EC 3.2.1.18) also known as neuraminidase, catalyzes the cleavage of SA residues from carbohydrate chains of glycoconjugates as a result of hydrolysis of α-glycosidic bonds. On the one hand, this enzyme, localized on the cell surface and in the intracellular space, can initiate catabolism of sialoglycoconjugates; on the other hand, it cleaves SA residues from them and thus regulate their structure and functions. Four types of mammalian sialidases are known: NEU1, NEU2, NEU3, and NEU4 (Table 2). They are encoded by different genes and are characterized by different subcellular localization [22, 24].
+
+Mammalian sialidases (neuraminidases)
+
+Lysosomes and plasma
+
+membranes
+
+Lysosomal cleavage, regulation of cellular
+
+signaling pathways by desialylation of plasma membrane receptors
+
+Oligosaccharides,
+
+glycopeptides, gangliosides
+
+Plasma membrane integral
+
+protein
+
+Endoplasmic reticulum,
+
+mitochondria, lysosomes
+
+After 1960, information appeared about an increase in the content of SA in the blood in various diseases [25–27]. The total level of SA is the sum of two fractions: associated with glycoconjugates (protein-, oligo- and lipid-bound SA) and freely circulating in the blood. Normally, free SA are found in the blood in small amounts [28, 29]. Determination of the content of SA fractions in blood and tissues provides information on the activity of sialylation/desialylation of proteins and lipids in the body [28, 30].
+
+Using numerous scientific literature data, it could be argued that almost any extreme effects on the body and inflammatory processes led to an increase in the level of total and free SA in the blood and tissues [25–27, 30–32]. However, their participation and mechanisms of changes in the concentrations of various SA fractions in the development of pathological processes were not entirely clear.
+
+Possible reasons for the increase in the content of parameters of the sialoglycoconjugates metabolism in biological objects include:
+
+(1) Activation of the hepatocyte synthesis and secretion of various sialoglycoproteins (α1-antitrypsin, α1-acid glycoprotein, ceruplasmin, α2-macroglobulin, haptoglobin, etc.) as an acute phase response [33, 34]. At the same time, the expression of sialyltransferases increases in hepatocytes [35, 36]. Some acute phase proteins (e.g., α1-acid glycoprotein) interact with inhibitory siglecs and thus are involved in the regulation of the innate immune response [37].
+
+(2) Destruction of body cells and cleavage of SA from sialoconjugates. It is known that the cell membrane damage leads to the release of intracellular contents and some membrane components. Therefore, the release or secretion of SA from the cell may be the result of cell membrane damage during myocardial infarction [38]. Increased sialidase activity in blood plasma is also observed in acute myocardial infarction [39].
+
+(3) High ST activity. Aberrant sialylation is one of the main characteristics of malignant transformation; it protects cancer cells from humoral and cellular defense systems [19, 40].
+
+Elevated SA levels appear to be common in various neoplastic cells and are associated with high ST activity, low sialidase activity, and/or increased production of sialyl glycoproteins [41, 42]. ST activity increases with the stage of breast cancer; therefore, serial measurements of these enzymes can be a reliable marker for monitoring disease activity and the success of selected therapy [43]. In the case of multiple myeloma, high expression of one of the forms of ST (ST3GAL6) correlates with poor patient prognosis [44]. A decrease in NEU1 and NEU4 mRNA levels has been reported in colon cancer cells [45]. The SA level in both erythremia and subleukemic myelosis increases on average by 42%, while the content of α1-acid glycoprotein decreases by 31% [33].
+
+However, the content of total SA in the blood also increases in some benign and inflammatory conditions; this indicates the lack of specificity and limits their use for early detection and screening of cancer [40].
+
+Assessing changes in glycosylation (particularly sialylation) of certain specific glycoproteins is one of the most promising approaches to identify cancer-specific markers [46]. Malignant cell transformation is a heterogeneous pathological condition in which several markers can provide more accurate information than one (Table 3).
+
+Some glycoprotein tumor markers
+
+Sialylation of microorganisms follows a similar strategy, providing better survival in the host (and thereby increasing virulence). This can be achieved by such methods as complete synthesis of SA in own (microbial) cells, SA delivery from the host using trans-sialidases in some trypanosomal strains, or transfer of SA from the host CMP glycosides by means of sialyltransferases expressed by pathogenic bacteria, for example, gonococci [47, 48].
+
+Glycosylation is the most common post-translational protein modification in the virus; it not only promotes the formation of a specific conformation of viral proteins, but also modulates their interaction with receptors and affects host cell recognition, viral replication, and infectivity. Viruses choose cells to obtain their genetic and structural materials, and thus glycosylation of viral proteins is highly dependent on host organelles and enzymes [49].
+
+The surface of the influenza A virion contains hemagglutinin, by which it binds to the target cell surface, and neuraminidase, which cleaves the SA from the cell receptor.
+
+Epithelial cells of the upper parts of the human respiratory tract mainly contain α2-6 linked SA, while the cells of the lower parts contain α2-3 bound SA (Fig. 4). Therefore, epidemic strains of influenza viruses, exhibiting specificity for α2-6-linked SA, are easily reproduced in the upper parts of the human respiratory tract, are actively released into the environment during speech, sneezing, coughing, and effectively infect other people by airborne droplets [50, 51].
+
+Structural formulas of α2-3- and α2-6-linked sialic acids. Adapted from [51].
+
+The SARS-CoV-2 virion is a spherical, single-stranded RNA virus. The SARS-CoV-2 genome encodes many highly glycosylated proteins that are responsible for host recognition, entry, binding, processing, and pathogenesis [52, 53]. Spike proteins (S) on the surface of the SARS-CoV-2 coronovirus, which are necessary for the attachment and penetration of the virus into the host cell, contain SA residues [54].
+
+The virus S protein binds to the cellular receptor ACE2, which is located on the surface of various cells of the upper respiratory tract and lungs [55]. ACE2 is intensively glycosylated by both N- and O-glycans, containing SA [56]. SARS-CoV-2 can bind SA on the cell surface through the S NTD protein, which allows the virus to interact with ganglioside microdomains of the plasma membrane, where the ACE2 receptor is also located [57]. The highly transmissible nature of SARS-CoV-2 is based on the unique structural features of its S protein, which can bind not only the ACE2 receptor, but also other host cell molecules for its entry into the cell. This is characteristic of many COVs that use the S protein to bind SA on the surface of host cells as receptors for their penetration through the plasma membrane [57].
+
+(4) High activity of sialidases. Desialylation of sialoglycoconjugates can lead to the recognition of molecules by galactose-specific lectins, as well as to the recognition of macromolecules and cells by the immune system. As part of the carbohydrate-containing compounds of blood cells, SA is bound to galactose or N‑acetylgalactosamine, which can be determined by the corresponding lectins after the enzymatic release of SA. Erythrocytes bind through their demasked galactose residues to the galactose-specific phagocyte receptor and are eventually engulfed and degraded [58].
+
+Synthesis and glycosylation of many plasma proteins occurs in the liver. Most acute and chronic liver diseases are accompanied by a decrease in the level of total SA in blood [59]. For example, the serum concentration of total SA in patients with chronic hepatitis B was significantly lower than in healthy people [60].
+
+Analysis of the structure and composition of carbohydrate chains of glycoconjugates in the blood provides information on the levels and patterns of glycosylation of major plasma glycoproteins, including acute phase proteins, immunoglobulins, and apolipoproteins [61]. Aberrant sialylation can lead to a change in the content of SA both in the composition of a separate sialoglycoconjugate and affect the level of SA in biological objects. Transferrin belongs to the negative acute phase proteins, and its content in the blood decreases during an inflammatory reaction [62]. Decreased sialylation of serum transferrin is used as a screening test for chronic alcohol use [63] and congenital disorders of glycosylation [64, 65]. At the same time, in persons with alcohol dependence, there is an increase in the concentration of SA in the blood serum [66].
+
+Aberrant IgA glycosylation observed in IgA nephropathy is manifested by sialylation in the absence of a galactose residue in O-linked glycans of the IgA1 hinge region [67]. This results in the change in the structure of the IgA molecule, its impaired clearance by hepatocytes because the asialoglycoprotein receptor ASGPR, expressed on hepatocytes, recognizes the terminal residues of galactose and catabolizes IgA. Glycoforms of IgA1 are detected as self-antigens; this leads to the formation of circulating immune complexes, some of which are deposited in the glomeruli, causing kidney damage [68].
+
+In many infectious diseases, changes in the pattern of total IgG glycosylation have been found in the blood. Antigen-specific IgG, anti-Gal IgG in hepatitis B and C have a specific glycosylation profile, which includes a decrease in galactosylation, and is also associated with the severity of the disease and the degree of associated liver damage in hepatitis C [69, 70].
+
+Congenital disorders of glycosylation (CDG) are a genetically and clinically heterogeneous group, including more than 130 diseases caused by defects at various stages of the glycan modification pathway, including sialylation (Table 4). Most of these monogenic diseases are autosomal recessive and have multisystem manifestations, mainly growth failure, developmental delay, facial dysmorphisms, as well as various bleeding disorders and endocrine disorders. They result from defects either in the biosynthesis of oligosaccharide precursors or at certain steps in the glycan assembly, resulting in the absence or structural changes of their chains. These diseases have a wide range of clinical phenotypes and affect almost all organ systems, with particular emphasis on normal brain development and multiple functions of the nervous, hepatic, gastrointestinal, and immune systems [65].
+
+Examples of hereditary diseases associated with impaired SA metabolism
+
+GNE-myopathy
+
+(Nonaka myopathy)
+
+Recently, changes in glycosylation processes, including sialylation, have been recognized as an important phenotypic feature of many pathological processes. Techniques have been developed and tested to enable the analysis of large sets of samples in a reliable and reproducible manner. Studies of carbohydrate markers for a number of inflammatory and malignant diseases are in progress [61].
+
+The clinical and diagnostic significance of determining the parameters of sialoglycoconjugate metabolism, including changes in the content of both individual SA fractions and specific proteins in various biological fluids and tissues, consists in elucidation of the causes and mechanisms of biochemical changes in the body in certain diseases. In combination with the measurement of existing markers, this can be used to improve diagnostic parameters, staging and monitoring of therapeutic response in some pathological conditions where the need for specificity is less than for specific diagnostics.

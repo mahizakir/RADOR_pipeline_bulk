@@ -1,0 +1,222 @@
+Adeno-associated virus (AAV) is a leading gene delivery platform for the treatment of
+monogenic diseases, with > 200 ongoing or completed clinical trials.1,2 Attributes of AAV include
+replication deficiency, no known human pathogenicity, and generally weak
+immunogenicity.3–5 Recombinant AAV
+vectors used for gene therapy are classified by serotypes that may vary
+significantly in relative transduction efficiency, tissue tropism, and safety
+profiles.6–8 Pre-existing
+humoral immunity to the AAV capsid has the potential to limit therapeutic efficacy
+and poses a potential safety risk for treatment with AAV-based gene transfer
+therapies. Specifically, pre-existing AAV antibodies can inhibit
+transduction9 and promote inflammatory responses via
+opsonization of AAV particles.10 Furthermore, AAV antibodies
+have been proposed to stimulate complement activation in clinical trials utilizing
+AAV9, resulting in severe thrombotic microangiopathic (TMA) events.11–16 Pre-existing antibodies to
+AAV can either be generated from infection with wild-type AAV or through previous
+exposure to an AAV-based gene therapy. Antibodies generated against one wild-type
+AAV can cross-react to multiple AAV serotypes, including recombinant AAV vectors
+used in gene transfer therapies. Thus, prior to treatment, patients should be
+screened for pre-existing antibodies specific to the vector capsid being utilized in
+the given gene therapy.
+
+There is currently no standardized assay for measuring pre-existing immunity against
+AAV vectors. Rather, entry into a gene transfer therapy program requires a specific
+antibody test, endorsed by the gene therapy sponsor.2,17 Importantly, program-specific
+assays can differ in the methodologies used for evaluating pre-existing immunity.
+Specifically, some sponsors will measure only antibodies that prevent AAV-mediated
+transduction of target host cells, known as neutralizing antibodies (NAbs), whereas
+other sponsors will choose a more comprehensive approach that measures total binding
+antibodies (TAbs), which includes non-neutralizing antibodies (non- NAbs) that can
+still bind to the vector and promote pro-inflammatory responses in addition to NAbs.
+Of additional importance in terms of the varied approaches that sponsors take in
+assessing pre-existing immunity is the cut-off threshold for what is considered to
+be an ‘elevated’ level of antibodies, or seropositivity, which would preclude
+participation in a gene therapy program. These thresholds must be experimentally
+determined through both preclinical and clinical studies and will be unique for each
+gene therapy program.
+
+As previously mentioned, NAbs are a subset of TAbs capable of inhibiting transduction
+and thus reducing the efficacy of gene transfer therapy.10,18 NAbs are typically measured
+using an in vitro cell-based assay, where the neutralizing titer is
+defined as the highest dilution that reduces transduction by ⩾ 50%. However, the
+wide variability of assay parameters yields markedly different NAb titers across
+clinical studies.2 In contrast, TAbs, which include NAbs and non-NAbs, are commonly
+detected by enzyme-linked immunosorbent assay (ELISA).2 TAb assays measure all
+antibodies that bind to a specific antigen, irrespective of epitope or neutralizing
+ability, thus facilitating a comprehensive evaluation of potential impact on safety
+and efficacy.2,19 TAb assays
+quantify all antibodies, both NAbs and non-NAbs, that bind to AAV, regardless of
+their ability to directly block transduction. It is important to screen for non-NAbs
+because they can have a strong influence on the safety of AAV-based gene therapies
+by inducing antibody-mediated immune complex formation; opsonization by phagocytic
+cells, which subsequently promote pro-inflammatory responses; and activation of the
+classical complement cascade. In addition, high titers of non-NAbs have been shown
+to reduce the efficacy of gene therapies by promoting premature vector clearance and
+indirectly influencing the transduction of target tissue.16,20,21
+
+Prevalence of pre-existing antibodies against AAV is dependent on multiple factors,
+including the serotype, type of antibodies assessed, method of assessment, and
+geographic location and age range of the population evaluated.17,22 rAAVrh74,
+which was first identified in rhesus macaques,23 has demonstrated widespread
+transgene delivery to muscle – including skeletal, diaphragm, and cardiac – in
+animal models following intravenous administration.5,24,25 Moreover, because rAAVrh74
+was isolated from monkeys, it may be associated with less pre-existing immunity
+compared with AAV serotypes isolated from humans.23,26 These features of rAAVrh74
+have made it an attractive platform for development of gene transfer therapies
+targeting neuromuscular diseases. Indeed, one study that examined seroprevalence of
+AAV antibodies in various populations, including patients with DMD, found rAAVrh74
+to be among the serotypes with the lowest rates of pre-existing immunity.5,23 Several rAAVrh74-based gene
+transfer therapies are under investigation, including delandistrogene moxeparvovec
+(SRP-9001) for gene transfer in patients with DMD [phase I (NCT04626674), phase I/II
+(NCT03375164), phase II (NCT03769116), and phase III (NCT05096221)] and SRP-9003 for
+the gene transfer of β-sarcoglycan into patients with limb-girdle muscular dystrophy
+type 2E/R4 [phase I/II (NCT03652259)].
+
+Here, we report the total anti-rAAVrh74 antibody seroprevalence among 101 individuals
+with DMD. A total antibody level of < 1:400 was defined as seronegative (not
+elevated) and ⩾ 1:400 was defined as seropositive (elevated). This < 1:400 total
+antibody threshold was determined based on preclinical nonhuman primate
+studies20 that found no inhibition of transduction nor safety events
+caused by antibodies at or below that level; these findings were subsequently
+clinically validated in human trials.26
+
+This study was conducted in the United States through a centralized virtual
+research coordination center and Principal Investigator, in accordance with the
+International Conference on Harmonisation Guidelines for Good Clinical Practice
+and the Declaration of Helsinki. The protocol was approved by a central
+institutional review board. Eligible patients were males, aged ⩾ 4 to
+< 18 years at the time of screening, with a definitive diagnosis of DMD based
+on clinical findings and confirmatory genetic testing. Key exclusion criteria
+were prior treatment with gene transfer therapy or living with a person who had
+previous known exposure to rAAVrh74 or other gene transfer therapies. Electronic
+consent and medical release from the eligible patients’ treating physicians were
+signed by the patients’ parents/legal guardians. Patients were provided with the
+choice of receiving their one-time blood draws either at a phlebotomy center or
+at home, via a home health provider. Blood was collected within
+2 weeks of enrollment (serum separator tubes for rAAVrh74 ELISA -). Blood was
+centrifuged; serum was collected, shipped on cold packs at 2°C–8°C, and then
+stored at –80°C until analysis. The primary endpoint was the percentage of
+seropositive patients, which was defined as having elevated anti-rAAVrh74 total
+antibody titers ⩾ 1:400.
+
+The sample size was calculated to obtain 8% precision around the overall
+seroprevalence estimate. With an estimated sample size of 100 patients, the
+margin of error [half width of the 95% confidence interval (CI)] would be
+< 8% for a rate of seroprevalence < 20. Demographic characteristics,
+including age (years), race, and ethnicity, were summarized for the full
+analysis set, defined as all patients who were enrolled in the study and had at
+least one sample evaluated with a valid result for immunogenicity. Analysis of
+seropositivity was performed on the full analysis set. Clopper–Pearson (exact)
+method was used to compute the CIs.27
+
+In total, 107 patients with a definitive diagnosis of DMD were enrolled, of whom 101
+completed the study (full analysis set) (Figure S1 in the Supplemental material). A summary of patient demographics and
+baseline characteristics is presented in Table 1. The mean (standard deviation) age
+of the evaluated patients was 9.1 (3.5) years. Most patients were ⩾ 8
+to < 18 years old (65.3%) and White (78.2%). The study was not powered for
+ethnicity-related analysis. Eighty-one percent of patients selected the home
+phlebotomy option.
+
+Demographic and baseline characteristics (full analysis set).
+
+DMD, Duchenne muscular dystrophy; SD, standard
+deviation.
+
+n = 94.
+
+Years are calculated as (date of informed consent minus date of the first
+motor symptom of DMD/DMD diagnosis/the confirmatory genetic testing for
+DMD)/365.25.
+
+n = 99.
+
+Results from the ELISA showed that a large preponderance of patients [87/101 (86.1%);
+95% CI, 77.8–92.2] did not have elevated anti-rAAVrh74 antibody titers (⩾ 1:400)
+(Figure 1). In the 14
+patients with elevated anti-rAAVrh74 antibodies, titers ranged from 1:400 to 1:3200
+[1:400: 1.0% (1/101); 1:800: 4.0% (4/101); 1:1600: 5.9% (6/101); and 1:3200: 3.0%
+(3/101)].
+
+Prevalence of anti-rAAVrh74 antibodies in 101 patients with Duchenne muscular
+dystrophy. Serum samples were assayed by binding ELISA for total
+immunoglobulin G against rAAVrh74. ELISA titer < 1:400 was considered as
+seropositive.
+
+AAVrh74, adeno-associated virus serotype rh74; ELISA, enzyme-linked
+immunosorbent assay; rAAVrh74, recombinant adeno-associated virus serotype
+rh74.
+
+Gene therapy has revolutionized the treatment of previously untreatable diseases.
+There is pressing need for the treatment of devastating, rare, progressive diseases,
+such as DMD, for which AAV-based gene transfer therapies could significantly impact
+large segments of the patient population. Currently, some patients are ineligible
+for AAV-based gene transfer therapies due to pre-existing antibodies to the AAV
+vector that may affect the safety and efficacy of treatment. In this study, patient
+samples from a cohort of 101 patients with DMD from across the United States were
+sent to a single-center laboratory and assessed for seroprevalence of total
+anti-rAAVrh74 antibodies, where seropositivity, or elevated antibody status, was
+defined as a titer ⩾ 1:400. This definition for seropositivity was based on
+preclinical nonhuman primate studies that established a threshold for impact on
+transduction efficiency. An overwhelming majority of patients were seronegative,
+suggesting the potential broad applicability of rAAVrh74-based precision genetic
+therapies for this population.
+
+The innovative virtual design of this study capitalized upon a centralized virtual
+platform to identify, screen, and receive consent from patients. Moreover, patients
+were allowed to choose a preferred setting for blood collection (i.e. home
+versus center-based), thus lowering the overall study burden on
+healthcare providers, caregivers, and patients. Unforeseen conditions spurred by the
+COVID-19 pandemic lent further credence and support to the virtual design model.
+
+This seroprevalence study focused on patients with DMD because the rAAVrh74 vector is
+currently being evaluated in clinical trials of delandistrogene moxeparvovec
+(SRP-9001), an rAAVrh74-based investigational gene therapy for DMD. Seropositivity
+for rAAVrh74 is an excluding criterion for clinical trials of rAAVrh74-based
+therapies. To date, no observed serious adverse events in clinical trials of
+rAAVrh74-based gene therapies have been attributed to antibody-mediated inflammation
+or complement activation.26,28 Furthermore, no antibody-mediated inhibition of transduction
+has been observed in these studies to date. The clinical trials (NCT04626674,
+NCT03375164, NCT03769116, and NCT03652259) utilize an anti-rAAVrh74 antibody
+screening test and cut-off definition for elevated TAbs comparable with the test for
+seropositivity described in this report. The absence of adverse events attributed to
+anti-rAAVrh74 antibodies in these trials suggests that comprehensive antibody
+screening is appropriate for determining one aspect of patient eligibility for
+rAAVrh74 gene therapy.
+
+Ongoing DMD gene therapy clinical development programs in the United States use
+different mini-/micro-dystrophin transgene constructs, muscle-specific promoters,
+and AAV serotypes, including rAAVrh74 and AAV9.29 Each gene therapy program
+requires a unique and specific assay, designed to measure pre-existing antibodies to
+a particular AAV vector, with threshold values that have ideally been empirically
+determined and validated through preclinical and clinical studies specific to the
+vector platform used.
+
+This study based seropositivity on a titer of total binding anti-rAAVrh74 antibodies,
+or TAbs, which includes NAbs and non-NAbs. Measurement of TAbs, as opposed to simply
+measuring NAbs, is a more comprehensive approach designed to reduce the risk of
+adverse events from pre-existing immunity.30,31 Other benefits to TAb assays
+include their ease of use, their fast turnaround time, and their simplicity to
+establish and validate compared with complex cell-based NAb assays.30
+
+Limitations of this study include that only United States patients were represented
+and the use of steroids, which was not assessed. While corticosteroid use has not
+been shown to impact seroprevalence in other studies of patients with DMD,32 their effect
+on anti-rAAVrh74 antibody titer was not specifically evaluated in this study; thus,
+their impact on seroprevalence cannot be ascertained.
+
+In conclusion, results from this study suggest that most patients with DMD in the
+United States are seronegative (86.1%) for pre-existing antibodies to rAAVrh74. This
+supports the broad applicability of rAAVrh74-based gene therapy, and those
+seronegative patients meeting other trial eligibility criteria would be eligible for
+entry into rAAVrh74-based clinical trials. Finally, because TAb assays offer a more
+comprehensive approach, this method of patient pre-screening may improve the safety
+and efficacy of AAV-based gene therapies.
+
+Click here for additional data file.
+
+Supplemental material, sj-docx-1-tan-10.1177_17562864221149781 for Evaluation of
+rAAVrh74 gene therapy vector seroprevalence by measurement of total binding
+antibodies in patients with Duchenne muscular dystrophy by Natalie L. Goedeker,
+Sachi D. Dharia, Danielle A. Griffin, Jesantha Coy, Todd Truesdale, Rajan
+Parikh, Kasen Whitehouse, Sourav Santra, Damon R. Asher and Craig M. Zaidman in
+Therapeutic Advances in Neurological Disorders

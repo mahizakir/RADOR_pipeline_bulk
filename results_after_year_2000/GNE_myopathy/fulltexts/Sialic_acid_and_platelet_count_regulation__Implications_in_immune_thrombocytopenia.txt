@@ -1,0 +1,298 @@
+Essentials
+Platelet glycans, particularly sialic acids, are indicators of platelet count.We compare similarities between immune thrombocytopenia and shear‐stress and storage‐related asialylation.We discuss genes involved in sialic acid synthesis leading to thrombocytopenia.Desialylation is a prominent feature in immune thrombocytopenia.
+
+Platelet glycans, particularly sialic acids, are indicators of platelet count.We compare similarities between immune thrombocytopenia and shear‐stress and storage‐related asialylation.We discuss genes involved in sialic acid synthesis leading to thrombocytopenia.Desialylation is a prominent feature in immune thrombocytopenia.
+
+Platelet glycans, particularly sialic acids, are indicators of platelet count.
+
+We compare similarities between immune thrombocytopenia and shear‐stress and storage‐related asialylation.
+
+We discuss genes involved in sialic acid synthesis leading to thrombocytopenia.
+
+Desialylation is a prominent feature in immune thrombocytopenia.
+
+Platelets are anucleate cell elements with the significant function of forming blood clots and preventing bleeding. Platelet count in humans ranges from 150 000 to 450 000 platelets per microliter of blood. Platelets are typically produced in the bone marrow (BM) by the eponymous megakaryocytes (MKs), large cells with multilobulated nuclei. Low platelet count (thrombocytopenia) increases the risk of uncontrolled or prolonged bleeding. By contrast, too many platelets (thrombocytosis) may lead to abnormal blood clot formation, with possible severe and life‐threatening complications, including stroke and myocardial infarction. The mechanisms responsible for keeping the average platelet count are complex and subject to intense investigation.
+
+Immune thrombocytopenia (ITP), a heterogeneous disorder, typically presents with isolated low platelet count (<100 000/µL) for which other causes of thrombocytopenia have been excluded. ITP can develop into a chronic disease; approximately two‐thirds of adults and 20% of children diagnosed with ITP progress to a chronic form.
+1
+ The incidence of ITP in adults ranges from 2 to 4 cases per 100 000 per year, with two peaks in age: first between 20 and 30 years of age, with a slight female predominance, and a larger peak after 60 years of age affecting men and women equally.
+2
+ At presentation, patients with ITP may be asymptomatic or, in ≈5%, have life‐threatening bleeding.
+2
+ Paradoxically, the risk of venous thromboembolism is higher in patients with ITP compared with the general population, complicating the management of venous thromboembolism, given the associated bleeding risk.
+2
+ Despite detailed knowledge of ITP pathophysiology, the incongruence with practical clinical applications and diagnosis is reflected in lack of incidence numbers besides evolution to chronicity.
+
+ITP is considered an acquired autoimmune disorder characterized by persistent thrombocytopenia resulting from a combination of increased platelet destruction, impaired platelet production (thrombopoiesis), and a loss of autoimmune tolerance. Insufficient thrombopoietin (TPO) production is another likely reason for ITP development.
+3
+ Despite considerable advancement in therapy, the precise etiology and pathophysiology phenomena driving the disease development and the evolution to chronicity remain undefined. It is increasingly apparent that ITP is a multifactorial and complex disorder.
+
+Classically, ITP is thought to be primarily due to IgG autoantibodies binding to platelets, leading to platelet destruction through enhanced Fc receptor–mediated phagocytosis and destruction in the spleen.
+4
+, 
+5
+ Autoantibodies and CD8+ T cells likely promote platelet clearance through phagocytosis by spleen macrophages, dendritic cells (DCs), and induction of apoptosis.
+6
+, 
+7
+ A study by Morodomi et al.
+8
+ shows that the site of platelet clearance is dependent not only on the specificity of the antiplatelet antibody but also on the injection route and circulating concentrations. High antibody concentrations induce platelet activation/desialylation and aggregation, leading to platelet aggregate removal by liver‐resident macrophages and desialylated platelet removal by hepatocytes. Repeated monoclonal antibody (mAb) injections and chronic thrombocytopenia opsonize platelets, leading to clearance via splenic macrophages. Hence, when generating ITP mouse models, the frequency and mode of antibody administration and antibody concentrations must be considered when interpreting platelet clearance mechanisms.
+
+Unequivocal evidence shows the presence of autoreactive CD4+ T cells that target epitopes on glycoprotein (GP) IIb‐IIIa.
+9
+, 
+10
+ Thus, CD4+ T‐helper (Th) cells play a substantial role in B‐cell differentiation into autoantibody‐secreting plasma cells. Proinflammatory Th17 cells are critical players in developing autoimmunity
+11
+ and multiple Th populations (Th1/Th17/Th22/TFH) contribute to the pathogenesis of ITP.
+12
+, 
+13
+, 
+14
+, 
+15
+, 
+16
+ Regulatory T cells (Tregs) secure immune tolerance by regulating B‐ and T‐cell–mediated autoimmunity and inducing a tolerogenic phenotype through interaction with DCs. Thus, Tregs are essential to secure immune tolerance, and reduced Treg levels have been implicated in the development of ITP.
+17
+
+Other alternative mechanisms leading to ITP include BM microenvironment perturbances, genetic predispositions, and alterations in sialic acids. Here, we focus on these roles, particularly that of sialic acid loss in controlling platelet production and destruction. Identifying specific mechanisms causing individual ITP could help guide personalized therapy approaches.
+
+Sialylation creates glycan diversity at the position C‐2 anomeric carbon of sialic acid that is linked to galactose C‐3 or C‐6 position or N‐acetylgalactosamine (GalNAc) C‐6 position, resulting in α‐2,3‐ and α‐2,6‐linkages, respectively. Sialyltransferases catalyze this linkage, and their differential and organ‐specific expression further diversify the functions of sialic acid.
+18
+ Sialic acids can bind to various pathogens and toxins, including influenza. In most such interactions, a pathogen‐binding protein (extrinsic receptor) recognizes sialic acids presented in specific linkages to a defined underlying sugar chain, thereby promoting cell invasion and pathogen distribution. Sialic acids are also ligands for immune cell receptors called sialic acid–binding immunoglobulin‐like lectins (Siglecs). Most Siglecs have the immunoreceptor tyrosine‐based inhibitor motif and thus act like inhibitory receptors that suppress immune cell activation when engaged. Hence, sialic acids serve as elements of “molecular mimicry,” in which successful microbial pathogens or cancer cells decorate themselves with sialic acids, assisting in the evasion of host immunity.
+18
+
+The hepatic Ashwell‐Morell receptor (AMR) and macrophage galactose lectin (MGL) remove aged desialylated platelets to regulate platelet life span.
+19
+, 
+20
+, 
+21
+ Sialic acid alterations are associated with pediatric and adult ITP. Opsonization of platelets with specific anti‐GPIbα antibodies isolated from patients with ITP results in platelet activation, translocation of neuraminidase‐1 (Neu1) to the surface, loss of sialic acid, and Fc‐independent hepatic clearance via the hepatic AMR in a subpopulation of patients with ITP.
+22
+ Studies from independent labs have found that liver hepatocytes remove desialylated platelets using their AMR.
+19
+, 
+23
+, 
+24
+ Seventy percent to 80% of patients have autoantibodies against integrin αIIbβ3, and 20% to 40% against the GPIb‐IX complex.
+25
+, 
+26
+, 
+27
+ In chronic ITP, platelet destruction often occurs in the spleen by binding the Fc portion of platelet‐bound immunoglobulins on the platelet surface to FcgRIIα and FcgRIIIα on tissue macrophages.
+28
+ Thus, standard therapies such as intravenous immunoglobulin (IVIG) and anti‐Rh(D) target Fc‐ and FcgR‐dependent mechanisms to increase platelet count.
+28
+ Fc‐independent thrombocytopenia, in which antibodies to GPIbα but not to αIIbβ3, induces thrombocytopenia via their F(ab)2 (Fc independent) has been demonstrated.
+22
+, 
+29
+ Interestingly, in mice, anti‐GPIbα antibody‐mediated thrombocytopenia is resistant to IVIG, which is consistent with several reports in humans.
+26
+ The data suggest that certain anti‐GPIbα antibodies uniquely induce platelet clearance in an Fc‐independent manner in mouse models and may be true in some human ITP cases, but more studies are required to solidify this novel Fc‐independent mechanism of platelet clearance in human settings. Another interesting study showed that asialylated GPIbα is required for platelet‐mediated hepatic TPO generation, which lends more credence to the interaction of GPIbα with hepatic lectins to regulate steady‐state TPO production.
+29
+ Another interesting study by Morodomi et al.
+8
+ shows that in a mouse model of ITP, high‐dose anti‐GPIbα mAb injection opsonizes, activates, and aggregates platelets, followed by a rapid clearance from the circulation by liver macrophages and hepatocytes via the AMR (ie, acute antibody‐mediated platelet clearance), which induces rapid TPO production. By contrast, low‐dose subcutaneous injections gradually decrease circulating platelet count (ie, mimicking chronic thrombocytopenia), and clearance is observed only in the spleen by macrophages, with unaltered TPO levels. Hence, when evaluating mouse models of ITP, the antibody concentration and administration route must be taken into account.
+
+Van der Wal et al.
+30
+ presented data at the ISTH 2020 congress supporting the role of differential microparticle glycosylation facilitating binding to hepatocytes (HepG2 cells) in vitro. Platelet microparticles (PMPs) shed during activation or storage are procoagulation and can result in vaso‐occlusion upon transfusion. The authors find that PMP clearance, needed to prevent vaso‐occlusion upon transfusion, is mediated by binding to hepatocytes (ie, HepG2 cells) in a glycan‐mediated mechanism. This in turn may shed some light on how platelets bind to hepatocytes in vivo. However, the debate about the exact identity of hepatocyte lectins in platelet glycan recognition and removal continues.
+
+Type 2B von Willebrand disease (VWD) is caused by gain‐of‐function mutations in the gene coding for von Willebrand factor. Patients with type 2B VWD display variable bleeding symptoms with or without thrombocytopenia. Some data suggest that desialylation‐mediated platelet clearance causes thrombocytopenia in type 2B VWD. The relationship between platelet desialylation and platelet count probed in 36 patients with type 2B VWD (p.R1306Q, p.R1341Q, p.V1316M mutations) and in a mouse model carrying the p.V1316M mutation showed that patients and mice with the p.V1316M mutation had abnormally extensive platelet desialylation. However, the authors concluded that in type 2B VWD, platelet desialylation has a minor role and is not sufficient to mediate thrombocytopenia. This conclusion is based on the following findings: 2B p.V1316M/von Willebrand factor increased sialic acid loss in wild‐type platelets with αIIb and β3 being major targets, but sialidase inhibitors had no effect on platelet count in mice with type 2B VWD.
+
+While the loss of viability of dog red blood cells (RBCs) can be elicited by the removal of ≈10% of the total RBC surface sialic acid measuring sialic acid moieties directly.
+31
+ Dupont et al.
+32
+ determined that a critical platelet desialylation threshold (not achieved in either patients or mice with type 2B VWD) is required to induce thrombocytopenia in vivo. The reference interval was determined in control platelets using sialidases, and loss of sialic acid was measured using Ricinus communis agglutinin I (RCA). The RCA‐binding value corresponding platelet count was calculated. An RCA‐binding threshold of 6.2 is likely to be necessary to induce desialylation‐dependent thrombocytopenia. However, this critical platelet desialylation threshold required to induce thrombocytopenia in vivo was not achieved in either patients or mice with type 2B VWD with the p.V1316M mutation (giving 2.1‐fold and 2‐fold differences, respectively) and so does not explain the low platelet count. The authors, however, did not measure sialic acid content loss directly. RCA is a lectin that recognizes terminal galactose residues, a method that does not measure sialic acid directly. Thus, the percentage of total sialic acid required for platelet removal remains unclear. Understanding the threshold of sialic acid loss from platelets that elicits platelet removal is essential to inform the underlying mechanisms of thrombocytopenia.
+
+Previous work show that platelets express the sialidases Neu1, Neu2, and Neu4.
+30
+ Neu1 is upregulated upon the addition of anti‐GPIbα antibodies on platelets of a subset of patients with ITP.
+22
+, 
+33
+ Influenza antiviral drugs including anamivir (Relenza), oseltamivir (Tamiflu) and peramivir (Rapivab) mimic the transition state to block viral neuraminidase. Multiple reports show that administration of sialidase inhibitor oseltamivir increases platelet counts in a population of patients with ITP.
+34
+, 
+35
+, 
+36
+ Administration of oseltamivir increases platelet counts in a cohort of patients with ITP and in healthy human subjects, suggesting that platelet sialic acid regulates platelet count.
+37
+ Thus, some patients with ITP characterized by platelet desialylation could profit from treatment inhibition of sialic acid loss or perhaps by modifying the function of Siglecs. One caveat is the limited and selective effect of oseltamivir in patients with ITP. Until the exact mechanism of action of how oseltamivir improves platelet count is known, its utility might be limited but can be applied currently, perhaps in combination therapy.
+
+Acute ITP occurs predominantly in children
+38
+, 
+39
+ and is frequently associated with viral infections,
+40
+ where viral epitopes similar to epitopes found on the surface of platelets appear to induce B cells to produce antibodies that are cross‐reactive with platelet surface antigens.
+41
+, 
+42
+ The TF antigen is defined as exposure of the underlying Core‐1 disaccharide (Galβ(1,3)GalNAc) through loss of its capping sialic acid. Acute infections with influenza viruses or bacteria in vivo can promote loss of sialic acid and TF antigen presence.
+43
+, 
+44
+ One example of bacterially induced TF antigen exposure on platelets is the hemolytic uremic syndrome.
+45
+, 
+46
+
+Recent work from our group shows that pediatric ITP plasma samples have increased anti–TF antigen antibody representation, suggesting increased exposure of the typically sialylated cryptic TF antigen in these patients.
+47
+ While anti–TF antigen antibodies occur “naturally” in almost all sera of adults,
+48
+ anti‐TF are low‐titer antibodies with relatively weak hemolyzing capabilities and typically do not cause platelet clearance.
+49
+ Thus, TF antigen presence on circulating platelets and RBCs can induce thrombocytopenia or hemolysis. Still, mechanisms in addition to antibody binding to TF antigen are likely necessary to cause both.
+50
+, 
+51
+ The presence of increased antibodies toward TF antigen in pediatric ITP is probably a reporter of a sialic acid loss and heightened immune response to asialo‐glycan structures. More data are needed to determine if antibody patterns to glycan structures can predict chronic versus acute ITP outcomes.
+
+At the ISTH 2020 congress, Marini et al.
+52
+ showed a correlation in patients with ITP between desialylating autoimmune antibodies, reduced platelet count, and bleeding tendency. Their results seem to target platelet desialylation as a diagnostic tool and for therapeutic approaches in the treatment of ITP. At the ISTH 2021 congress, Roka‐Moiia et al. showed that shear stress by mechanical circulatory support (MCS), a support system in patients with advanced heart failure, induced platelet surface desialylation, microvesiculation, and reduction in platelet count.
+47
+ Neuraminidase inhibition restores platelet count and decreases microparticle generation caused by hypershear. The authors propose that developing therapeutic strategies for preservation of platelet sialylation offers significant translational potential for pharmacologic management of MCS‐related platelet dysfunction, coagulopathy, and bleeding complications.
+
+Put together, these findings show that desialylation is a prominent feature in thrombocytopenia (Figure 1). It emphasizes the role of sialic acid as a “do not eat me” signal on platelets. In ITP, the presence of antibodies is a common theme, although they could have different pathologies. These antibodies can simply be a marker of increased platelet desialylation, such as in the case of the anti–TF antigen antibodies.
+47
+ Whether some antiglycan antibodies can lead to immune cell activation that can lead to thrombocytopenia is unclear. There are also platelet‐activating antibodies that lead to expression of desialylating neuraminidases. Platelet storage and shear stress can also lead to desialylation, presumably by expression of neuraminidase. Why and how these very separate pathologies lead to the same condition remain a mystery. In which ways do their mechanisms differ? It will be interesting to observe whether platelet desialylation can become a marker for other diseases with platelet function dysregulation, including cardiovascular disease, in which high shear stress is detrimental to endothelial cells and platelets, but the endothelial glycocalyx field remains unexplored.
+
+Desialylation is a prominent feature in thrombocytopenia. Various mechanisms lead to platelet desialylation, including (1) activating autoantibodies, (2) shear stress, and (3) platelet storage. Platelet activation by autoantibodies increases neuraminidase activity on the platelet surface. Whether desialylation‐induced shear stress occurs through the exact mechanisms is unclear. Antiglycan antibodies are also found in pediatric patients with ITP, potentially indicating sialic acid alterations as the cause of the disease. GPIbα, glycoprotein Ibα; ITP, immune thrombocytopenia; Neu1, neuraminidase‐1
+
+In 1978, Schofield
+53
+ proposed the hematopoietic microenvironment or “niche” to describe areas where hematopoietic stem cells (HSCs) reside and give rise to all blood cell lineage precursors, including MKs. Megakaryopoiesis is the differentiation of MK progenitors to functional platelets. Specialized microenvironments (niches) sustain MK maturation and localization to sinusoids and platelet release (also termed thrombopoiesis) into circulation.
+54
+
+Impaired thrombopoiesis is a fundamental cause of ITP. Multiple MK intrinsic and extrinsic environmental defects alter megakaryopoiesis in ITP: (i) Autoantibodies mediate MK inhibition/destruction both in vitro and in vivo
+55
+, 
+56
+, 
+57
+; (ii) there is aberrant expression of microRNAs directing MK proliferation, differentiation, and platelet production
+58
+, 
+59
+; (iii) defective MK apoptosis occurs
+51
+; (iv) reduced proliferation and differentiation rate of the mesenchymal stem cell compartment may account for BM defects in ITP
+60
+; and (v) CD8+ T cells can target MKs in the BM and inhibit platelet production.
+57
+
+Multiple changes in O‐glycans result in thrombocytopenia, including deficits in the α‐2,3‐sialyltransferase 1 (ST3Gal1).
+47
+ The sialyltransferase ST3Gal1 adds sialic acid specifically on the Core‐1 O‐glycans, also called the TF antigen. A mouse model with targeted deletion of St3gal1 in MKs (St3gal1
+MK−/−) using the Pf4‐cre mouse model revealed that (i) TF antigen exposure, restricted to MKs, results in moderate thrombocytopenia in St3gal1
+MK−/− mice; (ii) deletion of the lymphoid‐specific tyrosine kinase Janus kinase 3 in St3gal1
+MK−/− mice normalizes platelet counts, thereby implicating the involvement of immune cells in causing thrombocytopenia; (3) Siglec H‐positive BM immune cells engage with O‐glycan sialic acid moieties to regulate type I interferon (IFN) secretion and thrombopoiesis. The St3gal1
+MK−/− mouse BM has a population of immune cells with a plasmacytoid dendritic cell (pDC)‐like signature. These pDC‐like cells show a concomitant upregulation of immunoglobulin rearrangement gene transcripts Igkc and Ighm, suggesting immune regulatory mechanism involvement in thrombopoiesis upon aberrant glycosylation.
+47
+ A separate study also showed that increased IFN response, mediated by pDCs, also contributes to pediatric ITP pathogenesis by supporting monocyte and T‐cell activation.
+61
+
+The data show that sialic acid moieties, specifically on O‐glycans (Core‐1), have multiple functions in MKs and platelets. It is tempting to speculate that one such function of sialic acids on MKs may shape immune responses in the BM niche. Siglecs regulate immune responses, often playing an immune inhibitory function.
+62
+ Siglecs on immune cells recognize sialic acid–containing ligands as “self‐associated molecular patterns” (SAMPs). The role of Siglecs in the BM niche has not been widely explored. Based on the intriguing data published recently by Lee‐Sundlov et al.,
+47
+ it is feasible that in ITP or other chronic autoimmune conditions, alterations of MK sialic acids by pathogens or other insults to the sialic acid expression may lead to loss of SAMP and consequent loss of immune tolerance. Whether BM immune cells monitor MKs via glycan‐lectin interactions to control platelet production is unclear.
+
+At the ISTH 2021 congress, Butta Coll et al.
+63
+ presented highly intriguing work to demonstrate that loss of sialic acid from platelets induced an impairment of their ability to be activated and an increased apoptosis, accompanied by a diminished Treg population and a higher plasmablast subset. The authors posit that desialylated platelets act as etiopathogenic agents in ITP. However, there was no insight provided on how changes in Tregs and plasmablasts are induced and if MKs are desialylated. At the ISTH 2020 congress, Marini et al.,
+52
+ on the other hand, showed that autoantibodies from patients with ITP are able to induce cleavage of sialic acid on the MK surface, consequently reducing their ability to adhere to different extracellular matrix proteins. Furthermore, the authors show that ITP autoantibody‐mediated desialylation interferes with proplatelet formation from MKs, which is a key step in thrombopoiesis. However, in both of these reports, the specific type of sialic acid involved (ie, 2,3 sialic acid on O‐glycans vs N‐glycans) and molecular mechanisms have not been elucidated by the authors.
+
+Polymorphisms in Fcγ receptors have been associated with the onset and pathogenesis of ITP.
+64
+ Polymorphisms in genes encoding specific cyto‐ or chemokines, such as interleukin (IL)‐1, IL‐2, IL‐4, IL‐6, IL‐10, IL‐17, tumor necrosis factor‐α, transforming growth factor‐β, and IFN‐γ, have also been associated with ITP.
+65
+, 
+66
+, 
+67
+, 
+68
+, 
+69
+ Genetic profiles of cytokines or other immune components are increasingly recognized as potential risk factors for ITP.
+70
+
+Genetic disorders also affect platelet sialic acid in humans and various mouse models (Figure 2). Mutations in the GNE gene encoding the UDP‐GlcNAc 2‐Epimerase/N‐acetyl‐d‐mannosamine (ManNAc) kinase, a master regulator of sialic acid synthesis, are associated with congenital thrombocytopenia in humans.
+71
+, 
+72
+, 
+73
+, 
+74
+, 
+75
+ Sialic acid transporter gene SLC35A1 mutations also result in macrothrombocytopenia.
+76
+ It is likely that GNE and SLC35A1 mutations lead to increased clearance, causing thrombocytopenia. Mouse models such as St3gal4 knockout mice lacking the α‐2,3‐sialyltransferase 4 (ST3Gal4) responsible for the α‐2,3 linkage of sialic acid to galactose have profound thrombocytopenia. Crossing St3gal4‐null mice with mice lacking the hepatic AMR, also called the asialoglycoprotein recepto, results in platelet count recovery, implying that uncovering of galactose leads to AMR‐mediated clearance.
+24
+ Another glycosyltransferase knockout mouse model with severe thrombocytopenia, the β4GalT1‐null mice generates precursor glycan epitopes that are truncated and degalactosylated.
+47
+
+Megakaryocyte desialylation leads to thrombocytopenia. Megakaryocytes (MKs) reside in the bone marrow niche, interacting with immune cells and extracellular matrix (ECM). Desialylation of MKs activates bone marrow immune cells leading to thrombocytopenia. Genetic mutations in genes involving sialic acid synthesis and transport result in sialic acid loss of MKs and are associated with thrombocytopenia. Siglec, sialic acid–binding immunoglobulin‐like lectin
+
+Thus, sialic acid and galactose metabolism and decorations affect platelet clearance and production and influence at least indirectly the BM environment via TPO signaling. Moreover, patients with sialylation defects, such as SLC35A1‐CDG, a rare congenital disorder of glycosylation, can exhibit macrothrombocytopenia. A MK lineage‐specific SLC35A1 mouse model exhibited impaired megakaryocytopoiesis, impaired MK maturation, and excessive platelet clearance by liver macrophages, indicating that sialylation is essential for both platelet generation and clearance. Different deletions of sialic acid–synthesizing enzymes affect megakaryopoiesis and platelet clearance by apparently different mechanisms. Whether the AMR or other galactose‐recognizing lectins in the liver mediate platelet clearance in patients with GNE and SLC35A1 mutations requires further investigation. It is also unclear whether GNE and SLC35A1 mutations affect sialic acid loss, leading to perturbation of immune cells and the BM niche, like the finding described by Lee‐Sundlov
+47
+ in the St3gal1MK
+
+−/− mouse model.
+
+SLC35A1 gene mutations cause SLC35A1‐CDG. Few human cases with SLC35A1 mutations have been identified. One investigation revealed that the CMP‐sialic acid transporter (CST) encoded by SLC35A1 is not required for proplatelet formation.
+76
+ This finding that differs from results in SLC35A1–
+
+/
+
+–
+ mice that have defective proplatelet formation.
+77
+ Differences that possibly contribute to some of the inconsistencies between patients and the mouse model are (i) the SLC35A1‐CDG investigated a point mutation in the transmembrane domain; hence, the patient may have residual cytidine 5′‐monophosphate–sialic acid (CMP‐SA) activity; (ii) in vitro–differentiated MKs from peripheral blood CD34+ cells were used in the human study in contrast to differentiated BM MKs in MKs were used in our study; (iii) in the patient with SLC35A1‐CDG, sialylation is likely reduced in all cell types, while SLC35A1 deletion in mice is specific for MKs and platelets; and (iv) potential compensatory mechanism differences between human and mouse MKs. Nevertheless, the study of patients and the mouse model are complementary.
+
+At the ISTH 2021 congress, Fager Ferrari et al.
+78
+ reported two compound heterozygous variants in GNE causing severe macrothrombocytopenia as a result of decreased platelet sialylation. Treatment with oseltamivir did not mitigate the GNE‐associated thrombocytopenia identified in this patient. Inhibition of neuraminidases, the enzymes that hydrolyze sialic acid, using sialidase inhibitors such as oseltamivir was effective in a subset of patients with ITP. Inhibiting neuraminidase activity should not be ineffective in rescuing the sialic acid deficit caused by GNE variants, impeding CMP‐SA synthesis rather than hydrolysis. In a phase 3 trial using aceneuramic acid extended release (Ace‐ER), a treatment intended to replace deficient sialic acid in patients with GNE myopathy, Ace‐ER did not improve muscle strength. This approach could prove beneficial for patients with GNE mutations with isolated thrombocytopenia and could be considered in future clinical trials.
+79
+ Also at the ISTH 2021 congress, Persico et al.
+80
+ reported another patient with GNE variants and thrombocytopenia. This group points out the growing GNE variant cases reported that are associated with thrombocytopenia. They propose that including GNE among the genes associated with inherited thrombocytopenias could significantly contribute to understanding the role of GNE in this pathology, as well as patients’ appropriate molecular diagnosis and clinical management. We recently reported thrombocytopenia in pediatric patients with a GNE mutation.
+75
+ In our recent investigation, we discovered a patient with two compound heterozygous GNE variants, which are both located in the initial area of the ManNAc kinase domain.
+81
+ Using crystallography analyses of the ManNAc kinase, Martinez et al. showed that the wild type of amino acids T417 and R420 are directly involved in the stabilization of the α‐ and β‐phosphate of ADP.
+76
+ Site‐directed mutagenesis of GNE showed that original R420M lost their kinase activity but retained the epimerase activity.
+77
+
+GNE variants can lead to a reduction of sialic acid on platelets and muscle cells; however, why some GNE patients present with isolated thrombocytopenia remains a mystery. In the index patient, platelet counts were normalized upon a HSC transplant, with no signs of myopathy, thus far.
+75
+ In the cases of GNE mutations, it is unclear if loss of sialic acid synthesis may elicit an immune response in the BM, but an aberrant immune response in the BM could explain some of the selectivity in “phenotype presentations” in GNE patients. This hypothesis needs to be further investigated. The fundamental metabolic process of sialic acid production in MKs or in other cell systems is not fully elucidated, including possible unrecognized compensatory sialylation mechanisms. Of note, the patient (compound heterozygous) in our investigation showed decreased α‐2,3 platelet sialylation associated with a previously uncharacterized reciprocal increase in α‐2,6 sialylation, as evidenced by lectin microarray. The significance of increased α‐2,6 sialylation is not clear in GNE variants since prior studies did not investigate this sialic acid linkage. Of note, the hepatic AMR also recognizes α‐2,6 sialylated moieties, and thus may remove platelets with increased terminal α‐2,6 sialic acid, thereby contributing to clearance of these platelets. Thus, GNE and other alterations in genes that synthesize sialic acid point to the complexity of the origin of the thrombocytopenia in GNE patients.
+
+Platelet count and function are, in part, determined by sialic acid alterations. Platelet in vivo aging and storage (in vitro aging) provoke platelet asialylation and removal via the hepatic AMR and MGL receptors. While it is reasonable that neuraminidase activity causes loss of sialic acid during storage, the definite role of neuraminidase activity in vivo remains debated.
+
+In some patients with ITP, activating autoantibodies trigger platelet and probably MK desialylation. New evidence discussed in this review shows that specific antibodies to asialo‐glycans are increased in a group of pediatric patients with ITP and may contribute to untimely platelet clearance in ITP. The mechanism that causes sialic acid alterations in these patients is unclear. Additional mechanistic insight into how platelet sialic acid presence or loss contributes to the development of ITP is needed. For example, is platelet and MK asialylation a consequence or cause of immune cell dysfunction? Immune cells in the BM could surveil sialylation status on MKs and regulate the immune response. Recent data give credence to this notion. Loss of a specific sialic acid moiety on O‐glycans, exposing the TF antigen in MKs specifically, activates BM pDC‐like immune cells to induce thrombocytopenia, likely involving Siglecs and Siglec‐mediated signaling to induce thrombocytopenia. This observation sheds the possibility that immune cells surveil the MK sialylation status and form an immune response that affects thrombopoiesis.
+
+Increasing reports of genetic alterations involving sialic acid synthesis and transport lead to isolated thrombocytopenia. The mechanism by which thrombocytopenia occurs under these circumstances is still unclear. Desialylation may cause MK intrinsic production issues. MKs reside and develop in the BM niche in constant interaction with their extracellular matrix and surrounding immune cells (Figure 2). Thus, inhibition of thrombopoiesis and consequent thrombocytopenia may be immune mediated in response to the MK sialylation status. Altered interactions of asialylated MK proplatelet extensions with the endothelial extracellular matrix could also alter thrombopoiesis. Adding these genetic alterations to the screening list of inherited thrombocytopenia would further our awareness and prompt more investigation to understand the role of sialic acids in thrombocytopenia.
+
+MMLS and KMH have received consulting fees from Pfizer.
+
+MMLS, LR, HF, and KMH contributed equally to literature review and manuscript writing.

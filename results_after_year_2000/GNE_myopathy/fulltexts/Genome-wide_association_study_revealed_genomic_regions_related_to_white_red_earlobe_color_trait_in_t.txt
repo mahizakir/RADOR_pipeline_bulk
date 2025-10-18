@@ -1,0 +1,105 @@
+Earlobe color, a qualitative trait in chicken, is artificially and naturally selected in various breeds [1, 2]. It is a part of skin structure on the face without feathers and below the ear. In nature, shining color is selected to get more attention of their predators or partners [3, 4]. Earlobe color, a head furnishing trait, has been selected as a breed characteristic. Red or white earlobes are predominant in a number of the wild and domestic chickens worldwide [2] although yellow, blue, purple and black earlobe could be found in some breeds.
+
+Variation in chicken earlobe color may be caused by ancestral lineages and mutations [2], as well as the adaptability to local conditions [5]. For example, The presence of white earlobes is due to purine base deposition and the formation of other color earlobe is attributed to the mixture of different pigments including melanin or carotenoid [6]. The red earlobe, the same color as the rest of the red face, could reflect the health of the birds with the degree of redness [7].
+
+Genetic foundation studies of chicken earlobe color were conducted in previous studies. The white earlobe has been identified to be polygenic and it appeared to be sex-linked in some breeds [7]. The mottled earlobe in Rhode Island Reds appears to be produced by two recessive autosomal genes [8]. Recently, Wragg et al. [9] identified 7 concordant significances (P < 0.05 and Z > 4) SNPs on chicken chromosomes 1, 2, 4 and Z related to white/red earlobe color by using genome-wide association (GWA) analysis, indicating that earlobe color trait is sex-linked and polygenic. However, there has been little work to date to identify the accurate genomic regions and genes response to earlobe color in Rhode Island Red chickens. To eliminate this gap in knowledge, we performed a genome-wide association study (GWAS) to identify the genomic regions responsible for white/red earlobe in the Rhode Island Red chickens.
+
+After quality control, a total of 78 female chickens aged 20 weeks old were analyzed, of which 48 (61 %) presented white earlobe color as cases and 30 (39 %) presented red earlobe color as controls. The MultiDimensional scaling (MDS) analysis indicated the absence of population stratification in our study population (Additional file 1: Figure S1).
+
+Based on the Manhattan plot for earlobe color, we observed a total of 282 significantly associated SNPs spanning from 50.13 to 52.51 Mb (~2.38 Mb) on chromosome Z (P value < 9.81 × 10−7) in the sexually mature hens (Fig. 1 and Additional file 2: Table S1). The linkage disequilibrium plot (Additional file 3: Figure S2) showed the detected SNP markers were strongly linked in a haplotype block. Moreover, in this ~2.38 spanning, twenty-three genes were found related to earlobe color phenotype, including sixteen annotated genes and seven anonymous genes: PAM, SLCO4C1, ST8SIA4, FAM174A, CHD1, RGMB, RIOK2, LIX1, LNPEP, SHB, RNF38, TRIM14, NANS, CLTA, GNE, CPLX1, LOC107052343, LOC107052344, LOC107052345, LOC101752070, LOC107052346, LOC100857660 and LOC101752249. The sixteen annotated genes and their functions were displayed in Table 1.Fig. 1Manhattan plot of genome wide association study for white/red earlobe color. The Manhattan plot indicates -log10 (observed P-values) for genome-wide SNPs (y-axis) plotted against their respective positions on each chromosome (x-axis), and the horizontal green and black lines indicate the suggestive significant (1.95 × 10–5) and genome-wide significant (9.81 × 10–7) threshold, respectivelyTable 1Summary description of genes in ~2.38 Mb region on chromosome ZGeneFull NameLocation (bp)a
+Length (bp)a
+Number (SNP)b
+Functions
+PAM
+Peptidylglycine alpha-amidating monooxygenase50,043,929 - 50,172,820128,8927Catalyze neuroendocrine peptides to active alpha-amidated products [17, 30], type 2 diabetes [13].
+SLCO4C1
+Solute carrier organic anion transporter family member 4C150,256,470–50,283,28726,8182Transport estrone 3-sulfate [31].
+ST8SIA4
+ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 450,646,216–50,699,69153,4760Modulator of the adhesive properties of neural cell adhesion molecule [16].
+LOC107052343
+NA50,802,139–50,808,8226,6840NA
+FAM174A
+Family with sequence similarity 174 member A50,808,437–50,822,23613,8000NA
+CHD1
+Chromodomain helicase DNA binding protein 151,274,317–51,322,73748,4210Disease related [12, 32, 33, 34].
+RGMB
+Repulsive guidance molecule family member b51,334,306–51,349,99015,6850Angiogenesis [35], breast cancer [14].
+RIOK2
+RIO kinase 251,538,065–51,550,09012,0260Mitotic progression [36], cytoplasmic maturation [18].
+LIX1
+Limb and CNS expressed 151,552,825–51,581,10828,2840Fat signaling, marker for cerebral structures [19, 37].
+LNPEP
+Leucyl/cystinyl aminopeptidase51,598,066–51,651,40353,33813Vasopressin clearance and serum sodium regulation [38], associated with psoriasis [39].
+LOC107052344
+NA51,667,644–51,675,3217,6781NA
+SHB
+Src homology 2 domain containing adaptor protein B51,704,167–51,777,55173,38514Regulates cell motility [40, 41].
+LOC107052345
+NA51,759,503–51,766,9817,4794NA
+RNF38
+Ring finger protein 3851,958,739–51,993,02434,2869Disease related [15, 42].
+LOC101752070
+NA51,999,295–52,003,0263,7320NA
+TRIM14
+Tripartite motif containing 1452,003,922–52,011,3577,4363A mediator in the immune response against viral infection [43].
+NANS
+N-acetylneuraminic acid synthase52,013,130-52,022,0248,8953Change expression in response to androgen [44].
+CLTA
+Clathrin light chain A52,040,355–52,055,15814,8042Main structural component of the lattice-type cytoplasmic face of coated pits and vesicles [22, 23].
+GNE
+Glucosamine (UDP-N-acetyl)-2-epimerase52,058,958–52,096,17737,22010GNE myopathy [45], regulator of sialic acid synthesis [46].
+LOC107052346
+NA52,149,755–52,175,56725,8139NA
+LOC100857660
+NA52,178,755–52,205,23126,4776NA
+CPLX1
+Complexin 152,264,659–52,368,798104,14018Synaptic vesicle exocytosis, bind syntaxin, part of the SNAP receptor [21, 47, 48].
+LOC101752249
+NA52,471,803–52,483,45511,6532NA
+NA not available
+a Source: Reference Gallus_gallus-5.0 primary assembly (NCBI)
+b The number of genome significant SNPs located in gene
+
+Manhattan plot of genome wide association study for white/red earlobe color. The Manhattan plot indicates -log10 (observed P-values) for genome-wide SNPs (y-axis) plotted against their respective positions on each chromosome (x-axis), and the horizontal green and black lines indicate the suggestive significant (1.95 × 10–5) and genome-wide significant (9.81 × 10–7) threshold, respectively
+
+Summary description of genes in ~2.38 Mb region on chromosome Z
+
+NA not available
+
+a Source: Reference Gallus_gallus-5.0 primary assembly (NCBI)
+
+b The number of genome significant SNPs located in gene
+
+Additionally, a total of four autosomal regions with 6 SNPs were suggestive significantly related to white/red earlobe in chicken (1.95 × 10−5) (Fig. 1 and Additional file 4: Table S2), of which two on chromosome 2 (one with 2 SNPs and the other one with 1 isolated SNP) (67.19 Mb ~ 67.21 Mb), one on chromosome 5 (1 isolated SNP), and one on chromosome 7 (2 SNPs) (10.09 Mb ~ 10.12 Mb).
+
+The aims of this study were to identify and estimate the genomic regions responsible for white/red earlobe in Rhode Island Red chickens, and to locate positional candidate genes association with color earlobe by using a 600 K SNP panel for genotyping. In a brief, a total of 282 genome significantly SNP markers on chromosome Z were detected in this study, which corresponded to sixteen known genes and seven anonymous genes.
+
+Gene SLCO4C1 (solute carrier organic anion transporter family member 4C1) was identified for earlobe color within an average of 101 kb of twenty-five the genome-wide significant SNPs (Additional file 2: Table S1). This plausible positional candidate gene, SLCO4C1, may have its special function in earlobe color formation as it is among numerous significant SNPs that in linkage disequilibrium (LD) building up to a QTL peak.
+
+Candidate gene, SLCO4C1, belongs to the organic anion transporting polypeptide (OATP) family. Researchers have demonstrated that OATP family had the function of transportation of the amphipathic organic compounds, like bile salt in mammals [10, 11]. The component of bile salt, biliverdin, can be deposited to form blue eggshell [12]. Wang et al. [12] reported in chicken SLCO1B3 was in response to blue eggshell color formation via transferring biliverdin. Although the molecule transfer mechanism of earlobe color formation remains unknown, earlobes color was occurred due to purine base deposition or mixture of different pigments [6]. In practical, breeders believed some relations exist between earlobe and eggshell color, which might be caused by the close association of the determining genes on the chromosome or single factor that controls the pigmentation of both egg and earlobe [7].
+
+Thus, based on the current results, pigments deposition to form earlobe color, as well as the relations between earlobe and eggshell color, it is reasonable for us to speculate SLCO4C1 may play an important role in the formation of earlobe color. Future validation of this assumption of SLCO4C1 gene function is warranted in chicken.
+
+Besides the crucial positional candidate gene SLCO4C1, other candidate genes located in this ~2.38 Mb region have various functions (Table 1). For example, RNF38, CHD1, PAM, RGMB, LNPEP, RNF38, TRIM14 and GNE were detected to be associated with diseases [12–15]. ST8SIA4, PAM, RIOK2, LNPEP, LIX1, SHB, TRIM14 and GNE have been discovered to be important in regulating the life process [16–20]. NANS can change expression in response to androgen. CPLX1 and RIOK2 were correlated with cytoplasmic maturation [18] or synaptic vesicle exocytosis [21]. CLTA was found associated with cytoplasmic face of coated pits [22] and vesicles progress [23]. Currently, the mechanism underlying earlobe color is almost unknown and few literatures support these candidate genes were directly in response to earlobe color. However, the GWAS results in this study may provide a clue for researcher to identify the relationship between these candidate genes and earlobe color. Further validation experiment of these genes was needed to perform.
+
+Compared to our findings, Wragg et al. [9] has found 7 SNPs significantly associated with white/red earlobe color in various breeds via GWAS. In the study of Wragg et al., two SNPs (rs14170217 and rs14170463) were located on chromosome 2 at region 41.69 Mb and 41.89 Mb, respectively [9], which were ~25.5 Mb and ~25.3 Mb, respectively, downstream of our suggestive significantly SNPs (rs315420052 and rs313803643). The SNPs, rs14170217 and rs14170463, in Wragg et al. study were in the intron of genes, ATP2C1 and MRPL3, respectively. In our study, both rs315420052 and rs313803643 were in the intron of gene GMDS. Another SNP, rs14762712, on chromosome Z at 32.08 Mb in Wragg et al. study [9] was also in intron in BNC2 that important to pigment pattern formation. In summary, all detected significant SNPs in Wragg et al. study were in the intron area of genes. Only BNC2 was more related to earlobe color, which is not found in our study.
+
+Several reasons made the different results between ours and Wragg et al. study. Firstly, Wragg et al. use traditional breeds, Kenyan, Ethiopian, and Chilean village chickens to perform association analysis. Secondly, the phenotypic traits in Wragg et al. study were not only earlobe but yellow skin, oocyan, rose comb, and duplex comb. Thirdly, the experimental population birds almost have been post-prune in earlobe color in Wragg’s study. Moreover, compared to Wragg’s materials, our inbreeding population has a different phenotype in earlobe (Additional file 5: Figure S3) but a consistent genetic background, which is a good choice to perform GWAS. Also, GWAS always show different results in different populations [24]. Taken together, it is not surprise to obtain different results from ours and Wragg et al. study. However, both Wragg et al. and our study showed polygenic and sex-linked inheritance pattern determined earlobe color although different breeds were used in different studies.
+
+This study has revealed 282 genome significantly SNPs spanning ~2.38 Mb region on chromosome Z associated with earlobe color in Rhode Island Red chickens, corresponding to twenty-three genes. The genomic regions that we identified contain twenty-three genes with functions that suggest a role in response to earlobe color and, thus, these genes are both positional and functional candidates. Notably, among these twenty-three genes, SLCO4C1 may play critical roles in the formation of white/red earlobe color. Taken together, the candidate genes findings herein can help elucidate the genomic architecture of response to white/red earlobe and provide a new insight on mechanisms underlying earlobe color in Rhode Island Red chickens and other breeds.
+
+A total of 78 adult females Rhode Island Red chicken (20 weeks) were selected herein including 30 with red or predominantly red earlobe and 48 with white or predominantly white earlobe to perform GWAS (Fig. 2). In Rhode Island Red chicken, earlobe color trait is sex-linked. Males mainly had red earlobe whereas female had four grades of earlobe color: red, predominately red, white, and predominately white (Additional file 5: Figure S3). Animals have different phenotypes with a consistent genetic background is a good choice to do GWAS. Therefore, we chose sexually mature female chickens as experimental material to identify the genomic architecture of response to earlobe color in this study. In this experimental population, predominately red (Additional file 5: Figure S3b) or predominately white (Additional file 5: Figure S3c) is shown that red or white color overspread the majority of the earlobe surface. Blood samples were collected by standard venipuncture from a Rhode Island Red chicken population maintained at a commercial breeding farm in Beijing, China.Fig. 2Rhode Island Red chicken hens with the white or red earlobe color. a Red earlobe chicken, (b) white earlobe chicken.
+
+Rhode Island Red chicken hens with the white or red earlobe color. a Red earlobe chicken, (b) white earlobe chicken.
+
+Genomic DNA was extracted by standard phenol/chloroform method and genotyped with 600 K Affymetrix Axiom Chicken Genotyping Array (Affymetrix, Inc. Santa Clara, CA, USA). Affymetrix Power Tools v1.16.0 (APT) software was then used for quality control and genotype calling. Specifically, only samples with dish quality control (DQC) > 0.82 and call rate > 97 % were used for subsequent analysis. After sample quality control analysis, the mean concordance rate was 99.7 %.
+
+The classical multidimensional scaling (MDS) analysis was used to detect population structure in PLINK v1.09 software [25]. By computing identical by state (IBS) scores for unlinked SNPs with r2 < 0.2 and using multidimensional scaling, a total of 78 samples were identified to involve in further analysis. Projection onto the two multidimensional scaling axes is shown in Additional file 1: Figure S1.
+
+SNPs were removed with a minor allele frequency < 5 % in all samples (n = 135,166), or a P value of deviation from Hardy­Weinberg equilibrium (PHWE) < 1 × 10−6 in controls (n = 444). Ultimately, a total of 78 individuals and 370,106 SNPs were kept for the following association analysis.
+
+To test the association of each SNP with earlobe color, we used the basic case/control association analysis according to the manual of PLINK (v1.09). All qualified SNPs were subjected to the linkage disequilibrium via the −−indep-pairwise 25 5 0.2 commend (PLINK) to generate a pruned subset of 50,946 linkage equilibrium SNPs.
+
+The Bonferroni adjustment is a widely used method for correcting multiple hypothesis testing. Given the correlation between SNPs in linkage disequilibrium, the traditional Bonferroni adjustment appears to be overly conservative which key assumption is that all tests are independent [26]. Herein, the sum of independent blocks plus singleton markers was used to define the number of independent statistical tests [27, 28]. With this approach, 50,946 independent tests were suggested to determine the P value threshold. Hence, the genome-wide significant and suggestive P values were 9.81 × 10−7 (0.05/50946) and 1.95 × 10−5 (1/50946), respectively. The Manhattan plot of genome wide P values of association analysis was created by self-developed R programming codes. To further location candidate region that affect trait, we performed linkage disequilibrium (LD) analysis with genome significantly SNPs in Haploview software (v4.2) [29].
+
+DQC, dish quality control; GWAS, genome-wide association study; HD, high density; IBS, Identical by state; MDS, MultiDimensional scaling analysis

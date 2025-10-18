@@ -1,0 +1,405 @@
+Interstitial cystitis/bladder pain syndrome (IC/BPS) is a chronic pain disorder causing symptoms of urinary frequency, urgency, and bladder discomfort or pain.[
+
+1
+
+] Prevalence estimates in the past decade now exceed 10 million in the United States (3–7% of women and 2–4% of men).[
+
+2
+, 
+3
+
+] Symptoms of IC/BPS are often debilitating and can affect work, family, interpersonal relationships, sleep, and sexual activity.[
+
+4
+, 
+5
+
+]
+
+Understanding the etiology and pathogenesis of interstitial cystitis is paramount to the development of targeted therapies against this debilitating condition. The average time from presentation to the general practitioner to specialty clinic referral and subsequent diagnosis ranges from 3 to 7 years.[
+
+6
+
+] The diagnosis of IC/BPS is associated with high costs; while IC/BPS accounted for only 0.1% of all medical treatment and prescription drug claims in 2002 in the United States. That year the mean annual medical cost for individuals diagnosed with IC/BPS was $8420, compared to a mean of $4169 for those without IC/BPS.[
+
+7
+
+]
+
+Recent studies of kidney and urologic disorders have shown that many individuals have genetic diseases that remain undiagnosed after standard clinical evaluation.[
+
+8
+, 
+9
+, 
+10
+, 
+11
+, 
+12
+
+] For example, 5–8% of individuals with developmental disorders of the urinary tract have an undetected genomic disorder.[
+
+13
+, 
+14
+, 
+15
+
+] We also have seen reports of increased incidence of IC/BPS in first degree relatives of people diagnosed with IC/BPS.[
+
+16
+
+] Together this data point to a genetic etiology for IC/BPS.
+
+Our hypothesis was that some individuals with IC/BPS had undiagnosed Mendelian conditions, and that the genes behind these Mendelian conditions could be informative candidate genes leading us to an IC/BPS gene or gene pathway and ultimately an etiology. Therefore, we screened biological samples and phenotypic information on 109 unrelated individuals with severe IC/BPS. To test for Mendelian causes of IC/BPS, a diagnostic variant analysis of exome sequencing (ES) data was performed. To test whether the candidate genes identified in the Mendelian analysis had increased rare variant burden, we used the Genomic Learning System at Boston Children's Hospital (Boston, MA) to perform sequence kernel association test (SKAT) analysis implemented in the Genuity Science Sequence Miner platform (Cambridge, MA).
+
+238 individuals with IC/BPS were identified by collaborating physician referral or self‐referral from ads placed on Clinicaltrials.gov, the Interstitial Cystitis Association (ICA) website and newsletters, and Interstitial Cystitis Network (ICN). Inclusion criteria were 1) Diagnosed with IC/BPS by a clinician 2) Symptoms of urinary urgency and pelvic, suprapubic and/or abdominal pain for 3 months or longer in a 6 month period. Exclusion criteria were 1) evidence of bacterial urinary tract infections in last 3 months, 2) structural urinary tract abnormalities, and 3) bladder, prostate, cervical or uterine cancer. Probands included both adults and children with an IC/BPS diagnosis. All individuals were enrolled in the research program following informed consent under an IRB‐approved protocol at Boston Children's Hospital (04‐11‐160).
+
+Each proband with a clinical diagnosis of IC/BPS in the cohort has had the following clinical workup: cystoscopy with hydrodistension (i.e., looking for glomerulations, Hunner's ulcers, and cancer), a physical exam that ruled out structural defects and infection via urinalysis, and a voiding analysis to assess for muscle dysfunction (e.g., detrusor or pelvic floor). Participants have also completed several questionnaires including the O'Leary‐ Sant for women,[
+
+17
+
+] the National Institutes of Health Chronic Prostatitis Symptom Index (NIH‐CPSI) for men,[
+
+18
+
+] and a diagnostic questionnaire that asks about symptoms and co‐morbidities common in IC/BPS. Before enrollment, all data were reviewed by the study urologist to confirm the IC/BPS diagnosis.
+
+After enrollment, a 3–4 generation pedigree focusing on urinary and pain symptoms was obtained. Additional family members were enrolled using a tiered priority system. Families were stratified based on factors like presence of Hunner's ulcers (tier 1, N = 10 families), multiple family members with IC/BPS diagnosis (tier 2, N = 45 families), multiple family members with IC/BPS symptoms (tier 3, N = 60 families), and sporadic cases and family members (tier 4, N = 123 individuals and families). A review of the inheritance pattern in this cohort revealed an autosomal dominant inheritance pattern with variable expressivity in more than 50% of enrolled families. In total, 415 individuals were enrolled. 177 additional family members from 135 families were recruited, including 121 family members with a diagnosis of IC/BPS and 56 without a diagnosis of IC/BPS. 103 individuals did not have any relative enroll.
+
+Saliva samples were collected and white blood and buccal epithelial cell DNA were extracted using Oragene kits (DNA Genotek). The highest quality DNA for the cohort was sent for ES; 109 affected individuals (probands or an affected family member) from 109 distinct families were selected. Tiers, age of onset, and questionnaire scores were not taken into account as all individuals had a diagnosis of IC/BPS. Illumina‐based short read whole ES was conducted at the Broad Institute (Cambridge, MA) as previously described.[
+
+19
+, 
+20
+
+]
+
+After ES, all variants were annotated based on their predicted effect on protein function using the Codified Genomics platform (San Diego, CA). A filter on MAF of 0.005 for autosomal dominant and 0.01 for autosomal recessive variants, was chosen as a reasonable maximum allele frequency for disease‐causing variants. Allelic frequencies were estimated based on public databases including gnomAD, dbSNP, and the 1000 Genomes Project, as well as 2672 internal control sequences (healthy parents of individuals with suspected Mendelian disorders). Prediction of pathogenicity was computed using algorithms including PolyPhen.[
+
+20
+, 
+21
+
+]
+
+Additional resources for facilitating variant interpretation and establishing genetic causality included the Human Gene Mutation Database (HGMD), Online Mendelian Inheritance in Man (OMIM), and an in‐house curated list of genes and pathways with a known or postulated association to IC/BPS, pain, bladder, kidney, urogenital, immunological, skin and developmental disorders. Both pleiotropic and non‐pleiotropic genes were included as candidates.
+
+Next, the potentially disease‐causing variants in each individual were assessed using automated ACMG criteria scoring in Varsome (varsome.com) and manually reviewed for accuracy of clinical interpretation.[
+
+22
+
+] Finally, Variants that were classified as “Variants of Uncertain Significance (VUS),” “Likely Pathogenic,” and “Pathogenic” were manually queried for ACMG classification and for presence in ClinVar.
+
+All individuals were also called with the Genome Analysis Toolkit following the best practice workflow as described in Rockowitz et al.[
+
+20
+
+] and resulting VCF data analyzed in the Genuity Science (Reykjavik, Iceland). Within Genuity, ES data were analyzed for potentially disease causing variants in each proband. Again, a filter on MAF of 0.005 for autosomal dominant and 0.01 for autosomal recessive variants was used. Variant Effect Prediction (VEP) high/moderate (i.e., transcript ablation, splice acceptor variant, splice donor variant, stop gained, frameshift variant, stop lost, start lost, transcript amplification, inframe insertion, inframe deletion, missense variant, protein altering variant, splice region variant, or incomplete terminal codon variant) were considered. Genuity automatically screens for presence in ClinVar, HGMD, and OMIM.
+
+SKAT is a supervised, flexible, computationally efficient regression method to test for association between genetic variants (common and rare) in a region and a continuous or dichotomous trait while adjusting for covariates. The authors were interested to learn about the gene burden for the genes identified as variants of uncertain significance, pathogenic, or likely pathogenic by the Mendelian analysis/Varsome pipeline described above.
+
+109 individuals (93 female and 16 male) with IC/BPS were loaded as cases for the SKAT analysis. Cases with diagnostic variants were removed (6 individuals removed), along with ES with poor coverage, abnormal average SNV reference fraction, or yield below 0.80 (17 individuals removed). The yield field indicates the proportion of the overall variants that can be assigned to either homozygous reference or heterozygous call. If a mix of ES and WGS or different capture kits was used, the ES samples will show a very low yield as coverage was missing in areas.
+
+After filtering, 86 affected individuals remained (80 female, 6 male). Controls consisted of 90 unrelated healthy individuals (80 females, 10 males), who were unaffected parents of patients with suspected Mendelian disorders unrelated to IC/BPS. Controls were 100% Caucasian (self‐reported), matching the 100% Caucasian background of this subset of the IC/BPS cohort.
+
+Five genes were selected based on the results of the Mendelian analysis. Two genes were ATPase calcium‐transporters with pathogenic rare or private variants identified in the cohort: ATP2C1 and ATP2A2. Three additional genes, SIX5, ENAM, and DCAF8, were included due to previously reported pathogenic variants identified in the cohort and expression occurring in the urogenital tissues.
+
+SKAT analysis[
+
+23
+
+] was performed in Genuity Science (version 2.0.1).[
+
+24
+
+] VEP high/moderate variants were used for analysis. Allele frequency upper threshold was 0.01, with a Harvey‐Weinberg equilibrium threshold of 1e‐6. Bonferroni correction was applied for five genes tested and a p‐value less than 0.01 was considered to indicate significant difference.
+
+Though cases and controls were matched on sequencing platform, sequencing facility, and ancestry, five sets of housekeeping genes were also used as controls to ensure there were no batch effects creating systematic differences between case and control sequences (e.g., increased rare variant calls in IC/BPS cohort). The five sets of five housekeeping genes were selected by a pseudorandom number generator from a list of 3803 housekeeping genes from Eisenberg et al.[
+
+25
+
+] (see Table S1, Supporting Information for housekeeping gene list).
+
+109 unrelated individuals (93 women 16 men) underwent ES. 100% of individuals were Caucasian/White and non‐Hispanic ancestry (self‐reported). Average age and selected descriptive characteristics are stated in Table
+
+1
+. No children under 18 were sequenced.
+
+Selected characteristics for the IC/BPS individuals who underwent ES
+
+We identified multiple candidate genes with variants of interest across the IC/BPS cohort. Two private heterozygous variants were identified in the ATPase calcium‐transporting type 2C member 1 gene (ATP2C1) (ENST00000393221.4:c.2358A>T, p.Glu786Asp, (VUS/Likely Pathogenic) and ENST00000393221.4:c.989C>G, p.Thr330Ser (Likely Pathogenic). (Table
+
+2
+). These variants were identified in two IC/BPS cohort probands (SF368‐II‐2‐P2 & SF380‐II‐1‐P2). The variant in SF380 was confirmed in CLIA certified genetic testing laboratory. The variant in SF368 is in process of CLIA confirmation. Pathogenic variants in ATP2C1 are causative for autosomal dominant Hailey‐Hailey disease (OMIM # 169600), a blistering skin disorder.
+
+Rare and predicted damaging variants in ATP2C1, ATP2A2, and SIX5 in IC/BPS
+
+VUS/likely pathogenic
+
+PM2, PP2, PP3 supporting
+
+Likely Pathogenic
+
+PM2 Strong, PP2, PP3 Supporting
+
+Likely Pathogenic
+
+PM2 Strong, PP2, PP3 Supporting
+
+ENST00000317578.6:
+
+c.472G>A, p.Ala158Thr
+
+VUS/likely pathogenic
+
+PP5 Strong, PP3 Supporting
+
+A VUS/Likely Pathogenic variant in ATP2A2 (ENST00000539276.2:c.235G>A, p.Glu79Lys) was identified in two probands from the IC/BPS cohort, SF138‐III‐1‐P2, and SF355‐III‐1‐P2. This variant is not identified in gnomAD (accessed September 1, 2022), indicating that the variant is rare or private. This variant is also conserved across 46 vertebrate species.[
+
+26
+
+] CLIA confirmation is ongoing in these participants and affected family members (See Figure
+
+1
+ for Pedigree). The ATP2A2 gene has been shown to cause Darier‐White disease (OMIM # 124200), another autosomal dominant dermatological disorder. Interestingly, all affected individuals reported skin findings of psoriasis and/or eczema as a comorbidity to their IC/BPS disease.
+
+Pedigrees for SIX5 and ATP2A2 families.
+
+We also identified a family with a heterozygous variant in the SIX5 (ENST00000317578.6:c.472G>A, p.Ala158Thr) (See Figure 1 for Pedigree). This variant is previously reported as likely pathogenic, indicating a possible diagnosis of Branchiootorenal syndrome 2 (BOR2, OMIM # 610896). While the variant carriers do not have documented uro‐genital malformations, as they were exclusionary criteria for our study, it is possible that the individuals have subtle urogenital anomalies that eluded detection. Interestingly, one family member was excluded due to a urogenital malformation. She was subsequently enrolled in this study and was confirmed to also harbor the heterozygous SIX5 variant. We feel this family has a likely diagnosis of BOR2 syndrome with variable expressivity. This variant is in the process of being CLIA confirmed and reported back to family members for further investigation.
+
+A previously reported heterozygous variant in the DCAF8 gene was identified in an individual (ENST00000368073.3:c.949C>T, p.Arg317Cys). DCAF8 has been implicated in autosomal dominant Giant axonal neuropathy type 2 (OMIM # 610100). While giant axonal neuropathy type 1 is associated with a neurogenic bladder phenotype,[
+
+27
+
+] the DCAF8‐associated type 2 phenotype is associated with distal sensory impairment, lower extremity muscle weakness, and atrophy after the second decade, but does not reference neurogenic bladder.[
+
+28
+
+]
+
+One individual had a previously reported heterozygous variant in the ENAM gene, (ENST00000396073.3: c.1259_1260insAG, p.Pro422ValfsTer27), associated with Amelogenesis imperfecta (AI) ‐ hypoplastic autosomal dominant. AI usually occurs alone but has been reported in association with multiorgan syndromes such as nephrocalcinosis, hypothalamo–hypophyseal insufficiency, and Kohlschutter Syndrome.[
+
+29
+
+] Rarely, AI has been associated with distal renal tubular acidosis, characterized by hypokalemia, systemic acidosis, and polyuria.[
+
+30
+, 
+31
+
+]
+
+The SEC63 variant seen in an affected individual (ENST00000369002.4:c.1605dupA, p.Pro536ThrfsTer24) is associated with polycystic liver disease (PCLD).[
+
+32
+
+] However, renal features are not common in PCLD and any relationship of SEC63 to the IC/BPS phenotype in this individual is unclear.[
+
+33
+
+] Additional variants in genes with known expression in urogenital tissues and previously reported pathogenic variant interpretations are listed in Table
+
+3
+, with single heterozygous variants in autosomal recessive conditions reported in Table
+
+4
+. Individuals with rare variants in the IC/BPS candidate gene frizzled class receptor 8 (FZD8) are reported in Table
+
+5
+.
+
+Autosomal dominant Mendelian disorder‐associated variants in 109 individuals with IC/BPS
+
+VUS/likely pathogenic
+
+PP5 Moderate, PM2, PP3 Supporting
+
+Pathogenic
+
+PVS1 Very Strong, PM2 Moderate, PP5 Supporting
+
+Pathogenic
+
+PVS1 Very Strong, PP3, PP5 Supporting
+
+Carrier status for autosomal recessive Mendelian disorders
+
+Pathogenic
+
+PVS1 Very Strong, PP5 Strong, PM2 Moderate, PP3 Supporting
+
+Pathogenic
+
+PP5 Very Strong, PM5 Moderate, PM1, PM2, PP3 Supporting
+
+Pathogenic
+
+PVS1 Very Strong, PM2 Strong, PP3 Supporting
+
+FZD8 variants in the IC/BPS cohort
+
+Using SKAT, the five candidate genes from the Mendelian analysis with autosomal dominant or incomplete penetrance inheritance patterns (ATP2C1, ATP2A2, SIX5, ENAM, and DCAF8) were compared between cases (N = 86) and controls (N = 90). (Table S2, Supporting Information). ATP2C1 had a trend toward significance (p = 0.03, OR = 6.76) (Table
+
+6
+), though after Bonferroni correction only a p‐value of 0.01 would be considered significant. Six rare variants in ATP2C1 were identified in the IC/BPS cohort (see Tables S2 and S3, Supporting Information). One ATP2C1 variant was identified in the control cohort (NM_001199180.2):c.721A>G (p.Asn241Asp), scored as a VUS using ACMG criteria. No other candidate genes or housekeeping genes tested approached significance (see Tables S4 and S5, Supporting Information).
+
+SKAT analysis of Mendelian disorder‐associated genes returned to families and genes with plausible mechanisms of causing IC/BPS (86 cases and 90 controls). Markers and additional details are available in Tables S2 and S3, Supporting Information
+
+The etiology of IC/BPS continues to remain elusive, However, first degree relatives of individuals with IC/BPS have an increased risk of also having an IC/BPS diagnosis.[
+
+34
+
+] Recent studies of kidney and urologic disorders have also shown that many individuals have genetic diseases that are undiagnosed based on standard clinical evaluation.[
+
+8
+, 
+9
+, 
+10
+, 
+11
+, 
+12
+
+] In particular, 5–8% of individuals with developmental disorders of the urinary tract have an undetected genomic disorder.[
+
+13
+, 
+14
+, 
+15
+
+] Therefore, we hypothesized that a Mendelian disorder or a pathway of related disorders could be causative of symptoms diagnosed as IC/BPS.
+
+Our analysis utilized a Mendelian approach to analyze the ES data from 109 individuals with IC/BPS. This would allow us to both identify individuals with a potential mis‐diagnosis of IC/BPS and work to identify an IC/BPS candidate gene or pathway of genes. In IC/BPS probands, we identified rare variants in two bladder‐expressed genes in the ATP‐family ‐ ATP2A2 and ATP2C1.[
+
+35
+
+] Pathogenic variants in these genes cause two related skin disorders called Darier‐White and Hailey‐Hailey disease, respectively. Individuals with these disorders present with vesicular or blistering skin lesions that can affect the genitourinary areas and cause pain (Table
+
+7
+). The clinical follow‐up of the affected individuals with ATP2A2 and ATP2C1 gene variants demonstrated that they all have skin findings consistent with Darier‐White and Hailey‐Hailey disease. These findings suggested that molecular defects that primarily manifest in skin and mucosal epithelial injury may also participate in the pathogenesis of urothelial defects and IC/BPS.
+
+Comparative examination of the pathology and expression of genetic disorders caused by identified candidate genes (ATP2C1, ATP2A2, and SIX5 respectively)
+
+Darier‐White Disease, an autosomal dominant disease caused by mutations in ATP2A2, is a keratinizing disorder that leads to the formation of small hyperkeratotic papules in seborrheic skin areas but can also affect mucosal membranes, nails, and the genitourinary areas.[
+
+35
+, 
+36
+, 
+37
+, 
+38
+
+] The histology shows acantholysis, hyperkeratosis, and dyskeratosis (the premature differentiation of keratinocytes).[
+
+39
+, 
+40
+
+] We identified a likely pathogenic variant in ATP2A2 (ENST00000539276.2: c.235G>A, p.Glu79Lys) in two probands (SF355, SF138). This variant segregates with disease in family SF355 (Figure 1). In addition to a diagnosis of IC/BPS, affected individuals in this family also report Hunner's ulcers, vulvodynia, and psoriasis. Vulvar localization and psoriasis are consistent with a diagnosis of Darier‐White disease.[
+
+41
+, 
+42
+
+]
+
+The ATP2A2 gene encodes the sarco(endo)plasmic reticulum calcium‐ATPase 2 (SERCA2) enzyme, which is involved in regulation of positively charged calcium atoms inside cells by pumping Ca2+ into the endoplasmic and sarcoplasmic reticulum. Altered intracellular calcium signaling may result in the abnormal epithelial development and dysregulated cell proliferation that lead to skin lesions. In addition, the SERCA pump is a major Ca2+ removal mechanism in small dorsal root ganglion (DRG) neurons.[
+
+43
+
+] Lumbosacral DRG neurons mediate bladder sensation and are essential for normal voiding and pain detection. it is therefore possible that mutations in SERCA2 result in altered DRG neuron function and pain perception and also cause dysregulated cell proliferation in the urogenital tract resulting in the bladder balding and Hunner's ulcer often seen in IC/BPS. These findings suggest that further study of SERCA2 in bladder epithelium biology is warranted.
+
+Pathogenic variants in ATP2C1 cause Hailey‐Hailey disease, another autosomal dominant skin disorder.[
+
+44
+
+] Impairment of ATP2C1 leads to a dysfunction in the Golgi‐associated human secretory pathway Ca2+/Mn2+ ATPase (hSPCA1) that results in recurrent blisters and erosions in intertriginous sites.[
+
+45
+
+] Vulvar lesions are also possible.[
+
+44
+, 
+46
+, 
+47
+
+] This causes pain, vulvodynia, pruritus, and the development of chronic malodorous abnormal growths at risk of infection with Staphylococcus aureus and Candida albicans. The symptoms are typically exacerbated with sweating, friction, and heat. We identified two private heterozygous variants in ATP2C1 in two unrelated individuals with IC/BPS. The SKAT analysis indicated that 6 additional individuals in our IC/BPS cohort have rare ATP2C1 missense variants, conferring an OR of 6.76 (See Table 6 and Tables S2 and S3, Supporting Information). It is possible that hypomorphic variants in ATP2C1 increase the risk of intertriginous erosion and result in the IC/BPS phenotype. Studies show that knockdown of SPCA1 results in disruption of Golgi morphology in HeLa cells,[
+
+48
+, 
+49
+, 
+50
+
+] and reduction of the amount of Ca2+ stored in the Golgi lumen.[
+
+49
+, 
+50
+, 
+51
+
+] The Golgi complex is tightly integrated into the urothelial cellular system, where it is crucial for the health of the blood–urine barrier, mainly through its association with uroplakins.[
+
+49
+
+] One can hypothesize that mutations of ATP2C1 may also result in a disruption of Golgi morphology in urothelial tissue, impairing the formation of the blood‐urine barrier, a hallmark of IC/BPS.[
+
+52
+
+]
+
+We also identified a variant in the SIX5 gene (ENST00000317578.6:c.472G>A, p.Ala158Thr) known to cause BOR2 syndrome in one of our families with 3 generations of individuals with IC/BPS. Another family member has a bladder malformation. As BOR2 syndrome is known to have incomplete penetrance and associated kidney and lower genitourinary anomalies, the IC/PBS symptomology is potentially a mild manifestation of this genitourinary malformation syndrome.
+
+Two individuals with IC/BPS had rare variants in FZD8 (Table 5), which is a known candidate biomarker for IC/BPS.[
+
+53
+, 
+54
+, 
+55
+, 
+56
+
+] Keay et al. identified a glycosylated frizzled‐related peptide inhibitor of bladder cell proliferation that is secreted specifically by bladder epithelial cells from affected individuals.[
+
+53
+, 
+55
+
+] This peptide inhibitor has homology to the putative sixth transmembrane domain of frizzled‐8.[
+
+56
+
+] It is possible that rare variations in FZD8 are contributory to the IC/BPS phenotype in these individuals, though much more investigation into the potential impact of this gene in a clinical syndrome.
+
+Limitations of this study include that our sample size is small. Therefore, we did not have the power necessary to run a genome‐wide SKAT analysis and had to restrict the gene list to a small number of candidates. Additionally, we did not query structural variation (SV) or copy number variation (CNV). To extend these findings, we are attempting to enroll additional affected family members to screen them for the candidate genes discovered in this study. Moreover, we plan to follow the probands with ATP2C1 and ATP2A2 variants to see if interventions targeting their skin disorders will also ameliorate their IC/BPS symptoms. Future studies should also engage more family members and include parental ES and CNV assessment so that de novo versus inherited status can be determined, and ultimately future mechanistic studies will allow us to understand the role that ATP2C1 and ATP2A2 may play in IC/BPS. That said, it is also possible that the ATP2C1 and ATP2A2 variants are coincidental, and the individuals with these variants have co‐occurring but non‐overlapping disorders.
+
+In conclusion, we have identified variants in the genes SIX5, ATP2C1, and ATP2A2 that appear to explain aspects of the IC/BPS phenotype in affected individuals. As IC/BPS is a diagnosis of exclusion, we aim to use genetics to stratify the cohort, identifying families with overlapping phenotypic diagnoses like the SIX5 family. We hope this will allow us to finally discover a genetic cause of IC/PBS, which will lead to faster definitive diagnostics and genetic counseling while opening the door to more targeted therapeutics for this long‐neglected disorder.
+
+The authors declare no conflict of interest.
+
+E.E., M.T., A.G.G., L.K., and C.A.B. contributed to the conceptualization and primary writing. E.E., M.T., P.S., J.P., V.Z., R.N.Y., S.B., C.B., P.B.A., A.H.B., and C.A.B. contributed to data collection, analysis and interpretation of results, discussion, review, and editing of the manuscript.
+
+Supporting Information
+
+Click here for additional data file.
+
+Supplemental Table 1
+
+Click here for additional data file.
+
+Supplemental Table 2
+
+Click here for additional data file.
+
+Supplemental Table 3
+
+Click here for additional data file.

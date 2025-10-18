@@ -1,0 +1,661 @@
+Sialic acids are a family of α-keto
+acid carbohydrates with
+a nine-carbon backbone, such as N-acetylneuraminic
+acid,1 which are synthesized intracellularly
+and incorporated by sialyltransferases onto protein substrates in
+the Golgi.2 The resulting sialylated glycoconjugates
+are eventually transported to cell surfaces2 and are typically found at the termini of cell surface glycan chains.
+Sialoglycoproteins mediate various recognition processes,3 cell–cell interactions,3 and host–pathogen interactions.2 Dysregulation of sialic acid biosynthesis was observed
+to be pivotal not only to genetic diseases such as GNE myopathy but
+also many other human diseases including cancer and inflammatory disorders.1,4 Thus, it is important to understand the glycan biology involved
+with the substrates in the sialic acid biosynthesis pathway, particularly
+in different disease settings.
+
+Metabolic glycoengineering represents
+an established chemical biology
+method that enables the visualization and isolation of glycans for
+probing their biological roles.3,5 More recently, metabolic
+labeling of dysregulated glycans such as sialic acids on cancer cells
+also emerged for targeted treatment.6 Such
+metabolic glycoengineering strategies typically utilize N-acetylmannosamine (ManNAc) derivatives that have been modified with
+chemical reporters.5,7−9 The most common
+tool is N-azidoacetylmannosamine (ManNAz) in its
+peracetylated form to improve cell permeability,5 which is metabolized intracellularly, hijacking the involved
+enzymes in the sialic acid biosynthesis, and eventually converted
+to N-azidoacetylneuraminic acid (Neu5Az).2 The azido reporter group can then be utilized
+as a bioorthogonal handle on sialylated glycoconjugates,2 to be later appended via “click chemistry
+(CuAAC)”5 with a fluorophore for
+imaging or a biotin affinity tag for enrichment and functional studies.
+Success in hijacking this sugar salvage pathway usually requires the
+involved enzymes to be promiscuous to tolerate the chemically modified
+saccharide derivatives, and the size of chemical modification is ideally
+as small as possible.10
+
+Yet, even
+the current alkyne/azide-based chemical reporters are
+still bulky for general applications.11,12 For the metabolic
+glycoengineering of ManNAc salvage pathway with which researchers
+have so far found most success, the chemical reporters’ steric
+hindrance hampers the monosaccharide derivative’s metabolism
+by enzymes, recognition by transferases, and eventually disrupts their
+modification onto substrate proteins.3,8,10,11,13 The most effective acetylmannosamine derivative found to date, ManNAz
+(Figure 1A), resulted
+in significantly less glycoprotein levels than the wild-type ManNAc
+and generated a low percentage of modified sialic acid in mammalian
+cell lines.3,9,14,15 Even for cells eventually displaying modified sialic
+acids such as N-acetylneuraminic acid on the membranes,
+modification at the N-acetyl position with click
+chemistry tags or other functional groups resulted in reduced protein
+interactions and downstream biological activities.16,17 More importantly, the peracetylated Ac4ManNAz was revealed
+to incur growth inhibition and further cytotoxicity when administered
+to cell lines at concentrations higher than ∼100 μM.7,18,19 Thus, metabolically more effective
+and safer ManNAc analogues with reduced steric are constantly needed,
+which would have a significant impact on the probing of cellular glycoconjugates’
+characteristics and functions.7,20
+
+Cytotoxicity evaluation
+of the peracetylated N-acetylmannosamine derivatives.
+(A) Chemical structures of the α-fluorine-tagged
+monosaccharide Ac4ManN(F-Ac) and Ac4ManNAz.
+(B) Cytotoxicity of the peracetylated N-acetylmannosamine
+derivatives in HeLa or CHO cells after 48 h of incubation.
+
+Given the fluorine atom’s similarity in
+size to hydrogen
+and the minimal perturbance of fluorine substitutions to protein structure
+and function,21−23 we have recently utilized the fluorine tag as a steric-free
+labeling approach to study post-translational modifications, specifically
+hijacking the acetylation process by multiple acetyltransferases with
+F-acetyl CoA.12 We then invented a class
+of aryl thiol derivatized probes (Figure 2A) for a fluorine displacement reaction that
+is stable and bioorthogonal in mammalian cells.12 The resulting TAMRA-SH and Biotin-SH probes enabled us
+to efficiently label, detect, and enrich acetylation protein substrates in vitro and in cells for chemical proteomics studies,12,24 which cannot be achieved with traditional antibodies or “click
+chemistry”-based bulky chemical reporters.12 This initial success on acetylation compelled us to apply
+this methodology toward glycosylation, starting with the most common
+mannosamine monosaccharide-based sialic acid synthesis and incorporation.
+Herein, we report our recent development of N-fluoroacetyl
+mannosamine (ManN(F-Ac))-mediated metabolic labeling, which, coupled
+with the aliphatic selenol-based new generation of fluorine displacement
+probes, has led to the efficient labeling of sialylated glycoconjugates
+in mammalian cell lines. More importantly, this fluorine-selenol displacement
+reaction (FSeDR) allowed us to sensitively probe the biological roles
+of sialylated glycoconjugates in cancer cell progression.
+
+Characterization
+of the aliphatic selenol probe’s fluorine
+displacement activity. (A) Model reactions between the fluoroacetamide
+substrate and each generation of fluorine displacement model warheads
+(aryl thiol, aliphatic selenol compound 8). (B) Second-order
+reaction kinetics measurement of the model reaction between fluoroacetamide
+and the aliphatic selenol 8 at pH 7.2, in the presence
+of DTT. (C) Model BSA protein labeling with dethiobiotin-SH probe
+(pH 8.5, Tris buffer) or dethiobiotin-SeH probe (pH 7.2, PBS buffer).
+The fluorescent image is for the detection of IR dye-conjugated streptavidin
+that is incubated with the PVDF blot of the BSA protein following
+the probe labeling reaction. F-acetylated BSA was prepared by random
+lysine conjugation with a fluoroacetyl NHS ester.
+
+We started by preparing
+the tetraacetylated
+version of mannosamine, Ac4ManNH2 (1), following the reported Schiff base protection strategy (Scheme S1).25 A subsequent
+amide coupling of the amino-mannosamine with sodium fluoroacetate
+resulted in the desired fluorine analogue, Ac4ManN(F-Ac)
+(2), with an overall yield of ∼43% over four linear
+steps. Since peracetylated mannosamine derivatives were reported to
+affect cell growth and viability,7,18,19 we compared the effects of Ac4ManN(F-Ac)
+and Ac4ManNAz on representative cell lines, including CHO
+cells, which are sensitive to mannosamine and sialic acid analogues.26,27 As shown in Figure 1B, the commonly used azido analogue Ac4ManNAz was nontoxic
+in HeLa cells but decreased the viability of CHO cells to ∼82
+± 7% and ∼68 ± 6% once incubated for 48 h at concentrations
+of 250 and 500 μM, respectively. On the contrary, Ac4ManN(F-Ac) (2) maintained a satisfactory viability of
+CHO cells at ∼99 ± 4% and ∼92 ± 3% at the
+corresponding concentrations of 250 and 500 μM, respectively.
+Thus, the fluorine-tagged Ac4ManN(F-Ac) appears to possess
+a cytotoxicity profile better than that of the azido analogues and
+can be applicable to cell lines at concentrations below 500 μM.
+
+Previously, the aryl thiol probes, e.g., the 2,6-dimethoxybenzenethiol
+warhead, displaced fluorine from the α-fluoroacetamide functional
+group with a second-order reaction rate k of ∼1.0
+× 10–3 M–1 s–1.12 Nevertheless, this bioorthogonal reaction
+based on active thiols requires mildly basic conditions (pH ∼
+8.5) to proceed, which we reasoned is likely due to the need for formation
+of more nucleophilic thiolates. Such a preference for anion formation
+in order to effectively displace fluorine led our attention to another
+element in the chalcogen family, selenium. Compared to thiol derivatives
+that mostly have pKa values ∼8–10,12 the pKa values for
+most selenols are ∼5,28−30 and they can be fully deprotonated
+at neutral pH to become selenolates, which have higher polarizability
+and are more nucleophilic than thiolates.28 We therefore synthesized the aliphatic selenol model compound (7, Scheme S2) using selenocyanate
+as the protecting group and phenylalanine as the optically active
+unit to facilitate the monitoring of reactions.
+
+To activate
+the precursor probe 7, we attempted the deprotection
+of selenocyanate with sodium cyanoborohydride (NaCNBH3),
+which turned out to be ineffective. On the other hand, treatment with
+five equivalents of sodium borohydride (NaBH4) led to efficient
+reduction of 7 to the active selenol warhead 8 within just 10 min. We also observed that the selenol compound tends
+to readily form a dimer once upon exposure to air.31 In order to determine the experimental conditions that
+can quickly convert diselenide back to the active monomer state, we
+explored tris(2-carboxyethyl) phosphine (TCEP), dithiothreitol (DTT),
+NaCNBH3, and NaBH4 as potential reducing agents.
+As shown in Figure S1, NaBH4 rather than NaCNBH3 can effectively reverse the formation
+of 8-dimer within 30 min. Although commonly used as a
+strong reagent against oxidation in air, TCEP somehow also caused
+radical deselenization, resulting in the formation of the reported
+side-product TCEP = Se.32 Meanwhile, DTT
+at ∼25 equiv was observed to efficiently reduce 8-dimer and the resulting monomer 8 remained active at ∼10
+mM for up to several hours. Compared with NaBH4, DTT could
+be a milder reagent of choice for applications in biological systems.
+Hence, aliphatic selenol probes can be formulated as either protected
+selenocyanates or oxidized dimers for the purpose of long-term storage,
+which, right before application, can be activated in situ in a rapid
+manner through NaBH4 or DTT, correspondingly.
+
+Next, we set out to evaluate
+the aliphatic selenol’s fluorine displacement activities. The
+bimolecular reaction between 8 and the model substrate
+F-acetamide proceeded well at neutral pH (∼7.2) and had an
+observed rate constant of (2.20 ± 0.11) × 10–3 M–1 s–1 (Figure 2A,B), which is at least 2 times faster than
+the previous aryl thiol probe under basic reaction conditions.12 We then furnished the aliphatic selenol warhead
+with a dethiobiotin functional handle through direct amide coupling
+(Scheme S4). The resulting dethiobiotin-SeH
+probe was compared side-by-side with the previously reported dethiobiotin-SH12 in terms of labeling fluoroacetylated BSA model
+protein (Figure 2C).
+Efficient biotinylation by dethiobiotin-SeH occurred within 3 h of
+incubation at neutral pH, which appeared to reach saturation when
+the fluorescent intensities were compared with the sample BSA after
+6 h of reaction. Nevertheless, little labeling by dethiobiotin-SH
+was detected within the first 3 h, and the fluorescent intensity was
+weak even after 6 h of labeling reaction by the thiol probe.
+
+In order to gauge the potential of FSeDR-mediated labeling on fluorinated
+mannosamine metabolites, we utilized ManN(F-Ac) as the model substrate
+(Scheme S3). Adopting the milder activation
+method discussed above, we incubated 3 equiv of 8-dimer from the stock solution with ManN(F-Ac) in the presence of 25 equiv
+of DTT (Figure 3).
+The FSeDR conversion on ManN(F-Ac) turned out to be neat and clean
+(Figure 3B), with the
+desired product 10 accumulating within 2 h and showing
+mixed peaks of α/β isoforms at ∼4.2 min. Based
+on F19 NMR, the starting substrate ManN(F-Ac) was almost completely
+consumed after 8 h of reaction, and the targeted peak 10 appeared to be the only major product detected by LC–MS for
+this FSeDR reaction (full NMR and MS characterization for product 10 is available in the Supporting Information). Taken together, the aliphatic selenol probe seems to be efficient
+and specific for FSeDR reaction under physiological conditions.
+
+Time-dependent
+model fluorine displacement reaction on the N-fluoroacetyl
+mannosamine (ManN(F-Ac)) substrate by the
+aliphatic selenol warhead. (A) Chemical reaction scheme using 8-dimer and DTT as the reducing agent in PBS buffer. (B) Time-dependent
+LC–MS and F19 NMR spectra of the reaction. For LC–MS,
+solvent A was water with 0.1% formic acid, and solvent B was acetonitrile
+with 0.1% formic acid. The elution started with 2.5% solvent B for
+the first 0.5 min at 1 mL/min, followed by gradient increase of solvent
+B to 95% from 0.5 to 6 min. For F19 NMR, the α and β anomers
+of ManN(F-Ac) were detected at −226.7 and −226.9 ppm.
+
+With the FSeDR
+toolkit in hand, we moved forward with metabolic glycoengineering
+as shown in Figure 4A. Mammalian cell lines were incubated with 150–200 μM
+peracetylated analogue Ac4ManN(F-Ac) (2).
+The cells were fixed and then treated with dethiobiotin-SeH probe
+to initiate FSeDR-mediated labeling of the dethiobiotin tag onto the
+cell surface, which can be subsequently confirmed by staining with
+FITC-conjugated streptavidin for fluorescent detection. We observed
+clear fluorescent signals on the surface of the CHO cells (Figure 4B). Sialic acid has
+been reported to be upregulated in prostate cancer patient specimens,33,34 and elevated levels of sialoglycoproteins have also been observed
+in prostate cancer cell lines such as PC-3.35−37 Thus, we also
+attempted the metabolic engineering of sialylated glycoconjugates
+on the PC-3 cell line, which resulted in uniform global scale surface
+labeling. In either case, no sign of cytotoxicity was observed.
+
+N-fluoroacetyl mannosamine-mediated metabolic
+labeling of sialic acids on mammalian cell surfaces. (A) Experimental
+scheme for cellular incorporation and metabolic labeling using the
+Ac4ManN(F-Ac) and dethiobiotin-SeH toolkit. (B) Representative
+images of the labeled sialic acids (FITC, green) on the cell surfaces
+of the CHO and the PC-3 cell lines. Nuclei were stained with Hoechst
+(Blue).
+
+Encouraged by these results, we
+were curious about
+the intracellular
+level of sialoglycans and whether we could visualize the location
+of those sialylated glycoconjugates using the FSeDR toolkit. Sialic
+acid metabolism has been upregulated in hormone-sensitive cancer cells
+including PC-3 but also breast cancer cell lines such as MDA-MB-231.38,39 Hence, PC-3 and MDA-MB-231 were separately cultured on imaging slides
+with or without the metabolic treatment of Ac4ManN(F-Ac).
+After 2 days of incubation, cells were fixed, permeabilized, and again
+probed with dethiobiotin-SeH probe and streptavidin for fluorescent
+signal detection by confocal microscopy (Figure 5). For both prostate cancer cells and breast
+cancer cells, treatment with the FSeDR toolkit resulted in strong
+intracellular labeling across the cytoplasm and the punctate fluorescent
+signals could indicate the labeled sialoglycans in the Golgi apparatus,
+which is validated by our colocalization studies (Figure S2), showing most of the red fluorescent Golgi overlapped
+with the green fluorescence of sialoglycans and resulted in yellow
+colors within the merged images. This finding is consistent with the
+reported sialylation site and other lab’s imaging observations.40 Notably, confocal microscopic analysis of the
+cells treated with vehicle control gave very low background after
+reacting with the dethiobiotin-SeH probe, suggesting that the labeling
+of sialylated glycoconjugates is sensitive and specific. This is further
+confirmed by the parallel labeling and imaging analysis conducted
+with the presence of the ManNAc kinase inhibitor (3-O-methyl-N-acetyl-d-glucosamine),41 which inhibits the biosynthesis of N-acetylneuraminic acid, and effectively blocked the tracking of sialoglycans
+in both PC-3 and MDA-MB-231.
+
+N-fluoroacetyl mannosamine-mediated
+metabolic
+intracellular labeling of protein substrates in the sialic acid biosynthesis
+pathway in representative mammalian cell lines (PC-3, MDA-MB-231).
+Samples in the bottom panels were preincubated with the noncompetitive N-acetylmannosamine kinase inhibitor (3-O-methyl-N-acetyl-d-glucosamine). The proteins labeled by
+dethiobiotin-SeH probe were detected inside the 0.1% Triton X-100
+permeabilized cells with streptavidin-FITC (green). Nuclei were stained
+by Hoechst (Blue).
+
+Since
+the Ac4ManNAz-based CuAAC toolkit is regarded as the gold
+standard in metabolic glycoengineering, we prepared the dethiobiotin-alkyne
+probe (Scheme S5) and pursued “click
+chemistry” labeling in parallel to the FSeDR-mediated metabolic
+labeling. Direct confocal microscopic imaging showed similar levels
+of fluorescence signals (Figure 6A) between these two methods. While the steric-free
+advantage of fluorinated mannosamine should lead to better hijacking
+of the metabolic biosynthesis, it is possible that the significantly
+faster reaction kinetics42 of the “click
+chemistry”-based appendence with dethiobiotin compensated the
+weaker incorporation of azido-sialylated glycans. Nevertheless, PAGE
+gel analysis of those dethiobiotin-tagged proteins did reveal that
+the FSeDR approach has labeled more sialylated glycoproteins than
+did the CuAAC method (Figure 6B). For PC-3 cell lysates, the protein bands labeled and detected
+by FSeDR were apparently stronger in intensities than those labeled
+by CuAAC even for proteins migrating into the same molecular weight
+region. Notably, more protein labeling by FSeDR than CuAAC at high
+(>200 kDa) and low (<60 kDa) molecular weight ranges was observed
+in both PC-3 and MDA-MB-231 cells, as indicated by asterisks in Figure 6B, and being further
+confirmed by quantitative analysis in Figure S3. These results were consistent with the reported observations using
+traditional immunoaffinity methods that usually detected sialoglycoproteins
+at high and low molecular weights.43,44 Therefore,
+the Ac4ManN(F-Ac)-mediated FSeDR resulted in slightly better
+labeling of sialylated glycoconjugates than the traditional CuAAC
+method presumably due to the reduced steric hindrance of the F tag,
+and it theoretically should have more room to be further improved
+in the future depending on the continuous optimization of the FSeDR
+reaction kinetics. On a separate control run, we also observed almost
+completely diminished FSeDR labeling on the PC-3 cell lysates that
+had metabolized Ac4ManN(F-Ac) but were treated with sialidase
+before the addition of the dethiobiotin-SeH probe (Figure S4). This further confirms that the FSeDR labeling
+occurs accurately on sialylated cellular proteins.
+
+Comparison of the metabolic
+glycan labeling between the FSeDR and
+the “click chemistry” CuAAC toolkits. (A) Direct imaging
+results of PC-3 cell line using the pro-metabolite Ac4ManN(F-Ac)
+and Ac4ManNAz, respectively. The cellular proteins labeled
+by dethiobiotin were visualized with streptavidin-FITC dye after Triton
+X-100-mediated permeabilization. (B) Corresponding cell lysates of
+PC-3 cells and MDA-MB-231 cells were each subjected to metabolic sialic
+acid labeling using FSeDR or CuAAC toolkits. The dethiobiotin-labeled
+proteins on the PAGE gels were detected via streptavidin-IR680 dye
+and visualized in the fluorescent channel. CBB is Coomassie brilliant
+blue staining as the loading control.
+
+Hypersialylation is consistently observed in cancer cells,36 including prostate cancer cell lines, which
+have overexpressed sialoglycans such as Lewis antigens and sialyl-T
+antigens that are favorable for tumor dissemination.36−38 To detect this distinguished expression, we performed parallel metabolic
+labeling of both prostate cancer and tissue cell lines with Ac4ManN(F-Ac) (Figure 7A). Compared to PC-3, a metastatic cancer cell line, the regular
+prostate tissue cell line PNT-2 indeed demonstrated significantly
+lower signal after the FSeDR reaction with the dethiobiotin-SeH probe.
+Notably, hypersialylation has also been linked to the metastatic spread
+of hormone-sensitive cancer cells, which overexpressed sialylated
+glycoconjugates but also certain sialyltransferases.36,38,45 It is believed that surface sialylation
+changes are positively correlated with the metastatic potential of
+both prostate cancer and breast cancer.35,37−39 Yet, little experimental evidence has been achieved with metabolic
+glycoengineering to visualize this glycan redistribution except for
+one reported study on melanoma cells.46 With the application of the FSeDR labeling onto these hormone-sensitive
+and metastatic cell lines, we focused on the migrating cells as shown
+in Figure 7B. Under
+the confocal microscopic analysis, significant surface but also intracellular
+redistribution of sialylated glycoconjugates were captured in both
+PC-3 and MDA-MB-231 cells. Our results were pretty consistent with
+the reported sialylation redistribution during melanoma cell migration.46 The accumulation of sialoglycoproteins mostly
+overlapped with the actin-rich contact sites and aligned well with
+the cell protrusion and migration directions as being indicated by
+the cyan arrows from the cell center to the lamellipodia (Figure 7B), suggesting the
+potential roles of the hypersialylation in promoting cancer cell adhesion
+and specifically the formation of filopodia.
+
+Probing the sialic acid
+regulation in cancer cell progression with
+the N-fluoroacetyl mannosamine-mediated metabolic
+labeling strategy. (A) Peracetylated ManN(F-Ac)- and FSeDR-based metabolic
+labeling of intracellular proteins (green) in the prostate cancer
+cell line (PC-3) and prostate tissue (PNT-2). Nuclei stained by Hoechst
+(blue). (B) Intracellular metabolic labeling of sialoglycoproteins
+(green) within migrating cancer cells such as PC-3 and MDA-MB-231.
+Actin was stained by phalloidin (red) while arrows (cyan) indicated
+the migration direction based on the actin-rich contact sites.
+
+In summary, we have
+explored and demonstrated
+the successful use
+of N-fluoroacetyl mannosamine as a pro-metabolite
+mimic of ManNAc. The aliphatic selenol warhead has been introduced
+here as the second-generation fluorine displacement probe that functions
+with enhanced reaction kinetics but also under improved reaction conditions
+for applications within physiological environment, i.e., the neutral
+pH range. The resulting FSeDR toolkit empowers successful metabolic
+glycoengineering, hijacking the sialic acid biosynthesis pathway in
+a more comprehensive and efficient manner than that using the traditionally
+used CuAAC toolkit. More importantly, the FSeDR-based metabolic labeling
+validated the upregulation of sialylated glycoconjugates in hormone-sensitive
+cancer cell lines and confirmed their spatial distribution during
+cancer progression and migration. Although the N-fluoroacetamide
+derivatization has been utilized on related sialic acid analogues,47,48 our results here have been the very first report of α-fluorination
+on N-acetylmannosamine to probe the ManNAc/sialic
+acid salvage pathway. Moreover, the FSeDR-based fluorine displacement
+probes, such as dethiobiotin-SeH, efficiently converted N-fluoroacetamide to other biologically useful reporter groups such
+as biotin and potentially fluorophores, thereby empowering a much
+broader and more facile interrogation of sialylated glycoproteins
+than those in other N-fluoroacetamide derivatization
+studies. Current efforts are focused on the identification and functional
+annotation of these observed sialoglycoproteins and the systematic
+elucidation (including quantitative analysis) of their functional
+roles in cancer progression. Future work would involve the methodological
+invention toward metabolic glycoengineering of other important monosaccharides
+such as GalNAc and GlcNAc. It is also necessary to further design
+and evolve fluorine displacement probes with continuously improved
+reaction kinetics and bioorthogonality, which hopefully will lead
+to the real-time application of FSeDR in live cells.
+
+Reagents
+and solvents were
+purchased from commercial resources such as VWR, Fisher Scientific,
+Sigma-Aldrich, and Ambeed and were used directly without further purification.
+Analytical TLC was carried out with Silica Gel 60 F254 plates
+(Sorbent Technologies, Inc.). The chemicals on TLC were either visualized
+by UV 254 nm (UV lamp, Chemglass Life Sciences) or stained by phosphomolybdic
+acid or KMnO4 oxidation. Compound purification was performed
+by flash column chromatography on columns manually loaded with silica
+gel grade 60 (230–400 mesh, Fisher Scientific) or by reverse-phase
+Combi-Flash on prepacked C18 columns (Teledyne ISCO). Further purification
+by preparative high-performance liquid chromatography (HPLC) was implemented
+on the Waters 1525 series that consists of a 2489 UV/vis detector,
+1525 binary pump, and an XBridge Prep C18 column. Routine mass spectrometry
+analysis was done using a liquid chromatography–mass spectrometry
+(LC–MS) Agilent 6100. High-resolution LC–MS analysis
+was performed on an Agilent 6520 Accurate-Mass Quadrupole Time-of-Flight
+(Q-TOF) instrument coupled with an electrospray ionization source.
+For NMR analysis, 1H NMR and 13C NMR spectra
+were recorded on 400 or 500 MHz Bruker Advance, with tetramethylsilane
+(TMS) as the internal reference standard. The raw data were processed
+with MestReNova, and the chemical shifts were reported in parts per
+million (ppm) downfield from the internal standard (TMS). F19 NMR
+was acquired by placing the FSeDR model reaction mixture in a regular
+NMR tube within a Bruker spectrometer (471 MHz) equipped with an F19
+probe (PA BBO 500S2 BBF-H-D-05 Z SP). The receiver gain was set to
+191.1. A relaxation delay of 13.0 s and an acquisition time of 0.8738
+s were used. Each spectrum took 240 accumulated scans. All of the
+related synthetic and reaction schemes produced for compound synthesis,
+and compound characterizations are available in the Supporting Information.
+
+Reaction kinetics
+with the selenol model probe 8 was evaluated according
+to the reported method49,50 and also following our own previously
+reported procedures.12 Compound 8, after cyano-deprotection from precursor 7, was equally
+mixed with the substrate α-fluoroacetamide in 500 μL of
+PBS buffer (pH 7.2)/acetonitrile at concentrations of 5, 7.5, and
+10 mM each. The final mixture also contained 20 equiv of DTT to maintain
+the reductive environment for the selenol monomer. The reaction was
+incubated at 37 °C, with 2 μL of the mixture withdrawn
+at the desired time points (120, 240, 360, and 480 min) and quenched
+with 0.5% TFA/acetonitrile. The samples were eventually analyzed by
+LC–MS, and the concentrations of the reactants ([X]t at time t, [X]0 at time 0 for either reactant) were determined
+by comparing the ratios of peak areas with those from the standard
+curves. The rate constant (k) was determined by plotting
+1/[X]t (X is the substrate) against time and with the second-order equation
+(1/[X]t = 1/[X]0 + kt).
+
+The CHO, PC-3, MDA-MB-231, and PNT-2
+cell lines were all purchased from ATCC, and they were routinely authenticated.
+PC-3 cells were maintained in the 1:1 DMEM/F12 medium premixed with l-glutamine and HEPES (Cytiva HyClone). CHO and MDA-MB-231 cells
+were cultivated in DMEM high-glucose medium (Corning). PNT-2 cell
+line was cultured in RPMI 1640 media with l-Glutamine (Corning).
+All cell culture media were added with 10% FBS (Corning) and 1×
+antibiotic/antimycotic cocktail (100 IU/mL penicillin, 100 μg/mL
+streptomycin); and all cell lines were cultured in a humidified incubator
+at 37 °C with 5% CO2.
+
+Cytotoxicity evaluation was performed
+following our previously published procedures.12 Briefly, the fluorinated and the azido-derivatized peracetylated
+mannosamine were each incubated with the mammalian cell lines at 2-fold
+serially diluted concentrations down from 1 mM. After incubation at
+37 °C, 5% CO2 for 48 h, the number of viable cells
+was quantified using CellTiter-Glo assay (Promega, WI), and the luminescent
+signals were recorded on the H1 Synergy plate reader (Biotek, Agilent).
+
+Fluoroacetylated BSA (F-acetylated BSA)
+was prepared chemically by reacting 400 μL of BSA (2.4 mg/mL
+in DPBS, pH 7.2) with 14.8 μL of NHS-fluoroacetate (20 mM stock
+in DMSO) at room temperature for 2 h. The fluorinated BSA was purified
+by cold methanol precipitation to remove unconjugated fluoroacetate
+linkers, and then, the pellet was redissolved in 300 μL of water
+(2.6 mg/mL, ∼39 μM).
+
+Approximately,
+8 μL of F-acetylated BSA (39 μM stock in water) was mixed
+with 4 μL of TCEP (100 mM stock in water), 2 μL of dethiobiotin-SH
+(20 mM stock in DMSO), 1 μL of Tris buffer (1 M stock), and
+5 μL of NaOH (200 mM stock in water). The final reaction volume
+was 20 μL, and the pH value of the mixture was 8.5. The reaction
+mixture was incubated at 37 °C for the indicated time point (0,
+3, and 6 h), collected, and immediately snap frozen. The samples were
+stored at −80 °C until further analysis.
+
+Approximately,
+2 μL of dethiobiotin-SeCN probe 7 (20 mM stock
+in CH3CN) was mixed with 1 μL of NaBH4 (200 mM stock in water) at room temperature for 10 min. The activated
+probe solution was then mixed with 4 μL of DTT (100 mM stock
+in water), 5 μL of PBS (250 mM stock in water), and 8 μL
+of F-acetylated BSA (39 μM stock in water). The final solution
+had a volume of 20 μL and a pH value of 7.2. The rest of the
+procedures, such as sample collections and storage, were the same
+as those mentioned above for the dethiobiotin-SH probe.
+
+Approximately,
+6 μL of each sample after labeling with either probe and for
+different time points were loaded onto an 8% Bis-Tris SDS-PAGE with
+the MES-SDS running buffer (GenScript) for electrophoresis, which
+was later transferred onto PVDF membranes by a Trans-Blot SD semi
+dry transfer cell (Bio-Rad). The transfer was completed under 20 V
+voltage for 1.3 h in 1× NuPAGE transfer buffer (Invitrogen).
+The blot was blocked for 1 h with biotin-free casein buffer (Sigma-Aldrich)
+or self-prepared blocking buffer (3% BSA, 0.1% TBST, pH 8.0) and stained
+with streptavidin-IR Dye 680RD (LI-COR) at a dilution of 1/2000 for
+1 h, followed by 3 times washings with 0.1% TBST (pH 8.0). The biotinylated
+proteins on the blot were detected by the LI-COR Odyssey Fc Imaging
+System (700 nm channel, Ex 685 nm/Em 730 nm). At the end, the blot
+was stripped with stripping buffer (Thermo Scientific) and stained
+with Coomassie brilliant blue (CBB) to show an equal loading amount
+of each sample
+
+Approximately, 6 × 105 mammalian
+cells per well were seeded in six-well plates (Fisher Scientific).
+Once reaching 80% confluency, the cells were treated with the monosaccharide
+pro-metabolite by adding into each well 2 mL of fresh culture media
+that was premixed with 4 μL of 100 mM Ac4ManN(F-Ac)
+(in DMSO as the stock solution) or 4 μL of DMSO (Corning) as
+vehicle control. After 48 h cell cultivation, the cells were rinsed
+with 1 mL of PBS buffer (Corning) three times and incubated with ∼4%
+paraformaldehyde solution (Electron Microscopy Sciences). Following
+the fixation at room temperature for 20 min, the cell samples were
+washed in 0.5 mL of PBS buffer three times to remove fixative additives.
+
+For the labeling with the FSeDR-based dethiobiotin-SeH probe, 4
+μL of freshly made 500 mM NaBH4 aqueous solution
+was mixed with 2 μL of 200 mM dethiobiotin-SeCN probe in 30%
+acetonitrile and incubated within an Eppendorf tube for 10 min at
+room temperature. Alternatively, 4 μL of freshly prepared 1
+M DTT was mixed with 2 μL of 100 mM dethiobiotin-SeH dimer (8-dimer) in 30% acetonitrile and was incubated at room temperature
+for 10 min. Then, 40 μL of 10× PBS buffer (Corning) and
+360 μL of water were added and vortexed to mix. The pH of the
+activated probe solution was adjusted to ∼7.2 by 0.5 M NaOH
+aqueous solution. The cells were added with 100 μL of the probe
+solution per well and the mixtures were incubated for 8 h at 37 °C.
+
+Right after this labeling reaction, cells in every well were washed
+with 100 μL of PBS buffer three times for 10 min each, followed
+by a one h incubation in 100 μL of blocking buffer (3% BSA,
+PBS, pH 7.2) at room temperature. The cell samples were finally stained
+with streptavidin-FITC (BD Pharmingen) and Hoechst 33342 dye that
+were dissolved in the cell-blocking buffer, for one h in the dark.
+The samples were subjected to three PBS washings for 20 min each and
+were resuspended in PBS for imaging analysis with confocal or epi-fluorescent
+microscope.
+
+Approximately, 3 × 104 cells per
+well were seeded in 8-well chambered slides (Cellvis). Once reaching
+80% confluency, cells were treated with 300 μL of fresh media
+that was premixed with 0.45 μL of Ac4ManN(F-Ac) stock
+solution (100 mM in DMSO) or the vehicle control (DMSO) and were incubated
+in a humidified incubator at 37 °C with 5% CO2. For
+the comparison of labeling within the same cell line with or without
+the sialic acid biosynthesis inhibitor, approximately 4.69 μL
+of 3-O-methyl-GlcNAc stock solution (128 mM in DMSO,
+Cayman Chemical) or the DMSO control was also mixed with the media
+in addition to the monosaccharide. For comparison of metabolic labeling
+between PC-3 cells and PNT-2 cells, the media used for the two cell
+lines were the same (RPMI 1640 with the standard supplements as mentioned
+above).
+
+After 2 days of metabolic incubation, the cells were
+rinsed with 300 μL of PBS buffer three times and then fixed
+in 175 μL of ∼4% paraformaldehyde PBS solution at room
+temperature for 20 min. Then, 300 μL of PBS buffer per well
+was used to wash for three times, 10 min each, to remove fixative
+additives. In parallel to this, around 13.2 μL of freshly prepared
+NaBH4 aqueous solution (500 mM) was mixed with 6.6 μL
+of dethiobiotin-SeCN probe (200 mM, 30% acetonitrile/water) and incubated
+for 10 min at room temperature. Alternatively, 13.2 μL of DTT
+(1 M) was incubated with 6.6 μL of the dethiobiotin-SeH dimer
+(8-dimer probe, 100 mM) in 30% acetonitrile for 10 min. The activated
+probe solution was further mixed with 33 μL of a 1 M DTT stock
+solution, 66 μL of 10× PBS buffer (Corning), and 541 μL
+of water. The final probe mixture was adjusted with 0.5 M NaOH aqueous
+solution to ensure the pH value was ∼7.2. Each cell sample
+well was subsequently added with ∼160 μL of the above-mentioned
+probe solution. Then, the chamber was covered with a sticky sealing
+film and kept in an incubator at 37 °C for 8 h.
+
+Following
+the FSeDR labeling, cells in each chamber well were first
+washed with 160 μL of 20 mM DTT/PBS solution (pH 7.2) at room
+temperature. After this, each well was washed with 300 μL of
+PBS buffer twice for 10 min to remove unreacted probes. Then, the
+cell samples were permeabilized at room temperature for 10 min with
+200 μL of 0.1% Triton X-100 containing PBS, followed by three
+washings with 300 μL of PBS buffer (10 min each). The cells
+were then blocked by a one h incubation in 200 μL of cell-blocking
+buffer (3% BSA, PBS, pH 7.2) at room temperature. The blocked cells
+were eventually stained with streptavidin-FITC (1:200 dilution, BD
+Pharmingen) and Hoechst 33342 dye (1:1000 dilution) in the cell-blocking
+buffer for one h in the dark. For the samples with F-actin detection,
+CoraLite594-Phalloidin (1:200 dilution, Proteintech) was also added
+to the combined cell staining solution. For the samples for colocalization
+studies, Golgi was detected by rabbit anti-giantin antibody (BioLegend,
+1:500 dilution) followed by the DyLight 649 Donkey anti-rabbit IgG
+(BioLegend, 1:500 dilution). Each incubation step took 1.5 h at room
+temperature, followed by PBS washing for 3 times at 10 min each time.
+After staining, the cell samples were subjected to 3× PBS washings
+for 20 min each and were stored at 4 °C in the dark until analysis
+by the confocal microscope.
+
+Similar to the addition
+of Ac4ManN(F-Ac), approximately
+0.45 μL of azido-derivatized Ac4ManNAz monosaccharide
+(100 mM in DMSO) was added to the cells, reaching 80% confluency.
+The metabolic incubation period for cell lines parallelly treated
+with either of the mannosamine analogues was shortened to 12 h, after
+which the cell samples metabolizing Ac4ManNAz were rinsed
+and subjected to CuAAC-based labeling by the dethiobiotin-Alkyne probe 14. Specifically, 6.5 μL of 50 mM CuSO4 stock
+solution and 6.5 μL of 50 mM BTTES (Sigma-Aldrich) stock solution
+were incubated together for 10 min at room temperature. Then, the
+mixture was added with 6.5 μL of 10 mM dethiobiotin-alkyne probe
+stock solution, 6.5 μL of freshly made 250 mM sodium ascorbate
+solution, 65 μL of 10× PBS buffer (pH 7.2), and 559 μL
+of Milli-Q water. The probe solution was instantly aliquoted and added
+at a volume of 160 μL per well to the cell samples previously
+treated with Ac4ManNAz. The CuAAC cellular labeling reaction
+was left at 37 °C for 8 h as well to be consistent with FSeDR
+labeling. The subsequent staining and cellular imaging procedures
+are the same as those mentioned above for the FSeDR.
+
+To ensure more sensitive detection of individual
+protein bands, around 6 × 105 cells per well were
+seeded in six-well plates (Fisher Scientific). Upon 80% confluency,
+cells were added with 1.5 mL of fresh culture media per well that
+was premixed with 3 μL of 100 mM Ac4ManN(F-Ac) for
+FSeDR-based labeling, 100 mM Ac4ManNAz for CuAAC-based
+labeling, or DMSO as the vehicle control. After 12 h incubation, the
+cell samples were rinsed with 1 mL of PBS per well three times and
+lysed by 200 μL/well of prechilled RIPA lysis buffer (25 mM
+Tris-HCl, 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate, 0.1% SDS,
+pH 7.6) at 4 °C for 20 min with gentle shaking. Immediately after
+this, the lysates were transferred into Eppendorf tubes and gently
+mixed with 1.5 mL of cold methanol per tube, followed by overnight
+incubation at −80 °C for complete protein precipitation.
+The precipitated proteins were spun down at 15,000g for 5 min and redissolved in 50 μL of PBS that contained 1%
+SDS, with the exact protein concentrations measured by BCA assay (Pierce,
+Thermo Fisher).
+
+For FSeDR labeling, approximately 0.9 μL
+of the dethiobiotin-SeCN probe (200 mM) was activated by 1.8 μL
+of freshly prepared NaBH4 aqueous solution (500 mM) in
+10 μL of water for 10 min at room temperature. Alternatively,
+8-dimer stock solution (100 mM) can be treated with DTT (1.8 μL,
+1 M) as mentioned before for conversion to the active monomer dethiobiotin-SeH.
+For each sample labeling, 2.9 μL of the activated selenol probe
+solution was aliquoted out and mixed with 2 μL of 1 M DTT stock
+solution, 2 μL of 10× PBS buffer (pH 7.2), and 0.5 μL
+of 0.25 M NaOH solution (to adjust the final pH to 7.2) as well as
+water to fill the total volume up to 20 μL. This final probe
+reaction solution was added with 40 μg of the aforementioned
+lysates resulting from the cells that have metabolized Ac4ManN(F-Ac). After incubation at 37 °C for 12 h, the labeling
+reaction was quenched by freezing the lysates at −80 °C.
+For the control experiment, the lysates from cells having metabolized
+Ac4ManN(F-Ac) were incubated with neuraminidase (sialidase,
+MilliporeSigma) at 0.04 U/40 μg lysate proteins, pH 6.0 for
+3 h at 37 °C, before addition with the final probe solution.
+For CuAAC labeling, 0.9 μL of CuSO4 stock solution
+(50 mM) and 0.9 μL of BTTES stock solution (50 mM) were mixed
+with 11 μL of water and incubated at room temperature for 10
+min. The mixture was then added with 0.9 μL of a 10 mM dethiobiotin-alkyne
+probe stock solution, 0.9 μL of freshly made 250 mM sodium ascorbate
+solution, and 9 μL of 10× PBS buffer (pH 7.2). After sufficient
+mixing, an aliquot of ∼5.2 μL final probe reaction solution
+was added into the Eppendorf tube, which contained 40 μg of
+the lysates mentioned above as prepared from cells that have metabolized
+Ac4ManNAz. The total reaction volume in each tube was filled
+up to 20 μL with water, and the labeling reaction lasted for
+12 h at 37 °C before being quenched by freezing the lysate samples
+at −80 °C.
+
+On the day of gel analysis, all of the
+lysate samples resulting
+from either FSeDR or CuAAC labeling were thawed on ice at the same
+time. For each tube that contained 20 μL of the processed cell
+lysate sample, ∼3 μL of DTT stock solution (1 M) and
+∼8 μL of 4× LDS gel loading buffer were added. After
+heat denaturation at 70 °C for 10 min, all of the samples were
+quickly loaded onto a 4–12% Bis-Tris SDS-PAGE with the MES-SDS
+running buffer (GenScript) for electrophoresis (70–80 min at
+140 V). The gel was then fixed in 50% isopropanol/45% water/5% acetic
+acid for 15 min at room temperature, followed by washing with water
+three times (15 min each). With ∼15 mL of Western blot blocking
+buffer (3% BSA, 0.1% TBST, pH 8.0), the fixed gel was further blocked
+at room temperature for 1 h and was immediately stained with streptavidin-IRDye
+680RD (1/3000 dilution, LI-COR) for 1 h. After a final washing with
+0.1% TBST (pH 8.0) three times, the biotinylated proteins were detected
+by the Bio-Rad ChemiDoc System. The band intensities were quantified
+by using ImageJ software. Ultimately, the gel was stripped with the
+stripping buffer (1.5% glycine, 0.01% SDS, 1% Tween 20, pH 2.2) and
+stained with Coomassie brilliant blue (CBB) as the loading control.

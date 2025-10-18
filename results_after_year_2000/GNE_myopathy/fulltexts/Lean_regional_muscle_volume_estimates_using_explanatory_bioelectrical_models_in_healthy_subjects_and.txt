@@ -1,0 +1,272 @@
+The availability of accessible, non‐invasive, and robust methods for estimating skeletal muscle volume (SMV) is paramount for clinicians and scientists within various physiological and pathophysiological contexts involving muscle remodelling. Regional SMV, and more specifically thigh SMV, has emerged as an important hallmark across the health care continuum.
+1
+, 
+2
+, 
+3
+
+Methods for estimating regional SMV in humans are numerous and rely on a wide range of physical principles, models, and assumptions.
+4
+, 
+5
+ Dual‐energy X‐ray absorptiometry (DXA) is the most widespread technique for assessing lean regional SMV. DXA has many strengths (e.g. small radiation dose and cheaper than other imaging techniques), but as a two‐dimensional imaging technique, regional SMV estimates are obtained indirectly using anatomical models.
+4
+, 
+5
+ Computerized tomography (CT) and magnetic resonance imaging (MRI) are recognized as the gold standards for regional body composition analysis.
+4
+, 
+6
+ As three‐dimensional imaging techniques, CT and MRI can be used to obtain precise estimates of regional SMV. As opposed to CT, MRI is non‐ionizing, rendering it the safe alternative for three‐dimensional volumetric acquisitions. Importantly, CT and MRI can also determine intramuscular fat content, which is a critical information in conditions such as myopathies and sarcopenia. However, both CT and MRI require the segmentation of different tissue compartments within images that is known to be a very labour‐intensive task. Automated or semi‐automated approaches have been proposed, but they remain difficult to apply when severe degenerative muscle changes take place.
+4
+, 
+7
+ Consequently, when a simple estimate of lean regional SMV is being sought, limitations in the use of CT and MRI are largely related to their high costs and the technical expertise required to acquire and process images.
+
+Bioimpedance measurements refer to all methods based on the characterization of the passive electrical properties of biological tissues in response to the injection of an external current.
+8
+ Methods referred to as bioelectrical impedance analysis (BIA) have been identified as non‐invasive, non‐irradiant, cost‐effective, and portable for the assessment of appendicular SMV.
+8
+, 
+9
+, 
+10
+ However, BIA has been mostly performed using descriptive models that rely on poorly generalizable sample‐specific regression equations.
+8
+, 
+9
+ Although these models may be sufficient in epidemiological studies, the current consensus stresses that these approaches may be used with caution when precise individual measurements of body composition are pursued.
+4
+ Other local approaches referred to as electrical impedance myography may allow to discriminate pathological muscle status and change over time using a set of non‐specific parameters but do not provide estimates of regional SMV.
+11
+, 
+12
+
+A considerably smaller amount of studies has proposed explanatory BIA models for the estimation of regional SMV.
+13
+, 
+14
+, 
+15
+, 
+16
+ Brown et al. first introduced a method solely based on measured impedance and anthropometric measurements.
+13
+ Subsequently, Salinari et al. proposed an elegant approach for estimating whole‐limb SMV based on the resistance profile of the whole limb.
+15
+, 
+16
+ For clarity, this approach is referred to as serial bioelectrical impedance analysis (SBIA) in this work. Excellent consistency between SBIA and DXA in the lower limb of normal‐weight and overweight healthy subjects has been reported (i.e. relative error was <7 ± 3%).
+16
+ Salinari et al. also reported good consistency between SBIA and MRI (with no assessment of intramuscular fat) in the lower limb in a small group of male healthy subjects (n = 6; i.e. relative error was <6 ± 4%),
+15
+ and these findings were confirmed in 15 healthy men in a study conducted by Stahn et al.
+17
+ To the best of our knowledge, there are no SBIA data available in women. Stahn et al.
+17
+ reported higher accuracy of estimates of lower limb SMV when using higher frequencies (i.e. 500 kHz). However, the potential advantage of multifrequency acquisitions within such models remains to be scrutinized. The value of the muscle conductivity constant is the most critical aspect of these models. In previous works,
+15
+, 
+16
+, 
+17
+ the authors used published muscle conductivity constants
+18
+, 
+19
+, 
+20
+, 
+21
+ so that uncertainties regarding true in vivo values of skeletal muscle conductivity remain. Whether these models may be applicable in patients with severe muscle wasting associated with degenerative changes, in particular, intramuscular fat infiltration, has never been investigated. Although using a relatively small number of measurements over the whole lower limb has been reported to provide reasonable estimates,
+16
+ it remains unclear whether these models could be applied within shorter segments such as the thigh in both healthy subjects and patients with muscle impairments. Another aspect that has never been investigated is the between‐day reproducibility of SBIA measurements.
+
+Therefore, the aims of the present study were (i) to optimize SBIA numerical models by computing a conductivity constant based on actual thigh structure as assessed using state‐of‐the‐art quantitative MRI, (ii) to investigate its ability to estimate lean thigh muscle volume in healthy participants, and patients (men and women) with muscle wasting and degenerative changes such as intramuscular fatty infiltration, (iii) to investigate the potential advantage of multifrequency SBIA acquisitions, and (iv) to assess the between‐day reproducibility of SBIA.
+
+Patients with a confirmed diagnosis of inclusion body myositis and unmatched healthy participants with variable body mass index (BMI) and physical fitness level were proposed to participate in this study. All participants gave written informed consent. This study conformed to the Declaration of Helsinki and was approved by the local ethics committee. Participants were advised to refrain from alcohol and exercise for 48 h before measurements and to refrain from smoking and the consumption of caffeinated beverages on the day of measurement. No specific instructions regarding hydration prior measurements were given to participants. Participants underwent MRI followed by SBIA measurements within a single visit. A subsample of six healthy participants was studied for between‐day reproducibility of SBIA measurements within a second visit 24 to 72 h apart.
+
+Participants underwent an MRI scan of the thighs using a 3 T scanner (PrismaFit, Siemens, Healthineers, Erlangen, Germany). Scans were performed with subjects lying feet‐first in the supine position. The body coil was used for RF transmission, and a body matrix coil positioned on the thighs was operated in conjunction with a spine matrix integrated into the patient table for signal reception. Axial images were acquired using a 3D gradient echo sequence with the following parameters: echo times = 2.75, 3.95, and 5.15 ms; repetition time = 10 ms; flip angle = 3°; field of view = 224 × 448 × 320 mm3; spatial resolution = 1 × 1 × 5 mm3; and acquisition time = 5 min 38 s. The centre slice was positioned at one‐third of the distance between the upper edge of the patella and the anterior–superior iliac spine (ASIS). The centre of the central slice was carefully skin marked. Water and fat maps were obtained using a standard three‐point Dixon reconstruction, and fat fraction (FF) maps were computed as the ratio between the fat signal and the sum of the water and fat signals.
+22
+
+Out‐of‐phase Dixon images were manually segmented using the ITK‐Snap software according to four distinct areas labelled as follows: anterior muscle compartment (i.e. quadriceps), posterior muscle compartment (i.e. hamstrings and adductors), bone, and subcutaneous tissue associated with neurovascular bundles and intermuscular tissues. Segmentation was performed every 4 cm (i.e. every eight slices) as previously reported to yield accurate estimates of muscle volume.
+23
+ For each slice, the whole muscle cross‐sectional area (CSAMRI) was computed and the lean muscle cross‐sectional area (lCSAMRI) was obtained by removing the contribution of adipose tissue using FF maps.
+24
+ Subsequently, values for CSAMRI and lCSAMRI were fitted using cubic spline interpolation for computing volumes. Finally, overall values for muscle volume (VMRI) and lean muscle volume (lVMRI) were computed over a length corresponding to 40% of the distance between the patella–ASIS, centred on the central slice, and retrieved using standard trapezoidal integration. Therefore, the studied anatomical region was similar in every individual subject. An overview of image segmentation is displayed in Figure
+1.
+
+Typical quantitative magnetic resonance imaging acquisitions and processing. Illustration of the positioning of segmented slices in thighs in the coronal plane in one healthy participant (Panel A) and one patient (Panel C). Example how the regions of interest were drawn in the transverse plane the out‐of‐phase Dixon images depicted by the white dotted line in Panels (A)–(C) (Panel B for the healthy participant and Panel D for the patient): subcutaneous fat tissue–neurovascular bundles–intermuscular tissue (yellow), anterior muscle compartment (red), posterior muscle compartment (i.e. hamstrings and adductors, blue), and bone (green).
+
+Measurements were performed using a commercialized multifrequency bioimpedance device (Z‐Scan, Bioparhom, France) allowing raw impedance data acquisition. The participants were lying supine for 10 min before measurements to allow fluids to equilibrate. To avoid any short circuits, participants were asked to keep their arms alongside their body, a few centimetres away from it, and to slightly spread their legs to avoid any contact between them. Before applying the electrodes, the skin was shaved and rubbed with 70% ethanol. Conventional AgCl/Ag electrodes (Meditrace 100; Kendall, Mansfield, MA) were used for both current injection and measurement. Low‐intensity (70 μA) alternative current was sent through injection electrodes positioned in the centre of the third metacarpal of the hand and slightly above the lateral malleolus. A reference voltage electrode was positioned on the forearm, 15 cm away from the wrist injection electrode. The first voltage electrode was positioned on the anterior part of the thigh at the level of the skin mark corresponding to the central MRI slice (see above). Other voltage electrodes were positioned proximally and distally from the central mark with 4 cm intervals. All thigh voltage electrodes were connected to an electronic multiplexer (MAX306CPI+, Maxim Integrated, San Jose, CA 95134, USA) driven by a microcontroller (Arduino Uno) allowing the automatic switch of the voltage electrode along the thigh. Multifrequency measurements were performed from 50 to 350 kHz, with a 5 kHz step. An overview of the experimental set‐up is displayed in Figure
+2. The duration of the acquisition was 30 s per voltage electrode measurement and less than 5 min per side when considering all measurements.
+
+Experimental set‐up for serial bioelectrical impedance measurements and typical measurements. Schematic of the experimental set‐up (Panel A). Panel (B) shows resistance acquired at different frequencies between the hand voltage electrode and all voltage electrodes along the thigh (numbers represent the distance from the electrode corresponding to the central magnetic resonance imaging slice). Panel (C) shows the relative resistance profile along the thigh. The numbers on the left side of the curves indicate the distance from the first distal electrode above the patella. Lines represent resistance–frequency profiles fitted using a double exponential function with the Levenberg–Marquardt algorithm (Panel B) and relative resistance–length profile fitted using third‐order polynomial function (Panel C; see text for more details).
+
+As the longitudinal conductivity of the muscle is much higher than other tissues and because the contribution of reactance is anticipated to be negligible within the range of tested frequencies, the injected current flow in the longitudinal direction through the thigh was assumed to be mostly carried by the resistive component of muscle tissue.
+17
+ Therefore, only the real part of the impedance (reflecting the resistance) was used in the analysis. To reduce potential artefacts in resistance measurements (e.g. caused by insufficient skin preparation, cable movement, patient movement, and imperfect skin–electrode contact), each resistance profile according to frequency was fitted using a double exponential function using the Levenberg–Marquardt algorithm (Figure
+2B). The number of thigh voltage electrodes used for SBIA was adjusted depending on individual patella–ASIS distance. Relative resistance values were fitted using a constrained third‐order polynomial function. The derivative of the relative resistance was computed. The lean cross‐sectional area (lCSABIA) was computed as follows:
+(1)lCSABIA=1∂R∂z·σ,where 
+δRδz is the electrical resistance gradient in Ω/m between two locations of the body part separated from a distance z (m) and σ the conductivity constant (S/m). As performed in MRI, lean thigh muscle volume (lVBIA) was computed over a length corresponding to 40% of the distance between the patella–ASIS, centred on the electrode corresponding to the MRI central slice, and extracted using standard trapezoidal integration.
+
+To investigate whether muscle volume can be estimated on shorter length using a reduced number of voltage electrodes, lVBIA and corresponding lVMRI values were also computed using five or three electrodes around the central slice corresponding to 30% and 14% of the patella–ASIS distance, respectively.
+
+In vivo values of the muscle electrical conductivity constant were computed at all tested frequencies according to Equation 2 by using data from SBIA and MRI gathered in the right thigh of randomly chosen healthy participants (n = 10, 5 men and 5 women).
+(2)σ=1∂R∂z·lCSAMRI.
+
+This newly computed muscle conductivity constant was then used in both thighs for the analysis of SBIA data of all healthy participants and patients studied.
+
+Data are shown as mean ± standard deviation within text and figures. The assumptions of normality and sphericity were confirmed using the D'Agostino K‐squared and Mauchly tests, respectively. For cross‐validation of SBIA measurements against MRI and between‐day reproducibility of SBIA measurements, regression analysis and Bland–Altman plots were performed. Difference in means and paired t‐tests were used for the detection of systematic bias. The standard error of measurement (SEM) was used to study absolute reliability. Relative reliability was assessed using intra‐class correlation coefficients (ICC2,1). Linear mixed models were used to investigate the main effect and interaction of frequency and location of measurements along the thigh on absolute MRI–SBIA differences for both areas and volumes. Tukey's post hoc tests were conducted when a significant main or interaction was found. Pearson's or Spearman's rank correlation coefficient was used for studying potential relationships between normally or non‐normal distributed variables, respectively. All analyses were performed in the computing environment R Version 3.2.3.
+25
+ Statistical significance was set at P < 0.05 for all tests.
+
+Twenty healthy participants [8 women, age = 37 ± 9 years, BMI ranging from 16.8 to 31.3 kg/m2; 12 men, age 35 ± 10 years, BMI ranging from 19.8 to 26.2 kg/m2; with no significant age difference (P = 0.65)] and 20 patients diagnosed with inclusion body myositis [10 men, age = 63 ± 7 years, BMI = 26.7 ± 3.7 kg/m2; 10 women, age = 68 ± 10 years, BMI = 24.6 ± 9.4 kg/m2; with no significant age difference (P = 0.96)] were studied. Data from two patients were excluded from analysis because of aberrant SBIA measurements caused by contact between legs and/or movements during acquisitions.
+
+Areas of whole muscle, lean muscle, bone, and subcutaneous tissue associated with neurovascular bundles along the thigh extracted from MRI are displayed in Figure
+3. Patients with neuromuscular disorders had lower overall and lean muscle volume than healthy participants (i.e. VMRI was 1688 ± 491 vs. 2214 ± 698 cm3; P < 0.001). Within healthy participants, women had lower overall muscle volume (VMRI was 1498 ± 202 vs. 2691 ± 43 cm3 in women and men, respectively; P < 0.001) and higher FF (7.5 ± 1.4% vs. 4.9 ± 1.0% in women and men, respectively; P < 0.001). Patients exhibited various levels of muscle FF (26.5 ± 14.5%, range = 7.4–59.5%), and healthy participants exhibited low muscle FF (5.9 ± 1.8%, range = 3.2–10.9%). There was no difference in muscle volume or FF between men and women in the patient group (both P > 0.29).
+
+Regional thigh structure assessed using quantitative magnetic resonance imaging in healthy participants and patients with muscle disease. Areas of muscle, lean muscle, extramuscular fat and neurovascular bundles (EMF + NVB), bone, and muscle fat fraction according to relative thigh location expressed as a percentage of the distance between the upper edge of the patella and the anterior–superior iliac spine (patella–ASIS distance; with 0 corresponding to the central slice positioned at one‐third of the patella–ASIS distance) as assessed using quantitative magnetic resonance imaging in healthy participants (solid grey lines for individuals, solid black line for group average) and patients with muscle disease (dashed grey lines for individuals, dashed black line for group average).
+
+Depending on individual thigh length, nine (n = 20), eight (n = 17), or seven (n = 1) thigh voltage electrodes were used for SBIA measurements. The muscle conductivity constant as a function of frequency is displayed in Figure
+4. It ranged from 0.82 S/m at 50 kHz to 1.16 S/m at 350 kHz. Absolute percentage differences between lCSABIA and lCSAMRI (ΔlCSA) according to measurement location along the thigh are displayed in Figure
+5A. A significant main effect of measurement location on ΔlCSA was found [F(8, 36 875) = 103.34, P < 0.001]. Post hoc tests revealed that ΔlCSA was significantly greater at relative thigh locations ≤ −10% and ≥10% of patella–ASIS distance as compared with that observed at 0%. ΔlCSA according to the frequency of the injected current is shown in Figure
+5B. A significant main effect of the frequency of the injected current on ΔlCSA was found [F(60, 36 873) = 25.0, P < 0.001]. Minimal ΔlCSA was 13.7% corresponding to measurements performed at 155 kHz. Post hoc tests revealed that ΔlCSA significantly differed from the minimal ΔlCSA at frequencies ≥270 kHz. Consistency between lVMRI and lVBIA at different frequencies is shown in Table
+1. ΔlCSA was lower in the group of 10 healthy participants used to compute the conductivity constant (10.1 ± 6.9%) as compared with the healthy participants (12.7 ± 9.1%, difference in means = −2.6%; P < 0.01).
+
+Newly computed muscle conductivity constant as a function of injected current frequency. The newly computed conductivity constant was computed using serial bioelectrical impedance analysis and quantitative muscle magnetic resonance imaging in the right thigh of half (n = 10) of healthy participants studied (see Methods section for more details). Data are shown as mean ± standard deviation.
+
+Absolute difference between lean muscle cross‐sectional area estimated using serial bioelectrical impedance analysis and quantitative magnetic resonance imaging. Absolute difference between lean cross‐sectional areas estimated using serial bioelectrical impedance analysis and magnetic resonance imaging as a function of relative thigh location expressed as a percentage of the distance between the upper edge of the patella and the anterior–superior iliac spine (patella–ASIS distance; with 0 corresponding to one‐third of the patella–ASIS distance) (Panel A) and injected current frequency (Panel B). The minimum absolute area difference is highlighted in white in both panels. Data are shown as mean ± standard deviation. *Significantly different than absolute area difference compared with absolute area difference 0% relative thigh location. #Significantly different absolute area difference compared with absolute area difference obtained at 155 kHz.
+
+Regional lean muscle volume in thigh estimated using serial bioelectrical impedance analysis at multiple frequencies and using quantitative magnetic resonance imaging (n = 76)
+
+CI, confidence interval; DIM, difference in means; ICC, intra‐class correlation coefficient; LOA, limits of agreement; lVBIA, lean muscle volume as estimated using serial bioelectrical impedance analysis; lVMRI, lean muscle volume as assessed using magnetic resonance imaging; SEM, standard error of measurement.
+
+Indicates the injected current frequency at which absolute difference between serial bioelectrical impedance analysis and magnetic resonance imaging in lean muscle cross‐sectional areas was minimal (Figure
+5B).
+
+Values of lVMRI and lVBIA at 155 kHz in patients and healthy participants are presented in Table
+2. Agreement between lVBIA at 155 kHz and VMRI or lVMRI is displayed on Figure 6. The mean absolute percentage difference between lVBIA at 155 kHz and VMRI was 14.1 ± 13.5% while the mean absolute percentage difference between lVBIA at 155 kHz and lVMRI (ΔlV) was 10.4 ± 7.8% (difference in means = −3.7%; P < 0.01). There was a significant correlation between ΔlV and muscle FF (R = 0.23, P < 0.05, Figure 7B). There was no significant correlation between ΔlV and fat content in thigh expressed as a percentage of total thigh volume (R = −0.19, P = 0.1; R = 0.22, P = 0.07; Figure
+7A and 7C, respectively). A significant effect of group (i.e. patients vs. healthy participants) was found on ΔlV with significantly smaller differences in healthy participants compared with patients (−5.9%, P < 0.001). Agreement between lVMRI and lVBIA when using five‐electrode and three‐electrode measurements at 155 kHz is shown in Table
+3. There was no significant main effect of the number of electrodes on ΔlV [F(2, 144) = 2.11, P = 0.12].
+
+Regional lean muscle volume in thigh estimated using serial bioelectrical impedance analysis and using quantitative magnetic resonance imaging in healthy participants (n = 20) and in patients (n = 18)
+
+CI, confidence interval; DIM, difference in means; ICC, intra‐class correlation coefficient; lVBIA, lean muscle volume estimated using serial bioelectrical impedance measurements performed at 155 kHz; lVMRI, lean muscle volume as assessed using magnetic resonance imaging; SEM, standard error of measurement.
+
+Indicates significantly greater absolute percentage difference between lVMRI and lVBIA in patients as compared with that observed in healthy participants (P < 0.001).
+
+Agreement of regional lean muscle volume in thigh estimated using serial bioelectrical impedance analysis and quantitative magnetic resonance imaging (MRI). Regression analysis (Panels A and C) and Bland–Altman plots (Panels B and D) of thigh lean muscle volume estimated using serial bioelectrical impedance analysis (lVBIA) performed at 155 kHz against whole and lean muscle volume assessed using quantitative MRI (VMRI and lVMRI, upper and lower panels, respectively). In (A) and (C), the dashed line represents the identity line, and the solid line indicates the linear regression line. In (B) and (D), the solid line indicates the difference in means between the measurements, and the dashed lines indicate the limits of agreement. Muscle fat fraction as assessed with quantitative MRI is indicated by marker size. One may note larger difference between MRI and serial bioelectrical impedance analysis when intramuscular fat is not taken into account.
+
+Absolute difference between regional lean muscle volume in thigh estimated using serial bioelectrical impedance analysis according to muscle volume, muscle fat fraction, and thigh fat percentage as assessed using quantitative magnetic resonance imaging (MRI). Magnitude of difference between regional lean muscle volume in thigh obtained using serial bioelectrical impedance analysis according to muscle volume (Panel A), muscle fat fraction (Panel B), and fat content in thigh fat expressed as a percentage of total thigh volume (Panel C) as assessed using quantitative MRI. Lean regional muscle volumes estimated using serial bioelectrical impedance measurements performed at 155 kHz were used (see Results section for more details).
+
+Regional lean muscle volume in thigh assessed by serial bioelectrical impedance analysis using five and three voltage electrode measurements along the thigh (n = 76)
+
+n electrodes denotes the number of thigh voltage electrodes used for measurements; location (%) denotes the region of the thigh for which lean muscle volume was computed expressed as a percentage of the distance between the upper edge of the patella and the anterior–superior iliac spine with 0 corresponding to the central slice positioned at one‐third of the patella–anterior–superior iliac spine distance. CI, confidence interval; DIM, difference in means; ICC, intra‐class correlation coefficient; lVBIA, lean muscle volume as estimated using serial bioelectrical impedance measurements performed at 155 kHz; lVMRI, lean muscle volume as assessed using magnetic resonance imaging; SEM, standard error of measurement.
+
+Between‐day reproducibility of lVBIA in healthy subjects according to frequency and to the number of voltage electrode used for measurements is shown in Table
+4 and Figure
+8. When looking at frequencies 50, 100, 150, 200, 250, 300, and 350 kHz, there was a significant main effect of the frequency on between‐day differences in lVBIA [F(6, 66) = 9.61, P < 0.001]. Post hoc tests revealed a significant difference in between‐day differences in lVBIA between 350 kHz and all other frequencies and between 300 kHz and 50, 100, and 150 kHz. When looking at estimates obtained at 155 kHz, we also found a significant main effect of the number of electrodes on absolute between‐day percentage differences in lVBIA [F(2, 22) = 4.21, P < 0.05]. Post hoc tests revealed a significant difference in between‐day percentage differences in lVBIA using three vs. all electrodes (13.9%, P < 0.05) and no difference between three vs. five (6.8%, P = 0.51) and five vs. all electrodes (6.8%, P = 0.46).
+
+Between‐day reproducibility of regional lean muscle volume in thigh estimated using serial bioelectrical impedance analysis according to frequency and to the number of voltage electrode measurements (n = 12)
+
+The effect of frequency on between‐day reproducibility using measurements performed using all electrodes is presented. The effect of the number of electrodes used (n electrodes) using measurements performed at 155 kHz is displayed; n electrodes denotes the number of thigh voltage electrodes used for measurements; location (%) denotes the region of the thigh for which lean muscle volume was computed expressed as a percentage of the distance between the upper edge of the patella and the anterior–superior iliac spine with 0 to one‐third of the patella–anterior–superior iliac spine distance. CI, confidence interval; DIM, difference in means; ICC, intra‐class correlation coefficient; SEM, standard error of measurement.
+
+Indicates significantly larger difference between Day 1 and Day 2 in measurements performed at 350 kHz.
+
+Indicates significantly larger difference between Day 1 and Day 2 in measurements performed at 300 kHz.
+
+Indicates significantly larger difference between Day 1 and Day 2 as compared with that observed using all electrodes (P < 0.05).
+
+Between‐day reproducibility of regional lean muscle volume in thigh estimated using serial bioelectrical impedance analysis. Regression analysis (Panel A) and Bland–Altman plots (Panel B) of thigh lean muscle volume estimated using serial bioelectrical impedance measurements performed at 155 kHz on two different occasions. In (A), the dashed line represents the identity line, and the solid line indicates the linear regression line. In (B), the solid line indicates the difference in means between the measurements, and the dashed lines indicate the limits of agreement.
+
+Healthy participants and patients exhibited heterogeneous areas of whole muscle, lean muscle, subcutaneous fat associated with neurovascular bundles as assessed using quantitative MRI. As expected, muscle FF was low in healthy participants and moderate to high in patients. These results are in line with previously reported data in healthy participants
+26
+ and patients with myopathies.
+27
+
+As mentioned earlier, the value of the muscle conductivity constant is critical for the explanatory models used in the current work.
+8
+, 
+16
+, 
+17
+ The electrical properties of biological tissues have been extensively studied, mostly using macroscopic approaches.
+18
+, 
+28
+ The specific conductivity of tissues depends on the frequency and the orientation of the tissue relative to the applied electrical field. The latter phenomenon, known as directional anisotropy, is highly prominent in the skeletal muscle as a consequence of its ultrastructure, that is, very long tubular cells with a variable three‐dimensional arranged according to functional demands.
+29
+ As a result, muscle conductivity along the muscle fibre length is substantially greater than across them. Because the thigh is composed of multiple muscles exhibiting various types of structure (e.g. pennation angles and shape), it is anticipated that the muscle conductivity constant obtained in vitro parallel to myofibres may not provide satisfactory results.
+30
+ In previous SBIA studies, conductivity constants from the aforementioned literature were used for analysis.
+15
+, 
+16
+, 
+17
+ In the present work, we computed a specific conductivity constant for the thigh while assuming that intramuscular fat, extramuscular fat, and bone had negligible conductivity (i.e. previous studies
+13
+, 
+31
+). The newly computed conductivity constant was in the range of previously reported data for muscle conductivity assessed in vitro. For instance, the newly computed constant at 50 kHz was 0.82 S/m vs. 0.85 S/m in Zheng et al.
+19
+. This slightly smaller constant may be explained, at least in part, by the fact that conductivity was measured parallel to muscle fibres in Zheng et al.
+19
+ As expected, the conductivity constant increased according to injected current frequency as a result of the reduction of cellular membrane capacitance.
+18
+
+We found a small albeit significant effect of measurement location on the absolute difference in lean muscle cross‐sectional areas estimated using SBIA and MRI (Figure
+5A). Differences between lean muscle volume assessed using SBIA and MRI were also found to increase significantly at frequencies >270 kHz (Figure
+5B). As directional anisotropy is known to decrease according to injected current frequency,
+18
+ one may expect a lower relative error at higher frequencies when using a conductivity constant that has been obtained in vitro parallel to muscle fibres. Consistently, Stahn et al.
+17
+ reported a lower relative error at 500 kHz as compared with 50 kHz. However, conductivity constants used for 50 and 500 kHz measurements seemed to originate from two distinct studies,
+19
+, 
+30
+ hindering the interpretation of these findings. In the present study, the influence of directional anisotropy was partially ruled out as the computation of the conductivity constant was experimentally derived from anatomical muscle cross‐sectional areas. In other words, conductivity was measured assuming a dominant direction of myofibres relative to the current flow within thigh muscles for each investigated frequency. However, we observed a large difference in the conductivity constant at high frequencies that may explain, at least in part, larger absolute volume differences at higher frequencies. The error in the measurement of the real part of the impedance value at higher frequencies related to the bioimpedance device used may also contribute to explain these findings.
+32
+ Based on our findings, no advantage of multifrequency SBIA acquisition has emerged when using this type of BIA explanatory models. Using a single frequency (for instance, around 150 kHz) may substantially reduce the duration of acquisitions and thus limit confounding factors such as movements of the subject. At last, the fact that the conductivity constant was computed and averaged over all thigh locations that display different muscle organization may also contribute to explain the effect of measurement location on ΔlCSA.
+
+Our data showed strong agreement between lVBIA and VMRI as indicated by SEM < 10% and ICC > 0.9 in both healthy participants with variable BMI and patients with muscle atrophy and fatty infiltration. We also found that lVBIA tended to be larger than lVMRI. There are several potential explanations for these findings. Both extramuscular fat and intramuscular fat were assumed to have a negligible effect on resistance measurements because of the very low conductivity of fat (~0.06 S/m at 50 kHz vs. ~0.85 S/m in muscle according to the study of Brown et al.
+13
+). However, the conductivity of neurovascular bundles has been reported to be comparable with that of muscle (0.63 S/m at 50 kHz), and it may thus substantially influence resistance measurements. As neurovascular bundles may be difficult to delineate on MRI images, this was not performed systematically in the present work (i.e. subcutaneous fat, intermuscular fat, and neurovascular bundles were not segmented independently). We segmented neurovascular bundles on the central slices of four subjects (including two healthy participants and two patients). The area of neurovascular bundles was, on average, 3 cm2 as compared with a mean lean muscle area of 72 cm2 that is approximately 3%. This emphasizes that neurovascular bundles may substantially contribute to the overestimation of lVBIA, as previously reported.
+13
+, 
+14
+ Another potential explanation is related to the fact that the newly computed conductivity constant originated from a subsample of healthy participants, as illustrated by the slight, yet significant, difference with the healthy subjects whom data have not been used to compute the conductivity constant. More interestingly, ΔlV was found to be larger in patients compared with healthy participants. A potential explanation is that patients exhibit a very different thigh composition and thigh muscle structure (e.g. different global pennation angles and overall limb fat content) as opposed to their healthy counterparts, resulting in conductivity constants that may be imperfectly suited to lVBIA measurements in patients. However, the absence of strong relationships between ΔlV and VMRI and thigh fat expressed as a percentage of total thigh volume do not support this hypothesis (Figure
+7A and 7C). Conversely, and although this relationship was weak, patients with the highest muscle fatty infiltration had higher ΔlV. One potential explanation is that delineating muscle compartment on MRI images may become particularly arduous in patients with very severe fatty degeneration that might have led to imprecision in the estimation of lVMRI. Patients with most severe muscle degeneration may also be more likely to present oedema that may bias SBIA measurements.
+33
+ Noteworthy, oedema would also bias measurements of lVMRI.
+
+Our results showed that reliable estimates of regional lean thigh SMV may be obtained using five electrodes (i.e. corresponding to 20 cm length). Interestingly, there was no overestimation of lean thigh SMV values when using five or three electrodes (Table
+3). This relates, at least in part, to the larger difference in ΔlCSA observed on most distal and most proximal SBIA measurements (Figure
+5A). There are several potential explanations for this phenomenon. Distally, the muscle compartment is not predominant so that assumptions of the model may be violated. Proximally, the measurement of resistance may be parasitized by the lower trunk. When using three electrodes only, the precision of estimates was slightly reduced, likely due to imperfect fitting of the relative resistance profiles.
+
+Both absolute and relative between‐day reproducibility of lVBIA were good as supported by SEM < 6% and ICC > 0.9 between 50 and 200 kHz. This is in line with previous reports regarding the between‐day reproducibility of methods such as quantitative MRI for assessing lean regional SMV, although quantitative MRI may provide very reproducible estimates in healthy subjects.
+34
+ Very interestingly, our results showed that between‐day reproducibility was increasingly impaired above 200 kHz. These findings may contribute to explain the largest difference observed between SBIA and MRI at high frequencies mentioned earlier. Previously identified factors such as electrode impedance mismatch and the effect of stray capacitance may contribute to explain these impairments in agreement between SBIA and MRI as well as impairments in reproducibility at high frequencies. Correction techniques have been proposed to reduce these artefacts
+35
+, 
+36
+ and could be implemented to further investigate the potential of multifrequency SBIA. Although non‐significant, between‐day variability of lVBIA measurements with five electrodes appeared to be higher as compared with assessments using all electrodes (SEM < 13% and ICC > 0.8) and even more increased when employing three electrodes (SEM < 24% and ICC > 0.5). These findings support that lean thigh muscle volume as assessed with SBIA is reproducible between sessions and acceptable when using five instead of all electrodes. Using five electrodes can facilitate the implementation of SBIA for the assessment of lean regional SMV in longitudinal studies.
+
+This work has several limitations. First, the sample size of both healthy participants and patients was limited. A larger sample size, in particular when considering the wide BMI range in healthy participants, may help to further refine the accuracy and generalization of the conductivity constant. Second, between‐day reproducibility in patients, as well as sensitivity to changes, remains to be investigated. Third, as it is the case with traditional BIA methods, fluid changes may substantially affect estimates,
+33
+ potentially limiting the use of the method in contexts associated with large fluctuations in fluid balance.
+37
+ Postural effects on fluid distribution may be easily circumvented by allowing 10 min resting periods before measurements.
+8
+ Fourth, SBIA measurements do not allow assessment of individual muscle volume and pathophysiological changes occurring within muscles such as fatty degeneration. However, it appears to be very promising when regional lean SMV assessments are pursued. Other local BIA approaches that might allow the estimation of pathophysiological changes are currently emerging.
+12
+ Combining SBIA with these approaches might be promising to obtain both quantitative and qualitative insights regarding muscle status. Future research will include the acquisition of more data in a broader scope of diseases involving both primary and secondary muscle impairments. Another limitation is that not all available MRI slices were segmented. Conversely, segmenting a reduced number of slices has been shown to provide precise estimates of regional SMV.
+23
+ Increasing the density of electrodes (i.e. number of electrodes on a given length) might also help to improve estimations by facilitating the fitting of the relative resistance profiles. Similar works shall be conducted in legs and upper limbs.
+17
+ The ability of SBIA to monitor change in regional SMV over time and/or in response to interventions will be investigated in future studies.
+
+This study demonstrates a strong agreement between lean regional SMV estimated using SBIA and quantitative MRI both in healthy subjects and in patients with muscle wasting and fatty degeneration. SBIA shows promises for non‐invasive, fast, and accessible estimation and follow‐up of lean regional muscle volume in transversal and longitudinal studies.
+
+The authors have no conflict of interest to disclose.

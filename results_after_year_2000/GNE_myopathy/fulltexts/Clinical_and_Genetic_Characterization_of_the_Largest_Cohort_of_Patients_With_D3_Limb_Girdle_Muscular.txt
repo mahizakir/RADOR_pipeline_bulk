@@ -1,0 +1,133 @@
+Limb girdle muscular dystrophies (LGMD) are genetically inherited and heterogeneous disorders that primarily affect skeletal muscles, leading to progressive, predominantly proximal muscle weakness. The new classification of subtypes is based on the mode of inheritance (D, dominant; R, recessive), the affected protein, and then its order of discovery [1].
+
+Ancillary testing is helpful and includes creatine kinase (CK) level determination, muscle magnetic resonance imaging (MRI), and electromyography. Muscle biopsy can aid in the diagnosis of LGMD but remains more informative for LGMD R subtypes. However, due to large phenotypic heterogeneity and overlap across the LGMD subtypes, a genetic‐first diagnostic approach is now the gold standard for LGMD diagnosis [2].
+
+The prevalence of LGMD across all subtypes ranges from 2.27 to 10 per 100,000 with variable subtype frequency depending on geographical region [3].
+
+Compared to autosomal dominant (AD) variations, the autosomal recessive subtypes are far more common. Dysferlinopathies (LGMDR1) and calpainopathies (LGMDR2) were found among the most frequently affected genes in the adult population in Latin America [4].
+
+The autosomal dominant forms are relatively rare, representing 10% of all LGMD [3]. LGMD D3 is an infrequent genetic disease caused by point mutations in exon 6 locus 4q21 of the HNRNPDL gene, which encodes a protein with the same name (human heterogeneous ribonucleoprotein D‐like). This protein acts as a transcriptional regulator and participates in the metabolism and biogenesis of messenger RNA [5].
+
+Few cases have been reported so far around the world. Only five countries with six unrelated families have been described to date: one in Spain, two in Argentina, one in China, one family in Brazil, and one patient in Italy [6, 7, 8, 9, 10].
+
+LGMDD3 was first described in 2004 in a Brazilian‐Caucasian family with 12 affected individuals by AD late‐onset LGMD associated with progressive finger and toe flexion limitation. Subsequently, we identified the first genealogy from Uruguay with 18 affected members with AD LGMD mapped in the same region of the gene, which was published in 2014 alongside the Brazilian family. Whole genome sequencing allowed us to identify the mutation in both families in the HNRNPDL gene [7, 11].
+
+Two different heterozygous missense mutations have been described involving a prion‐like domain of this protein, both at the same position of the HNRNPDL gene, codon 378, and affecting the same amino acid: Asp378Asn in the Brazilian, Chinese, and Italian families; and Asp378His in the Uruguayan, Argentinian, and Spanish families. Hence, this region of the gene may represent a possible hotspot for de novo mutations [5].
+
+Uruguay is a small country with uniform ethnic, cultural, and social features. Most of the patients with LGMD D3 found in Uruguay are from Nueva Palmira, a small city located in Southwest Uruguay, with a population of 9857 inhabitants [12] (Figure 1).
+
+Map of Uruguay pointing the city of Nueva Palmira.
+
+When the Spanish and Portuguese arrived in the 16th century, the territory was inhabited by several Indigenous groups. Later on, European immigration further transformed the region and significantly increased the proportion of foreign‐born residents. At present, the genetic ancestry of the Uruguayan population has been estimated to be 9.1% African, 14.7% Native American, 76.2% European [13].
+
+Data on the natural history of LGMD D3 is scarce and studies describing larger clinical cohorts followed over long periods of time are lacking. The objective of the present study is to provide a detailed characterization of a large Uruguayan cohort of an admixed population with LGMD D3.
+
+We present an observational retro‐prospective descriptive study which was conducted in Nueva Palmira, visiting the region from March 2019 to August 2024. Prior to each visit, we provided information to the population about the disease and invited inhabitants of the region to participate in the study.
+
+The patients included in the study had to fulfill at least one of the following criteria: (1) clinical features of LGMD; (2) increased plasma CK levels; (3) to be symptomatic or asymptomatic first or second degree relatives of known affected patients with LGMD D3.
+
+Demographic and clinical data were collected using a protocol with special emphasis in clinical and family history, neurological examination, and ancillary test results. In all cases, patients underwent a neurological examination by a member of the research team on at least two occasions over time. A predefined format was used to collect the following clinical information: sex, age of onset, presenting symptoms and progression, extra‐muscular manifestations, severity and distribution of muscle weakness, use of walking aids, and family history. Blood samples were collected in all patients for genetic testing. The asymptomatic group of patients underwent genetic screening for the mutation and clinical examination. A written informed consent was obtained before their inclusion in the database.
+
+We evaluated strength by using the Medical Research Council scale (MRC). We calculated an MRC total score ranging from 120 (normal strength) to 0 (quadriplegic) by calculating the sum of individual MRC grading scale (0–5) in six muscle groups of upper limbs (shoulder abduction/adduction, arm flexion/extension, finger flexion/extension) and lower limbs (hip flexion/extension, knee flexion/extension, foot plantar flexion/dorsiflexion) of each side. We included both sides in the score to take into consideration the possibility of asymmetry. For the analysis, we dichotomized the variable into two groups of severity, taking into account the median MRC total score.
+
+We calculated a score that estimates the rate of progression using the loss of points in MRC total score and the disease duration in years. This score was dichotomized taking into consideration the median value.
+
+The rate of progression was calculated as the ratio of:
+
+120 (maximum score on the MRC scale) − MRC scale at the time of first examination.
+
+Time period from symptomatic onset to the time of first examination in years.
+
+Serum CK activity and electromyography, MRI, and pulmonary function testing results were reviewed when available.
+
+Statistical analysis was done using STATA 16.1. A descriptive statistical analysis of the variables was performed. To describe results, we used summary measures according to the type of variables: means with their standard deviation, median, and interquartile range. Means in variables with normal distribution were compared using the student T test. Median values in groups were compared using nonparametric tests (Mann Whitney). A significance level of 0.05 was used.
+
+DNA was extracted from whole blood at the Genetic Diversity Pole, University of the Republic. The first 16 patients were studied using whole exome sequencing with the NovaSeq 6000 platform (Illumina) at Macrogen Korea Inc., employing SureSelect V6 + UTR with the human 38 hg genome as the reference. The sequencing coverage was 100× depth.
+
+Additionally, a screening test for the mutation was developed and performed in the remaining patients. For that, two primers (forward and reverse) were designed to amplify by PCR the region 4:82426233–82426713 (GRCh38), including the C → G mutation at position 4:82426523 (rs587777669) and an insertion (A) at position 8:82426357, both found in patients. The presence of those mutations, at heterozygous or homozygous state, as well as the absence of those, was then determined.
+
+This study was approved by the Ethics Committee at the Hospital de Clínicas “Dr. Manuel Quintela,” Faculty of Medicine, University of the Republic, Uruguay.
+
+We examined a total of 59 individuals in the region of Nueva Palmira, Uruguay, 49 symptomatic patients and 10 asymptomatic individuals carrying the pathogenic variant in the HNRNPDL gene.
+
+Only 5 out of 49 patients did not recall family history of a muscle condition. Figure 2 illustrates the genealogy of one of the affected families in the study. There was no reported consanguinity, except for one case involving two homozygous siblings, one of whom was evaluated in this study.
+
+Pedigree of an affected family of one of the patients included in the study illustrating the autosomal dominant pattern of inheritance.
+
+All evaluated patients were Caucasians. Affected individuals were evenly distributed across sex categories, with 25 males and 24 females. The mean age of participants was 57 years (range: 37–87), and the average disease duration at the time of the evaluation was 12 years. Age of onset ranged from 23 to 75 years old, with a mean of 44. Regarding the 10 asymptomatic patients who voluntarily underwent genetic testing, we evaluated two males and eight females aged 18–50 years. It is noteworthy that all were within the expected age range for symptom onset.
+
+We draw attention to the fact that we found a significant difference in the mean age of onset between sex categories, with men having a younger age at presentation of the disease (mean of 40.2 in men, 47.9 in women, p = 0.006). We did not find differences between sex categories in terms of weakness severity nor in the need for assistance. We point out that the median time course of the disease and the rate of progression were similar in both sexes. (Figure 3).
+
+(A) Boxplot illustrating the age of disease onset in relation to sex. Disease onset was significantly earlier in men compared to women (mean age of onset 40.2 in men vs. 47.9 in women, p = 0.006) (B) Boxplot showing the rate of progression in both sex categories. Weakness progression (measured by annual decline in MRC score) was similar in both sexes (2.39 for men 2.27 for women p = 0.8).
+
+The majority of patients' first symptoms were proximal muscle weakness (91.8%). Only 4 out of 49 patients described distal lower limb weakness as the initial symptom of the disease. We did not find a significant difference in the site of onset between lower and upper extremities with 21 patients reporting first noticing weakness in upper extremities, 24 in lower extremities, three upper and lower at the same time, and one patient reporting initial weakness of abdominal muscles.
+
+53.1% of patients had weakness of cervical muscles in varying degrees of severity. 71.4% had involvement of trunk muscles, with Beevor's sign seen in 32.7% of the patients examined. Scapular winging was observed in 85.7% of affected individuals, 81.6% of patients having symmetric involvement of scapular fixating muscles. Tibialis anterior muscle was affected in 63.3% of patients.
+
+Regarding gait, 32.7% of individuals required assistance, the majority with the use of a cane. Among the 48 individuals who were able to walk, 45.8% exhibited a myopathic gait pattern, and 33.3% (16/48) showed steppage gait. Among patients requiring gait aids, the mean time from symptom onset to the need for assistance was 17.36 year. We point out that the minimum interval was 6 years, corresponding to the homozygous patient.
+
+Respiratory muscles were spared in most patients, and the few affected (2/49) had mild symptoms. We did not find cardiovascular involvement.
+
+In terms of extra neuromuscular involvement, it is remarkable that 11 out of 49 patients had type 2 diabetes; an equal number presented with early‐onset cataracts.
+
+The main clinical findings are described in Table 1 and illustrated in Figure 4.
+
+Main clinical findings of patients included in the study.
+
+Clinical features. (A) Marked proximal arm atrophy with partially spared finger flexion in advanced stage. (B) Beevor's sign (C, D) Scapular winging.
+
+Despite the fact that the date and type of symptom onset may be subject to recall bias, we believe the rate of progression provides a close estimate of the natural history of the disease. No clinical factors were found to be associated with the rate of progression (Figure 3).
+
+Concerning ancillary tests, we found a median CK value of 423 and IQR 322–566 (minimum 225 and a maximum of 2100).
+
+Electromyography showed a myopathic pattern in proximal muscles of upper and lower extremities. We did not request muscle biopsy to avoid patients undergoing an invasive study, as we already had genetic confirmation of the disease. Biopsy had already been performed in one patient and showed myopathic changes and rimmed vacuoles that led to the misdiagnosis of Inclusion Body Myositis (IBM).
+
+In relation to muscle MRI, we highlight the fact that symptomatic individuals shared characteristic features shown in Figure 5. Atrophy and fat replacement are the main findings in all patients but edema can also be seen, particularly in the early stages of the disease. We identified a particular involvement of the anterior and posterior compartments in the thigh muscles, with the internal vastus, vastus lateralis, and biceps femoris being the most affected. Adductor longus is relatively spared in comparison to adductor magnus, which is markedly affected. Also, in some patients, there was involvement of the gluteus maximus. The rectus femoris muscle is distinctively spared, even in the late stages of the disease in the majority of reported cases worldwide.
+
+MRI of patients in the study illustrating distinctive features observed in LGMD D3. (A, C, E) T1 sequence showing atrophy and fat replacement. (B, D, F) STIR sequence revealing edema in affected muscles. (A, B) Involvement of gluteus maximus (Asterisk). (C, D) Adductor magnus markedly involved (black continuous line); vastus, gracilis, biceps femoris, semimembranosus and semitendinosus partially involved (white continuous line); rectus femoris and adductor longus partially spared (white dashed line). (E, F) Tibialis anterior prominently involved (black continuous line); partial involvement of other muscles of anterior compartment (white continuous line) with soleus and gastrocnemius (white dashed line) spared.
+
+In relation to genetic testing, we confirmed the pathogenic variant c.1132G>C p.(Asp378His) in 59 participants, 49 symptomatic and 10 asymptomatic individuals.
+
+We highlight that we found one patient with a homozygous mutation, who presented with a younger disease onset and a more severe phenotype, requiring assisted ambulation at age 44 and wheelchair use at age 54. It is remarkable that we have seen the natural history of the first case of a homozygous mutation reported to date. A sibling of this patient who also carried a homozygous mutation (not included in this cohort) died at the age of 38 year old.
+
+We assessed genetic ancestry based on DNA sequence data from four patients who are unrelated. The results showed 0%–7% African, 9%–28% Native American, and 65%–85% European ancestry. An African origin of the variant can be ruled out, but a Native American origin cannot. All individuals have Spanish ancestry (15%–20%) among other European ancestries.
+
+LGMD D3 is a rare genetic myopathy of autosomal dominant inheritance. To date, scarce information exists concerning LGMD D3 and its natural history [6, 7, 8, 9, 10]. We emphasize that we evaluated patients in the study over time, following the natural history and witnessing the progression of the disease.
+
+In spite of being a rare disease around the world, a recent study in Uruguay by some members of our group (not yet published) suggests LGMD D3 could be the most frequent limb girdle dystrophy in the Uruguayan population. A genetic panel (tested genes: LGMD1C, LGMD2D, SGCB, SGCG, SGCD, CAPN3, DYSF, TCAP, FKRP, ANO5, HNRNPDL, GAA) was applied to a sample of 100 patients with suspected LGMD or elevated CK. The study found 33 pathogenic mutations, of which 10 corresponded to LGMD D3.
+
+We calculated the estimated global prevalence of LGMD D3 for the region of Nueva Palmira to be 3.75 (95% CI 2.64–5.17) [12].
+
+The current high prevalence of LGMD D3, considered a rare disease, detected in a small geographical area of Uruguay meets the criteria of an inherited disease cluster. To our knowledge, this is the largest cohort study on LGMD D3 and the first autosomal dominant LGMD cluster worldwide.
+
+The phenotype of affected individuals with LGMD D3 in Uruguay shares some characteristics with the disease description in other parts of the world, with some distinctive features (Table 2). The hallmark of the disease is characterized by slowly progressive limb girdle weakness of adult onset, most patients present initial symptoms of the disease in the third or fourth decade of life.
+
+Comparative table highlighting similarities and differences between LGMD D3 description in six countries. AL, Adductor longus; AM, Adductor magnus; AO, Age of onset; BF, Biceps femoris; RF, Rectus femoris; TA, Tibialis anterior; ULN, Upper limit normal.
+
+It is notable that men start to manifest the illness at a younger age, showing what could be described as a sex dependent anticipation, a striking fact not reported to date in any dystrophy with autosomal pattern of inheritance. Differences in penetrance and variable expression dependent on sex have been described in a variety of genetic conditions. This is hypothesized to be due to different mechanisms, such as allelic variation, genomic imprinting from epigenetic modifications, gene regulation in steroid responsive genes, among others [14].
+
+Regarding phenotypic features, most patients in our investigation described first noticing weakness in proximal muscles of lower or upper limbs. We identified abdominal weakness as a characteristic feature, even in those with minimal symptoms and early disease course. Beevor's sign was observed in some patients, which has not been reported to date in this dystrophy. Beevor's sign has been traditionally linked to facioscapulohumeral muscular dystrophy (FSHD). However, it has been recently reported in other myopathies such as IBM [15, 16, 17, 18, 19].
+
+Contrary to previous descriptions of LGMD D3, finger flexor paresis is not a typical nor early sign of the disease in the Uruguayan form. The fact that finger flexor paresis is also an uncommon finding in Argentinian patients further supports the hypothesis of a shared ancestry among affected individuals in these countries.
+
+Our findings indicate that the involvement of the tibialis anterior muscle is a distinctive and early feature of the disease. Finger flexor prominent involvement is not a common pattern in myopathies and is a distinctive feature in IBM. Nonetheless, it can be seen in other myopathies such as Valosin‐containing protein (VCP) and VCP‐related myopathies, which share some of the clinical findings of LGMD D3 and can show rimmed vacuoles in muscle biopsy, as is seen in LGMD D3 [20].
+
+MRI patterns are known to be helpful in the diagnostic approach of LGMD, and LGMD D3 is not the exception [21, 22]. The pattern of lower limb involvement was consistent with those reported in previous works. Typical findings at the thigh include selective involvement of Vastus and Adductor magnus with distinctive sparing of Rectus femoris and Adductor longus [6, 8, 9, 10]. In distal muscles of lower limbs, tibialis anterior was predominantly affected, similar to what was reported in Spanish families. These findings show some similarities with the imaging patterns identified in a large cohort study for IBM caused by VCP mutations [22].
+
+It would be valuable to assess CK levels and perform muscle MRI in asymptomatic individuals in future studies in order to identify early subclinical muscle involvement, providing a basis for longitudinal follow‐up.
+
+Two causative mutations have been reported in LGMD D3, and phenotypic variations have been described. These point mutations result in an amino acid change in the resulting protein. As the structural change in the protein remains the same [5], we could postulate that the substitution of a negatively charged residue (Asp) by a residue with a positive charge (His) has a different effect on the function of the HNRNPDL protein. There are still a few questions that remain unanswered. Given the proposed hotspot in codon 378 of the gene as a susceptibility for mutations, why is it that there are so few confirmed cases worldwide?
+
+Genetic drifts can contribute to the clustering of rare diseases, which in our country could be explained by two key events: population size reductions of Amerindian groups and migratory waves from Europe. Evasion of negative selection can be seen in autosomal dominant disorders when symptom onset begins after the reproductive age, as in the case of late onset myopathies [23]. In the case of LGMD D3, we hypothesize the later onset of symptoms found in women compared to men contributes to the evasion of negative selection.
+
+A founder effect has already been proposed in recessive forms of LGMD as in the case of LGMD R12 related to the anoctamin 5 gene [24] and Calpain‐related LGMD R1 [25], which in this case can be favored by limited genetic interchange in endogamic groups.
+
+Given the fact that the mutation is the same as the one found in Spain and the high Spanish immigration, we could speculate that the founder mutation could be traced back to Spain. Although this has not yet been confirmed, a reconstruction of genealogies of the seven affected families has been traced back to at least eight generations, which dates to the 1800s, a period of time in which the region of Nueva Palmira began to be populated and a high rate of migration from Europe was seen. However, it is currently not possible to determine whether the origin is Spanish or Native American, as all individuals analyzed so far carry both ancestries.
+
+Multisystem proteinopathies (MSP) are a group of heterogeneous disorders caused by mutations in RNA binding proteins (RBP) that lead to pathological protein aggregation and a variable combination of clinical presentations including IBM. VCP myopathy patterns can be similar to the one seen in HNRNPDL mutation [26]. Given the similarities between the phenotypes associated with alterations in RBPs, we hypothesize that LMGD D3 shares a pathophysiological mechanism with MSP. Histopathological findings with rimmed vacuoles raise the need to keep in mind the possible erroneous diagnosis of acquired IBM, as occurred in one of our patients. The presence of abnormal autophagic vacuoles and protein aggregates is a common denominator of many genetic and sporadic muscle diseases. Vacuole accumulation is not necessarily the primary cause but is probably the consequence of mutations in genes involved in protein homeostasis and/or RNA processing such as myopathy linked to HNRNPDL. The frequency of early onset cataracts and type 2 diabetes found in our patients is higher than expected in the general population, making us wonder if this could be a manifestation of a multisystem proteinopathy in HNRNPDL related LGMDD3 [27, 28]. Considering all the aforementioned points, it is worth questioning whether LGMD D3 should continue to be classified within the LGMD spectrum, given its distinctive features.
+
+In conclusion, we propose that LGMD D3 in Uruguay presents as a slowly progressive adult onset scapulo‐pelvic‐peroneal dystrophy with intrafamilial heterogeneity and a relatively homogeneous disease course, stressing the fact that men present at a younger age. Our study provides the first epidemiologic and phenotypic characterization of LGMD D3 in Uruguay and the first description of a cluster of an autosomal dominant LGMD.
+
+Detecting and characterizing geographic clusters of genetic disorders within an isolated group could be of great help in understanding the disease's natural history and genealogy, and provides the opportunity for personalized genetic health care. Additionally, it can enhance molecular and genetic understanding of rare diseases, which could eventually lead to the development of potential treatment strategies.
+
+The authors declare no conflicts of interest.

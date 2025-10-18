@@ -1,0 +1,287 @@
+It is well established
+that truncated mucin-type O-glycans located
+on the cell surface, such as Tn antigen, sialyl-Tn antigen, T antigen,
+and sialyl-T antigen (Figure 1), are a hallmark feature of many human cancers.1,2 In humans, addition of a sialic acid to Galβ1-3GalNAcα-O-Ser/Thr
+by ST3Gal sialyltransferases produces sialyl-T antigen and inhibits
+any further elongation of the glycan except for possible addition
+of another α(2,6)-linked sialic acid to the GalNAc by α-N-acetylgalactosaminide sialyltransferase (ST6GalNAc) to
+form disialyl-T (Figure 1).3 Sialyl-T is expressed at low levels
+in some normal cells such as epithelium and leukocytes,4,5 but is more highly expressed on the cell surface of many human cancers
+such as breast, cervix, and bladder cancer, and other diseases such
+as GNE myopathy.6,7 Recent studies indicate sialyl-T
+might be produced during tumorigenesis, and its prevalence might be
+reduced when tumors become metastatic.8 It was also reported that sialyl-T could enhance tumor growth9,10 and modulate the tumor immunological microenvironment through engagement
+of the lectin Siglec-9.11 These discoveries
+distinguish sialyl-T as an important disease-associated glycan epitope.
+
+Biosynthesis
+and structures of truncated mucin-type O-glycans.
+
+Although there is growing evidence that sialyl-T is a good
+biomarker
+for cancer and many other diseases,6,7 and its utility
+for immunotherapy and clinical diagnosis has also been suggested,11,12 details about its role in a variety of physiological and pathological
+processes are still largely unknown due to the lack of an effective
+analytical technique. Unlike other truncated O-glycans, there are
+no specific monoclonal antibodies or lectins for the direct detection
+of sialyl-T. An indirect method that combines neuraminidase treatment
+and the use of a T-antigen-binding lectin is the primary method for
+sialyl-T analysis.13,14 Additionally, gene expression
+level or enzymatic assay of ST3Gal1,15 and
+mass spectrometry based methods16 are also
+used to evaluate the expression of sialyl-T. Nevertheless, all these
+methods are time-consuming with relatively low accuracy.
+
+Here,
+we report a simple one-step chemoenzymatic labeling strategy
+to probe cell surface sialyl-T (Scheme 1). Inspired by the biosynthetic pathway of sialyl-T,
+this approach capitalizes on the relaxed donor specificity and strict
+acceptor specificity of human sialyltransferase ST6GalNAc-IV, which
+selectively and rapidly labels the sialyl-T with sialic acid derivative
+functionalized with triazole-linked biotin in vitro for further visualization, quantification, and enrichment analysis
+of sialyl-T (Scheme 1). This approach expands the technologies available for understanding
+the role of sialyl-T in a variety of biological and pathological processes.
+
+(A) Two-step labeling strategy.
+(B) One-step labeling strategy.
+
+In recent
+years, the development of bioorthogonal chemistry has provided powerful
+tools for the analysis of glycans, proteins, lipids, nucleic acids,
+and other metabolites in living systems.17−23 Typically, bioorthogonal functional groups are metabolically incorporated
+into target molecules, allowing covalent conjugation by corresponding
+biorthogonal chemical reactions with either fluorescent or affinity
+tags for subsequent visualization or enrichment. As a complementary
+strategy to remodel glycans with unnatural functionalities, an chemoenzymatic
+labeling strategy has offered exciting possibilities to interrogate
+structure-defined glycan epitopes.24−30 This strategy takes advantage of glycosyltransferases to tag target
+epitopes with biorthogonal reactive groups. However, we and others31 have found that many glycosyltransferases that
+are active in assembling oligosaccharides in the test tube or even
+recognize standard glycoproteins failed to label glycan epitopes on
+the cell surfaces. This requires careful investigations on a variety
+of glycosyltransferases for their capability to work on complex samples
+to develop a practical chemoenzymatic labeling tool.
+
+In the
+sialyl-T biosynthetic pathway, the ST6GalNAc family is the only enzyme
+that can directly modify sialyl-T.32 Among
+the reported six ST6GalNAc isoenzymes, ST6GalNAc-IV exhibits a strict
+acceptor specificity toward sialyl-T, while other ST6GalNAc isoenzymes
+show broader specificity with other structures such as Tn antigen,
+T-antigen, and glycolipids.33−35 Inspired by this biosynthetic
+process, we choose ST6GalNAc-IV as a candidate for further studies.
+Recombinant human ST6GalNAc-IV was expressed in baculovirus insect
+cells (Figure S1), and enzymatic activity
+was tested using Neu5Acα2-3Galβ1-3GalNAcα-O-Bn and
+CMP-Neu5Ac. A metal ion effect study indicated that the activity of
+ST6GalNAc-IV does not rely on metal ions such as Mg2+ or
+Mn2+ (Figure S2), which is different
+from the previous assays,34,35 in which high concentration
+of Mn2+ was added. This is crucial for the chemoenzymatic
+labeling reaction as a high concentration of Mn2+ is toxic
+toward living cells and will lead to a high background labeling signal
+(data not shown).
+
+A donor and acceptor specificity study is
+an important step to
+develop a practical chemoenzymatic labeling tool. Relaxed donor specificity
+is the prerequisite for glycosyltransferases to carry biorthogonal
+functional groups, while acceptor specificity determines what kinds
+of epitopes can be labeled. It has been reported that many sialyltransferases
+tolerate modifications, even large moieties like biotin at C-5 or
+C-9 position.36,37 To find a good bio-orthogonal
+functional group carrier for ST6GalNAc-IV, we designed and synthesized
+10 CMP-Neu5Ac analogues (2–11 in Figure 2). Preparative scale
+synthesis of 1–9 was from ManNAc
+or Neu5Ac analogues using sialic acid aldolase from Escherichia
+coli K12 and CMP-sialic acid synthetase from Neisseria
+meningitis (Schemes S1 and S2).38 The products were purified using the method
+reported previously.39,4010 and 11 was synthesized from 2 and 3 by CuAAC
+ligation, respectively (Scheme S3). The
+products were confirmed by NMR and MS analysis (see Supporting Information). These analogues contain azide, alkyne,
+alkene, ketone, and triazole biotin at the C-5 or C-9 position, and
+can be effectively probed by well-established methods such as copper-catalyzed
+azide–alkyne cycloaddition (CuAAC),41 strain promoted alkyne–azide cycloaddition (SPACC),41 Staudinger–Bertozzi ligation,17 Pd-catalyzed bioorthogonal elimination reaction,42 Diels–Alder reaction,43 dual labeling strategy,44 or
+one-step selective exoenzymatic labeling (SEEL) strategy.45 It is worth mentioning that one-step SEEL is
+a newly developed strategy by the Boons group for probing glycoproteins,
+which has a much better sensitivity than traditional methods such
+as the use of NHS-activated biotin and DBCO-biotin.45 Donor specificity study of ST6GalNAc-IV with Neu5Acα2-3Galβ1-3GalNAcα-O-Bn
+showed that all these CMP-Neu5Ac derivatives could be well accepted
+by ST6GalNAc-IV (Figure 2). Interestingly, a slightly higher activity was even observed toward
+substrate with a large modified group at the C-5 position (10).
+
+Structures of the CMP-Neu5Ac analogues and donor specificity of
+ST6GalNAc-IV. aRA: Relative activity. The activity with
+natural substrate CMP-Neu5Ac (1) was set as 100. See Supporting Information for experimental details.
+
+To study the acceptor specificity
+of ST6GalNAc-IV, a sugar library
+including 12 representative structures listed in Table 1 was prepared as described in Supporting Information. Acceptor specificity
+study using CMP-Neu5Ac analogues 10 showed that ST6GalNAc-IV
+is highly specific toward sialyl-T. Although relative high activities
+toward Neu5Gcα2-3Galβ1-3GalNAcα-O-Bn and Kdnα2-3Galβ1-3GalNAcα-O-Bn
+were also observed, Kdn and Neu5Gc are rarely present in humans.46 These studies indicate the potential of ST6GalNAc-IV
+for use in the versatile labeling of cell surface sialyl-T antigen.
+
+The activity
+with entry a was set
+as 100. The reaction was carried at 37 °C for 30 min. The activity
+was quantified by HPLC analysis.
+
+To
+test whether ST6GalNAc-IV can be used for cell surface labeling, we
+chose azido, alkynyl, and biotinylated probes (3, 4, and 10) for further experiments as they have
+a higher relative activity and can be easily detected by commercially
+available reagents. Azido and alkynyl probes (3 and 4 in this work) are the most popular two probes that are widely
+used in typical two-step bio-orthogonal reporter strategy.21 Since compound 10 contains a biotin
+group, it can be used to directly biotinylate the target epitopes
+by a simpler one-step reaction.45 Breast
+cancer MCF7 (∼5 × 107) was incubated in suspension
+with 200 μM of probe 3, 4, or 10 in the presence of 80 μg of ST6GalNAc-IV at 37 °C
+for 1 h, while the same labeling reactions without enzyme were performed
+in parallel as controls. After the labeling reaction, CuAAC (1 h,
+RT) was performed to introduce biotin group: 3 was biotinylated
+with 12, and 4 was biotinylated with 13 (Figure 3A). It is worth mentioning that 13 is a newly developed
+picolyl azide reporter probe for the sensitive detection of the alkyne
+group.47,48 The labeling efficiency of the various labeling
+probes (3, 4, and 10) was determined
+by SDS–PAGE of cell lysates followed by Western blotting using
+streptavidin conjugated with HRP. As shown in Figure 3B, the successful cell labeling requires
+both enzyme ST6GalNAc-IV and labeling probes. We found that the popular
+two-step clickable approach as the use of reporter pairs of 3 & 12 and 4 & 13 does not work well for detecting sialyl-T (Figure 3B). This is probably due to the relatively
+lower abundance of sialyl-T on cell surface compared to other structures
+such as total sialylated glycans and Neu5Acα-(2,3)-Gal glycans.29,45 The conventional azido probe 3 requires a longer exposure
+time to get a better signal but also with a higher background noise
+(Figure S3). The 4 and 13 reporter pair does give a better signal than 3 and 12, but it is still much lower (around 4 times, Figure S4) than probe 10 as the
+use of probe 10 does not need to undergo an additional
+click reaction step. In fact, experiment showed that 100 μM
+of 10 was sufficient for robust labeling (Figure 3E). Furthermore, the similar
+results were also observed when above-mentioned labeling probes were
+used to label another sialyl-T positive cell line colon cancer HT29
+(Figure 3B). Indeed,
+even for other truncated mucin-type O-glycans such as T antigen and
+Tn antigen, it has been difficult to detect them by using the Western
+blot method as their relatively lower abundance and weak affinity
+of the currently available antibodies or lectins. Therefore, the described
+strategy provides a sensitive way to detect sialyl-T.
+
+(A) Structures of the
+reporter probes used for biotinylation 3 and 4. (B) Western blot analysis of chemoenzymatic
+labeling of breast cancer MCF7 and colon cancer HT29 cells (result
+represents at least three repeats). (C) Imaging of cell surface sialyl-T
+on MCF7 cells (green) by fluorescence microscopy. 200 ms acquisition
+time for 10 + ST6GalNAc-IV group and 500 ms acquisition
+time for the rest groups. Nuclei were stained with 4′,6-diamidino-2-phenylindole
+(DAPI). (D) Comparison study of the relative labeling efficiency across
+probes 3, 4, and 10. (E) MCF7
+cells (∼5 × 107) were labeled with ST6GalNAc-IV
+using variable concentrations of probe 10 (25–500
+μM). See Supporting Information for
+experimental details.
+
+We next investigated whether the chemoenzymatic strategy
+could
+be used to image sialyl-T glycans in living cells. Adherent MCF7 was
+labeled with probe 3, 4, or 10 as described above. Then, CuAAC (10 min, RT) was performed to biotinylate 3 and 4 with probe 12 and 13, respectively. The biotinylated samples were then stained
+with Alexa Fluor 488 streptavidin (30 min, 4 °C) to install a
+fluorescent reporter onto the sialyl-T. Strong fluorescence labeling
+was observed in cells labeled with ST6GalNAc-IV and 10, while no labeling signal was observed in the absence of ST6GalNAc-IV,
+confirming the specificity of the chemoenzymatic reaction in situ
+(Figure 3C). Meanwhile,
+only a very weak fluorescence signal was observed when using probe 3 or 4 even with a longer acquisition time (2.5
+times longer than probe 10). As quantified by flow cytometry,
+the use of probe 10 afforded around 12-fold higher labeling
+efficiency than probe 4, or 30-fold higher than probe 3 (Figure 3D). Therefore, the use of probe 10 provides a sensitive
+way to image cell surface sialyl-T antigen. More importantly, the
+chemoenzymatic labeling strategy is independent of metabolic machinery
+pathway, making it particularly useful in staining tissue biopsies.
+
+Next, this new labeling method was used to detect and compare the
+expression levels of sialyl-T across different cell lines. MCF7, T47D
+(breast cancer cell line), MDA-mb-231 (highly invasive breast cancer
+cell line), HT29, Raw 264.7 (macrophage cell line), HEK293 (human
+embryonic kidney cell line) cells were chemoenzymatically labeled
+in suspension by ST6GalNAc-IV and 10, and stained with
+the streptavidin conjugated with Alexa Fluor 488. The cells were untreated
+or labeled in the absence of ST6GalNAc-IV were performed as controls.
+As shown by flow cytometry analysis, all the well-known sialyl-T positive
+cell lines including MCF7, T47D, and HT29 shows robust staining compared
+to the control cells (Figure 4), highlighting the feasibility of the described strategy
+for use in living cell labeling. At the same time, much lower expression
+of sialyl-T was observed in Raw 264.7 and HEK293. Interestingly, MDA-mb-231
+displayed around a 3-fold decrease in sialyl-T expression on the surface
+compared to MCF7 and T47D, indicating lower expression sialyl-T may
+be an invasive biomarker of breast cancers. These results also demonstrate
+that the described chemoenzymatic labeling approach can readily discriminate
+different cell lines.
+
+Flow cytometry analysis of the relative expression levels
+of sialyl-T
+across various cancer cell lines. Cells were untreated (red) or chemoenzymatically
+labeled in the absence (green) or presence (blue) of ST6GalNAc-IV.
+Quantification of the mean fluorescence intensity (MFI) relative to
+cells labeled in the absence of ST6GalNAc-IV is shown on the right.
+Error bars represent data from triplicate experiments.
+
+We next used the described labeling strategy
+to globally profile
+sialyl-T-attached glycoproteins from cancer cell lines. It is well
+established that sialyl-T-attached glycoproteins that located on cell
+surface play important roles in living cells,11 where these glycoproteins are the potential therapeutic targets
+or biomarkers. However, there has been relatively little research
+to identify or profile sialyl-T-attached glycoproteins due to the
+lack of effective enrichment method. Taking advantage of the described
+one-step labeling strategy, sialyl-T-attached proteins that located
+on the cell surface (MCF7 and HT29) were biotinylated by ST6GalNAc-IV
+and 10 (Figure 5). The biotinylated proteins were captured using avidin agarose,
+which has an extremely strong affinity toward biotin group (Kd = 10–14 to 10–15 M). After digestion with trypsin, the peptide fragments were analyzed
+by tandem mass spectrometry. We successfully identified 78 cell surface
+proteins in breast cancer MCF7 and 43 proteins in colon cancer HT29
+(Table S2 and Table S3). Among the total
+number of proteins, 14 are identified in both cell lines (Table S3). The classification of the identified
+proteins by PANTHER system showed that proteins with binding activity
+and catalytic activity are the two main classes in both cell lines
+(Figure 5). This is
+different from the previous classification, in which proteins with
+catalytic activity and transporter activity are two main classes of
+total Neu5Acα-(2,3)-Gal glycans.29 Many well-known sialylated cell adhesion molecules, such as integrin
+and CD44,49 are also identified in this
+study. This finding may imply that sialyl-T plays certain roles in
+protein binding and cell adhesion and migration. This result also
+accords with the previous observations, in which truncated mucin-type
+O-glycans have a strong relationship with tumor cell adhesion and
+migration.50
+
+(A) Scheme of global
+profiling of sialyl-T-attached glycoproteins.
+(B) Number of the identified proteins from MCF7 and HT29. (C) Classification
+of the identified proteins by the PANTHER system.
+
+In summary, on the basis of relaxed donor
+specificity and strict
+acceptor substrate specificity of human ST6GalNAc-IV, we have developed
+a practical labeling method for visualization, quantification, and
+enrichment analysis of sialyl-T antigen with excellent selectivity
+and sensitivity. This method is far superior to the traditional lectin-based
+detection method, which is limited by a time-consuming process and
+relatively low accuracy. We found the popular two-step labeling approach
+employing the click chemistry reaction does not work well to detect
+sialyl-T as the relatively lower abundance of sialyl-T on cell surface,
+while the one-step labeling strategy using CMP-Neu5Ac derivative 10 containing a triazole-linked biotin group provides a supersensitive
+way to detect sialyl-T. We anticipate this work will accelerate the
+study of investigating the function of sialyl-T epitope in a variety
+of biological and pathological processes. Moreover, we found tolerance
+of a large modification group such as biotin is not a proprietary
+nature of some randomly selected enzymes. We have tested all the sialyltransferases
+in our hand including various bacterial sialyltransferases (α-2,3-,
+α-2,6-, and α-2,8-sialyltransferase)51−53 and many human
+sialyltransferases (α-2,3- and α-2,6-sialyltransferase).54,55 All the tested sialyltransferases can well accept substrate with
+a large modification group such as compounds 10 and 11 (results will be reported in due course), indicating acceptance
+of large modification group is the common nature of the sialyltransferase
+family. In addition, protein engineering of key amino acids will also
+allow some other glycosyltransferases to accept substrates with a
+large modification group.56 This will make
+a
+one-step labeling strategy very popular in the future for use in analysis
+of kinds of glycan epitopes by either in vitro chemoenzymatic
+labeling or in vivo metabolic labeling method.

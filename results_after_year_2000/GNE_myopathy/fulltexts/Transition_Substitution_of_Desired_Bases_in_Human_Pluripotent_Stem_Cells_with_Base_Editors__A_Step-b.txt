@@ -1,0 +1,345 @@
+Precise genome editing in human pluripotent stem cells (hPSCs) holds great potential for both isogenic disease modeling and autologous ex vivo stem cell therapy (1-3). Generally, induced pluripotent stem cells (iPSCs) with different genetic backgrounds have been used as controls to characterize iPSCs from patients harboring pathogenic mutations. Correcting pathogenic mutations allows using iPSCs from the same patients to precisely compare cellular characteristics to understand disease mechanisms (1) and autologous ex vivo stem cell therapy, thus avoiding immune rejection (4).
+
+With the advancements in genome editing tool kits (5, 6), hPSCs have been subjected to newly developed editing tools such as base editors (BEs) (7) and prime editors (PEs) (7-9) as well as conventional knock-in with Cas9 (8, 10). Despite extensive efforts to improve the efficiency of knock-in with Cas9 in hPSCs (8, 10-12), in which endonuclease activity of Cas9 results in massive p53-dependent cell death due to DSBs induction (13), the frequent incidence of deleterious large deletions by endonuclease activity of Cas9 in hPSCs (14) has become a serious technical issue. Instead, BEs with nickase Cas9 (nCas9) or catalytically dead Cas9 (dCas9) are capable to induce base transitions by conjugated deaminase activity without creating DSBs (15, 16). Thus, BEs have been applied to establish isogenic hPSC models for disease modeling (7) and gene correction in patient-derived iPSCs (17), and to edit pathogenic transition mutations accounting for 30% of disease-associated human genetic variants (18). In this regard, optimization of BEs, newly developed base editing tools to extend the editing scope, becomes highly important for application in hPSCs due to higher editing of pathogenic point mutations (58%) (19), including transversion mutations than that of BEs.
+
+Diverse versions of BEs exist: this protocol is optimized with ABE8e for ABE (addgene# 138489) (20) and AncBE4max for CBE (addgene #112094) (21). ABE8e is composed by engineered TadA (TadA8e) adenine deaminase linked to nickase Cas9 (nCas9) (Fig. 1A). AncBE-4max consists of modified rat APOBEC1 (erAPOBEC1), via ancestral reconstruction, linked to nCas9 and uracil glycosylase inhibitors (UGI) (Fig. 1B). Most base editors including ABE8e and AncBE4max adopt nCas9 because its nickase activity makes single strand break (SSB) on the non-editing strand. This helps ensuring the repair of the non-editing strand, not that of the editing strand where the deaminated base is located. This repair is mediated by the endogenous mismatch repair (MMR) system, that recognizes a nick on the non-editing strand and activates to produce the desirable base editing. Instead, the editing strand is repaired by base excision repair machinery like Uracil DNA glycosylase (UNG), that recognize and recover the deaminated base.
+
+The deaminase in BEs catalyzes deamination within a small range of bases called editing window (15). This editing window is where the majority of deamination occurs and is different for each BE (19). For instance, the editing window of AncBE4max is positioned 4 to 8 nucleotides (nt) in the protospacer sequences (i.e., complementary cleaved target sequences, red box in Fig. 1) counting the protospacer adjacent motif (PAM) as positions 21∼23, that of ABE7.10 is 4 to 7 nt, (Fig. 1) (20). ABE8e induce A：T to G：C conversion by catalyze deamination on adenine (A), turning it into inosine (I) which is recognized as guanine (G) during DNA replication and mismatch repair (MMR) (Fig. 1A) (22). Similarly, AncBE4max turns cytosine (C) to uracil (U) by deaminase activity of APOBEC1 (Fig. 1B) (15). U in DNA is recognized as thymine (T) in DNA replication and MMR, therefore the deamination of C induces C：G to T：A conversion (Fig. 1B) (15). Since deamination of C occurs frequently in nature, DNA glycosylases such as uracil DNA glycosylase (UNG) efficiently recognize and remove the deaminated C (i.e., U) in DNA to maintain genome integrity (23). BE4 adopted additional UGIs compared to BE3 to inhibit UNG activity (Fig. 2), because cellular UNG activity, triggered by deamination of cytosine, impairs C：G to T：A mutation by CBE (24). Due to high expression of UNG in hPSCs, additional depletion of UNG with small interfering RNA improves the efficiency and product purity of AncBE4max in hPSCs (25).
+
+To apply BEs for precise genome editing, three main factors need to be considered: i) base editor for mutation type (i.e., ABE or CBE), ii) existence of protospacer adjacent motif (PAM), and iii) possible occurrence of bystander base editing. Among the twelve possible types of transition and transversion point mutations, ABE and CBE are able to edit only transition mutations. Thus, A to G (or T to C) base substitution is conducted by ABE and C to T (or G to A) conversion is achieved by CBE. The second prerequisite for application of BEs is the presence of the PAM sequence [i.e., 5’-NGG-3’ for BEs based on Cas9 from S. pyogenes (SpCas9)] at an appropriate distance from the target base. If the editing window ranges from x to y nt in the spacer sequence, the PAM sequence should be placed (21 – y) to (21 – x) nt away from the target base (Figs. 3A and 3B). For instance, as ABE8e, whose editing window is positioned 4∼8 nucleotides of protospacer sequences, targets A, the PAM sequence of ABE8e should be located 13 to 17 bp away from the target base (Fig. 3C) (20). Similarly, as the editing window of YE1-BE4max, a narrow editing window version of BE4max, is 3 to 6 nt, YE1-BE4max requires NGG at 15 to 18 bp distance from the target base (Fig. 3D) (26).
+
+The requirement that the PAM sequence be located at a specific region for desired base substitutions largely limits the application of BEs. Due to this restriction, only around 15% (i.e., 9 out of 63 patients) and 13% (i.e., 16 out 121 patients) of pathogenic mutations associated with GNE myopathy (OMIM #605820) (7) and Tay-Sachs disease (OMIM#272800) (unpublished data) respectively are covered by ABE or CBE. The limited genome-targeting scope of conventional BE due to the PAM sequence is relieved by improved BEs based on engineered SpCas9 (i.e., SpCas9-NG), such as NG-ABE (27) and NG-CBE (28). By including a PAM-released version of BEs, the editing accessibility of point mutations is extended to 38% for GNE myopathy (7) and 24% for Tay-Sachs disease (unpublished data) respectively.
+
+Bystander editing from unintended bases within the editing window is inevitably produced by BEs due to the capacity of deaminases to access any base in the target range. The possibility of bystander editing requires a laborious clonal selection to produce the desirable clone (Fig. 4A). For instance, while hESCs mutants harboring I329T mutation in GNE was produced by ABE (7), mixture of mutants including target (T in the middle to C) as well as bystander (T in the right to C) edit was observed (Fig. 4B). After clonal selection, I329I (from bystander edit) and I329T (from target edit) mutant clones were established (Fig. 4C). Targets without bystander bases are suitable for accurate base editing. Otherwise, narrow-editing window CBEs such as YE1-BE3 (29) and YE1-BE4max (25) can selectively edit a target C over a neighboring C, which are alternatives for BE3, or BE4 max to reduce bystander editing. Also, using a ABE7.10 rather than using ABE8e can reduce bystander editing with similar editing window, since ABE7.10 has lower processivity than ABE8e (20). Computational predictions such as those provided by DeepBaseEditor (30) are useful methods to choose accurate target by predicting editing outcome of BEs.
+
+Alcohol Lamp.
+
+Spreader.
+
+42℃ Heat block.
+
+36℃ shaking incubator.
+
+1L erlenmeyer flask.
+
+Polymerase chain reaction (PCR) equipment (Agillent Tcehnologies, SureCycler 8800).
+
+Micropipette.
+
+P10 (1∼10 μl).
+
+P20 (2∼20 μl).
+
+P200 (20∼200 μl).
+
+P1000 (200∼1000 μl).
+
+500 ml beaker.
+
+Gel electrophoresis equipment (Takara, AD110).
+
+Agarose gel tray (Takara, AD210).
+
+100 ml Erlenmeyer flask.
+
+Microwave machine.
+
+Autoclave.
+
+1.5 ml E-tube (Axygen, MCT-150-C).
+
+50 ml centrifuge tube (SPL, 50050).
+
+100 mm petri dish (SPL, 10090).
+
+Micropipette tip P10 (Neptune, BT10XLS3).
+
+Micropipette tip P20 (Neptune, BT20).
+
+Micropipette tip P200 (Neptune, BT200).
+
+Micropipette tip P1000 (Neptune, BT1250).
+
+10 ml serological pipette (Corning, 4101).
+
+Latex glove (Ultratex, UF).
+
+50x TAE buffer (Biosesang TR2002-100-00).
+
+BsaI (Enzynomics, R0725).
+
+T4 DNA ligase (Solgent, SDL01-R40k).
+
+T4 PNK (Enzynomics, M0055).
+
+10x T4 DNA ligase buffer (Solgent, SDL01-R40k).
+
+Taq DNA polymerase (Solgent, STD95-E500).
+
+10x Taq buffer (Solgent, STD22-B12h).
+
+10 mM dNTP (Solgent, SDN12-B10h).
+
+Ultra pure water (Biosesang, WR4006-100-00).
+
+CIP (BioLabs #M20905).
+
+LB broth stick (LPS, LB-250).
+
+LB agar broth powder (BioSesang LR3004-250-02).
+
+Fragment DNA purification kit (iNtRON, 17290).
+
+Agarose (Young Sciences, Y50004).
+
+Red safe (iNtRON, 21141).
+
+100 bp DNA ladder (iNtRON, 24073).
+
+1,000 bp DNA ladder (iNtRON, 24074).
+
+Ampicillin (BioSesang, AC1043-005-00).
+
+6x DNA buffer (iNtRON, 21162).
+
+Xtra Midi EF Kit (NucleoBond, 740420.50).
+
+8-well Strip Plates (Thermo Fisher Scientific, 15031).
+
+pRG2 vector (addgene, 104174).
+
+DH5α E.coli (Real Biotech, RH617).
+
+pRG2_Rvs primer (5’ gagtcagtgagcgaggaagc 3’).
+
+99% ethyl alcohol (DUKSAN, UN1170).
+
+Clean bench.
+
+CO2 incubator (37℃, 5% CO2) (Thermo Scientific, 311).
+
+Microscope.
+
+Centrifuge machine.
+
+Hemocytometer.
+
+Micropipette.
+
+P10 (1∼10 μl).
+
+P20 (2∼20 μl).
+
+P200 (20∼200 μl).
+
+P1000 (200∼1000 μl).
+
+NEPA21 electroporator (NEPAGENE, NPG-NEPA).
+
+Cell freezing container (NALGENE, 5100-0001).
+
+1.5 ml E-tube (Axygen, MCT-150-C).
+
+60 mm cell culture dish (Corning, 353802).
+
+6 well cell culture dish (FALCON, 353046).
+
+24 well cell culture dish (FALCON, 353047).
+
+Micropipette tip P10 (Neptune, BT10XLS3).
+
+Micropipette tip P20 (Neptune, BT20).
+
+Micropipette tip P200 (Neptune, BT200).
+
+Micropipette tip P1000 (Neptune, BT1250).
+
+10 ml serological pipette (Corning, 4101).
+
+5 ml serological pipette (Corning, 4051).
+
+Latex glove (Ultratex, UF).
+
+Electroporation tube (NEPAGENE, EC-002S).
+
+StemFit04 complete media (AJBASIC04CT).
+
+Y-27632 (Sigma, Y0503-5MG).
+
+iMatrix (891-012, ATRIXOME).
+
+Accutase (562527, BD).
+
+Opti-MEM (11058021, gibco).
+
+AccuPrep genomic DNA extraction kit (BIONEER, K-3032).
+
+Dulbecco’s phosphate buffered saline (DPBS) (Gibco, 14190-250).
+
+Taq DNA polymerase (STD95-E500).
+
+10x Taq buffer (STD22-B127).
+
+10 mM dNTP (SDN12-B10h).
+
+ABE8e vector (addgene, 138489).
+
+NG-ABE8e vector (addgene, 124163).
+
+AncBE4max vector (addgene, 112094).
+
+YE1-BE4max-NG vector (addgene, 138159).
+
+siRNA targeting UNG (BIONEER, 7374-2).
+
+Preparation of LB broth with ampicillin (100 μg/ml).
+
+Dissolve ampicillin powder to 100 mg/ml with UPW.
+
+Add two LB broth powder stick and 500 ml of distilled water (DW) to 1 L Erlenmeyer flask.
+
+Wrap top of 1 L Erlenmeyer flask with aluminum foil.
+
+Autoclave LB broth and cool down to room temperature.
+
+Add 500 μl of ampicillin (100 mg/ml) in front of flamed alcohol lamp (Note. Flame micropipette tip before use).
+
+Preparation of LB agar broth plate with ampicillin (100 μg/ml).
+
+Add LB agar broth powder 20 g and 500 ml of DW in 1 L Erlenmeyer flask.
+
+Wrap top of 1 L Erlenmeyer flask with aluminum foil.
+
+Autoclave LB agar broth and cool down to 40∼50℃ then add 500 μl of ampicillin (100 mg/ml) in front of flamed alcohol lamp (Note. Flame micropipette tip before use).
+
+Add 15 ml of LB agar broth to 100 mm petri dish in front of flamed alcohol lamp (Note. Flame serological pipette before use) and set in room temperature for overnight.
+
+Editing tool for C：G to T：A or A：T to G：C: Base editor is selected as described in Figure 2 among AncBE4max (editing window: 4∼8 nt), NG-AncBE4max (editing window: 4∼8 nt), ABE8e (editing window: 4∼8 nt), and NG-ABE8e (editing window: 4∼7 nt).
+
+Order DNA oligo for sgRNA cloning: Add CACC sequence to 5’ of forward oligo and AAAC sequence to 5’ of reverse oligo as Table 1 in order to match the sticky end of pRG2 vector cleaved by BsaI.
+
+Preparation of Insert.
+
+Dilute each oligo to 10 pmol/μl.
+
+Add 1 μl of each oligo, 1 μl of 10x T4 ligation buffer, 1 μl of T4 PNK, 6 μl of UPW to 8-well strip plate.
+
+React as Table 2 follow with PCR machine (melt and re-annealing).
+
+Dilute reacted solution to UPW with 1/50 ratio in e-tube.
+
+Digestion of pRG2 vector with enzymes.
+
+Add 40 μl of UPW, 5 μl of 10×IV buffer, 1 μl of BsaI, 1 μl of CIP, and 3 μl of pRG2 vector (500 ng/μl) to 8-well strip plate at 37℃ for 4 hour (hr).
+
+Preparation of Enzyme-digested pRG2 vector.
+
+Dilute 50x TAE buffer to 1x concentration with UPW.
+
+Mix 1x TAE buffer and agarose for 1% (weight/volume) agarose gel in 100 ml Erlenmeyer flask.
+
+Melt agarose with microwave, then add red safe and mix gently by shaking flask.
+
+Set agarose gel in gel tray.
+
+Mix solution from 1.2.d with 6X DNA loading buffer. Load the solution into a well of 1% agarose gel, and 1,000 bp DNA ladder into other well of the gel.
+
+Set the gel into electrophoresis equipment and run the equipment.
+
+Cut the gel at 2,500 bp position, checking a clear band being loaded within the cut gel fragments. Also, check the unclear band at 700 bp position within uncut part of the gel.
+
+Extract DNA from the cut gel fragment with DNA purification kit.
+
+Add 0.7 μl of solution from 1.2.c, 30 ng of purified DNA from 1.2.e, 1 μl of 10×ligation buffer, 1 μl of T4 DNA ligase, and UPW up to 10 μl to 8-well strip plate, react at 16℃ for overnight.
+
+Add 5 μl of solution from 1.2.f to 50 μl of DH5α E.coli, then, heat-shock at 42℃ for 1 minute (min). (Note. Keep DH5α in ice).
+
+Place DH5α from 1.2.g in ice for 10 min.
+
+Spread DH5α from 1.2.h to LB agar plate with ampicillin by spreader. (Note. Keep spreader in 99% EtOH, flame before spread DH5α).
+
+Incubate the LB agar plate from 1.2.i at 37℃ for overnight.
+
+Colony PCR.
+
+Inoculate colony formed on LB agar plate from 1.2.m to 1 ml LB broth with ampicillin for 4 hr in 37℃.
+
+Add 1 μl of DH5α, 2.5 μl of 10×Taq buffer, 0.25 μl of Taq DNA polymerase, 0.5 μl of dNTP, 2 μl of forward oligomer from 1.2.b, 2 μl of pRG2_Rvs primer, and 16.75 μl of UPW to 8-well strip plate. PCR as Table 3.
+
+Mix PCR product with 6×DNA buffer and run with 100 bp DNA ladder in 2 % agarose gel by gel electrophoresis equipment. If DNA band with 250 bp size is observed, sgRNA cloning can be considered as completed.
+
+Add DH5α from 1.2.k to 500 ml of LB broth with ampicillin, culture in 37℃ with shaking incubator for overnight.
+
+Prep sgRNA vector from cultured DH5α with Xtra Midi EF Kit. Sequence prepped plasmid DNA with pRG2_Rvs primer for confirmation of cloning.
+
+Cell culture media preparation.
+
+Aliquot StemFit 04 media with 50 ml volume in 50 ml centrifuge tube, store at 4℃.
+
+Y27632 10 μM culture media preparation.
+
+Dilute Y27632 powder to 10 mM with UPW
+
+Add 50 μl 10 mM Y27632 to 50 ml of StemFit 04 media from 2.1.a.
+
+Cell transfer culture media preparation.
+
+Just before transfer, add 0.5% volume of iMatrix to Y27632 10 μM culture media from 2.1.b.
+
+Add 3 ml of cell transfer culture media to 60 mm cell culture dish, 1.5 ml to 6 well cell culture dish, and 350 μl to 24 well cell culture dish.
+
+Among various hPSCs culture media and coating materials, we adopted StemFit 04 complete media and iMatrix for clinical grade culture condition.
+
+When cells grew up to 70∼80% of confluency, suction culture media and add 1 ml of Accutase for 60 mm cell culture dish, 500 μl for 6 well cell culture dish, and 150 μl for 24 well cell culture dish. Incubate at 37℃ for 10 min in CO2 incubator.
+
+Transfer detached cells to e-tube, centrifuge with 1,000 rpm for 1 min at room temperature.
+
+Suction supernatant, wash with DPBS for two times.
+
+Resuspend cells with 200 μl of Y27632 10 μM culture media.
+
+Seed 5∼20 μl of cells to well plate with cell transfer culture media.
+
+Wash out cell transfer culture media with DPBS and add cell culture media after 1 day from transfer.
+
+Change media every other day.
+
+Transfection requires 1×106 cells.
+
+Detach and wash cells followed by process 2.2.b∼2.2.d.
+
+Resuspend cells with opti-MEM and count with hemocytometer.
+
+Dilute cells to 1×106 cell/100 μl.
+
+Add 3.5 μg of base editor vector, 1.5 μg of sgRNA vector to 100 μl of cell (1×106 cell/100 μl). (Note. For CBE application, add 2 μg of siRNA targeting UNG to increase editing efficiency and product purity).
+
+After pipetting, transfer solution from 2.3.e to electroporation tube.
+
+Electroporate cell with NEPA 21 with condition described in Table 4. (Instead of NEP21, other electroporation system, such as Amaxa 4D Nucleofector system (Lonza) was also used as described (31)).
+
+Transfer electroporated cells to e-tube with 200 μl of Y27632 10 μM culture media, using pipette contained within electroporation tube set.
+
+Seed cells to well plate with cell transfer culture media.
+
+After 4 days from transfection, detach and wash cells followed by the previous step from 2.2b to 2.2e.
+
+Count cells with hemocytometer and dilute 1 cell/1 μl.
+
+Seed 10 μl of diluted cells from 2.4.b to 60 mm culture dish with cell transfer culture media. Change media every other day.
+
+After colony formation (usually takes 1∼2 week), mechanically detach each colony with 1 ml micropipette tip, and transfer to e-tube with 50 μl of cell transfer culture media.
+
+After breaking colony with pipetting, transfer cells to 24 well plate filled with cell transfer culture media. Culture up to 10∼30% confluency.
+
+Transfer cells from 2.4.e followed by process 2.2.b∼2.2.f.
+
+Extract genomic DNA from left cells from 2.5.a with AccuPrep genomic DNA extraction kit.
+
+Design primer for target gene amplification with primer3web (https://primer3.ut.ee/).
+
+Add 1 μl of gDNA, 2.5 μl of 10×Taq buffer, 0.25 μl of Taq DNA polymerase, 0.5 μl of dNTP, 2 μl of forward primer, 2 μl of reverse primer, and 16.75 μl of UPW to 8-well strip plate. PCR as follow.
+
+94℃ 2 min → [94℃ 20 sec → 58℃ 20 sec → 72℃ 60 sec]×34 cycle → 72℃ 5 min → store at 4℃.
+
+Analyze amplified target gene with Sanger sequencing.

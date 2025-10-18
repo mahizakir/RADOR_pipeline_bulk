@@ -1,0 +1,263 @@
+Essentials
+β‐Galactose on platelets is a new biomarker to evaluate thrombocytopenia (low platelet count).The amount of platelet β‐galactose exposure in healthy individuals is unknown.We developed a way to measure the amount of β‐galactose exposure by flow cytometry in a clinical laboratory.Reference range of β‐galactose exposure was defined in 120 healthy adults.
+
+β‐Galactose on platelets is a new biomarker to evaluate thrombocytopenia (low platelet count).The amount of platelet β‐galactose exposure in healthy individuals is unknown.We developed a way to measure the amount of β‐galactose exposure by flow cytometry in a clinical laboratory.Reference range of β‐galactose exposure was defined in 120 healthy adults.
+
+β‐Galactose on platelets is a new biomarker to evaluate thrombocytopenia (low platelet count).
+
+The amount of platelet β‐galactose exposure in healthy individuals is unknown.
+
+We developed a way to measure the amount of β‐galactose exposure by flow cytometry in a clinical laboratory.
+
+Reference range of β‐galactose exposure was defined in 120 healthy adults.
+
+Thrombocytopenia can have various causes, which are usually classified as being central or peripheral. Techniques for exploring central thrombocytopenia (ie, abnormal platelet production) include bone marrow assessment, plasma thrombopoietin assays, and evaluation of the immature platelet fraction.
+1
+ Peripheral causes of excessive platelet consumption can be easily monitored. However, evidencing an increase in platelet clearance is more challenging because a routine laboratory assay for platelet clearance is not available. Indeed, the in vivo platelet half‐life can be measured only in specialized centers after indium111 labeling, and peripheral destruction can be revealed by a weak platelet transfusion yield. With a view to improving the diagnosis and treatment of thrombocytopenia, the search for new biomarkers prompted the assessment of platelet sialylation and β‐galactose exposure.
+2
+ However, clinical laboratories do not have specific assays of platelet turnover related to β‐galactose exposure.
+
+Sialic acids are terminal sugar components of glycoproteins and glycolipids and are incorporated during the sialylation process. In contrast, desialylation occurs during platelet aging, with the cleavage of terminal sialic acids from platelet glycoproteins.
+2
+, 
+3
+ The absence of sialic acid exposes β‐galactose residues, which are considered to be senescence antigens. Their exposure influences platelet clearance via the cooperation between Ashwell‐Morel receptors on hepatocytes and CLEC4F and MGL on Kupffer cells.
+4
+, 
+5
+, 
+6
+ Platelet β‐galactose exposure can result from platelet hyposialylation or platelet desialylation. Both mechanisms have been described in various diseases or patients. For instance, mutations in the genes coding for the solute carrier family 35 member A1 (SLC35A1) sialic acid transporter and the uridine diphosphate‐N‐acetylglucosamine 2‐epimerase/N‐acetylmannosamine kinase (GNE) have been linked to platelet hyposialylation and thrombocytopenia.
+7
+, 
+8
+, 
+9
+, 
+10
+, 
+11
+, 
+12
+, 
+13
+ Alternatively, platelet desialylation (via the activation of sialidases) associated with thrombocytopenia has been observed in cases of sepsis
+14
+ and immune thrombocytopenia (ITP)
+15
+, 
+16
+, 
+17
+, 
+18
+, 
+19
+ and following allogenic hematopoietic stem cell transplantation.
+20
+ Patients with ITP who present with significant platelet desialylation and anti–glycoprotein Ib (GPIb) antibodies are less likely to respond to conventional first‐line treatments.
+16
+ Other autoantibodies rather than GPIb have been described. Indeed, those containing anti‐GPIIb/IIIa antibodies also showed the ability to induce cleavage of sialic acid and expose β‐galactose.
+21
+ Furthermore, a case report described a patient with acquired Glanzmann thrombasthenia due to ITP with Fc‐γ receptor IIa (FcγRIIa) mediated platelet desialylation who was inhibited in the presence of anti‐FcγRIIa antibody.
+22
+
+The sialidase inhibitor oseltamivir phosphate (used as an anti‐influenza drug) reportedly increased the platelet count in a pediatric ITP patient who experienced platelet desialylation during an influenza virus A infection
+19
+ and in an adult with chronic, anti‐GPIb/IX–positive ITP.
+15
+ Furthermore, the combination of a sialidase inhibitor with drugs that boost platelet production induced a sustained platelet response in a proportion of patients with anti‐GPIbα–positive ITP and who had failed to respond to previous treatments.
+23
+ The substantial elevation of the platelet count in this setting prompted interest in developing novel approaches to the treatment of desialylation‐related thrombocytopenia. However, prerequisites for the identification of thrombocytopenic diseases linked to desialylation/β‐galactose exposure include the standardization of the β‐galactose platelet assay and the determination of a reference range for β‐galactose exposure in the healthy population.
+
+This reference range has not previously been determined. A lack of knowledge of the variability within a healthy population precludes comparisons of patients with a single control subject. Moreover, the determination of reference values in a healthy population could help to identify patients with thrombocytopenia who might respond to sialidase inhibitors.
+15
+, 
+16
+, 
+17
+, 
+18
+, 
+19
+, 
+23
+ Accurate diagnosis of desialylation‐related thrombocytopenia with a routine lab assay and the use of sialidase inhibitors, when more robust evidence will be generated from large and properly designed trials, might avoid the use of burdensome treatments, such as corticosteroids and splenectomy.
+
+As we and others have shown, platelet β‐galactose exposure can be evaluated using flow cytometry after the platelets binding to fluorescent lectins.
+9
+, 
+16
+, 
+23
+, 
+24
+, 
+25
+ Various lectins have been used: Some bind to sialic acid (eg, Sambus nigra agglutinin [SNA]), and others bind to β‐galactose (the sugar unmasked upon desialylation or hyposialylation, eg, Ricinus communis agglutinin [RCA] and Erythrina cristagalli lectin [ECL]). One challenge in the translation of β‐galactose exposure into a clinically relevant disease marker (notably in critical care medicine) is the development of a stable, standardized, convenient, routine assay of platelet β‐galactose exposure.
+
+The initial objective of the present study was to determine the best conditions for the standardized, quantitative measurement of platelet β‐galactose exposure by using RCA in a clinical laboratory. We then used the standardized assay to determine reference values in a population of healthy subjects.
+
+Blood samples from healthy subjects were obtained from the French Blood Establishment (Etablissement Français du Sang; reference: 13/CABANEL/008), in accordance with the tenets of the Declaration of Helsinki; the study participants were informed about the anonymous use of their personal data and gave their written, informed consent. In compliance with the Clinical and Laboratory Standards Institute (CLSI) C28A3 guideline,
+26
+ reference ranges were established by testing 127 healthy subjects, none of whom had taken any antiplatelet medications for at least 2 weeks before blood sampling.
+
+In line with international guidelines, venous blood was collected in a Vacutainer containing 7.5% K3 EDTA.
+27
+ Platelet‐rich plasma (PRP) was obtained after 2 centrifugation steps, that is, 10 minutes at 38 g and then 10 minutes at 122 g, to enable the recovery of large and giant platelets.
+
+Platelet surface β‐galactose exposure was determined using fluorescein isothiocyanate (FITC)‐conjugated RCA (Vector Laboratories, Burlingame, CA, USA). Briefly, PRP diluted 1/20 with phosphate buffered saline (PBS; (95 µL) was incubated with RCA for 30 minutes at room temperature in a final volume of 100 µL. The reaction was stopped with PBS (400 µL) and then analyzed using flow cytometry. In some experiments, samples in which RCA had been incubated with β‐lactose (200 mmol/L) (Sigma‐Aldrich, St Louis, MO, USA) were used as negative controls.
+25
+, 
+28
+ As a positive control of platelet desialylation (ie, the maximum possible amount of β‐galactose exposure due to sialic acid removal from the platelet surface), PRP was incubated with 0.5 U/mL neuraminidase from Clostridium perfringens (NeuC, Sigma‐Aldrich) for 20 minutes at 37°C. The stability of platelet β‐galactose exposure was studied from 10 controls. On the day of sampling, each blood sample was divided into 2 aliquots; one was assayed in 2 hours, and the other was assayed after 24 hours of storage at room temperature. The stability of RCA binding was evaluated 30 minutes and 1, 2, 3, and 4 hours after the start of the incubation.
+
+Surface GPIbα and GPIIb expression was measured with mouse anti‐GPIbα (clone SZ2) or anti‐GPIIb (clone P2) antibodies, respectively, or a negative isotype control (Biocytex, Marseille, France), and detected with a FITC‐labeled secondary antibody. After 30 minutes of incubation at room temperature, samples were diluted with PBS and analyzed using flow cytometry.
+
+Lectin or antibody binding was determined on a FACS CANTO‐II flow cytometer, and the resulting data were analyzed using Diva 6 software (both from BD Biosciences, San Jose, CA, USA). The flow cytometer was routinely calibrated with SPHERO Rainbow Calibration Particles (BD Biosciences). In each sample, the geometric mean fluorescence intensity (MFI) was determined for a total of 5000 platelets.
+
+Quantitative data were graphed as dot plots (showing the mean ± standard deviation [SD]) or as box‐and‐whisker plots (with the lower and upper hinge defining the interquartile range, the line inside the box denoting the median, and the whiskers corresponding to the maximum and the minimum). All statistical analyses were performed with Prism 6 for Mac software (version 6; GraphPad, Inc, La Jolla, CA, USA). If only 2 groups were compared, Student’s t test (for data with a Gaussian distribution, according to a D’Agostino‐Person test) or Mann‐Whitney test (for data with a non‐Gaussian distribution) was used. For ≥3 groups, a 1‐way analysis of variance (ANOVA) and Dunnett’s correction for multiple comparisons were applied. Equality of variance was tested with an F test (prior to Student’s t test) or Bartlett’s test (before an ANOVA). The assay’s standardized results are presented as mean ± SD. In accordance with CLSI guideline C28‐A3,
+26
+ the reference range was defined as the 95% confidence interval (CI) for the population. Correlations were assessed by calculating Pearson’s coefficient r. The threshold for statistical significance was set to P < .05 (*P < .05; **P < .01; ***P < .001). To remove outliers, we applied the robust regression and outlier removal method,
+29
+ with a Q coefficient of 1%.
+
+As lectins are known to induce hemagglutination when incubated with whole blood,
+30
+ we decided to study platelet β‐galactose exposure in PRP. Furthermore, and given that thrombocytopenic patients’ blood samples are often collected in EDTA tubes, we first used flow cytometry to evaluate the binding of RCA to platelets in EDTA‐containing PRP and thus determined the optimal concentration of RCA. Hence, PRP was incubated with FITC‐labeled RCA concentrations ranging from 0 to 50 µg/mL (Figure 1A and Figure S1A). RCA binding to platelets was observed at all concentrations. Between 1.56‐12.5 µg/mL, the level of RCA binding increased in a linear manner (Figure 1A). In contrast, RCA data ≥25 µg/mL were not usable. In fact, the flow cytometry histogram for FITC showed a large peak at 25 µg/mL in the last decade of the FL1‐H filter (Figure S1A) and for 50 µg/mL RCA, a nonspecific platelet population (P2, corresponding to platelet agglutination) was found outside the platelet gate (ie, outside the forward scatter [FSC]/side scatter window) (Figure S1B). The concentration of 12.5 µg/mL RCA represented a good compromise with no agglutination observed, and a FITC‐MFI peak of 2147 ± 838 (n = 3).
+
+RCA labeling, concentrations and specificity. A, A flow cytometry analysis of RCA binding on PRP containing various concentrations of RCA (1.56, 3.12, 6.25, and 12.5 μg/mL) (n = 3 experiments). B, A histogram of the flow cytometry analysis of RCA binding in PRP treated (or not) with 0.5 U/mL NeuC. C, A histogram of the flow cytometric analysis of RCA binding in PRP incubated (or not) with 200 mmol/L β‐lactose (n = 4 experiments). The mean ± SD values were compared using Student’s t test. D, Flow cytometry analysis of PRP after treatment with NeuC or with β‐lactose and labeling with RCA. The data are representative of 4 independent experiments. PRP, platelet‐rich plasma; RCA, Ricinus communis agglutinin. *P < .05; ***P < .001
+
+We next evaluated the maximum possible levels of β‐galactose exposure on platelets (corresponding to a positive control) by incubating PRP with 0.5 U/mL NeuC before incubation with 12.5 µg/mL RCA (n = 3); we found that the MFI for RCA labeling was 8.4 ± 2.4‐fold higher than in control PRP (Figure 1B,D). At higher RCA concentrations (≥25 µg/mL), all flow cytometry measurement of RCA binding in the presence of NeuC were out of range (Figure S1C). These results demonstrated that an RCA concentration of 12.5 µg/mL is not a limiting factor and that a strong desialylation (ie, an increase in the MFI) can easily be observed, relative to a control.
+
+To study the specificity of our assay, we performed a competition experiment with 200 mmol/L β‐lactose. As a disaccharide composed of galactose and glucose, β‐lactose can compete for RCA binding with the β‐galactose on glycoproteins exposed after terminal sialic acid removal.
+25
+, 
+28
+ As expected, we observed a shift in the signal and thus a strong decrease in RCA binding to platelets (RCA MFI: 248 ± 98 for RCA + β‐lactose, and 1805 ± 542 for RCA alone) (Figure 1C,D), attesting the assay’s specificity. With 12.5 µg/mL RCA (10 measurements in 4 healthy subjects), the intra‐assay coefficient of variation (CV) ranged from 7% to 12%. Under these conditions, the mean ± SD RCA MFI for fixed platelets was 8128 ± 960 (n = 15) and the inter‐assay CV was 11.8% (Appendix S1).
+
+Taken as a whole, our data demonstrated that platelet sialylation was measurable with 12.5 µg/mL RCA. This concentration yielded an acceptable signal‐to‐noise ratio, and enabled the detection of an 8‐fold increase in platelet β‐galactose exposure (Figure 1B‐D).
+
+We next sought to determine whether the platelet count, stability of the RCA binding, platelet size, platelet storage conditions, had any influence on the assay results.
+
+We first analyzed the effect of the platelet count by comparison of MFI‐RCA from 3 healthy subjects before adjustment of the PRP’s platelet count (525 ± 52 × 109 L−1) and after adjustment (100, 50, 20, and 10 × 109 L−1). There were no significant differences in the MFI‐RCA between the various dilutions; the MFI‐RCA was 1109 ± 233 with a platelet count of 10 × 109 L−1 and 874 ± 208 in the unadjusted PRP (Figure 2). These data demonstrate that a platelet count as low as 10 × 109 L−1 does not induce a variation with an RCA concentration of 12.5 µg/mL.
+
+FIGU Effect of the platelet count on RCA labeling. A flow cytometry analysis of RCA binding on PRP at indicated platelet concentration (n = 3 experiments). The mean ± SD values were compared using a 1‐way ANOVA and Dunnett’s posttest. ANOVA, analysis of variance; PRP, platelet‐rich plasma; RCA, Ricinus communis agglutinin; SD, standard deviation
+
+We next evaluated the influence of the time interval between the moment when lectin association was stopped with PBS and the flow cytometry measurement (30, 60, 120, 180, or 240 minutes). The RCA binding was stable up to 240 minutes (MFI‐RCA: 1233 ± 329 at T0 vs 1480 ± 410 at T240: P = NS) (Figure 3A).
+
+Influence of the time interval on RCA binding, glycoprotein expression and FSC values. A flow cytometry analysis of (A) RCA binding, (B) FSC parameter, (C) anti‐GPIbα binding and (D) anti‐GPIIb binding in PRP at the indicated time points. Analyses performed at 30, 60, 120, 180, and 240 min after the incubation had been stopped with PBS (n = 3 experiments), and the RCA/size parameter ratios were calculated: (E) RCA/FSC, (F) RCA/GPIbα and (G) RCA/GPIIb. The mean ± SD values were compared using a 1‐way ANOVA and Dunnett’s posttest. ANOVA, analysis of variance; FSC, forward scatter; GPIIb, glycoprotein IIb; GPIbα, glycoprotein Ibα; PBS, phosphate buffered saline; PRP, platelet‐rich plasma; RCA, Ricinus communis agglutinin; SD, standard deviation
+
+As we have previously reported, the possible presence of large and/or giant platelets means that the MFI for RCA must be normalized against platelet size.
+9
+, 
+25
+ On the day when the blood sample was collected, we measured the FSC (the amount of laser light that passes around the cell and is proportional to the cell’s diameter) and the levels of 2 conventional glycoproteins (GPIbα and GPIIb) proportional with the mean platelet volume,
+31
+ at the same time as RCA binding. The FSC parameter and the 2 glycoprotein levels were stable up for to 240 minutes after the incubation had been stopped (Figure 3B‐D). The RCA/size ratios (RCA/FSC, RCA/GPIbα and RCA/GPIIb) were stable over the 4 hours of measurement (Figure 3E‐G). These data show that if the assay is performed on the day when the blood sample is collected, the MFI for RCA can be normalized against FSC, GPIbα and/or GPIIb for up to 4 hours.
+
+We next investigated the effect of the sample storage time prior to RCA binding. It has been proven that chilled platelets undergo desialylation,
+32
+ indeed the MFI‐RCA of blood stored at 4°C was 1939 ± 441 compared to control 1140 ± 297 (P < .001). Whole blood was therefore stored at room temperature (22°C) for 24 hours (D1) after sample collection (D0). We first compared the MFI‐RCA values on D0 and D1; interestingly, the values were similar (1252 ± 434 and 1140 ± 297, respectively; P > .05) (Figure 4A). In contrast, levels of both of GPIIb and GPIbα on D1 differed from those observed on D0 (Figure 4B,C). The MFI for GPIIb was 11 548 ± 3172 on D0 and 5963 ± 2155 on D1 (P < .001), whereas the MFI for GPIbα was 7033 ± 740 on D0 and 8040 ± 1006 on D1 (P < .05). However, the FSC parameter was the same on D0 and D1 (Figure 4D); hence, the RCA/FSC ratio was also the same on D0 and D1 (Figure 4E).
+
+Influence of storage of whole blood for 24 h at room temperature. Samples of whole blood were stored at room temperature (22°C) for 24 h (Day 1, D1) after collection (Day 0, D0). Dot plots of a flow cytometry analysis of (A) RCA binding, (B) anti‐GPIIb binding, (C) anti‐GPIbα binding and (D) FSC in PRP (n = 10 experiments). The mean ± SD values were compared using Student’s t test. E, Dot plots of the RCA/FSC ratio on D0 and D1. FSC, forward scatter; GPIIb, glycoprotein IIb; GPIbα, glycoprotein Ibα; PBS, phosphate buffered saline; PRP, platelet‐rich plasma; RCA, Ricinus communis agglutinin; SD, standard deviation. *P < .05; ***P < .001
+
+Taken as a whole, our data show that platelet β‐galactose exposure can be measured in an RCA‐based flow cytometry assay of a PRP sample stored at room temperature for up to 24 hours. The measure of RCA binding did not change significantly over the first 4 hours of incubation. To take account of platelet size, we selected the FSC parameter. Hence, platelet β‐galactose exposure was expressed as an RCA/FSC ratio (Table 1).
+
+Technical and biological parameters for platelet β‐galactose measurement with RCA lectin by flow cytometry
+
+After having defined standardized conditions for measuring β‐galactose exposure at the platelet surface, we measured the variability of platelet β‐galactose exposure (RCA binding), FSC, and the RCA/FSC ratio in a population of 127 healthy subjects. We recorded the donors’ sex and blood group, and checked whether these variables had an influence on the RCA, FSC, or RCA/FSC ratio. The sex was known for 117 donors (49 men and 68 women), and blood group data were confirmed for 101 donors (Table 2). The hemoglobin level, leukocyte count, platelet count, and mean platelet volume were within the reference ranges
+33
+ for this population (Table 2). The age median was 28. In this population of healthy subjects, the RCA values were not normally distributed. The median MFI‐RCA was 1232 (95% CI, 652‐2874) (Figure 5A, Table 3). As expected in a population of healthy subjects, the MFI‐RCA was not correlated with the platelet count or the FSC variable (Figure S2). Interestingly, there were no differences between men and women or between ABO blood groups (Figure 5B,C). The median (95% CI) FSC was 2310 (95% CI, 1282‐3894) (Figure 5D, Table 3). Again, there were no differences with regard to sex or ABO blood group (Figure 5E,F). We next evaluated the variability of the RCA/FSC ratio. After rejecting outliers (7 outliers have been identified), we determined reference values for 120 healthy subjects. We found that the RCA/FSC values were not normally distributed. The median RCA/FSC ratio was 0.52 (95% CI, 0.237‐0.941) (Figure 5G, Table 3). Interestingly, the RCA/FSC ratio was not different according to the sex (median RCA/FSC ratio: 0.49 for women and 0.52 for men) (Figure 5H). Similarly, the RCA/FSC ratio did not vary significantly with the blood group (Figure 5I), meaning that matching for these 2 parameters will not be required in a future clinical trial. Taken as a whole, we found that the RCA/FSC ratio in a population of healthy subjects was independent of sex and blood group, and has a reference range ([95% CI] of 0.237‐0.941).
+
+Biological data of the cohort
+
+Values of RCA, FSC, and RCA/FSC in healthy subjects. Dot plots of a flow cytometry analysis of (A) RCA binding and (D) FSC in 127 healthy subjects and compared (B‐E) for males (n = 49) vs females (n = 68) and (C‐F) among blood groups (O: n = 39; A: n = 45; B: n = 13; AB: n = 4). The RCA/FSC ratio was calculated, and outliers were removed. Dot plots of the RCA/FSC ratio (G) for 120 healthy subjects. The RCA/FSC ratio was compared (H) in males (n = 44) vs females (n = 67) and (I) among blood groups (O: n = 38; A: n = 44; B: n = 12; AB: n = 4). The statistical analyses are described in the Section 2. RCA, FSC, and RCA/FSC values for males and females were compared using a Mann‐Whitney test. RCA, FSC, and RCA/FSC values for blood groups were compared using a 1‐way ANOVA and Dunnett’s posttest. ANOVA, analysis of variance; FSC, forward scatter; PBS, phosphate buffered saline; PRP, platelet‐rich plasma; RCA, Ricinus communis agglutinin; SD, standard deviation
+
+Statistic values of RCA, FSC and RCA/FSC ratio in the healthy population
+
+Important data are in bold.
+
+In the present study, we determined the reference range for platelet β‐galactose exposure (as measured using a convenient standardized flow cytometry assay) in a large group of healthy subjects. A variety of mechanisms may contribute to the development of thrombocytopenia in patients. Although β‐galactose exposure is known to accelerate platelet clearance, a reference range in healthy subjects had not previously been determined. This step is therefore a prerequisite for the identification of thrombocytopenic diseases linked to variations in sialylation.
+
+Platelet sialylation can be monitored with lectins that bind to sialic acid (eg, SNA) or the β‐galactose exposed by desialylation (eg, RCA or ECL). RCA is the lectin that has been most frequently used to study platelets in murine models and humans.
+4
+, 
+5
+, 
+9
+, 
+12
+, 
+16
+, 
+17
+, 
+20
+, 
+23
+, 
+25
+, 
+32
+, 
+34
+, 
+35
+, 
+36
+ In this study, we used RCA to measure β‐galactose exposure in a healthy population. Other lectins could be used to confirm and/or define the type of sialylation by using ECL, SNA, or Maackia amaurensis II lectins.
+
+If large or giant platelets are present, the measurement of β‐galactose exposure must take account of the platelet size. In principle, the RCA values could be normalized against levels of the 2 main platelet glycoproteins (GPIbα and GPIIb); however, we found that these levels were not stable when the blood had to be stored for a day at room temperature. In patients with ITP, quantification of GPIbα or GPIIb expression might also be biased by the presence of anti‐GPIbα or anti‐GPIIb antibodies. We therefore decided to express the β‐galactose exposure as the RCA/FSC ratio, since the FSC signal intensity is proportional to platelet size. We demonstrated that the RCA/FSC ratio was stable for up to 24 hours after blood collection and was independent of sex and blood group in our population of healthy subjects. Our assay had good analytical qualities and an acceptable level of precision; the within‐run and between‐day CVs were <12%. Interestingly, the stability of RCA’s binding to frozen, fixed platelets makes it possible to implement internal or external quality controls—an important feature for clinical laboratories. One limitation of our study was the fact that we determined reference values for the RCA/FSC ratio in an adult population only. To the best of our knowledge, glycoprotein sialylation in healthy children has never been studied. Given the lower levels of glycoprotein αIIbβ3 (GPIIbIIIa) expression and platelet hyporeactivity in children,
+37
+ adult reference values cannot be extrapolated to a pediatric population, and so a pediatric cohort study is necessary.
+
+Many recent publications have highlighted platelet desialylation as a major cause of thrombocytopenia in various disease settings. Accordingly, a quantitative platelet sialylation assay is potentially a valuable tool for the diagnosis and management of patients with thrombocytopenia. We recently reported on a case of congenital SLC35A1 deficiency in 2 siblings with moderate macrothrombocytopenia, moderate hemorrhagic manifestations, and a profoundly low platelet count (12 × 109 L−1).
+9
+ By using the flow cytometry assay described in the present study to quantify platelet β‐galactose exposure, we observed an elevated level of RCA labeling—attesting to defective sialylation on the platelet surface and we demonstrated a major decrease in life span for the patient’s platelet.
+9
+ It has long been suggested that the GPIb receptor complex is a shear sensor in platelets, and a mechanosensitive domain of GPIbα was identified.
+24
+ When shear stress is high or under circumstances where von Willebrand factor (VWF) binds to GPIbα in normal blood flow conditions (such as type 2B von Willebrand disease), VWF undergoes a conformational change and can bind GPIbα with high affinity. Binding of VWF prompts GPIbα’s mechanosensitive domain to unfold and thus exposes β‐galactose on the platelet surface.
+24
+ Our group used the platelet sialylation assay described here to investigate the relationship between platelet desialylation and the platelet count in 36 patients with type 2B von Willebrand disease. We observed abnormally high levels of platelet desialylation in patients with the mutation p.V1316M.
+25
+ Desialylation‐related thrombocytopenia might also be present in other acquired disorders related to VWF‐platelet binding during common clinical procedures, such as the implantation of transaortic valves and mechanical circulatory support. All these new devices markedly disturb blood flow and increase levels of shear stress; turbulent blood flow converts coiled VWF multimers into an elongated form
+38
+ that favors VWF/GPIb interactions and might therefore also lead to β‐galactose exposure on the platelet surface.
+24
+, 
+39
+ The complications associated with the above‐mentioned cardiovascular devices, notably severe thrombocytopenia, limit their use and increase their risk/benefit ratio.
+40
+, 
+41
+, 
+42
+, 
+43
+ The mechanism underlying these transient or persistent episodes of thrombocytopenia has not been characterized.
+44
+ One can reasonably hypothesize that desialylation is involved,
+39
+ and so the impact of desialylation on the bleeding risk remains to be determined.
+
+Immune thrombocytopenia is the most extensively documented acquired disease related to desialylation. Currently, the pathophysiologic model of ITP includes an Fcγ‐receptor–mediated clearance of opsonized platelets by macrophages, but also recognizes an Fcγ‐independent mechanism, mediated by antiplatelet antibodies that cause platelet desialylation and clearance in the liver.
+16
+ The combination of a sialidase inhibitor with other treatments helped to increase the platelet count in a small cohort of patients with ITP.
+8
+ However, the desialylation model has not yet been validated in a large population of patients with ITP; our development of a standardized platelet assay paves the way for this type of study.
+
+Reliable reference values for platelet β‐galactose exposure are crucial for achieving adequate levels of diagnostic accuracy. However, our reference values were obtained with our flow cytometer, and results by different types of flow cytometers may not comparable. Therefore, each laboratory should validate their own reference intervals using their specific experimental conditions. We observed variability of the RCA/FSC ratio in our population. We found various single nucleotide polymorphisms (database AWESOME)
+45
+ in 3 genes involved in platelet glycosylation/sialylation: SLC35A1, GNE and B4GALT1.
+46
+ This analysis demonstrated that the variability observed could be explained by a genetic variation. An easy‐to‐implement platelet surface desialylation assay for PRP samples is an absolute necessity for clarifying the etiology of thrombocytopenia and countering certain forms of disease. The treatment of moderate to severe thrombocytopenia (with platelet transfusions, corticosteroids, intravenous immunoglobulin, thrombopoietin receptor agonists, and splenectomy) is costly and not always effective. From this standpoint, we suggest that a better detection of desialylation‐related thrombocytopenia might lead, after evaluation in large clinical trials, to the use of oseltamivir treatment. This approach has tremendous implications, and might benefit patients in practical and economic terms. The value of our present results must now be confirmed in groups of patients with thrombocytopenia.
+
+The authors declare no conflicts of interest.
+
+DL: study design, data analysis and interpretation, writing. TP, SD, MCB, PT, AP, SZ, and AD: data analysis and interpretation. FS, AM, and CVD: study design. AK and DB: study conception and design, data interpretation, writing.
+
+Supplementary Material
+
+Click here for additional data file.

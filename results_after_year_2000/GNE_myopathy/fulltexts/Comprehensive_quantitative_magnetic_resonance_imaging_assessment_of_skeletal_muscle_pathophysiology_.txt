@@ -1,0 +1,270 @@
+Becker muscular dystrophy
+
+Bandwidth per pixel
+
+Carr–Purcell–Meiboom–Gill
+
+Duchenne muscular dystrophy
+
+Deoxyribonucleic acid
+
+Electrocardiogram
+
+Extracellular volume fraction
+
+Extended phase graph
+
+Flip angle
+
+Fat fraction
+
+Gadolinium
+
+Generalized autocalibrating partially parallel acquisitions
+
+Golden retriever muscular dystrophy
+
+Hematocrit
+
+Image‐selected in vivo spectroscopy
+
+Quantitative MRI
+
+Quantitative MRI/MRS
+
+Multi‐slice multi‐spin‐echo
+
+Neuromuscular disorder
+
+Region of interest
+
+Tibialis cranialis
+
+Inversion time
+
+Water T1
+
+Water T2
+
+Duchenne muscular dystrophy (DMD) is a severe degenerative neuromuscular disorder (NMD), caused by X‐linked inherited mutations that limit the production of dystrophin, which is a critical structural protein in the muscle fibers. The lack of dystrophin results in chronic tissue injury, characterized by repeated cycles of necrosis, regeneration and concurrent inflammation. Over time, this leads to progressive muscle fibrosis, waste and replacement by fat. Symptoms typically appear in the first few years of life, indicated by delayed motor milestones, and evolve rapidly, with loss of ambulation around the age of 12. As the disease progresses, cardiac and respiratory impairments result in premature death around the age of 25.
+1
+
+Golden retriever muscular dystrophy (GRMD) is a genetically determined model of the human DMD disease, sharing similar histopathological alterations and clinical symptoms. Most preclinical trials on GRMD focus on the first year of the disease, which closely parallels the first 10 to 15 years of DMD. During this period, dogs exhibit early signs of muscle weakness, followed by severe progression indicated by postural changes and significantly impaired locomotion. Subsequently, locomotor signs tend to stabilize, and dogs can generally live through adulthood, although respiratory and cardiac impairments end up leading to premature death around 6–7 years of age.
+2
+
+Quantitative MRI/MRS (qMRI/S) has become an important tool for the assessment and management of patients with NMDs.
+3
+, 
+4
+, 
+5
+, 
+6
+, 
+7
+, 
+8
+ For instance, fat‐fraction (FF) maps quantify the degree of muscle‐fat replacement, allowing to precisely evaluate the stage and rate of the disease progression, which is valuable information for assessing the disease heterogeneity and for optimizing treatment strategies. On the other hand, water T2 (T2H2O) and water‐T1 (T1H2O) maps reveal the presence of pathophysiological alterations that precede muscle wasting.
+4
+, 
+7
+, 
+9
+, 
+10
+ In particular, T2H2O has been shown to be abnormally increased in DMD
+8
+, 
+11
+ and to provide some predictive value concerning future muscle‐fat replacement
+4
+, 
+6
+, 
+7
+ and loss of function,
+5
+ in different NMDs. However, different from FF, which quantifies a specific morphological change within the tissue, T2H2O and T1H2O are not specific, being increased in the presence of different histopathological tissue alterations that result in augmented muscle water content and free water fraction, such as cell swelling, interstitial edema, and inflammation.
+11
+, 
+12
+, 
+13
+, 
+14
+ This lack of specificity has hindered their qualification as biomarkers.
+
+One way to increase specificity would be to assess the histological tissue water compartmentation. A particularly interesting qMRI method for assessing tissue water compartmentation is the extracellular volume (ECV) fraction, obtained using T1 maps acquired before and after intravenous gadolinium (Gd)‐based contrast agent injection. In cardiac applications, ECV has been shown to reveal the extent of focal and diffuse myocardial fibrosis in muscular dystrophy patients
+15
+, 
+16
+, as well as other pathological alterations resulting in expanded extracellular space such as cardiac amyloidosis and myocarditis.
+17
+ Recently, ECV has been shown to correlate with skeletal muscle fibrosis in a fibrotic mice model.
+18
+ In Becker muscular dystrophy (BMD), a milder form of dystrophinopathy, where fibrosis is an important phenotypic feature, ECV was abnormally increased even in normal appearing muscles with normal T2H2O.
+19
+ Another interesting and promising approach, relatively unexplored in the realm of muscle MRI, involves investigating the actual multiexponential behavior of the T2 relaxation of the water signal in skeletal muscle. When properly measured and analyzed, the T2 relaxation of muscle water is characterized by a distribution of T2 values, instead of a single T2 obtained from a monoexponential fitting, as used for standard T2H2O mapping.
+20
+ There is now strong evidence indicating that this behavior reflects primarily the tissue water compartmentation at the histological level.
+13
+, 
+14
+, 
+21
+, 
+22
+ More recently, in a cohort of patients, bicomponent water T2 was more sensitive and specific in detecting the presence of disease than the conventional monoexponential T2, allowing, for instance, the differentiation of myopathies.
+11
+
+In this study, we investigated changes in tissue water compartmentation in the skeletal muscle of GRMD dogs using multicomponent water T2 and ECV measurements, in addition to conventional FF, T2H2O, and T1 mapping techniques. We hypothesize that these complementary methods may provide further insights into the pathophysiological alterations underlying the characteristic changes in T2H2O and T1 observed in dystrophic skeletal muscle.
+
+This is a retrospective study comprising 17 GRMD and 7 age‐matched control (healthy golden retriever) dogs, as summarized in Table 1. Among these, eight GRMD and four control dogs had multiple (ranging between two and six) visits, with dogs' ages throughout the visits varying between 2 and 24 months. The age of the dogs that underwent a single visit ranged from 2 to 49 months. In total, 55 dog examinations were conducted, comprising 30 in GRMD (6 in 2‐ to 3‐month‐old, 12 in 4‐ to 7‐month‐old, 5 in 8‐ to 13‐month‐old, and 7 in 15‐ to 49‐month‐old dogs) and 25 in control dogs (3 in 2‐ to 3‐month‐old, 4 in 4‐ to 7‐month‐old, 7 in 8‐ to 13‐month‐old, and 11 in 15‐ to 49‐month‐old dogs). All GRMD dogs were diagnosed through DNA analysis as previously described.
+23
+
+Detailed description of the study cohort, indicating the number of dogs that underwent single or multiple visits and the age at each visit.
+
+Note: X marks indicate the time points at which each dog was examined in the longitudinal studies.
+
+Abbreviation: GRMD, golden retriever muscular dystrophy.
+
+The study was conducted in conformity with the European regulatory laws concerning the use of animals for research and the French Ministry of research (Ministère de l'Enseignement Supérieur et de la Recherche) under the following approval numbers: #3678, #23763, #36911, and 20/12/12‐18.
+
+Blood samples were acquired from the dogs before MRI acquisition for assessing hematocrit (HCT). MRI and MRS data acquisition was conducted using a 3‐T whole‐body clinical system (Magnetom PRISMAfit, Siemens Healthineers, Erlangen, Germany). Throughout the entire examination, dogs were under isoflurane anesthesia and placed on a heating pad, while their cardiac and respiratory rates were continuously monitored. A 15‐channel birdcage transceiver coil was used for RF transmission and signal detection at the level of the distal pelvic limbs. Quantitative fat‐water MRI was performed using a multi‐echo gradient‐echo sequence (3D acquisition, TEs = 2.75 and 3.95, TR = 10 ms, FA = 3°, resolution = 0.5 × 0.5 × 1.0 mm3, 104 slices, BW/px = 490 Hz), and FF maps were reconstructed based on a 2‐pt Dixon method. T2H2O maps were generated by fitting an extended phase graph (EPG)‐based signal model to multi‐slice multi‐spin‐echo (MSME) data (inter‐echo spacing = 9.6 ms, Nb of echoes = 17, nominal excitation/refocusing FA = 90°/180°, TR = 3 s, resolution = 1.4 × 1.4 × 5 mm3, 11 slices, slice gap = 12.5 mm, BW/px = 445 Hz, partial Fourier = 6/8, GRAPPA
+24
+ acceleration factor = 2, acquisition time = 3 min 32 s), as described in Marty et al.
+25
+ Maps of T1 were generated from single inversion recovery Look‐Locker data (2D FLASH, 1400 radial spokes, TE/echo spacing = 2.1/3.42 ms, TR = 10 s, TI = 30 ms, FA = 5°, BW/px = 820 Hz, resolution = 1.1 × 1.1 × 8 mm3, slice gap = 12 mm, 5 slices, acquisition time = 50 s) using a dictionary matching approach, as described in Marty et al.
+26
+ Muscle T1 maps were obtained at two timepoints, before (native T1) and 15 min after an intravenous injection of a gadolinium‐based contrast agent (Dotarem [0.2 mmol/kg], Guerbet) (T1 post‐Gd).
+
+For assessing ECV, the blood T1 was measured in the left ventricular cavity before and 10 minutes after contrast‐agent injection. This was necessary since the spatial resolution of the T1 maps of the pelvic limbs was not sufficient for allowing precise assessment of blood T1 in one of the major arteries. For cardiac acquisitions, the body coil was used for RF transmission and an 18‐channel flexible‐phased array coil in combination with a 32‐channel spine coil for signal reception. Cardiac T1 maps were generated from data acquired using the standard ECG‐triggered modified Look‐Locker inversion recovery sequence
+27
+ (Single‐slice True FISP, TE/echo‐spacing = 1.19/2.7 ms, TR = 550 ms, TI = 260 ms, Inter‐echo spacing = 2.7 ms, FA = 35°, BW/px = 930 Hz, resolution = 1.9 × 1.9 × 5.5 mm3, partial Fourier = 6/8, phase res. = 80%, acquisition time = 22 s).
+
+Multicomponent water T2 was assessed in the right tibialis cranialis (TC) muscle using a fat‐suppressed (CHESS
+28
+) single‐voxel (~1 × 1 × 4 cm3) image‐selected in‐vivo spectroscopy Carr–Purcell–Meiboom–Gill (ISIS‐CPMG) sequence
+13
+ (inter‐echo‐spacing = 2 ms, echo‐train‐length = 200, TR = 7.5 s, 2‐step phase cycle). The TC muscle was chosen for its geometry that simplifies the single‐voxel positioning, contributing to the methodological standardization between acquisitions. Only the even echoes were kept, and each water T2 decay curve was normalized by the signal amplitude at TE = 4 ms. The following bi‐exponential model was fitted to the normalized water T2 decay curves using nonlinear least squares:(1)STE=a1e−TE/T21+a2e−TE/T22
+
+The T2 values of the first and second components, T21 and T22, along with the second component's relative fraction, A2=a2/a1+a2, were computed for each examination.
+
+With the goal to confront qMRI and ISIS‐CPMG data, ROIs were drawn within the right TC muscle on the out‐of‐phase Dixon images, the T1‐weighted images, and the T2‐weighted images. For the T2H2O and native‐T1 maps, the five central slices were selected for the analysis, except for FF, where the slices were selected to coincide with the selected slice positions on the other parametric maps. For each dataset, the mean value of all the pixels within the five ROIs was calculated for each parameter map.
+
+From the mean muscle native T1 and T1 post‐Gd, the blood native T1 and T1 post‐Gd, and the hematocrit, the mean ECV in the right TC muscle was calculated as follows:(2)ECV=∆R1muscle∆R1blood1−HCTWhere, ∆R1=1T1postGd−1T1native
+
+All data processing was conducted in Python 3.11 and MATLAB R2022b.
+
+We investigated the relationship between the assessed qMRI/S metrics and age during the dogs' first year of life in GRMD and control groups by fitting separate linear mixed‐effects models for each group. In these models, age was included as a fixed effect, and individual dogs were treated as a random effect for the intercept to account for repeated measures within subjects. To assess differences between GRMD and control dogs, we used the Mann–Whitney U‐test at four distinct age ranges. The null hypothesis was rejected for every p‐value less than 0.05. All the statistical analysis was conducted in MATLAB R2022b.
+
+Figure 1 shows examples of the qMRI data obtained in a control and a GRMD dog. Due to incomplete examinations in some dogs/visits, only 48 and 43 out of the 55 examinations included T1 mapping and ECV measurement, respectively. In Figure 2, the boxplots show the distribution of the mean FF, T2H2O, native T1 and ECV values characterizing the TC muscle across four age ranges (2–3, 4–7, 8–13, and 15–49 months) for both GRMD and control dogs, where the p‐value comparing GRMD and control dogs within each age range is indicated. The corresponding medians and interquartile ranges are presented in Table 2. While no significant difference in FF was observed between GRMD and control dogs, T2H2O, native T1 and ECV were elevated in GRMD. However, due to a lack of control data for native T1 and ECV in young control dogs, the differences in these markers did not reach significance at the youngest age range (2–3 months). Notably, there is a visible progressive decrease in the median values of all three metrics with increasing age in both groups. This trend is more pronounced in the GRMD dogs, where they start higher and decrease more steeply compared to the control dogs. This observation is supported by the linear mixed‐effects model fits, with results summarized in Table 3. The model was characterized with a significant negative slope for all three metrics, with significantly different intercepts and slopes between GRMD and control dogs, except for the slope on the native T1.
+
+Examples of axial fat‐fraction (FF), water T2 (T2H2O), native T1 and T1 postgadolinium maps obtained at the level of the distal pelvic limbs in a control and a GRMD dog. GRMD, golden retriever muscular dystrophy.
+
+Boxplots showing the distribution of the mean fat‐fraction (A), water T2 (B), native T1 (C), and extracellular volume fraction (D) observed in the tibialis cranialis muscle of GRMD and control dogs at four age ranges. The p‐values comparing GRMD and control dogs in each age range are indicated. GRMD, golden retriever muscular dystrophy.
+
+Summary of the results for all the qMRI/S metrics evaluated in each group of dogs at four age ranges, presented as median (interquartile range), alongside p‐values from the corresponding Mann–Whitney U‐tests.
+
+Note: T1: Native muscle T1. T2H2O: Water T2. T21: first component's T2 (ISIS‐CPMG). T22: second component's T2 (ISIS‐CPMG). A2: second component's volume fraction (ISIS‐CPMG). Results presented in bold correspond to statistically significant differences between GRMD and control groups, as confirmed by the corresponding p‐values.
+
+Abbreviations: ECV, extracellular volume fraction; FF, fat‐fraction; GRMD, golden retriever muscular dystrophy.
+
+Summary of linear mixed‐effects model fittings of the explored qMRI/MRS metrics against age (from 2 to 15 months)—intercepts, slopes, and respective p‐values comparing GRMD and control dogs.
+
+Note: T1: Native muscle T1. T2H2O: Water T2. T21: first component's T2 (ISIS‐CPMG). T22: second component's T2 (ISIS‐CPMG). A2: second component's volume fraction (ISIS‐CPMG). Results presented in bold correspond to statistically significant differences between GRMD and control groups, as confirmed by the corresponding p‐values.
+
+Abbreviations: ECV, extracellular volume fraction; FF, at fraction; GRMD, golden retriever muscular dystrophy.
+
+Not significantly different from zero.
+
+Due to incomplete examinations in some dogs/visits, only 45 out of the 55 examinations included single‐voxel CPMG acquisitions. Figure 3A shows examples of water T2 decay curves measured in the TC muscle of a GRMD and a control dog acquired at different timepoints (2 and 10 months old), where one may clearly notice their nonmonoexponential behavior and appreciate the impact of both age and disease on the water T2 relaxation. The water T2 decay curves were accurately modeled (see Equation (1)), resulting in a median mean square residual of 6.3 × 10−6 with an interquartile range of 5.0 × 10−6. In Figure 3B–D, the boxplots show the distribution of the bicomponent water T2 metrics, T21 and T22 and A2, across four age ranges (2–3, 4–7, 8–13, and 15–49 months) for both GRMD and control dogs, where the p‐value comparing GRMD and control dogs within each age range is indicated. The corresponding medians and interquartile ranges are presented in Table 2. While no significant differences between GRMD and control dogs were observed in the first and second components T2 values, the relative fraction of the long‐T2 component, A2 (Figure 3D), was significantly elevated in GRMD at all four age ranges. Notably, there is a visible progressive decrease in the median values of T21 and A2 with increasing age in both groups. While trend in T21 is similar between GRMD and control dogs, the trend in A2 is clearly more pronounced in the GRMD dogs, where they start higher and decrease more steeply compared to the control dogs. This observation is supported by the linear mixed‐effects model fits, with results summarized in Table 3. The model was characterized with significant negative slopes for both T21 and A2, with significantly different intercept and slope between GRMD and control dogs on the A2 metric.
+
+In (A), are displayed examples of normalized water T2 decay curves measured in the tibialis cranialis muscle of a GRMD and a control dog at two different timepoints (2 and 10 months old). The curves clearly deviate from a straight line, demonstrating their nonmonoexponential behavior. In (B)–(D), the boxplots illustrate the distribution of the first component's T2, the second component's T2, and its corresponding relative fraction, respectively, obtained from the bi‐exponential fitting of the water T2 decay curves. The p‐values comparing GRMD and control dogs in each age range are indicated. GRMD, golden retriever muscular dystrophy.
+
+Figure S1 presents longitudinal histological assessment of the TC muscle in a separate cohort of GRMD and control dogs, evaluated at 2, 6, and 12 months of age (unpublished data). Quantitative histopathological analysis was performed according to a previously described method.
+29
+ The data reveal an evident increase in myofiber diameter during muscle development, accompanied by a corresponding decrease in ECV fraction. Quantitative analysis further indicates that (I) the volume fraction of endomysial and perimysial connective tissue tends to decrease over time in both control and GRMD dogs, while being consistently elevated in GRMD; (II) adipose deposition barely develops in GRMD TC muscle, except in a few severely affected dogs at the age of 6 months; and (III) mononuclear cell infiltrates are mainly observed at early timepoints (2 and 6 months) declining by 12 months.
+
+In this study, qMRI methods that are commonly used in clinical studies involving NMDs were employed to evaluate disease activity (T2H2O and native T1) and progression (FF) in the skeletal muscle of GRMD dogs. Additionally, ECV and single‐voxel bicomponent water T2 relaxometry were included as potential markers of specific histopathological changes within the tissue.
+
+As expected from the typical phenotype seen in GRMD
+30
+, 
+31
+, 
+32
+ (Figure S1), FF was not significantly higher than in controls, contrasting with what is observed in DMD patients, who experience a severe progression of muscle‐fat replacement in the distal leg muscles over time.
+8
+, 
+33
+ Previous studies have demonstrated the sensitivity of T2H2O and native T1 to dystrophic tissue alterations in GRMD, and skeletal muscle growth in control and GRMD dogs.
+30
+, 
+31
+ Our results confirm these findings further, showing that the qMRI metrics T2H2O, native T1, and ECV, along with the bicomponent water T2 relaxometry metric A2, were consistently elevated in GMRD dogs across all age ranges. Moreover, longitudinal assessment starting at 2 months of age revealed significant decreases in T2H2O, native T1, ECV, T21, and A2 in both control and GRMD dogs during their first year of life, confirming their sensitivity to muscle growth and maturation in both groups. These results are encouraging and suggest that potential positive effects of treatments can be assessed through these metrics, if the threshold values for normal tissue are established for different age ranges. Previous studies have demonstrated that various MRI metrics respond to gene therapy in GRMD dogs.
+34
+, 
+35
+ In clinical studies, T2H2O was shown to significantly decrease in corticosteroid‐treated DMD patients
+36
+ and in sirolimus‐treated inclusion body myositis patients.
+37
+
+Previous research on healthy skeletal muscle suggests that the first (A1 and T21) and second (A2 and T22) components characterizing the T2 relaxation of water represent the parenchymal and vascular compartments, respectively.
+13
+, 
+22
+ From this perspective, our CPMG data suggest an elevated relative vascular volume in the GRMD dogs, as indicated by the increased A2 values. This finding aligns with the elevated ECV values observed in the same dogs. Interestingly, while T21, A2, and ECV were all sensitive to tissue growth and maturation, T21, unlike A2 and ECV, was not significantly different between control and GRMD dogs and presented a very similar evolution with age in both groups. This suggests that these metrics are likely sensitive to distinct changes in diseased and developing muscle tissue, with the tissue alterations related to muscle growth and maturation, impacting all of them, and the dystrophic‐induced changes, impacting primarily A2 and ECV. It is worth noting that these findings are consistent with the parenchymal‐vascular compartmentation model. Muscle tissue growth and maturation are characterized by cellular hypertrophy
+38
+ (see Figure S1) and an increase in intracellular protein content.
+39
+ While the former translates into an augmented cellular volume fraction, which explains the progressive decrease observed in A2 and ECV as the dogs grow, the latter is expected to reduce the intracellular T2, accounting for the progressive decrease observed in T21 during the same period. In contrast, inflammatory responses to acute and chronic tissue injury are anticipated exclusively in GRMD, commencing at early ages and diminishing during the first year of the disease.
+2
+, 
+31
+ This aligns with the elevated A2 and ECV values observed in GRMD dogs across all age ranges and the significantly faster decrease of both metrics in GRMD dogs with age.
+
+These findings suggest that the elevated T2H2O and T1 values observed in young dogs reflect primarily the smaller cellular volume fraction and lower protein content typical of developing muscle tissue, while in GRMD, these abnormal values are likely to represent extracellular edema. This aligns with previous studies exploring 31P NMR spectroscopy, which suggest the increased relative fraction of a more alkaline inorganic phosphate pool observed in the skeletal muscle of GRMD dogs,
+40
+ DMD,
+8
+ and dysferlinopathy
+7
+ patients reflects an expanded interstitial space.
+
+It is worth commenting on some discrepancies observed between ECV and A2. ECV was consistently higher than A2 across all age ranges (see Table 2). Notably, while both ECV and A2 decreased during the first year in both groups, ECV had a higher initial value, but a similar rate of decline compared to A2 (see Table 3), resulting in an increasing relative difference between these metrics. Given that ECV has been shown to correlate with fibrosis in animal models,
+18
+ including its use in assessing diffuse fibrosis in the myocardium,
+15
+, 
+16
+ and that diffuse fibrosis has been shown to have negligible impact on water T2 relaxation,
+18
+ the increasing relative difference between ECV and A2 with age could thus indicate the accumulation of fibrotic tissue, which predominantly affects ECV while having little influence on the T2 signal. Furthermore, it is likely that in injured and necrotizing muscle fibers, the sarcolemma becomes permeable to the Gd‐based contrast agent, thus resulting in increased measures of ECV, while having lower impact on A2.
+
+It is important to acknowledge potential sources of bias in the metrics derived from our methodological approaches. First, the combined results from localized CPMG and T1 measurements strongly indicate that the long‐T2 component is characterized by a higher T1 compared to the main‐T2 component (see Tables 2 and 3). This would result in a weaker contribution of the long‐T2 component in the MSME signal acquired using a TR of 3 s. Nonetheless, our results suggest that such an effect must be rather small. Unlike T21, both T2H2O and A2 allowed differentiating GRMD from control dogs at all age ranges, showing a significant decrease with age in both groups, and a significantly faster decrease in GRMD dogs. Second, the fat‐suppression module used in the localized CPMG technique may produce magnetization transfer effects, which could cause a systematic bias on A2 if these effects differed between T2 components. Despite this, due to the nonnegligible fraction of intramuscular fat in healthy and diseased tissue, the multi‐exponential behavior of fat T2‐relaxation, and the inherent ill‐posed nature of multi‐exponential deconvolution, it is mandatory to exclude fat signal contamination to assess tissue water compartmentation via T2‐relaxometry. While we cannot rule out the possibility of such a bias, our results demonstrate the sensitivity of the metric A2 to pathophysiological processes involving changes in tissue water compartmentation.
+
+In face of the ongoing research on therapeutic development for NMDs, either exploring gene therapies or targeting specific pathogenic pathways, there is an urgent need for more specific noninvasive biomarkers for clinical trials. In brain applications, multicomponent water T2 metrics have demonstrated their importance, offering a histologically validated measure of myelin content.
+41
+, 
+42
+, 
+43
+ Recently, myelin water fraction has been proposed as a biomarker for clinical trials looking for remyelination.
+44
+ Our results encourage further investigation into the multiexponential behavior of the water T2 relaxation in skeletal muscle, specifically within the context of NMDs, as this approach could provide comparable insights and benefits.
+
+In conclusion, the qMRI/S metrics explored in this study provided highly sensitive markers for tracking disease activity in GRMD dogs. Structural and biochemical changes in the developing skeletal muscle significantly influence these metrics and should be carefully considered when evaluating the disease progression and treatment effects in GRMD. Notably, insights from ECV and bicomponent water T2 relaxometry suggest that (I) the elevated T1 and T2H2O values observed in GRMD dogs are primarily due to the extracellular edema resulting from inflammatory responses to tissue injury and (II) the significant decrease in T1 and T2H2O values with age in control and GRMD dogs is likely to reflect the progressive increase in cellular volume fraction and protein content associated with tissue growth.
+
+Despite the relatively small sample size, our study underscores the potential of multicomponent water T2 relaxometry to provide valuable insights into muscle pathology in NMDs. Future research should focus on integrating histological data and expanding sample sizes to validate these findings further. The development of specific noninvasive biomarkers, as demonstrated in brain studies, could significantly improve clinical trials for NMD therapies, offering precise measures of disease activity and therapeutic efficacy.
+
+The study was conducted in conformity with the European regulatory laws concerning the use of animals for research and by the French Ministry of research (Ministère de l'Enseignement Supérieur et de la Recherche) under the following approval numbers: #3678, #23763, #36911, and 20/12/12‐18.
+
+Figure S1: Longitudinal histological assessment of the tibialis cranialis muscle in GRMD and control dogs.
+
+Upper panel: Images of H&E‐stained tibialis cranialis muscle biopsies at x40 magnification, in healthy (upper line) and GRMD dogs (bottom line) at 2, 6 and 12 months of age (from left to right). The growth of the myofibers is obvious, as well as the consequent decrease of the extracellular space fraction in growing dogs.
+
+Bottom panel: Data of a quantitative analysis performed on H&E‐stained tibialis cranialis muscle sections, according to a previously described method1, are presented. These results show that the volume fraction of endomysial and perimysial connective tissue (left graph) tends to decrease in both control and GRMD dogs between 2 months and the subsequent timepoints, while being elevated in GRMD dogs. Adiposis deposition (middle graph) barely develops in GRMD tibialis cranialis muscle, except in some more severely affected dogs at the age of 6 months and at low levels. Mononuclear cell infiltrates (right graph) is mainly found at early timepoints (2 and 6 months of age) and decreases thereafter (12 months).
+
+1. Barthélémy, I. et al. Effects of an Immunosuppressive Treatment in the GRMD Dog Model of Duchenne Muscular Dystrophy. PLoS ONE 7, e48478 (2012).

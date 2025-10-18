@@ -1,0 +1,224 @@
+In the study field of idiopathic inflammatory myopathies (IIM), there are several windows of opportunity to explore: new biomarkers of activity, severity, disease remission criteria, and a myriad of pivotal studies targeted to specific molecules associated with the pathophysiology. Others not defined yet are IIM remission criteria for adult myopathies, interstitial pneumonia with autoimmune features (IPAF), etc. The inclusion of ML as a complementary tool for research in IIM is an emerging tool that could enhance precision diagnosis and prognosis [1].
+
+The IIM, commonly named myositis, comprises a diverse group of autoimmune disorders characterized by inflammation and proximal muscle weakness. The most common disease clinical phenotypes of IIM in adults are dermatomyositis (DM), polymyositis (PM), immune-mediated necrotizing myopathy (IMNM), and inclusion body myositis (IBM) [2]. Over the years, the EULAR/ACR 2017 classification criteria have included previously described phenotypes and added amyopathic dermatomyositis (ADM), juvenile dermatomyositis (JDM), and juvenile myositis (JM) [3]. In contrast, the 2004 European Neuromuscular Center (ENMC) workshop further expands this spectrum by incorporating two entities of IIM: overlap myositis (OM) and cancer-associated myositis (CAM) [4]. Additionally, although not formally categorized as a separate entity in these classification systems, the antisynthetase syndrome (ASS) is recognized due to its association with anti-aminoacyl-tRNA synthetase antibodies, particularly anti-Jo-1 [5, 6].
+
+Despite these advances, the knowledge about the disease behavior remains limited, highlighting the need for large-scale studies of the natural history of myositis. Supporting tools for IIM classification include electromyography (EMG), magnetic resonance imaging (MRI), muscle ultrasound (US) [7], measurement of serum muscle enzyme levels, detection of autoantibodies, and histological muscle biopsy [8, 9].
+
+Recent studies have demonstrated the ML potential as a predictive approach analyzing gene expression profiles, treatment responses, cancer risk, and IIM phenotypes based on imaging and serological data [10, 11]. Integrating ML with conventional diagnostic approaches could improve specificity and facilitate customized treatment strategies in precision medicine.
+
+Search procedures were defined in advance within an operational protocol and conducted by the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines.
+
+For the reference review, we used the PubMed database and Medical Subject Headings (MeSH) from the National Center for Biotechnology Information (NCBI). We considered publications dated from 12/02/2014 to 02/05/2025. Regarding the search criteria, we included observational and bioinformatic studies published only in English. Two key aspects were considered: myositis and machine learning in the MeSH database (Fig. 1). We conducted the PubMed search on February 16th. At that time, the final algorithm for our PubMed search was: “U + 201CMyositisU + 201D” ("Myositis"[Mesh]) AND"Machine Learning” [Mesh].Fig. 1PubMed and MeSH database PRISMA flow diagram
+
+PubMed and MeSH database PRISMA flow diagram
+
+As a result of the final search, we obtained 34 articles. Two independent reviewers screened the titles, abstracts, and full texts of all identified articles using predefined eligibility criteria: (1) being an original article; (2) focusing exclusively on myositis; and (3) reporting performance metrics or model outputs.
+
+Inter-rater agreement between reviewers was calculated using Cohen’s κ statistic, resulting in a value of 0.93, indicating almost perfect agreement. However, not all records were included in the final review (see Supplementary Material). The exclusion criteria applied during full-text assessment were as follows: three articles (n = 3) did not address myositis, instead focusing on other autoimmune or neuromuscular conditions; six records (n = 6) were published only as abstracts or letter proceedings, which typically lack peer review and do not provide sufficient methodological or quantitative detail; one study (n = 1) lacked quantitative data such as performance metrics or model outputs, which were essential for our synthesis and visualization; and one (n = 1) was a review article, excluded to avoid data duplication. The final number of articles considered for this review was 23 (1–5, 8–15, 17–20, 22, 23, 27, 28, 31, 32).
+
+ML is a subfield of artificial intelligence (AI) that enables computers to gain knowledge from training data and improve their performance over time without requiring explicit programming or supervision. ML can identify patterns within data and extract valuable insights to facilitate more accurate and automated decision-making. ML models and algorithms learn through experience, recognize patterns in datasets, and associate them with specific categories of samples [12].
+
+In its traditional definition, ML methods encompass three types of knowledge acquisition: supervised, unsupervised, and reinforcement learning [13]. Supervised learning trains a model using labeled data, enabling it to predict outcomes for new, unlabeled instances based on learned associations between features and labels [14]. In medical diagnosis, a model can analyze patient data to determine whether a tumor is benign or malignant based on characteristics like size and shape [13]. Unsupervised learning identifies patterns and structures within data without relying on labels, offering insights but making evaluation challenging [15]. In genomics, gene expression data from single cells can be grouped to distinguish different cell types without predefined categories [13]. Reinforcement learning differs by learning through trial and error, receiving rewards or penalties to optimize decision-making [16]. In robotic surgery, an AI agent refines its approach by continuously adjusting its actions based on performance feedback from real clinical scenarios (Fig. 2) [13].Fig. 2Different subfields of artificial intelligence
+
+Different subfields of artificial intelligence
+
+Some of the most used evaluation metrics in ML include ROC curve, its associated AUC, and accuracy, all of which are useful for assessing a model’s predictive performance.
+
+ROC curves are graphical tools used to evaluate the diagnostic ability of a binary classification model across different threshold settings. The ROC curve plots the true positive rate (sensitivity) against the false positive rate (1—specificity), allowing visualization of the trade-off between sensitivity and specificity [17]. The AUC quantifies the overall ability of the model to discriminate between the positive and negative classes, regardless of the chosen threshold. This metric is commonly used to evaluate classification models in medical research, as it reflects the ability to distinguish between two classes (e.g., diseased vs. non-diseased individuals). AUC values range from 0 to 1, where 1 indicates perfect classification, 0.5 suggests random performance, and values below 0.5 indicate performance worse than random guessing [18].
+
+On the other hand, accuracy refers to the proportion of correct predictions made by a classification model, calculated as the number of true positives and true negatives divided by the total number of predictions. It is one of the most frequently employed metrics in medical ML applications [19].
+
+Likelihood ratio (LR) is widely used in biomedical research and frequently applied to estimate the likelihood that a specific clinical condition may lead to disease or mortality. Although it relies on a linear combination of input features, it employs a non-linear sigmoid function to model the probability of class membership [20].
+
+The decision tree is a classic supervised learning algorithm known for its interpretability and simplicity. It operates like a flowchart, where each node represents a decision based on a specific feature to split the data into groups. However, decision trees are prone to instability due to their sensitivity to data variations. Radio frequency (RF) is a common example, where several trees are trained on different random subsets of the data to improve robustness and accuracy [21].
+
+Support vector machine (SVM) is a widely used supervised learning algorithm, primarily applied to binary classification. It works by creating a decision boundary called a hyperplane that separates data points with the largest possible margin. Only the closest data points, known as support vectors, influence the position of the hyperplane [21].
+
+Deep learning (DL) is another branch of ML that utilizes convolutional neural network (CNN)-based models to replicate the human brain’s ability to process vast and complex datasets in fields such as natural language processing and image analysis (Fig. 2) [22]. CNNs are a specialized type of artificial neural network within the field of DL, specifically designed to handle visual data. They process images through multiple layers of filters known as convolutional kernels, whose weights are learned during training. These filters detect basic features like edges, which are then combined by deeper layers to identify more complex patterns. This hierarchical processing mimics how the human visual system operates: in the retina, photoreceptor outputs are similarly preprocessed by ganglion cells [23, 24].
+
+Most ML studies have focused on systemic lupus erythematosus (SLE) and rheumatoid arthritis (RA) [21], while the area of IIM remains largely unexplored. Among the limited number of studies addressing ML and IIM, most of them focus on DM, which is the most prevalent phenotype in IIM worldwide [25].
+
+Based on the PubMed publications database, reports have grown exponentially over the past 8 years, resulting in a total of 23 published studies of ML in IIM. The first study to integrate ML in IIM research was published in 2017, with a substantial increase in the number of reports starting in 2022. Figure 3 shows these studies over time and categorizes them by their approach.Fig. 3Growing use of ML in IIM studies throughout the years
+
+Growing use of ML in IIM studies throughout the years
+
+Most studies were related to clinical image studies, such as MRI and muscle US analysis, followed by cancer and ILD risk prediction, biomarkers clinical prediction, clinical responses, and other fields of inquiry.
+
+As part of the IIM assessment, the inclusion of medical imaging such as MRI and US provides additional information to the clinician about the muscle damage severity, muscle damage extent, and clinical activity of IIM [26].
+
+US is a promising imaging technique for assessing IIM due to its feasibility of use to guide the clinician for a targeted muscle biopsy area; however, the operator dependence could affect its reproducibility [27]. Burlina et al. employed ML to improve the automated diagnosis in IIM. They found that a DL-based method using a deep CNN achieved high accuracy in distinguishing control group (CG) vs. IIM (DM, PM, IBM); CG vs. IBM; and IBM vs. other phenotypes of IIM (DM or PM) [26].
+
+The same research group applied novelty detection, an unsupervised DL approach, which has demonstrated effectiveness in the muscle US by training exclusively on CG samples to recognize abnormalities indicative of disease. The model captures subtle patterns often missed by clinicians. Their findings showed that these methods could improve clinical effectiveness and offer a valuable prescreening tool for early IIM detection with high performance [28].
+
+In a similar study, Nodera et al. employed texture analysis coupled with ML to quantitatively differentiate IIM conditions based on muscle US images. The results showed that texture analysis, particularly pixel intensity variations, was effective in distinguishing between dystrophy and IIM, achieving high accuracy [29].
+
+MRI is becoming increasingly used for clinical diagnosis of muscle conditions such as rhabdomyolysis and IIM [30]. MRI might help the clinician to guide the biopsy muscle site [31]. Fabry et al. implemented a DL approach, specifically a 1-Lipschitz neural network, designed to differentiate between type 1 facioscapulohumeral dystrophy (FSHD1) and IIM using whole-body muscle MRI. The DL model was tested in three configurations: (1) thigh only; (2) thigh and calf; and (3) thigh, calf, and shoulder. The performance of the DL tool achieved correct classification percentages. It was comparable to two radiologists specializing in musculoskeletal imaging, matching their accuracy and correctly classifying six of the seven cases that the radiologists misclassified [32].
+
+Another group formed by Nagawa et al. developed an ML approach to classify IIM based on muscle MRI texture analysis. Using 2D manual segmentation, 93 texture features and 93 local binary pattern (LBP) features were extracted from short-tau inversion recovery MRI images. Various ML models, including SVM, were trained using a sequential feature selection algorithm. The results showed that models using LBP features outperformed those using original texture features, achieving a high AUC [33].
+
+CNN has achieved notable success in multiple medical fields, such as radiology, ophthalmology, and pathology. These networks are optimized for image processing tasks and stand out for their capacity to automatically extract and learn layered visual features directly from unprocessed input data [34]. Kabeya et al. developed a deep CNN-based algorithm to assist in the diagnosis of muscle diseases using muscle biopsy samples. The algorithm successfully differentiated IIM from hereditary muscle disorders and accurately classified four phenotypes of IIM (ASS, IBM, DM, and IMNM), achieving an outstanding AUC-ROC and accuracy. Under constrained conditions, the CNN outperformed nine experienced physicians, whose highest recorded score is less than the model [35].
+
+Wang et al. investigated the correlation between quantitative MRI (qMRI) biomarkers and histopathological findings in patients with IIM. The study included patients with histopathologically confirmed IIM who underwent thigh qMRI scanning within 1 month before muscle biopsy. The qMRI analysis utilized ML-based muscle segmentation to measure fat fraction and T2 mapping for assessing muscle inflammation. The results demonstrated an intraclass correlation coefficient for T2 time measurements with high performance [36].
+
+The same group of investigators developed a DL-based model to automate muscle segmentation in T2 mapping MRI and assess muscle inflammation in IIM. Using a pre-trained CNN (VNet architecture), the DL algorithm accurately segmented thigh muscles and provided quantitative T2 values that significantly differentiated IIM patients from CG [37].
+
+Finally, Massaro et al. implemented a fast RF (FRF) ML model to automate the quantification of endomysial microvessel density in CD31-immunostained muscle biopsies from patients with IIM, including patients with anti-HMGCR + IMNM, anti-SRP + IMNM, and seronegative IMNM. The FRF algorithm classified image pixels into three tissue classes (background, isolated endomysial microvessels, and perimysial vessels), achieving high performance with only 12 training images. Quantification of CD31 + pixel density revealed that anti-HMGCR + IMNM patients had significantly increased endomysial capillary density compared to PM, ASS, and OM [38].
+
+Specific IIM phenotypes, mainly DM positive for anti-TIF1-γ and/or anti-NXP2 antibodies, are linked to heightened cancer risk. Approximately 25% of individuals with IIM are expected to develop malignancies. Notably, cancer is the primary cause of mortality among adults with IIM [39, 40]. Zhao et al. applied ML algorithms to identify clinical phenotypes and predict cancer in IIM positive for anti-TIF1γ in a longitudinal cohort. Among the patients studied, 54% had cancer, typically diagnosed within 6 months of IIM diagnosis. The authors used an ML classifier to select the most important clinical variables, including disease duration, blood lymphocyte percentage, CRP levels, and shawl sign. ML classifiers (RF, SVM, XGBoost, elastic net, and decision tree) were built to predict cancer. The study found that IIM positive for anti-TIF1γ antibodies can be separated into three clinical phenotypes corresponding to patients with low, intermediate, and high cancer risk. The ML model had good performance with RF in predicting cancer in anti-TIF1γ IIM patients [10].
+
+A separate research effort by Zhang et al. applied multiple ML models to predict malignancy in a cohort of IIM patients to determine the key features that could be used for malignancy prediction. The study included anti-TIF1-γ, ALT levels, and age as powerful predictors of cancer risk. Among all autoantibodies analyzed, anti-TIF1-γ was the strongest independent predictor, associated with a fivefold increase in malignancy risk. ILD was found to be a negative predictor of malignancy. Six ML models were compared: LR, SVM, RF, XGBoost, classification and regression tree, and CNN. The LR model was better than the other ML models [41].
+
+Screening for ILD risk in patients with IIM is essential because it represents one of the most frequent and severe complications associated with these conditions. ILD is a common extra muscular manifestation of IIM. In DM, the incidence varies widely from 5 to 65%. This means that patients might initially present with respiratory involvement rather than the classic signs of IIM. ILD is an important contributor to morbidity and mortality in this population, with some studies reporting that it accounts for up to 50% of the excess mortality seen in IIM patients [42, 43]. Zhang et al. analyzed the medical records of patients with IIM to uncover potential risk factors associated with ILD, coexisting rheumatic conditions, and malignancies. The presence of myositis associated autoantibodies (MAA) such as anti-PM/Scl, anti-Ro52, and myositis specific antibodies (MSA) such as anti-aminoacyl-tRNA synthetase and anti-MDA5 was linked to an increased risk of ILD. Additionally, Raynaud’s phenomenon, joint pain (arthralgia), and positivity for antinuclear antibodies were identified as significant indicators of overlapping rheumatic disorders. Among IIM patients who developed malignancies, male sex and the presence of anti-TIF-1-γ antibodies emerged as notable risk factors. Through hierarchical clustering analysis, the patients were categorized into six distinct subgroups: (1) DM associated with malignancy, (2) classic DM, (3) PM with pronounced muscle involvement, (4) DM with ILD, (5) PM with ILD, and (6) IIM overlapping with other rheumatic diseases with a notable accuracy [44].
+
+A second approach by Li et al. developed and validated an ML-based model to predict 3-month mortality in patients with anti-MDA5 antibody–positive DM-associated ILD. In a large, multicenter Chinese cohort, multiple algorithms were tested (XGBoost, LightGBM, RF, SVM, KNN, and LR), using input features selected via the BorutaShap feature selection algorithm. LR outperformed all other models with an adequate AUC-ROC [42].
+
+The prediction of the presence of anti-MDA5 antibodies in JDM has greatly benefited from the use of ML techniques. In a study conducted by Xue et al., a predictive model was developed that integrated patients with JDM, effectively identifying those at risk of testing positive for these antibodies. Using approaches such as LASSO regression and the RF algorithm, the model achieved superior accuracy compared to traditional LR models, obtaining a great AUC-ROC. This model demonstrated a high concordance and calibration index, providing significant net benefit in clinical decision-making for the early identification of JDM phenotypes [45].
+
+Biomarker analysis plays a crucial role in evaluating IIM by offering additional information on phenotype classification, degree of muscle inflammation, and muscle damage. Employing ML algorithms to classify muscle biopsies from patients with various phenotypes of IIM using transcriptomic data, a linear SVM model achieved the highest accuracy. Using recursive feature elimination (RFE), the authors identified uniquely overexpressed genes specific to each phenotype [1].
+
+Another research group, integrated by Liu et al., analyzed transcriptomic data from muscle biopsies of patients with IIM. They identified differentially expressed genes and immune cell infiltration patterns specific to IMNM. Through RFE and gene set enrichment analysis, five key genes were identified: NDUFAF7, POLR2J, CD99, ARF5, and SKAP2. These genes were enriched in immune and metabolic pathways related to muscle injury and inflammation. Nevertheless, the linear SVM model performed the best at identifying IMNM muscle biopsies from others, with high accuracy [46].
+
+An alternative research group, integrated by Zhang et al., applied a three-stage ML model (LR-decision tree framework) to predict perifascicular pathological phenotypes in IIM based on clinical and MSA profiles. The study patients were classified into three distinct PF subgroups: perifascicular atrophy (PFA), perifascicular necrosis (PFN), and PF-MHCn (isolated perifascicular upregulation of MHC-I/II). PFA was associated with MSA (such as anti-TIF1γ, anti-NXP2, and anti-MDA5), prominent skin manifestations including Gottron sign and heliotrope rash. Histologically, PFA showed abundant capillary membrane attack complex deposition and high myxovirus resistance protein A expression. PFN was linked to anti-Mi2 and anti-Jo-1 antibodies, elevated CK levels, and severe muscle necrosis. PF-MHC patients were frequently MSA-negative, suggesting the existence of maybe unrecognized autoantibodies. The three-stage ML model achieved good classification performance with a high accuracy and AUC-ROC [47].
+
+Wang et al. also employed ML to identify interferon-stimulated gene 15 (ISG15) as a diagnostic biomarker for DM. Using datasets of patients (DM and CG) from GSE46239 and GSE142807, the authors applied LASSO, SVM-RFE, Bayesian ridge regression, and weighted gene co-expression network analysis (WGCNA) to filter key genes. Validation with the independent dataset GSE128314 confirmed significantly elevated ISG15 expression in DM skin lesions. Immunohistochemistry on clinical samples showed strong ISG15 staining in perivascular regions and lymphocytes, absent in controls. Immune infiltration analysis using CIBERSORT revealed ISG15 association with elevated M1 macrophages, CD8 T cells, and T follicular helper cells, indicating a role in both innate and adaptive immunity. The model achieved a great AUC-ROC, demonstrating excellent diagnostic performance [48].
+
+Incorporating predictive tools for prognosis and therapeutic response represents a new direction in the IIM approach, with the potential to revolutionize how clinicians anticipate disease behavior and tailor interventions. Wu et al. showed that LR can effectively predict disease activity by analyzing serum growth differentiation factor 15 (GDF15) levels. Serum GDF15 levels exhibited significant positive correlations with multiple indicators of disease activity, including muscle enzymes (CK, AST, ALT, LDH), inflammatory markers (CRP, ESR), and immunoglobulin concentrations (IgG, IgA) [49].
+
+Intravenous immunoglobulin (IVIg) and subcutaneous immunoglobulin (SCIg) are two extensively used treatment options for IIMs. However, not all patients respond equally to these therapies, prompting the need to apply predictive models to identify which patients are most likely to benefit from these treatments. Danieli et al. ran a study involving patients with IIM and employed LR as the best algorithm to analyze serum CK, muscle weakness, and myositis intention to treat activity index (MITAX) scores as predictors of response to IVIg and SCIg with high performance. Researchers found that dysphagia, cutaneous manifestations, and scores from the MITAX were reliable indicators of muscle strength, as assessed by manual muscle testing eight [11].
+
+The same research group also tested ML models in immunosuppressive therapy, mainly corticosteroids, methotrexate, mycophenolate mofetil, azathioprine, and rituximab. ML models have been applied to try to predict long-term outcomes, where the SVM model performed best when predicting disease activity (MITAX score), while RF models were most effective in predicting immunosuppressant usage patterns [50].
+
+Due to the diversity of approaches, it is not possible to group all ML contributions into a single category. Tannemaat et al. aimed to distinguish between amyotrophic lateral sclerosis (ALS) and IBM and CG using an RF classifier algorithm to analyze electromyography traces. The study showed high diagnostic performance in distinguishing between EMG of CG and those with ALS and IBM from CG, both achieved a great AUC-ROC. However, the distinction between ALS and IBM was poor, highlighting the clinical difficulty in differentiating between these conditions [51].
+
+Another group of research, led by Ryyppö et al., applied multiple ML models to predict the early onset of vasculitis, myositis, and glomerulonephritis in a large dataset of patients (including those with IIM). The study tested the predictive capabilities of the InceptionVasGloMyotides DL model and the XGBoost algorithm using various retrospective data masking strategies, simulating real-world diagnostic delays. XGBoost achieved the highest positive predictive value and a great AUC-ROC for binary classification with a 30-day masking. It also reaches high accuracy and outperforms InceptionVasGloMyotides in scenarios with less data masking [52].
+
+All quantitative data are summarized in Table 1, which outlines the performance metrics and cohort characteristics for each of the studies discussed above.
+Table 1Overview of ML-based studies in IIM: cohorts, inputs, and performanceApproachReferenceCohort (n)Input variablePerformanceClinical image analysis[26]n = 80; 19 with IBM; 14 with PM; 14 with DM; 33 CGMuscle US imagesAccuracy = 79.2%&#[28]n = 89; 19 with IBM; 15 with PM; 20 with DM; 35 CGMuscle US imagesAUC-ROC = 0.719&[29]n = 51; 11 with IBM; 19 with DM1; 21 with PM-DMMuscle US imagesAccuracy = 78.4%[32]n = 40; 19 with FSHD1; 13 with PM; 5 with DM; 3 with ASSMuscle MRIAccuracy = 73.66%#[33]n = 74; 22 with DM; 14 with ADM; 19 with PM; 19 CGMuscle MRIAUC-ROC = 0.767&[35]n = 1400; 103 with DM; 102 with IBM; 107 with IMNM; 126 with ASS; 126 with DYST; 95 with FCMD; 173 with LGMD2A; 177 with LGMD2B; 83 with UCMD; 211 with CM; 60 with GNEM; 37 with neuropathyH&E pathology slidesAUC-ROC = 0.977#[36]n = 13; 7 with DM; 4 with PM; 1 with ASS; 1 with IMNMqMRI imagesICC = 0.838[37]n = 74; 27 with DM; 29 with PM; 8 with ASS; 10 CGqMRI imagesAUC-ROC = 0.986; Sensitivity = 96.89%; Specificity = 100%[38]n = 90; 8 with anti-HMGCR + IMNM; 5 with PM; 8 with anti-SRP + IMNM; 21 with adult DM; 8 with PM; 8 with SSc-OM; 8 with ASS (6 Jo1⁺, 2 PL7⁺); 5 with PM-Mito; 3 with MM; 10 with IBM; 6 CGImmunostained muscle biopsiesAUC-ROC = 1&Cancer and ILD risk prediction[10]n = 87; all IIM positive for anti-TIF1γMedical recordsAccuracy =  > 90%[41]n = 168; 86 with DM; 40 with PM; 29 with ASS; 13 with IMNMMedical recordsAUC-ROC = 0.784&[44]n = 310; 191 with DM; 119 with PMMedical recordsAccuracy = 63.3%[42]n = 509; all with anti-MDA5 + DM-ILDMedical recordsAUC-ROC = 0.866&[45]n = 152; all with JDMMedical recordsAUC-ROC = 0.975Biomarkers clinical prediction[1]n = 119; 39 with DM; 49 with IMNM; 18 with ASS; 13 with IBMTranscriptomic dataAccuracy = 91%&[46]n = 98; 25 with DM; 40 with IBM; 11 with IMNM; 22 CGTranscriptomic dataAccuracy = 93.1%&[47]n = 231; all with IIMMedical recordsAUC-ROC = 0.872; Accuracy = 87%[48]n = 100; 91 with DM; 9 CGSkin samplesAUC-ROC = 0.950Clinical responses[49]n = 255; 140 with DM; 39 with PM; 76 CGProtein levelsAUC-ROC = 0.89; Accuracy = 83%; Sensitivity = 87%; Specificity = 80%[11]n = 51; 18 with DM; 17 with PM; 9 with ASS; 7 with IMNMMedical records and treatmentAUC-ROC = 0.89; Accuracy = 83%; Sensitivity = 80%; Specificity = 87%&[50]n = 103; 53 with DM; 33 with PM; 9 with ASS; 7 with IMNMMedical recordsRME = 8.7&#Other fields of inquiry[51]n = 65; 20 with ALS; 20 with IBM; 25 CGEMGAUC-ROC = 0.715#[52]n = 114,897; 942 with IIM; 2,919 with vasculitis; 11,036 with glomerulonephritis; 100,000 CGMedical recordsAccuracy = 98%&ADM; amyopathic dermatomyositis, ALS; amyotrophic lateral sclerosis, AUC-ROC; area under the curve-receiver operating characteristic, ASS; antisynthetase syndrome, CG; control group, CM; congenital myopathy, DM; dermatomyositis, DM1; myotonic dystrophy type 1, DYST; dystrophinopathy, EM; electromyography, FCMD; Fukuyama-type congenital muscular dystrophy, GNEM; GNE myopathy, IBM; inclusion body myositis, ICC; intraclass correlation coefficient, IIM; idiopathic inflammatory myopathy, ILD; interstitial lung disease, IMNM; immune-mediated necrotizing myopathy, JDM; juvenile dermatomyositis, LGMD2A/B; limb-girdle muscular dystrophy type 2 A or 2B, MM; mitochondrial myopathy, PM; polymyositis, PM-DM; polymyositis–dermatomyositis overlap, PM-Mito; polymyositis with mitochondrial pathology, qMRI; quantitative magnetic resonance imaging, RME; relative mean error, SSc-OM; systemic sclerosis with overlap myositis&Best model performance#Mean of the best model performance
+
+Overview of ML-based studies in IIM: cohorts, inputs, and performance
+
+ADM; amyopathic dermatomyositis, ALS; amyotrophic lateral sclerosis, AUC-ROC; area under the curve-receiver operating characteristic, ASS; antisynthetase syndrome, CG; control group, CM; congenital myopathy, DM; dermatomyositis, DM1; myotonic dystrophy type 1, DYST; dystrophinopathy, EM; electromyography, FCMD; Fukuyama-type congenital muscular dystrophy, GNEM; GNE myopathy, IBM; inclusion body myositis, ICC; intraclass correlation coefficient, IIM; idiopathic inflammatory myopathy, ILD; interstitial lung disease, IMNM; immune-mediated necrotizing myopathy, JDM; juvenile dermatomyositis, LGMD2A/B; limb-girdle muscular dystrophy type 2 A or 2B, MM; mitochondrial myopathy, PM; polymyositis, PM-DM; polymyositis–dermatomyositis overlap, PM-Mito; polymyositis with mitochondrial pathology, qMRI; quantitative magnetic resonance imaging, RME; relative mean error, SSc-OM; systemic sclerosis with overlap myositis
+
+&Best model performance
+
+#Mean of the best model performance
+
+Table 2 summarizes the QUADAS-2 evaluation of the 23 studies included in this review. A total of 22 studies (95.7%) were rated as having a high risk of bias in at least one domain, most frequently in the index test domain due to the lack of external validation and reliance on internal datasets. Additionally, 15 studies (65.2%) presented an unclear risk of bias in the flow and timing domain, largely due to incomplete or missing information on the temporal sequence between the index test and the application of the reference standard.
+Table 2.QUADAS-2 bias assessment results of ML-based studies in IIM
+
+QUADAS-2 bias assessment results of ML-based studies in IIM
+
+In terms of applicability, high concern was identified in 14 studies (60.9%) in the patient selection domain, primarily due to the use of retrospective datasets, exclusion of diagnostically challenging cases, or inclusion of CG, all of which limit generalizability to broader clinical populations. Conversely, most studies showed low applicability concerns in the index test and reference standard domains, where clinically relevant methods and validated diagnostic definitions were used.
+
+Only one study was classified as having low risk of bias across all domains. This highlights the need for more rigorous design, external validation, and transparent reporting in future ML research in IIM.
+
+To provide a clearer overview of the reported performance of ML models within the IIM field, we reviewed each included study and extracted the available data on evaluation metrics, such as AUC-ROC, accuracy, sensitivity, specificity, relative mean error (RME), and intraclass correlation coefficient (ICC) (Table 3). For each study, we reported the performance of the best-performing model as described by the original authors. In cases where a single model was evaluated under multiple conditions (e.g., data partitions or subgroups), we calculated the average values to allow consistent reporting across studies.
+Table 3Reported performance metrics across the ML approaches in IIMApproachAUC-ROCAccuracySensitivitySpecificityRMEICCClinical image studies (n = 9)Reported data, n (%)x̅, (min–max)5 (55.6)0.89 (0.72–1.00)3 (33.3)77.09 (73.66–79.20)1 (11.1)100.001 (11.1)100.00---1 (11.1)0.83Cancer and ILD risk prediction (n = 5)Reported data, n (%)x̅, (min–max)3 (60)0.87 (0.78–0.97)2 (40)76.65 (63.30–90.00)------------Biomarkers clinical prediction (n = 4)Reported data, n (%)x̅, (min–max)2 (50)0.91 (0.87–0.95)3 (75)90.37 (87.00–93.10)------------Clinical responses (n = 3)Reported data, n (%)x̅, (min–max)2 (66.7)0.89 (0.89–0.89)2 (66.7)83.00 (83.00–83.00)2 (66.7)83.5 (80.00–87.00)2 (66.7)83.5 (80.0–87.00)1 (33.3)8.7---Other fields of inquiry (n = 2)Reported data, n (%)x̅, (min–max)2 (100.0)0.83 (0.71–0.96)1 (50.0)98.00------------x̅; mean, min; minimum, max; maximum, ILD; interstitial lung disease, AUC-ROC; area under the curve-receiver operating characteristic, RME; relative mean error, ICC; intraclass correlation coefficientDashes (–-) indicate not reported data
+
+Reported performance metrics across the ML approaches in IIM
+
+Clinical image studies (n = 9)
+
+Reported data, n (%)
+
+x̅, (min–max)
+
+5 (55.6)
+
+0.89 (0.72–1.00)
+
+3 (33.3)
+
+77.09 (73.66–79.20)
+
+1 (11.1)
+
+100.00
+
+1 (11.1)
+
+100.00
+
+1 (11.1)
+
+0.83
+
+Cancer and ILD risk prediction (n = 5)
+
+Reported data, n (%)
+
+x̅, (min–max)
+
+3 (60)
+
+0.87 (0.78–0.97)
+
+2 (40)
+
+76.65 (63.30–90.00)
+
+Biomarkers clinical prediction (n = 4)
+
+Reported data, n (%)
+
+x̅, (min–max)
+
+2 (50)
+
+0.91 (0.87–0.95)
+
+3 (75)
+
+90.37 (87.00–93.10)
+
+Clinical responses (n = 3)
+
+Reported data, n (%)
+
+x̅, (min–max)
+
+2 (66.7)
+
+0.89 (0.89–0.89)
+
+2 (66.7)
+
+83.00 (83.00–83.00)
+
+2 (66.7)
+
+83.5 (80.00–87.00)
+
+2 (66.7)
+
+83.5 (80.0–87.00)
+
+1 (33.3)
+
+8.7
+
+Other fields of inquiry (n = 2)
+
+Reported data, n (%)
+
+x̅, (min–max)
+
+2 (100.0)
+
+0.83 (0.71–0.96)
+
+1 (50.0)
+
+98.00
+
+x̅; mean, min; minimum, max; maximum, ILD; interstitial lung disease, AUC-ROC; area under the curve-receiver operating characteristic, RME; relative mean error, ICC; intraclass correlation coefficient
+
+Dashes (–-) indicate not reported data
+
+This approach was intended solely to facilitate visualization and synthesis of the available information, rather than to perform a direct comparison of model effectiveness. We acknowledge the heterogeneity in study design, datasets, clinical endpoints, and evaluation criteria, which precludes comparative interpretation.
+
+Among the reported metrics, AUC-ROC was the most frequently used across studies, reflecting its clinical relevance in distinguishing between disease and non-disease states. However, several other important indicators, such as sensitivity, specificity, and ICC, were inconsistently reported. The absence of these metrics in many studies represents a limitation for a comprehensive understanding and highlights the variability in reporting practices.
+
+These observations remark the need for future ML research in IIM to adopt standardized, reproducible evaluation frameworks to improve clinical translation and comparability across studies.
+
+Integrating multimodal data, including imaging, serological profiles, histopathology, and transcriptomic signatures, has proven to be a promising approach for enhancing the diagnosis, classification, and prognosis of IIM through ML models. These tools hold substantial potential for advancing precision medicine by supporting personalized therapeutic strategies that account for individual clinical and molecular profiles. However, several critical challenges remain. Many studies lack standardized protocols, external validation, and comprehensive performance metrics beyond conventional measures such as AUC-ROC and accuracy, limiting their clinical translation. Addressing these gaps requires robust, reproducible, and generalizable ML approaches built on diverse datasets and interpretable frameworks to ensure clinical relevance. Emerging strategies that combine ML with multi-omics integration, including gene expression networks, radiomics, and autoantibody profiles, are particularly promising for capturing the heterogeneity of IIM and enhancing phenotype-specific predictions.

@@ -1,0 +1,439 @@
+Rare diseases (RDs), by definition, affect fewer than five in 10,000 people [1, 2]. Estimates of the total number of RDs vary between countries and studies, due to differing definitions and challenges with data collection. However, it is cited that there are more than 7000 different RDs [3]. Approximately 80% of RDs are of genetic origin. As genomic technology evolves, new RDs are discovered regularly [1]. Although individual RDs are rare, the total number of Australians living with a RD is sizeable. Approximately 8% of Australians live with a RD, equating to around two million people [4].
+
+RDs often manifest in childhood and become chronic; some are life threatening and others lead to significant disability [5, 6]. Diagnosis of RDs is often delayed, due to limited knowledge, lack of exposure to and awareness of healthcare professionals to RDs and uncertainty about referral pathways. Inherent features of RDs, including heterogeneity, complexity and low patient numbers result in a lack of data, evidence and knowledge [1], making data collection and registries critical for RDs.
+
+Rare disease registries (RDR) are established to collect RD data and in some cases, monitor clinical outcomes [1, 7]. Registries, if populated with high-quality clinical data over extended periods of time, can assist with health service planning, epidemiological research, clinical trial recruitment and post-marketing drug surveillance [1, 8]. RDRs can play a vital role in understanding disease trajectories and help developing clinical trials for RD that meet safety and efficacy criteria despite low patient numbers; with many recruiting fewer than 100 patients worldwide [9].
+
+The critical role of RDRs is globally recognised by the RD community and policy makers [1, 6, 10]. International experts jointly identified ten key principles of RDRs, including: the need for RDRs to be a global priority; the importance of scope and focus; interoperability and harmonisation; consistency through minimum core data elements; links with biobank data; inclusion of patient reported data; sustainability; and governance and building knowledge [11].
+
+Nonetheless, in Australia, data for most RDs are not being captured through routine health information systems or registries, and there is no coordinated strategy to collect, measure, build and translate already existing information on RDs [1].
+
+On behalf of the Australian Government, Rare Voices Australia (RVA), the national peak body for Australians living with a RD [12], led the collaborative development of the National Strategic Action Plan for Rare Diseases (the Action Plan) [13], which was informed by extensive multi-stakeholder consultation. The Action Plan was launched in February 2020 with bipartisan support and RVA is now leading its collaborative implementation. The Action Plan called for the development of a national, person-centred approach to RDRs to support national standards, best practice and minimum data sets. It further highlighted the need for investment into RDRs, which aligns with worldwide agreement on the value and importance of RDRs [13].
+
+Under Pillar 3, Research and Data, of the Action Plan, Priority 3.1 calls on the sector to ‘Enable coordinated and collaborative data collection to facilitate the monitoring and cumulative knowledge of rare diseases, informing care management, research and health system planning’ [13]. The first step to this end is outlined in Implementation step 3.1.4.1, ‘Develop a summary report of all existing Australian and relevant international rare disease registries’ [13], which provided the impetus for this scoping review.
+
+This scoping review investigates RDRs collecting Australian data in the literature, including an audit of what RDRs and databases exist in Australia, how they are funded, what data they collect and their impact on patient outcomes. It is the first step to understanding existing datasets and informing national coordination of RDRs that aligns with international best practice for RD data collection, including establishment of minimum data sets. A national approach to RDR’s in Australia would enable improved monitoring and the accumulation of knowledge about RDs to inform clinical practice, research, government investment in RD and health service planning [14]. Data collected should also inform planning and investment decisions for other government services and departments playing an essential role in the holistic care of patients, carers and families living with rare disease including, the National Disability Insurance Agency, Department of Communities and Housing, Department of Education, and other financial support services.
+
+A protocol for this scoping review follows the Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for scoping reviews (PRISMA-ScR) format [15].
+
+To identify relevant studies, we searched four databases: MEDLINE, EMBASE, CINAHL and PsychINFO, and the Google Scholar from inception through November 2022. Grey literature was also included. For each article selected for inclusion, abstracts and full articles were obtained. Reference lists of the included studies and systematic reviews were examined during the review. To capture as many relevant studies as possible, we did not establish a time frame for when articles were published. Dissertations, government reports, randomised control trials, conference proceedings, conference posters and meeting abstracts were included.
+
+The search strategy was developed by three researchers (RR, MC and CM). We used Medical Subject Heading (MeSH) keywords and free text search terms. The most up to date version of Chrome Web browser was used in our searches. The database records and details of how the literature search was undertaken were maintained at each stage of the review process. Also, a manual search using Google and Google Scholar was performed. The key search terms were ([“rare” or “disease” or “rare diseases” or rare adj disease* or condition* or disorder* or illness* or infection* or diagnosis*] and [“genetic” or “genetic, population” or “genetics, medical” or “genetics, microbial” or “human genetics”] and [“registry” or “registries” or “database” or “dataset” or “library” or “record” or “archive”] and [“Australia” or “Victoria” or “New South Wales” or “South Australia” or “Western Australia” or “Tasmania” or “Queensland” or “Northern Territory” or “Melbourne” or “Sydney” or “Adelaide” or “Canberra” or “Hobart” or “Brisbane” or “Darwin” or “Perth”]). We adapted the search strategy to the search requirements of the remaining databases mentioned above. The terms were combined by means of Boolean operators.
+
+Quantitative and qualitative studies describing existing RDs and RDRs were included. International studies without Australian data, were excluded from this review, as they do not provide information on Australia’s RDR landscape. Furthermore, studies of diseases that are not rare were also excluded. Articles were excluded if they did not discuss a RD or if they were written in a language other than English.
+
+The study selection process was made up of two phases. In phase one, two researchers conducted the initial search of the literature (RR and CM). The second phase consisted of screening the literature, where three researchers (RR, MC and CM) independently screened the titles and abstracts of all articles identified through the search strategy to determine eligibility and classify studies as relevant, possibly relevant and irrelevant. Results were discussed by all researchers to resolve any inconsistencies in study selection and a final list of relevant studies were made.
+
+The results from the database searches were extracted into EndNote™ X9 software, a management software for references that allows the identified references to be organized into different electronic databases. The results were combined into a single EndNote folder. Duplicated studies were identified and removed.
+
+Data were extracted from relevant articles and internet material using a standardised data extraction form in Microsoft Excel. The main data points extracted include: objectives of the registry, details of registry management, population size, data captured by the registry, demographic or clinical or patient-reported outcome measures (PROMs) and quality of life (QoL) data, funding information, ethics and consent models of the registry.
+
+The search of MEDLINE, EMBASE, CINAHL and PsycINFO databases yielded in 741 documents (Fig. 1). A further 92 documents of grey literature were identified. After removing duplicates, 523 documents were screened for titles and abstracts. Of those, full copies of 75 relevant articles were retrieved. Fifty-four online publications (e.g. webpages and reports) of Australian RDRs and online databases were included. The screening of full-texts resulted in 49 publications. A total of 103 publications and online data sources were used in the data extraction and data analysis process.Fig. 1Study flow. Details the flow of information through the different phases of the review; maps out the number of records identified, included and excluded
+
+Study flow. Details the flow of information through the different phases of the review; maps out the number of records identified, included and excluded
+
+Publications included in the final review were published between 2002 and 2021. Five (10.2%) articles were published in 2017 and six (12.2%) were published in 2019, 2020 and 2021. The remaining articles were published between the 2002 and 2016.
+
+Of the 49 publications used in the scoping review, 20 (40.8%) were published in Australia, seven (14.3%) were published in the United States (US), six (12.2%) in the Netherlands, two (4.1%) in the United Kingdom (UK) and one each (2.04%) was published in Japan and Canada.
+
+Seventy-four different RDRs and databases were described in these studies (Table 1). Nineteen (25.7%) of those were global registries that included Australian data, 24 (32.4%) were Australian national registries and covered all jurisdictions, 10 (13.5%) were Australian and New Zealand (ANZ) and five (6.8%) were Australian state and jurisdiction-based registries. Sixteen (21.6%) “umbrella” registries, which represent numerous registries that have agreed to work under a unified registry, collected data from several RDs or conditions, which included some RDs. Thirteen (17.6%) registries stored data that were specific to rare forms of cancer.Table 1General description and characteristics of rare disease registries, databases and organisations identified in the scoping reviewNameSizeYear establishedTypePatient/clinician; single/multicentreData entry methodReportingFunding sourceConsent modelInternational Collaborative Gaucher Group Gaucher Registry12,000 participants1994GlobalClinician;MulticentreWeb-based data entryNSGenzymeOpt inGlobal Retrospective Registry for Danon Disease82 patients (2021)2006GlobalClinician;MulticentreE-mail & telephoneNSNSNSGlobal Registry of Acute Coronary Events10,2000 patients (2021)1999–2009GlobalClinician;MulticentreNSNSNSOpt inInternational & SIOP-E Diffuse Intrinsic Pontine Glioma (DIPG) RegistriesEstimated > 1000 patients (2020)2011GlobalClinician;MulticentreOnline web application & databaseAnnual reportThe DIPG CollaborativeConsent requiredInternational Dysferlinopathy RegistryNS2012GlobalClinician;MulticentreOnlineNSThe Jain FoundationConsent requiredInternational Schwannomatosis Database389 patients (2017)2011GlobalClinician;MulticentreOnlineNSIndustryConsent requiredInternational Pachyonychia Congenita Research Registry2000 patients (2018)2004GlobalPatient;MulticentreWeb-based data entryNSPachyonychia Congenita Project Non-profit OrganizationConsent requiredWolfram Syndrome International Registry21 patients (2009)2009GlobalPatient;MulticentreNSNSNSConsent requiredThe Global Fukutin Related Protein Registry622 patients (2018)2011GlobalPatient;MulticentreWeb-based data entryNewslettersLGMD2iFund & CureLGMD2iVoluntary opt in/opt outCantú Syndrome Registry74 (2019)2012GlobalPatient;MulticentrePaper form, electronic form through REDCapNewslettersNSConsent & recruitment procedures varyGNE Myopathy Registry432 patients (2021)2014GlobalPatient;MulticentreOnlineNewslettersTranslational Research in Europe-Assessment & Treatment of Neuromuscular Diseases networkElectronic consentGlobal Prader-Willi Syndrome Registry1696 participants (2019)2015GlobalPatient;MulticentreOnlineNSFoundation for Prader-Willi ResearchOpt inGlobal Angelman Syndrome Registry> 1300 families2016GlobalPatient;MulticentreOnline databaseNSFoundation for Angelman Syndrome Therapeutics AUSConsent requiredIdiopathic Thrombocytopenic Purpura Natural History Study Registry1448 patients (2021)2017GlobalPatient;MulticentreWeb-based data entryAnnual reports & fundraisersPlatelet Disorder Support AssociationVoluntary participationFriedreich’s Ataxia Global Patient Registry1000+ patients (2021)2019GlobalPatient;MulticentreOnlineAustralian annual reports; newslettersFriedreich’s Ataxia Research AllianceConsent requiredThe Myotubular & Centronuclear Myopathy Patient Registry228 patients (2018)2013GlobalPatient;MulticentreOnlineNewslettersMyotubular Trust, Muscular Dystrophy UK & Audentes TherapeuticsOpt inInternational Niemann-Pick Disease Registry1000 patients2013GlobalPatient;MulticentreWeb-based data entryAnnual reports; newslettersConsumers, Health, Agriculture & Food Executive Agency grantConsent requiredLimb-Girdle Muscular Dystrophy Type 2A Patient RegistryNSNSGlobalPatient;MulticentreOnlineNSFundraisersNSInternational Fragile X Premutation Registry> 2300 patients (2014)2009GlobalPatient;MulticentreOnlineNSCDCConsent requiredAustralian & New Zealand Fontan Registry1682 patients2009ANZClinician;MulticentreWeb-based data entryAnnual report, registry publicationsHeart foundation, MCRI, ANZ trustees, Heart Kids, Australian GovernmentOpt outThrombotic Microangiopathies Registry340 patients (2020)2009ANZClinician;MulticentreOnline REDCap databaseNewsletterMonash University (In kind)NSAustralasian Epidermolysis Bullosa Registry417 patients (2012)2006ANZClinician;MulticentreOnline databaseResearch publicationsThe Dystrophic Epidermolysis Bullosa Research Association of AustraliaOpt inLymphoma & Related Diseases Registry4500 patients (2021)2016ANZClinician;MulticentreWeb-based data entryNSIndustry partnersOpt outMyeloma & Related Diseases Registry4747 patients (2021)2012ANZClinician;MulticentreWeb-based data entry, Paper QoLResearch publications, annual report, 6-monthly reports to sites, newsletterIndustry partners, Myeloma AustraliaOpt outAustralia & New Zealand Transplant Registry*29,997 patients (2021)1977ANZClinician;MulticentreOnline or postalAnnual reportGovernment, IndustryOpt outAustralian & New Zealand Registry of Advanced Glaucoma*> 20002007ANZClinician;MulticentrePaper & onlineNewsletterGovernment, IndustryNSAustralasian Interstitial Lung Disease Registry> 20002016 (Australia)ANZClinician;MulticentreRetrospective data entered at 1st clinic visit with prospective data—after each subsequent visitNSLung FoundationConsent requiredThe Australasian Registry Network of Orphan Lung Diseases186 patientsJul 2009 & Jun2014ANZClinician;MulticentreNSPublicationLung Foundation & Mr Ivan CashOpt inAustralia & New Zealand Familial Hypercholesterolaemia Registry1500 patients (2021)2015ANZClinician;MulticentreEMRAnnual reportNSOpt inAustralian National Creutzfeldt-Jakob Disease Registry1321 cases (2019)1993AUSClinician;MulticentreForms completed by clinicians, familiesAnnual ReportsGovernmentOpt inThe Australian Rett Syndrome Database311 patients (2007)1993AUSClinician;MulticentreFamily & clinical questionnaireNewsletterNew South Wales Rett Syndrome Association & Rett Syndrome Australian Research FundOpt inLymphangioleiomyomatosis Registry100 patients (2014)2006AUSClinician;MulticentreNSNewsletterNot-for-profit charityNSAustralian Genetic Heart Disease Registry1600 patients (2013)2007AUSPatient,MulticentreOnline databaseBi annual newsletterAgnes & Berel Gings, Pfizer, Boston Scientific, Cardiomyopathy Association of AustraliaOpt inNeonatal Alloimmune Thrombocytopenia Registry76 patients (2015)2009AUSClinician;MulticentreOnline databasePeriodic newslettersMonash University's Department of Epidemiology & Preventative MedicineOpt outAustralian Idiopathic Pulmonary Fibrosis Registry647 patients (2017)2012AUSClinician;MulticentreWeb-based data entryNewslettersEducational grants & government research fundingOpt inThe Aplastic Anaemia & Other Bone Marrow Failure Syndromes RegistryNS2013AUSClinician;MulticentreNSNSMaddie Riewoldt's visionOpt outHaemoglobinopathy Registry378 patients2013AUSClinician;MulticentreOnlineOn funders requestIndustry partners, Thalassaemia & Sickle Cell Australia, Thalassaemia Society of NSWOpt outAustralian Bronchiectasis Registry1053 patients (2018)2015AUSClinician;MulticentreWeb-based data entryNSNational Health & Medical Research Council practitioner fellowshipOpt inMonash Public Health Genomics*NS2015AUSClinician;MulticentreNSNANANAPLANETNS2019AUSClinician;MulticentreOnline database /Mobile AppNSAustralian Government, Ipsen, Melbourne UniversityOpt inAustralian Cystic Fibrosis Data Registry3538 patients1996 (data collection in 1998)AUSClinician;MulticentreOnline databaseAnnual reports & quarterly NewslettersCystic Fibrosis Australia, Vertex PharmaceuticalsOpt in & Opt outAustralian Inherited Retinal Disease Registry9298 patients (2020)2009AUSClinician;MulticentreNSAnnual ReportsRetina Australia (WA)Opt inAustralian Calciphylaxis Registry47 patients (2014–2019)2014AUSClinician;MulticentreOnline databaseNilAmgen AustraliaOpt inBosentan Patient Registry528 patients2004–2007AUSPatient;MulticentreNSNilActelion PharmaceuticalsOpt inThe Australian Neuromuscular Disease Registry (covers Spinal muscular atrophy448 patients (December, 2021)NSAUSPatient;MulticentreOnlineMonthly & on demandBiogen & Novartis, Philanthropic supportSave our Sons & Muscular Dystrophy NSWOpt inHypersomnolence Australia, Idiopathic Hypersomnia Patient RegistryNSNSAUSPatient;MulticentreWeb-based data entryNewsletterNon-profit charitable organisationOpt inHHT Alliance (Hereditary Haemorrhagic Telangiectasia)108 patients2014AUSClinician;MulticentreOnline databaseNSThe Royal Melbourne Hospital FoundationOpt inAustralian Mitochondrial Disease Foundation Patient Registry486 patients (2020)2014AUSPatient;MulticentreOnline formNilThe Mito Foundation, charityOpt inLeukodystrophy Australia> 300 patients and familiesNSAUSPatient;MulticentreNSAnnual reportAustralian Government’s Medical Research FundOpt inAustralian Autoinflammatory Diseases Registry~ 200 people2016AUSClinician;MulticentreREDCap databaseOn demandResearch grantOpt inAustralian Bleeding Disorders Registry3127 patients (2021)1988AUSIndustry;MulticentrePaper form, mobile app, webpageAnnual reportNational Blood Authority (NBA)Opt inAustralian Motor Neurone Disease Registry827 (in 2009)2004AUSClinician;MulticentreNSNilCharity—run by volunteersOpt in & Opt outThe Rare Genetic Lipid Disorders Registry16 patients (2019)2019AUSPatient;MulticentreOnline databaseNSNSOpt inMyeloma Database in the Royal Adelaide Hospital, South Australia743 patients2009–2019StateClinician;MulticentreNSNSNSNSSouth Australian Scleroderma Register859 patients (2021)1993StateIndustry;MulticentreOnlineReported in other public reportsAustralian Rheumatology AssociationInformed consentThe Glomerular Disease Registry120 patients (2020)2018StateClinician;MulticentreNSAnnual reportThe George Institute for Global HealthInformed consentHuntington's Disease Research Participant RegistryNS2019StatePatient;MulticentreOnlineNSNSVoluntaryPerth Demyelinating Diseases Database983 patients (2009)NSStateClinician;SingleOnlineNSNSInformed consentThe South Australia Pathology iSYS database#20 patients (2017)NSUmbrellaIndustry;SingleOnlineNSNSNSMedical Genome Reference Bank*4000 participants2016UmbrellaIndustry;MulticentreWeb-basedNSNSNSAustralian Cancer Database#353 cases with mucosal melanomas1982UmbrellaIndustry;MulticentreOnlineNSNSNSAustralian Childhood Cancer Registry#1269 patients (2020)1983UmbrellaIndustry;MulticentreNSNSNSNSAustralian Paediatric Surveillance Unit Database#14291993UmbrellaIndustry;MulticentreAPSU report cardNSNSNSQueensland Oncology Online Database#18 patients (2015–2017)2005–2017UmbrellaIndustry;SingleRetrospectiveNSNSNSState-wide database based at Royal Perth Hospital, Western Australia#526 patients (Feb 2015-Sept2017)NSUmbrellaClinician;SingleOnline databaseNSNSNSGynaecological tumour registry of King George V Hospital20 patients1987–2000UmbrellaClinician;SingleOnline databaseNSNSNSSouth Australian Clinical Cancer Registry#140 patients1980'sUmbrellaIndustry;MulticentreOnline databaseNSNSNSSouth Australian Pathology Database#NS1960sUmbrellaIndustryOnline databaseNSNSNSThe Victorian Cancer Council Registry#251 patients (Jan 1998 to Dec2013)NSUmbrellaIndustryOnline databaseNSNSNSWestern Australia Register of Developmental Anomalies#30,000 births annually2011UmbrellaClinicianOnline databaseNSNSNSWestern Australia Cancer Registry#95 patients (2021)1981UmbrellaClinicianElectronic & paper recordsNSNSNSPMCC Prospective Database on Cervix Cancer PatientsNS1998UmbrellaClinicianOnline databaseNSNSNSUniversity of Sydney Endocrine Surgical Unit Database21 patients (Jul 1958 to Jun 2010)1957UmbrellaClinicianOnline databaseNSNSNSANZ Australia & New Zealand; APSU Australian Paediatric Surveillance Unit; AUS Australia; DIPG diffuse intrinsic pontine glioma; CDC Centre for Disease Control and Prevention; LGMD limb girdle muscular dystrophy; MCRI Murdoch Children’s Research Institute; NBA National Blood Authority; NHMRC National Health and Medical Research Council; NS not stated; NSW New South Wales; PMCC Peter MacCallum Cancer Centre; SIOPE; European Society for Paediatric Oncology; UK United Kingdom; WA Western Australia*Includes information of registries, databases and institutions collecting/researching people with rare disease conditions#Information on State and Umbrella rare disease registries and databases listed in the table is relevant to specific disease or condition
+
+General description and characteristics of rare disease registries, databases and organisations identified in the scoping review
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Patient,
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Biogen & Novartis, Philanthropic support
+
+Save our Sons & Muscular Dystrophy NSW
+
+Patient;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Industry;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Industry;
+
+Multicentre
+
+Clinician;
+
+Multicentre
+
+Patient;
+
+Multicentre
+
+Clinician;
+
+Single
+
+Industry;
+
+Single
+
+Industry;
+
+Multicentre
+
+Industry;
+
+Multicentre
+
+Industry;
+
+Multicentre
+
+Industry;
+
+Multicentre
+
+Industry;
+
+Single
+
+Clinician;
+
+Single
+
+Clinician;
+
+Single
+
+Industry;
+
+Multicentre
+
+ANZ Australia & New Zealand; APSU Australian Paediatric Surveillance Unit; AUS Australia; DIPG diffuse intrinsic pontine glioma; CDC Centre for Disease Control and Prevention; LGMD limb girdle muscular dystrophy; MCRI Murdoch Children’s Research Institute; NBA National Blood Authority; NHMRC National Health and Medical Research Council; NS not stated; NSW New South Wales; PMCC Peter MacCallum Cancer Centre; SIOPE; European Society for Paediatric Oncology; UK United Kingdom; WA Western Australia
+
+*Includes information of registries, databases and institutions collecting/researching people with rare disease conditions
+
+#Information on State and Umbrella rare disease registries and databases listed in the table is relevant to specific disease or condition
+
+Most of the registries, 47 (63.5%), mentioned in these studies, were established in the 2000s. The Neuroendocrine Tumour Registry (PLANET) [16, 17], Friedreich’s Ataxia Global Patient Registry [18] and Huntington’s Disease Research Participant Registry [19, 20] were established most recently, in 2019.
+
+Forty-two (56.8%) registries used solely an online web-based data entry method. While only five (6.8%) registries use either, both paper and online web-based data entry or paper-based data entry only.
+
+The population size captured in each registry varied. At the time of this review, only 16 (21.6%) of the RDRs captured population of > 1000 patients. Five (6.8%) registries captured data of > 4000 patients. One registry, International Collaborative Gaucher Group (ICGG) Gaucher Disease Registry [21, 22], captured data of > 120,000 participants since it was established in 1994.
+
+Data management varied among the RDRs identified in this scoping review. Within the global registries, most of the data were entered by patients, their caregivers or other family members. Six global registries were clinician-initiated with the data entered by clinicians (ICGG Gaucher Disease Registry [22], the Global Retrospective Registry for Danon Disease [23, 24], the International and SIOP-E Diffuse Intrinsic Pontine Glioma (DIPG) Registries [25, 26], the International Dysferlinopathy Registry [27] and the International Schwannomatosis Database [28]).
+
+In ANZ and Australian national registries, most registries collect their data online, with data entry completed by clinicians and registry staff. However, two of the Australian patient registries, Australian Bleeding Disorders Registry (ABDR) [29] and the PLANET registry [17], direct patients to enter their data via a mobile application.
+
+Limited information was available on data management of the jurisdiction-based or “umbrella” registries identified in this scoping review.
+
+Most of the RDRs collected similar types of data, including patient demographics, clinical and diagnostic variables, procedure and treatment information, and PROMs.
+
+Table 2 summarises data captured by RDRs and databases, described in this scoping literature review.Table 2Data captured by rare disease registries and databasesRegistry nameDemographic variablesDiagnostic/clinical variablesTreatment/procedure detailsQoL dataTiming of data collectionInternational Collaborative Gaucher Group Gaucher RegistryGender, ageDiagnosis details, clinical, biochemical, & therapeutic characteristics regardless disease severityTreatment status & choice, splenectomy status & date, treatment with alglucerase/imigluceraseQoL questions—NS(1) Baseline window: 12 months before to 1 month following date of imiglucerase initiation, (2) 10-year window: 8.5 to 11.5 years, (3) 20-year window: 17 to 23 yearsGlobal Retrospective Registry for Danon DiseaseGender, ageDiagnostic details; genetic details; Baseline echocardiographic dataNSNSNSGlobal Registry of Acute Coronary EventsInitials, DOB, address, telephone, physician, cardiologist detailsMedical history, presentation symptoms, hospital dates, ECG findings, laboratory pathology resultsProcedures, cardiac interventions, thrombolytics, medications, in-hospital events, discharge statusNS6 months after dischargeInternational & SIOP-E Diffuse Intrinsic Pontine Glioma (DIPG) RegistriesCountry, gender, ageDiagnosis, date of diagnosis, imaging, signs & symptoms & physical exam at diagnosis, response evaluations, central pathology review characteristics, central imaging review characteristics, & molecular profileTreatment data- chemotherapy, biopsies, pathology dataNSOngoing after registrationInternational Dysferlinopathy RegistryBasic demographicsDiagnosis details; symptoms &family historyNSNSNSInternational Schwannomatosis DatabaseContact details, DOB genderDiagnosis details; symptoms & family historyNSNSNSInternational Pachyonychia Congenita Research RegistryName, surname, gender, DOB, address, doctor detailsAge of diagnosis, disease characteristics, family characteristicsImages of disease areas, genetic testing details, medicationsQOL symptom & pain questionsOnce a year, target follow-up for 1 yearWolfram Syndrome International RegistryAge, genderDiagnosis details, family historyGenetic testing, DNA samples, & biological samples (blood & urine)NSNSThe Global Fukutin Related Protein RegistryName, age, address, email, phone numberDiagnosis, motor function, pain, ventilation & family history, symptoms, lung, heart & cognitive function, contractures, six-minute walk distance & muscle strengthMedications, non-invasive/invasive ventilation use, brain/muscle MRINSAnnuallyCantú Syndrome RegistryName, age, address, email, phone numberMedical history & health information, specific ABCC9 or KCNJ8 variant in the family (if any)NSNSAnnuallyGNE Myopathy RegistryAge, 18+Muscle Biopsy or genetic testing. General medical history; Level of physical activityMedicationsQoL questions6 months, 12 months & AnnuallyGlobal Prader-Willi Syndrome RegistrySocioeconomic details, biological family historyDiagnostic details & medical historyMedications, supplementsBehaviour & mental healthAs often as requiredGlobal Angelman Syndrome RegistryName, DOB, DOD, genderNewborn & infancy history; history of diagnosis & results; Illnesses or medical problems; Behaviour & Development; Epilepsy history; Sleep Disturbance Scale for Children Pathology & DiagnosticsMedications & interventionsNSPeriodicallyIdiopathic Thrombocytopenic Purpura Natural History Study RegistryName, surname, age, gender, country, race, insurance, education, employmentDiagnostics tests, clinical visits, family history, & pregnancy/childbirthMedications & frequencies/dosage, diet, surgeriesEnjoyment of life, fatigue, sleep, pain, social activities, mental health, physical health, PTSD symptoms, & financial impactWithin patient's own timeframeFriedreich’s Ataxia Global Patient RegistryName, DOB, genderDiagnosis, medical history, functional mobilityNSQoL—NS1 month before anniversary, then annuallyThe Myotubular & Centronuclear Myopathy Patient RegistryContact details & demographics; family historyClinical diagnosis; genetic mutation; Genetic report & muscle biopsy report; Details of clinician & genetic testing/muscle biopsy centresBest & current motor function & wheelchair use; Respiratory function, ventilation type & chest infections, Feeding & heart function; Neuromuscular examinations & scoliosis surgeryNSNSInternational Niemann-Pick Disease RegistryIndividually identifying data: name, addressDiagnosis, health status, disease characteristicsTreatment, lab results, imaging testsQoL questions—NSEvery six monthsLimb-Girdle Muscular Dystrophy Type 2A Patient RegistryName, DOB, gender, email, phone number, state, country, clinic nameGenetic diagnosis, genetic mutation, current ambulatory (walking) status, other family members with muscular dystrophyMedicationsNSNSInternational Fragile X Premutation RegistryName, DOB, gender, contact detailsLimited medical historyNSNSNSAustralian & New Zealand Fontan RegistryHeight, Weight, BMIBirth defects, congenital abnormalities, obstetric complications/interventions. cardiovascular health; condition specific information, general health, imaging, medication & supplements, reproductive health, linkage to other health databasesRe-intervention event(s), pacemaker status, cardiac transplant status, site of cardiac transplant procedure, Fontan take-down status, site of Fontan take-down procedurePedsQLNSThrombotic Microangiopathies RegistryName, sex, DOB, doctor’s nameThe circumstances and symptoms leading up to the diagnosis of TMA, other illnesses, medications, or history which could influence the onset & treatment of TMAThe type of treatment, the response of the illness to those treatments & any complications of the illness or treatment; relevant laboratory test & scan resultsNSNSAustralasian Epidermolysis Bullosa RegistryAge, sex, ethnicity, geographical & disease subtype distribution, past & current medical history, family historyDiagnostic laboratory studies, areas of blistering or erosion, EB type/subtype, electron microscopy, immunofluorescence, genetic mutation, complications (tracheolaryngeal, gastrointestinal, weight & growth development, ocular, genitourinary, skin cancers, renal disease, anaemia, swallowing problems) & clinical outcomesElectron microscopy, immunofluorescenceNSNSLymphoma & Related Diseases RegistryDemographics outcomes- overall & progression-free survival, duration of response & time to next treatment. Long-term outcomes- through linkage with cancer & death registriesDiagnoses, health status at diagnosis. Laboratory and imaging results at diagnosis, therapy, chemotherapy, autologous & allogeneic stem cell transplantation, & maintenance and supportive therapies: outcomes, long-term outcomesTherapyQoLNSMyeloma & Related Diseases RegistryGeneral health diagnosis, gender, ageDiagnoses, clinical & laboratory results, therapy, decisions & complications, clinical outcomesAutologous &allogeneic stem cell transplantation, therapy complications, laboratory resultsEQ-5D-5LNSAustralia & New Zealand Transplant Registry*Name, gender, DOB, ethnic background, details of transfers between treating unitsBaseline comorbidities, paediatric data; parenthood outcomesTransplant Event, graft failure eventNSReal time data collected on all new incident patients commencing RRTAustralian & New Zealand Registry of Advanced Glaucoma*Fist name, surname, DOB, gender, address, phone number, email, eye clinicianPatient clinical details, diagnosis, BCVA, highest recorded IOP, refraction, central corneal thickness, cup disc ratioGlaucoma surgery, laser trabeculoplastyNSNSAustralasian Interstitial Lung Disease RegistrySex, age, ethnicity, mortalitySymptoms, clinical findings, occupational & environmental exposures, family history & co-morbid diseaseCurrent & past medication lists (including oxygen use), results of other investigations including: serum blood markers, high resolution CT chest findings, blood gases, bronchoscopy +/− biopsy, active & past treatments specific to any form of ILD, adverse effects or incidentsShortness of Breath Questionnaire, St George Respiratory Questionnaire & HADSBaseline, Mortality data is reviewed every 6 monthsThe Australasian Registry Network of Orphan Lung DiseasesReported disease, patient initials, DOB, postcode, medical record number, new case or follow up, physician detailsNSNSNSNSAustralia & New Zealand Familial Hypercholesterolaemia RegistryPersonal & contact details, doctor’s details, relatives’ details for index patients, family pedigree, details on founder effect origin, family linkage details, clinical data at follow up assessments: hypertension, diabetes, antithrombotic, biochemistry profiles, & deathFamily history, clinical history, physical examination, plasma LDL-cholesterol, biochemistry profile, risk factors and clinical trials, ‘Dutch Lipid Clinic Network Score’, ‘FH Diagnostic category’, ‘LDL-cholesterol adjusted for treatment’, ‘BMI’, genetic data (genotype & gene variants), laboratory reportsMedication details, drug intolerances, imaging tests: carotid ultrasonography, echocardiograms, coronary artery calcium scores, angiograms, & nuclear perfusion scans, e type, frequency, & complicationsNSNSAustralian National Creutzfeldt-Jakob Disease RegistryFull name, MRN, DOB, Address, doctor name, Hospital; Survival/mortalityRelevant medical conditions, including investigations, FNI outcome classificationRequired to list any surgeries, transplants, grafts, blood donations/products or organs, dental/surgical care, renal dialysis, tattoos or piercings, or acupunctureNSFrom diagnosis—deathThe Australian Rett Syndrome DatabaseFull name DOB, address, age at diagnosis, mothers age at subjects’ birth, mothers & fathers’ occupation, education, birth orderGenetic: MECP2 test, result & mutation identified, clinical severityTreatment type dependant on symptomsNSEvery 2 to 3 yearsLymphangioleiomyomatosis RegistryFull name, DOB, address, phone, email, gender, NOKDate of diagnosis, spirometry and, when available, lung volumes and diffusing capacity), arterial blood gases or oximetry, walking and resting oxygen titration, cardiopulmonary stress testing, cause-specific mortality, functional status, & clinical events associated with lung transplantationNSNSNSAustralian Genetic Heart Disease RegistryDOB, gender, ethnicity, COB, height & weight, family historyClinical diagnosis, age at diagnosis, sudden cardiac death event, other serious medical conditions, symptoms, medications, genetic testing results, echo, ECG, cardiac MRI, exercise stress testsDetails of interventions, AICD indications, device details, adverse events & appropriate shocks. Use of services, cardiac investigations & clinical genetics consultsNSAnnuallyNeonatal Alloimmune Thrombocytopenia RegistryMaternal demographics, neonatal demographics, postnatal featuresClinical case description, laboratory investigations (antibody investigations- immunofluorescence tests, glycoprotein binding ELISA assays & HLA antibody testing)Transfusions, antenatal therapy, therapy & outcome, clinical outcomesNSAntenatal & PostnatalAustralian Idiopathic Pulmonary Fibrosis RegistryDemographics, smoking history, family history, medication historySymptoms, objective investigational data relevant comorbidities (gastroesophageal reflux disease)High-resolution computed tomography scans & any surgical lung biopsy specimens collectedQoLEvery 6 monthsThe Aplastic Anaemia & Other Bone Marrow Failure Syndromes RegistryDemographic details Clinical context, including possible precipitants, family history, including IBMFS, IPF & liver diseaseClinical presentation, laboratory test results at initial presentation & follow-up reviewsImmunosuppressive therapy, bone marrow or haematopoietic stem cell transplant, & supportive therapy; Clinical outcomes, including details of any relapse, complications, performance status indicators & disease progressionNilData is collected through routine clinical visitsHaemoglobinopathy RegistryFull name, DOB, Medicare no, MRN, doctors’ details, ethnicity, genderHeight, weight, symptoms, diagnostic laboratory results, clinical &imaging results, complications of disease, family historyTherapy, clinical outcomes, transfusions,NSMultiple occasions (not specified)Australian Bronchiectasis RegistryFull name, DOB, gender, Postal address, email address, COBAge at diagnosis, diagnosis tests, clinical visits, comorbidities, genetic variationsSpirometry results, CT chest, radiology reports, airway cultures, medicationsQoL-BBaseline data, spirometry & CT details measured at enrolment, airway cultures obtained for 2 years prior to & 3mths after enrolmentMonash Public Health Genomics*NAThe program conducts research centred around the genetic analyses of large cohorts, clinical trials and patient registriesMaintenance & supportive therapies;NANAPLANETFull name, gender, DOB, clinician detailsBristol Stool Scale, Vital measurement (height & weight) ECOG scale—level of functionCompare types of treatments including; SSA PRRT, Chemo (Carbo/Etop), CAPTEM, Everolimus, Sunitinib, Telotristat & ImmunolocyQLQ-C30 & QLQGINET21Periodically dependant on various treatmentsAustralian Cystic Fibrosis Data RegistryName, Gender, DOB, COB, DODDiagnostic data; genetic mutation, initial diagnosis testing, clinical measures; lung function & BMI status, pulmonary infections & complicationsTransplant history, hospital admissions, IVAbNilQuarterlyAustralian Inherited Retinal Disease RegistryGender, DOB & contact details, ophthalmologist /referring doctor, family history & pedigree structureClinical data, results of electrophysiology tests, psychophysical measurement, ophthalmic examinations & genetic variationsTopical therapies, gene therapies, clinical trialsNSNSAustralian Calciphylaxis RegistryFull name, DOBLaboratory data, clinical background & presentation as well as therapeutic strategies & outcomes. Laboratory resultsTreatment dialysis prescription, medications & treatment outcomes. Photos of skin lesionsNilInitial 5-year period of data collection, all treating units were contacted for patient follow-up data ongoing periodically, including calciphylaxis resolution & mortalityBosentan Patient RegistryName, gender, DOBHealth & vital statistics, clinical characteristicsConcomitant medications, length of treatmentNilAt enrolment & at each 6-monthly visitThe Australian Neuromuscular Disease RegistryFull name, DOB, COB, gender, postal & email addressGenetic information, year of diagnosis, diagnostic tests, clinical visits, comorbiditiesClinical management, therapies, laboratory results, medications, frequency, dosages, surgical proceduresNS6 & 12 monthsHypersomnolence Australia, Idiopathic Hypersomnia Patient RegistryFull name, DOB, email, postal addressDiagnosis, Multiple Sleep Latency Test resultsDose/type of medications, other medications, sleep apnoea status, treatment for sleep apnoea, other concernsNilOnce offHHT Alliance (Hereditary Haemorrhagic Telangiectasia)Full name, DOB address & Country of residenceAge & details of first diagnosis, physician details, family history of HHTSurgical therapies, medical therapies, treatments manage complicationsNSInitial entry & subsequent update of available information as requiredAustralian Mitochondrial Disease Foundation Patient RegistryFull name DOB, DOD, gender, email & postal addressClinical diagnosis, biochemical diagnosis, genetic diagnosis, type of mitochondrial diseaseNSNil6 & 12 monthsLeukodystrophy AustraliaFull name DOB, gender, email & postal address, COBYear of diagnosis, diagnosis test, genetic results, family history of diseaseNilSurvival/mortalityInitial diagnosis, 6mths, 12 months & 24 monthsAustralian Autoinflammatory Diseases RegistryFull name, DOB, gender, email & postal addressAge at diagnosis, diagnostic testing, family history & genetic resultsClinical management, therapy, laboratory resultsNilOnce off—initial recruitmentAustralian Bleeding Disorders RegistryTitle, Full name, alias, DOB, address, phone email, doctor detailsDate diagnosed, bleeding disorder, severity, baseline factor date/level, weight, heightTreatment regimen, product name, total dose, frequencyNilNSAustralian Motor Neurone Disease RegistryPatient demographics, site of onset of diseaseChanges in disease, complications related to disease progression, diagnosis dateTreatment type & impact of new treatments & interventionsNilFirst presentation 3 months 6 months, approx. 12 months after your first visit, then ongoing every 6 monthsThe Rare Genetic Lipid Disorders RegistryPersonal & contact detailsClinical history, family history, first physical examination. Genetic data & imaging, laboratory dataManagement & treatment plansNilLongitudinal follow up forms (not specified)Myeloma Database in the Royal Adelaide Hospital, South AustraliaPersonal & contact detailsParaprotein subtype, cytogenic abnormalities at diagnosis, sites of involvement; biopsy-proven extramedullary myelomas involving skin, organ or CNSTreatment details: autologous & allogenic stem cell transplantsNSNSSouth Australian Scleroderma RegisterDemographics, sex, age at disease onset, residency & occupation at disease onset & 10 years before first symptoms, siblings, familial history of scleroderma, disease subtypeIncidence, clinical phenotype, possible precipitating factors, seasonality at presentation, presence of autoantibodies, survival; organ involvement, available serologyImmunofluorescence, counter immune-electrophoresis, enzyme-linked immunosorbent assay, line immunoblotHAQ, SF-36, PROMIS-29 Profile 2.0, UCLA SCTC GIT 2.0, FACITAnnualThe Glomerular Disease RegistryBasic demographics detailsMedical history& details of disease diagnosisDNA & blood samplesNSEvery 6 months through medical records & physician reviewsHuntington's Disease Research Participant RegistryName, contact details, DOB, age, genderHandedness (left or right h& dominant), description of health in terms of Huntington’s disease (diagnosis/genetics), general health-related questionsNSNS4 times a yearPerth Demyelinating Diseases DatabaseGender, family history of MS, age at onset of initial symptoms, clinical courseEDSS score, MSSS score, VEP, disease durationHLA-DRB1 genotyping, blood samples, MRI findings, cerebrospinal fluid studiesNSNSAICD automatic implantable cardioverter-defibrillator; BCVA best corrected visual acuity; BMI Body Mass Index; CAPTEM capecitabine and temozolomide; CNS Central Nervous System; COB Country of Birth; CT computed tomography; DIPG Diffuse Intrinsic Pontine Glioma; DNA deoxyribonucleic acid; DOB Date of Birth; DOD date of death; EB Epidermolysis Bullosa; ECG electrocardiogram; ECOG Eastern Cooperative Oncology Group; ELISA Enzyme linked Immunosorbent Assay; EQ-5D European Quality of Life Five Dimension; FACIT Functional Assessment of Chronic Illness Therapy; FH Familial Hypercholesterolaemia; HADS Hospital Anxiety & Depression Scale; HAQ Health Assessment Questionnaire; HLA Human Leukocyte Antigen; HLA-DRB1 Major Histocompatibility Complex, Class II, DR Beta; IBMFS Inherited Bone Marrow Failure Syndromes, ILD Interstitial Lung Disease;IOP Intraocular pressure; IVAb Intravenous Antibiotics;IPF Idiopathic Lung Fibrosis; LDL; Low-density Lipoprotein; MECP2 Methylcytosine-binding Protein 2; MRI Magnetic Resonance Imaging; MRN Medical Records Number; MS Multiple Sclerosis; MSSS Multiple Sclerosis Severity Scale; NA not applicable; NS Not Stated; NOK Next of Kin; PedsQL; Paediatric Quality of; PROMIS - 29 Profile 2.0: Patient-Reported Outcomes Measurement Information System - 29 Profile version 2.0; PRRT Peptide Receptor Radionuclide Therapy; PTSD Posttraumatic Stress Disorder; QoL quality of life; QoL-B quality of life questionnaire; QLQ-C30 European Organisation for Research and Treatment of Cancer. Core Quality of Life Questionnaire; QLQGINET21 Questionnaire for Patients with Gastrointestinal Neuroendocrine Tumours; RRT renal replacement Therapy; SIOPE; European Society for Paediatric Oncology; SSA Somatostatin Analogues; SF 36 Short Form 36; TMA Thrombotic Microangiopathies; UCLA SCTC GIT University of California Los Angeles Scleroderma Clinical Trial Consortium Gastrointestinal Tract; VEP visual evoked potential
+
+Data captured by rare disease registries and databases
+
+AICD automatic implantable cardioverter-defibrillator; BCVA best corrected visual acuity; BMI Body Mass Index; CAPTEM capecitabine and temozolomide; CNS Central Nervous System; COB Country of Birth; CT computed tomography; DIPG Diffuse Intrinsic Pontine Glioma; DNA deoxyribonucleic acid; DOB Date of Birth; DOD date of death; EB Epidermolysis Bullosa; ECG electrocardiogram; ECOG Eastern Cooperative Oncology Group; ELISA Enzyme linked Immunosorbent Assay; EQ-5D European Quality of Life Five Dimension; FACIT Functional Assessment of Chronic Illness Therapy; FH Familial Hypercholesterolaemia; HADS Hospital Anxiety & Depression Scale; HAQ Health Assessment Questionnaire; HLA Human Leukocyte Antigen; HLA-DRB1 Major Histocompatibility Complex, Class II, DR Beta; IBMFS Inherited Bone Marrow Failure Syndromes, ILD Interstitial Lung Disease;IOP Intraocular pressure; IVAb Intravenous Antibiotics;IPF Idiopathic Lung Fibrosis; LDL; Low-density Lipoprotein; MECP2 Methylcytosine-binding Protein 2; MRI Magnetic Resonance Imaging; MRN Medical Records Number; MS Multiple Sclerosis; MSSS Multiple Sclerosis Severity Scale; NA not applicable; NS Not Stated; NOK Next of Kin; PedsQL; Paediatric Quality of; PROMIS - 29 Profile 2.0: Patient-Reported Outcomes Measurement Information System - 29 Profile version 2.0; PRRT Peptide Receptor Radionuclide Therapy; PTSD Posttraumatic Stress Disorder; QoL quality of life; QoL-B quality of life questionnaire; QLQ-C30 European Organisation for Research and Treatment of Cancer. Core Quality of Life Questionnaire; QLQGINET21 Questionnaire for Patients with Gastrointestinal Neuroendocrine Tumours; RRT renal replacement Therapy; SIOPE; European Society for Paediatric Oncology; SSA Somatostatin Analogues; SF 36 Short Form 36; TMA Thrombotic Microangiopathies; UCLA SCTC GIT University of California Los Angeles Scleroderma Clinical Trial Consortium Gastrointestinal Tract; VEP visual evoked potential
+
+Demographic variables included given names, surnames, age, gender, country, address, email, phone number, death date, race/ethnicity, insurance, education, employment status, family history, next of kin, clinic and doctor’s details. The information was anonymised for most RDRs and databases. Individually identifying data was only collected in the International Niemann-Pick Disease Registry [30, 31]. As the development of the International Niemann-Pick Disease Registry is ongoing, the use of identified data will aid in the registries planning for linkages to clinical and patient datasets.
+
+Diagnostic/clinical data variables generally included some or all of the following: (1) the presence of disease symptoms and clinical examination findings; (2) investigation findings such as pathology investigation and biopsy/cytology results, medical imaging investigations, genetic profile, and resulting date of diagnosis; (3) functional and behavioural status and support needs related to the disease; and (4) the presence of disease sequelae, including morbidity and death.
+
+For paediatric RDs, a broader paediatric history was also often included (Table 2). Some clinical and diagnostic information was unique to each RDR. For example, the ICGG Gaucher Disease Registry [22, 32] collected additional details on biochemical and therapeutic characteristics, while the DIPG registry [25] captured symptom duration, cranial neve palsy, pyramidal signs, cerebellar signs, tumour material, imaging details, signs and symptoms and physical exam at diagnosis, response evaluations, central pathology review characteristics, and molecular profile. The Australian Bronchiectasis Registry records spirometry results, computerized tomography (CT) chest scans, radiology reports, airway cultures and pulmonary exacerbations as their baseline data [33, 34], while the Neonatal Alloimmune Thrombocytopenia (NAIT) records maternal and paternal testing result details [35, 36].
+
+Disease management information included: (1) medical management, including medications; (2) surgical and procedural information; (3) exacerbation/critical care episodes; and (4) supportive care, such as nutritional and allied health interventions. This information was similar across all the registries; however, additional information was available for individual RDRs. Only three ANZ RDRs collected surgical procedures and treatment information.
+
+PROMs and QoL data were captured by five global registries (ICGG [22], International Pachyonychia Congenita Research Registry [37, 38], GNE Myopathy Registry [39], Friedreich’s Ataxia Global Patient Registry [18], Immune Thrombocytopenia (ITP) Natural History Study Registry [40]), which captured physical and mental health, post-traumatic stress disorder symptoms, social activities and financial impact.
+
+Only four ANZ RDRs captured PROMs and QoL information. These include the ANZ Fontan Registry [41], Myeloma and Related Diseases Registry (MRDR) [42], Lymphoma and Related Diseases Registry (LARDR) [43] and the Australasian Interstitial Lung Disease Registry (AILDR) [44]. Amongst the Australian RDRs, 24 registries collected PROMs. Similar to most RDRs discussed in this review, the specific PROMs collected varied depending on the registry.
+
+Most global RDRs and databases captured data annually; however, some had specific data entry requirements. For example, the ICGG Gaucher Disease Registry collected data at multiple time points: (1) baseline (2 months before to 1 month following the date of imiglucerase initiation), (2) 10-year window (8.5–11.5 years), and 3) 20-year window (17–23 years) [22]. In the Global Angelman Syndrome registry participants may receive a request to update data periodically [45, 46]. The GNE Myopathy Registry [39] contacted their patients at 6 months and yearly. Friedreich’s Ataxia Global Patient Registry [18], Cantú Syndrome Registry [47, 48] and the International Pachyonychia Congenita Research Registry [37] collected data annually.
+
+While there was limited data available on the timing of data collection throughout the ANZ RDRs, it was noted that the ANZDATA registry distributes an annual survey for all dialysis and transplant units in ANZ on the 31st of December [49]. The AILDR data are collected at baseline, and mortality data are reviewed every 6 months with dates of death and lung transplantation recorded as determined by clinical records and/or death certificates [44]. Families and carers in the Australian Rett Syndrome Database are invited to contribute information every 2–3 years about changes in the health or function of the individual with Rett syndrome for whom they care [50]. To assess patient outcomes in the Australian Calciphylaxis Registry (ACR) [51], following the initial 5-year period of data collection, all treating units are contacted for patient follow-up data, including calciphylaxis resolution and mortality. Other registries and databases capture data annually.
+
+Annual reports, newsletters and research publications were the main reporting outputs for 32 (43%) RDRs identified in this review (Table 2). Funding the operations of the registries and databases varied from industry partners, non-profit charity organisations and fundraisers and government grants.
+
+Registries are often established to describe patterns of care, and to understand variation in treatments and outcomes and predictors of prognosis and QoL. Establishing and maintaining a registry requires substantial resources, infrastructure and sustained funding [52].
+
+The present scoping review examined publicly-available data on existing RDRs and databases that included Australian participants. The findings of this review are an important first step towards informing the development of a national framework for the RDRs in Australia.
+
+Seventy-four different registries and databases of RDs collecting Australian data were identified; 19 of them were global registries, 24 were Australian-only registries, 10 were ANZ based, and five Australian jurisdiction-based registries. Sixteen “umbrella” registries collected data on several rare conditions, which included some RDs, and thirteen registries stored rare cancer-specific information.
+
+The population size captured in each registry varied, with many being relatively small. This highlights the challenges associated with diagnosis and reporting, as few clinicians have experience in managing individuals with RDs. Lack of clinician awareness can lead to significant delays in diagnosis or individuals remaining undiagnosed, creating future RD data deficits [53].
+
+Data management and entry varied among the RDRs, with data either being entered by patients/caregivers/family members, clinicians or by the registry staff. Most of the Australian-only RDRs identified in this review were clinician-led. For ultra RDs where patients are few, building a patient registry is an intuitive first step to determining the number of people affected, their geographical distribution and basic demographic and clinical characteristics of the disease. The scope of these registries may evolve over time, maturing from a community effort as a means for a basic understanding of patient and disease characteristics, to a supportive mechanism for research funding and attracting input from health service providers to registry data collection [54].
+
+Identifying a common minimum data set for RDRs is a challenge due to the heterogeneous nature of RDs. The RDR data sets identified in our review generally comprised a variety of data elements within the domains of demographic; diagnostic/clinical; treatment/procedure and PROMs and QoL data, with individual variables being unique to RDs. In 2011, the European Commission funded the EPIRARE project (‘Building Consensus and Synergies for the European Union (EU) Registration of Rare Disease Patients’), prior to the establishment of a European Platform for RDRs, which aims to support a harmonized approach to European RDRs [55–57]. A ‘set of common data elements for Rare Diseases Registration’ was produced by a Working Group coordinated by the Joint Research Centre and composed of experts from EU projects: EUCERD Joint Action, EPIRARE and RD-Connect.
+
+The European Platform on RD Registration (EU RD Platform; European Commission) identified 16 common data elements for the initial registration of people with RDs onto a RDR. These are grouped in the following categories:Pseudonym.Personal information (date-of-birth, sex).Patient status (alive, dead, long-term follow-up, opted out).Care pathway (date of initial specialist contact).Disease history (Age at symptom onset; age at diagnosis).Diagnosis (Disease diagnosis, Genetic diagnosis, undiagnosed).Research (contact for research, data for secondary use, biobank).Disability (functioning, disability).
+
+Pseudonym.
+
+Personal information (date-of-birth, sex).
+
+Patient status (alive, dead, long-term follow-up, opted out).
+
+Care pathway (date of initial specialist contact).
+
+Disease history (Age at symptom onset; age at diagnosis).
+
+Diagnosis (Disease diagnosis, Genetic diagnosis, undiagnosed).
+
+Research (contact for research, data for secondary use, biobank).
+
+Disability (functioning, disability).
+
+While a detailed mapping of each Australian registry’s dataset against elements was beyond the remit of this scoping review, a majority of identified RDRs collected items that aligned with the broad categories recommended by EPIRARE [58]. In addition, a number of RDRs in Australia collected follow-up clinical and patient-reported information.
+
+PROMs and QoL data were captured only by some of the RDRs identified in our review. PROMs are increasingly being introduced into clinical registries in Australia, providing a person-centred perspective on the expectations and impact of treatment [59]. Including PROMs in clinical registries offers numerous advantages [60]. First, incorporation of the patient voice helps keep outcome measurements of care person-centred. Further, symptom burden, QoL and satisfaction with care are dynamic variables that cannot be recreated accurately through retrospection; they are essentially lost if not captured “in the moment”. PROMs data collection has also been supported by the EPIRARE [58].
+
+Frequency of data collection was not consistent throughout the RDRs captured in this review. Determining regular intervals and time points for data capture in RDRs can be challenging due to low patient numbers and frequent loss to follow up. Overtime, retention of patients and providers can also be difficult, so registry developers should build in mechanisms for monitoring and follow-up [61].
+
+RDR reporting information was not available for more than half of the RDRs identified in this review. This could be because these RDRs were not established with a purpose for quality improvement as an outcome [62]. This is a noteworthy limitation of many RDRs in Australia, that should be addressed by a more coordinated national approach, including alignment with the recently published National Strategy for Clinical Quality Registries and Virtual Registries [63].
+
+Our review identified opportunities to learn from successful RDRs, as well as from those that have not been sustained. Established in 2009, the Australasian Registry Network of Orphan Lung Diseases (ARNOLD) is one example of an unsustainable registry [64]. ARNOLD aimed to provide prevalence data for multiple orphan lung diseases in both the paediatric and adult populations [64]. During its operation ARNOLD obtained national data relating to 30 rare and extremely rare lung diseases. However, the registry faced several barriers. Data were limited by the under-reporting of patient identifiers and other details. Only 35% of notifications to the registry included postcode, birthdate or patient initials, so duplicate notifications could not be identified, which may have led to over-reporting of some rare conditions. Another limitation of this registry was specific diseases were not well defined, so reporting relied on individual physician diagnoses, which may have led to inconsistencies. Nonetheless, the registry operators noted that many physicians recognised the importance of contributing to a web-based RDR to monitor quality of care [64].
+
+An exemplar RDR is the Australian Cystic Fibrosis Data Registry (ACFDR) [65, 66]. The ACFDR has been funded, from its commencement, by Cystic Fibrosis Australia through a combination of fundraising, philanthropy and industry support. The ACFDR collects information from people with cystic fibrosis from the time of diagnosis to the time of death or lung transplantation. Data is entered into the registry by clinicians and data managers from 23 public centres. Data completeness has been enhanced over the last few years through an industry-sponsored data quality program, leading to increased acceptability of the data and increasing use for research and quality improvement. The success of the ACFDR is attributed to sustained funding over a prolonged period, broad clinical and community support, and experienced registry management.
+
+The concept of a single national RDR or database in Australia is worth consideration and has been suggested previously [1]. National RDRs have been also established in other countries, including China [67], Italy [68] and other European countries [69]. In 2019, researchers in Slovenia developed a national RDR pilot informed by focus groups with experts from leading institutions in the field of RD [70]. The results indicated that effective development of a national RDR requires a series of systemic changes and many considerations [70].
+
+The European Society for Immunodeficiencies (ESID) Registry was utilised as a platform for the German Network on Primary Immunodeficiency Diseases (PID-NET) to perform queries on RDRs and extract the data in the context of PID-NET [71, 72]. To interconnect RDRs the Open Source Registry System was implemented, based on a federated search functionality, ultimately making data from the ESID registry available in an interoperable manner and without losing sovereignty [73].
+
+For several years, there have been activities ongoing in Germany under the Medical Informatics Initiative to digitally bring the hospitals together, combining the development of IT infrastructure, scientific research projects, as well as the promotion of junior researchers and education in medical informatics [74]. This initiative has been realized within five consortia of which two are mainly using Open-Source software [75], namely the consortia MIRACUM [76] and DiFUTURE [77]. They work on distributed data analysis using Data Shield [78] and the Personal Health Train [79], the latter designed for distributed machine learning. A combination of the aforementioned methods could potentially lead to a robust solution allowing RD data to remain within the registries without creating a new umbrella RDR, to use attachable structure leveraged by established tools, in order to interconnect RDRs nationally and internationally.
+
+To achieve this in Australia, well-coordinated and well-funded efforts should involve all stakeholders, as well as alignment of all medical, organisational and technological aspects in accordance with the long-term public healthcare objectives and infrastructure for clinical trials. With differing perspectives on key issues related to RDRs, such as their sustainability, data custodianship, data entry requirements, and other challenges including limited patient numbers, a lack of infrastructure and workforce, funding sources and governance structures, the development of formal policies to support coordination and sustainability of Australian RDRs has been complex and difficult.
+
+Such initiatives require behavioural, regulatory, financial, organizational, process, policy, clinical, and many other changes at all levels of the healthcare system. Dedicated funding should be allocated for eligible RDRs to support their reach to recruit every possible consenting patient across Australia and ensure full coverage of the eligible clinical population. Incentives for hospital and health services should encourage staff to continue dedicating their time to RD data collection. Investing in the infrastructure and staffing would assist in streamlining and simplifying the maintenance and data entry demands of new and existing RDRs across Australia. Finally, RDRs should be promoted in hospitals and relevant clinics, and collaborations with relevant international registries should be sought [13]. As we take steps towards a nationally coordinated approach we should leverage data and learnings from existing RDR captured in this review. Information regarding RDRs operating in Australia could be consolidated into a repository to support the development of new RDRs. Aligning with the previous work of EPIRARE and the EU RD Platform in defining a minimum data set, a national set of best practice principles for RDRs in Australia could be developed, using the ACFDR as an exemplar. This could include principles of success derived from this review, as well as individual RDR experiences, including:Clinician-led, person-centred governance.Low burden approvals.Ongoing sustainable funding.Low burden data collection & linkage with existing data sources.Mechanisms for consumer contribution.Prospective, incidence-focused registries that address knowledge gaps.Enablement of multiple data uses, with consumer opt-out provisions.Broad data uses, including for reporting, epidemiology, secondary research, access to clinical trials.Support consumer connection and mechanisms to report back to registry participants.Data interoperability/harmonization—data sharing/linkage between datasets/registries.
+
+Clinician-led, person-centred governance.
+
+Low burden approvals.
+
+Ongoing sustainable funding.
+
+Low burden data collection & linkage with existing data sources.
+
+Mechanisms for consumer contribution.
+
+Prospective, incidence-focused registries that address knowledge gaps.
+
+Enablement of multiple data uses, with consumer opt-out provisions.
+
+Broad data uses, including for reporting, epidemiology, secondary research, access to clinical trials.
+
+Support consumer connection and mechanisms to report back to registry participants.
+
+Data interoperability/harmonization—data sharing/linkage between datasets/registries.
+
+Research and data are one of the three key pillars in the Action Plan [13]. Limited data is a common feature of RDs, often resulting in high uncertainty, which impacts every part of people’s lives. People are faced with impossible choices based on incomplete knowledge and unclear pathways. In development of the Action Plan the sector highlighted comprehensive, high quality collection, and effective use of RD data as one of four critical enablers of effective RD policy [13]. RDRs have unique advantages that can be leveraged for success. These advantages include engaged communities who value data and knowledge and are highly attuned to the benefits of RDRs in facilitating access to participation in research and clinical trials. In addition, the benefits of novel therapies and precision medicine for RDs are likely to encourage the establishment of future RDRs for the support of post-marketing surveillance.
+
+This study has systematically and comprehensively reviewed publicly-reported data collected by RDRs with Australian participants, as reported in the literature. To appreciate the findings in this review, the following limitations should be considered. First, we have likely missed several RDRs and databases that collect RD information because a lot of data is kept in secure electronic health records despite our comprehensive search strategy, including an internet search in addition to a literature search of four large electronic databases. Second, most publications or grey literature sources did not provide detailed information on the data items captured by RDRs and databases. For state-wide and “umbrella” registries, the information and numbers reported are accurate at the date of publication of the source and for the particular condition, as these registries may also capture other RDs and conditions. We have identified a few state/jurisdiction and “umbrella” registries that capture data from various conditions, including RDs. Registry information is relevant to the conditions only listed in the tables. This has been noted in the legends and in the text. Since we focussed on the registries collecting data from people with RDs, we are aware that not all RDs captured by the state and “umbrella” registries may be described in this scoping review. Third, RDR literature did not usually report on the impact of registries on patient outcomes, nor did they detail enablers and barriers to meeting registry objectives. This requires further investigation and follow-up with registry managers.
+
+The findings of this scoping review highlight the heterogeneity of RDRs collecting Australian data, with variations noted in the mechanisms for data entry, data items captured, scope, outputs, and sources of funding. This heterogeneity calls attention to the challenges of establishing and maintaining RDRs in Australia and the interest in a nationally consistent approach, as highlighted in the Action Plan [13]. Nevertheless, the different characteristics and needs of individual RDs in Australia make interoperability difficult, especially given the absence of a nationally consistent minimum dataset for RDs.
+
+An initial step would be to consolidate information regarding existing RDRs to support the development of new registries. This should be followed by development of Australian RDRs best practice consensus guidelines, aligned with existing international standards, with goals to improve clinical practice and outcomes, access to research and clinical trials, and support the RD community. Investment in a nationally coordinated and consistent approach to data collection for RD in Australia will improve our understanding and quantification of the national burden of RDs, and their impact on patients, carers and families. A national strategy for RD data collection will also require cross-jurisdictional government engagement and agreement. This requires systemic policy reform, but is a critical way for governments to keep pace with international direction and respond to the Action Plan for the best possible health and wellbeing outcomes for Australians living with a RD.
+
+Few of the seventy-four RDRs identified in this review were sustainable funded or reported regular research and quality improvement outputs. This suggests an under-investment in RDRs in Australia compared to more common conditions—diabetes and obesity, heart disease and cancer, which have been prioritised as areas for CQRs by the Australian Commission for Safety and Quality in Health Care [80]. Not many RDRs identified in this review outline a clear purpose or scope, and the data they collect is often incomplete and varied. These factors are contributing to poor data quality and poor levels of clinical awareness and knowledge. To achieve equity in data and knowledge of RD that is aligned with more common conditions, investment in RDRs is vital. Without such investment rare diseases cannot be counted and evidence-based improvements in care and outcomes will not keep pace with rapid advances in medical technologies, particularly in the areas of genomics and precision medicine.

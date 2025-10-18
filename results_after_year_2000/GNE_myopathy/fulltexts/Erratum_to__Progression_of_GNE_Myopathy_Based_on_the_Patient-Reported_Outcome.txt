@@ -1,0 +1,15 @@
+J Clin Neurol 2019;15(3):275–284 / https://doi.org/10.3988/jcn.2019.15.3.275
+
+Dear Editor,
+
+We authors opted for correcting the mistakes made in “Progression of GNE myopathy based on the Patient-reported Outcome”, which was published in J Clin Neurol 2019;15(3):275–284.
+
+In Table 1 on page 277 and 278, the mutations were described at nucleotide level, and the resultant protein alterations were shown in Fig. 1 on page 279. Several of the description (2 in Table 1 and 2 in Fig. 1) were found incorrect and thus were rectified as follows;
+
+1. In Fig. 1, p.R308C located on exon 6 should be p.R308G.
+
+2. In Fig. 1, p.R337O located on exon 6 was a typing error and should be p.R337Q.
+
+3. Both Case 34 and 35 in Table 1; c.1664G>T should be c.1664C>T.
+
+We apologize to make disturbances in the publication.

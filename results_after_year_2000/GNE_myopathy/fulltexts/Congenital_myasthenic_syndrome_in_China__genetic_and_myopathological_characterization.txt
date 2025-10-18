@@ -1,0 +1,225 @@
+Congenital myasthenic syndrome (CMS) is a group of neuromuscular junctions (NMJ) disorders that are highly heterogeneous, both clinically and genetically. CMS diagnostic clues include early disease onset, fatigability or fluctuating weakness, symmetric extraocular and limb muscle involvement, a positive family history, and a decremental response to repetitive nerve stimulation (RNS). Mutations in CMS‐related genes lead to an accurate diagnosis. Over 30 genes have been identified to date, mainly in autosomal recessive CMS, as well as in a small group of autosomal dominant forms of the syndrome. Based on the causative genes and their encoded protein functions, CMS is characterized by defects in presynaptic proteins, synaptic basal lamina‐associated proteins, and postsynaptic proteins, as well as defective protein glycosylation and endplate development and maintenance, among other syndromes.
+1
+, 
+2
+
+The incidence and distribution of CMS has been reported in several geographical regions, and the mutational frequencies of CMS genes vary among different ethnicities.
+1
+, 
+3
+, 
+4
+, 
+5
+, 
+6
+
+CHRNE, RAPSN, and COLQ mutations are prevalent in most populations.
+1
+, 
+3
+, 
+4
+, 
+5
+, 
+6
+ In Chinese patients, cases of CMS have been described with a series of gene mutations, including in CHA,
+7
+
+COLQ,
+8
+
+GFPT1,
+9
+ and MUSK,
+10
+ but the exact mutation frequency of CMS in China remains unclear. Based on the molecular defects and the response to NMJ‐modulating drugs, CMS therapies can be divided into three categories: responsive to cholinergic upregulation (e.g., acetylcholinesterase inhibitor [AChEI] and 3,4‐diaminopyridine), responsive to β‐adrenergic agonists (e.g., albuterol and ephedrine), and responsive to open‐channel blockers (e.g., fluoxetine and quinidine).
+11
+ However, drug effects are not constant in some types of CMS.
+12
+, 
+13
+ Diminished drug responses have also been observed in some CMS subtypes.
+14
+ Therefore, the continuous observation of these agents is necessary to evaluate their long‐term effects.
+
+In the present study, we investigated 35 Chinese patients with CMS, from 29 families. We provide genetic data on the mutational frequencies of CMS, broaden the clinical, genetic, and pathologic aspects of CMS subtypes, indicate diagnostic clues of CMS in both clinical patterns and muscle pathologies, and evaluate the therapeutic outcomes of NMJ‐modulating agents.
+
+Thirty‐five patients from 29 unrelated families who were diagnosed with CMS at the Department of Neurology, Peking University First Hospital, were included in this study. A diagnosis of CMS was based on clinical symptoms, a decremental response to RNS (over 10% decrease at low‐frequency stimulation), and the presence of pathogenic variations of CMS‐related genes. Clinical data collection included age of disease onset, gender, disease duration, initial symptoms, muscle weakness distribution and pattern, other organ dysfunction, creatine kinase level, myasthenia gravis (MG)‐related antibodies (including anti‐acetylcholine receptors [AChR], RyR, titin, and MuSK antibodies, which were performed in ELISA), RNS and other electrophysiological findings, and muscle pathology. Therapeutic responses to a series of NMJ‐modulating drugs were followed up during each visit, either in the clinic or via phone calls. The Activities of Daily Living (ADL) scales were utilized to defined the therapeutic response of our patients, which is often used in clinical trials of myasthenia gravis.
+15
+, 
+16
+ If the ADL scores at posttreatment follow‐up were lower than baseline, we defined the patients as having treatment improvement or partial improvement.
+
+Open muscle biopsies were performed in patients who gave consent for this procedure. The muscle tissue was frozen in cooled isopentane and stored in liquid nitrogen. Standard histological and histochemical staining was performed, including hematoxylin & eosin, modified Gömöri trichrome, periodic acid–Schiff reaction, oil red O, reduced nicotinamide adenine dinucleotide tetrazolium reductase, succinate dehydrogenase, cytochrome‐c oxidase reaction, adenosine triphosphatase (at pH 4.3, 4.6, 9.4, and 10.5), and nonspecific esterase. Immunohistochemical staining was also performed, with antibodies against dystrophin, sarcoglycans, alpha‐dystroglycan, dysferlin, and desmin. Specimens from some patients were also fixed in 2% glutaraldehyde and postfixed in osmic acid for electron microscopy.
+
+Genomic DNA was extracted from peripheral blood for targeted next‐generation sequencing covering 2484 genes related to hereditary neuromuscular disorders or whole‐exome sequencing. If variants were identified, Sanger sequencing was used to confirm the findings. Blood samples were also collected from parents, as well as affected and unaffected family members, to identify variant origins and test co‐separation. The genetic variants were interpreted using the American College of Medical Genetics and Genomics guidelines. The mutational types and frequencies were summarized.
+
+The study was performed in accordance with the ethical standards of the relevant national and institutional committees on human experimentation and was approved by the Institutional Review Board of Peking University First Hospital (No. 2012[542]). Informed consent for all examinations was obtained from patients or their guardians. The study protocol strictly followed the guidelines of the Declaration of Helsinki.
+
+In total, 35 CMS patients were enrolled from 29 families, six of which (families 3, 9, 11, 12, 14, and 29) had a positive family history. Five families (families 3, 9, 12, 14, and 29) presented an autosomal recessive inheritance pattern and one family (family 11) had an autosomal dominant pattern. Only two siblings were confirmed from a consanguineous family (family 14). Ten CMS‐related genes were identified and classified
+1
+, 
+2
+ among the 29 families (Table S1): [1] presynaptic defects (CHAT, family 1); [2] synaptic basal lamina‐associated defects (COLQ, families 2–5); [3] postsynaptic defects (CHRNA1, family 6; CHRNE, families 7–10, and slow‐channel syndrome caused by CHRNE mutations, family 11); [4] defects in endplate development and maintenance (AGRN, families 12–16; DOK7, family 17)); [5] defects in glycosylation (GFPT1, families 18–25; GMPPB, family 26–27, COG7, family 28); and [6] other syndromes (SLC25A1, family 29). The most frequent CMS‐related genes were GFPT1 (27.6%), AGRN (17.2%), CHRNE (17.2%), and COLQ (13.8%).
+
+Homozygous variants were found in eight families and compound heterozygous variants were found in 19 families. Family 11, with an autosomal dominant inheritance pattern, revealed a single heterozygous variant. Patient 31 from family 25 had only one heterozygous variant in GFPT1, which had an autosomal recessive inheritance. A total of 47 variants were identified. The variant types comprised 29 missense variants, four nonsense variants, five small insertions/deletions, three splicing variants, two non‐coding variants, and four copy number variations involving deletions of one to three exons (Table S1).
+
+The patients included 15 women and 20 men. All of our patients are Han Chinese. Most of them are from the north, and a few are from the south. The disease onset age ranged from birth to 23 years old. Twenty‐eight patients had onset in the first decade of life, while four had onsets in the second decade, and three in the third decade. Disease duration varied from 1 to 30 years. Of the 35 patients, 21 (60%) had delays in achieving motor development milestones. Eleven (31.4%) patients presented bilateral symmetric ptosis as the initial symptom, while the other 24 patients first presented with lower limb weakness. At the time of diagnosis, 15 (42.9%) patients had ptosis, while 9 (25.7%) had ophthalmoplegia. Facial weakness was revealed in five (14.3%) patients, bulbar palsy in one (2.9%) patient, neck weakness in ten (28.6%) patients, and respiratory insufficiency in two patients (in patient 5, transient respiratory failure occurred after neostigmine injection, and only partially recovered). Limb weakness was apparent in 33 (94.3%) patients, including 15 with upper limb involvement and 33 with lower limb involvement. Fluctuations in motor symptoms, such as diurnal fluctuations of weakness, exercise intolerance, or fatigability, occurred in 31 (88.6%) patients. Regarding abnormalities aside from motor symptoms, three patients had scoliosis (patients 3, 4, and 23), two patient had Achilles tendon contracture (patients 7 and 33), two patients had recurrent diarrhea (patient 23 and 34), two patient had calf hypertrophy (patients 32 and 33), and one patient had dilated cardiomyopathy (patient 32) (Table S2).
+
+In CMS subtypes with various molecular defects, we summarized the distribution of weakness, which consisted of involvement in the ocular, limb (proximal/distal), and other (facial/bulbar/cervical/respiratory) muscles. The involvement of both ocular and limb muscles occurred in one patient with CHRNA mutation and six patients with CHRNE mutations. The involvement of both ocular and other muscles was revealed in five patients with COLQ mutation and four patients with CHRNE mutation. Involvement of both the limb and other muscles was present in one patient with DOK7 mutation, one patient with GFPT1 mutation, and one patient with GMPPB mutation. Generalized weakness involving all three types of muscles included four patients with COLQ mutations, three patients with CHRNE mutations, one patient with AGRN mutation, and one patient with SLC25A1 mutation. Pure limb‐girdle weakness appeared in eleven patients, including one with CHAT mutation, one with AGRN mutation, seven with GFPT1 mutations, one with GMPPB mutation, and one with COG7 mutation. Pure distal dominant weakness was present in six patients, all of whom had mutations in AGRN. Furthermore, two patients with GFPT1 mutations had an asymmetric and proximal pattern of weakness. Clinical phenotypes of various CMS subtypes are listed in Table 1 and Figure 1.
+
+The clinical spectrum of 35 patients with different CMS subtypes.
+
+B, Bulbar; C, Cervical; Dis., Distal limb weakness; F, Facial; LL, Lower limb; MM, Motor milestone delay; OPH, Ophthalmoplegia; Pro., Proximal limb weakness;R, Respiratory; Sym., Symmetrical; UL, Upper limb; y, years.
+
+Transient dyspnea was noticed after neostigmine injection.
+
+Weakness distribution in this cohort of congenital myasthenic syndrome.
+
+We evaluated three therapeutic categories in 33 of the 35 patients, and follow‐up durations ranged from 2 months to 5 years. The patient with CHAT mutation had partial improvement with AChEI therapy. In five patients with COLQ mutations, two had no improvement and three worsened with AChEI treatment; one of these patients had acute respiratory failure after intramuscular injection of neostigmine. One patient improved with albuterol treatment, one with fluoxetine, and two with combination therapy, but all of these patients ceased to respond to the therapies after 1.5 to 3 years. The six patients with primary AChR defects, with mutations in CHRNA1 and CHRNE, all responded partially to AChEI. One patient had further improvement with the addition of albuterol, while the other two did not improve. In two patients from a slow‐channel syndrome family, AChEI, albuterol, or fluoxetine at the maximal dose of 40 mg had no apparent effect. In patients with defects in endplate development and maintenance, different reactions were observed to the same medication. In eight patients with AGRN mutations, three worsened, one improved, and four showed no improvement in response to AChEI treatment. Albuterol was tried in five patients, and ephedrine was administered to four patients. Both drugs initially had a satisfactory effect, but became less effective in the three patients who continued this treatment for 5 years. The only patient with DOK7 mutation had partial improvement with combination AChEI and albuterol treatment. In patients with glycosylation defects, those with GFPT1 mutations showed great improvements with low‐dose AChEI treatment (pyridostigmine bromide at ≤ 60mg/day), except for one patient who did not improve. The patient with GMPPB and COG7 mutation responded well to AChEI. In the patient with the defective mitochondrial citrate carrier, SLC25A1, a partial response to AChEI was observed. The details of change‐from‐baseline ADL scores were described in Table S2.
+
+Thirty patients finished RNS testing, and 28 (93.3%) showed decrements of over 10%. The remaining two patients, patient 1 (CHAT mutation) and patient 21 (AGRN mutation), did not show any decremental responses at frequencies of 1, 3, or 5Hz. Of the 24 patients who underwent needle electromyography, there were myopathic changes in 15 patients and normal appearance in 9 patients. Sixteen patients underwent detection of MG‐related antibodies, including AchR, RyR, Titin, and MuSK. Two patients (patient 6, with COLQ mutation, and patient 30, with GFPT1 mutation) had mild elevations of AchR antibodies. Thirty‐one patients had creatine kinase levels in the normal range (25–170 IU/L) or mildly elevated, while patients 32 and 33 with GMPPB mutation had the highest creatine kinase of 2080 and 9999 IU/L, respectively.
+
+Nineteen patients underwent open skeletal muscle biopsies. Mild changes or non‐specific myopathies, such as fiber atrophy, necrosis/regeneration, or type 1 fiber predominance, were frequent in 10 patients (52.6%), who had mutations in CHRNA1 (patient 7), CHRNE (patients 9, 10, and 13), AGRN (patients 15, 18, and 21), DOK7 (patient 23), and GFPT1 (patients 24 and 30). Tubular aggregates (TAs) (Fig. 2A) were typical in five patients (patients 26–29 and patient 31) with GFPT1 mutations. Patient 19, with AGRN mutation, underwent two muscle biopsies (from the right and left anterior tibialis, respectively) at an interval of 11 years. Mild unspecific myopathy was revealed on the first biopsy. On the second biopsy, massive atrophic/ hypertrophic fibers, fiber necrosis/regeneration, rimmed vacuoles (Fig. 2B), target‐like fibers (Fig. 2C), and fiber connective tissue replacement were indicating muscular dystrophic appearance and muscle denervation. In patients 32 and 33 with GMPPB mutations, chronic myopathy with necrotic fibers was present (Fig. 2D). Central nuclei, a tendency toward type 1 fiber predominance and fiber‐type disproportion suggestive of centronuclear myopathy, were also noted in patient 32 (Fig. 2E). Alpha‐dystroglycan was decreased in patients 32 and 33 (Fig. 2F) with intact dystrophin and sarcoglycan expression. In patient 34 with COG7 mutations, grouped atrophic fibers (Fig. 2G) and fiber type grouping (Fig. 2H) were in accordance with chronic neurogenic muscle impairment.
+
+Muscle pathology in various subtypes of congenital myasthenic syndrome: (A) Tubular aggregates appeared within fibers. MGT staining. (B) Hypertrophic/atrophic fibers, rimmed vacuole, together with connective tissue replacement and infiltration. H&E staining. (C) Target like structure within an atrophic fiber. NADH staining. (D) Central nuclei, fiber necrosis, and hyalinized fibers. H&E staining. (E) Type 1 fiber predominance and fiber type disproportion with larger type 2 fibers than type 1. ATPase staining (pH 4.6). (F) Alpha‐DG decreased with the intact expression of dystrophin and sarcoglycans. (G) Grouped atrophic fibers. H&E staining. (H) Fiber type grouping. ATPase staining (pH 4.6).
+
+In our series, the most frequent mutations were GFPT1, AGRN, CHRNE, and COLQ. The CMS mutation frequency in Chinese was very different from that of other ethnic groups. Our data indicated CHRNE as the most common AChR defect, similar to previous reports,
+1
+, 
+4
+, 
+5
+ but also showed a high proportion of GFPT1 and AGRN mutations. In a cohort of 680 CMS patients of mainly European origin
+5
+ using a panel of 10 CMS‐associated genes that did not include AGRN, the top three mutations were CHRNE (49%), RAPSN (15%), and COLQ (12%), whereas GFPT1 accounted for only 4% of patients. Furthermore, in a Mayo Clinic study of 359 CMS patients,
+2
+ 50.4% of the genetically confirmed CMS patients had genetic defects in AChR, 14.2% had mutations in RAPSN, and 12.5% had mutations in COLQ. Again, GFPT1 and AGRN were not very common in this cohort, and were present in approximately 3.1% and 0.8% of patients, respectively. Moreover, in 35 kinships from Israel, mainly of Arabic descent, RAPSN, COLQ, and CHRNE were the three most frequent mutations, while GFPT1 was reported in only one family.
+3
+ Additionally, CHRNE and COLQ mutations were proposed to be the two most common subtypes of CMS in an Indian cohort.
+6
+ Mutations in CHRNE, RAPSN, and COLQ were frequent in a Spanish population, as well as a high rate of GFPT1 mutations.
+4
+
+The CHRNE Val279Phe mutation, identified in family 11 in the present study, has been previously reported in a patient diagnosed with slow‐channel congenital myasthenic syndrome (SCCMS) based on a patch‐clamp study of mutant AChRs expressed in HEK cells.
+17
+ Family 11 showed an autosomal dominant inheritance pattern and decremental RNS, both of which are in accordance with the hallmarks of SCCMS, but repetitive compound muscle action potential and endplate potential analysis of AChR were still needed. In patient 31, the childhood onset, fluctuating limb‐girdle myasthenia, decremental RNS, TAs within myofibers, and good response to AChEI indicated the possibility of TA‐related CMS, similar to that of GFPT1, DPAGT1, or ALG2 mutations.
+18
+, 
+19
+ We therefore still considered this patient’s diagnosis as CMS even with only one GFPT1 heterozygous mutation, since pathogenic non‐coding variants could be missed in next‐generation sequencing. Two variants were found in non‐coding areas of CHRNE. c.‐95G > A, in patient 9, is a known disease‐causing mutation that is located in the promoter region of CHRNE, and converts the Ets‐binding site of the promoter region from CGGAA to CAGAA.
+20
+ Additionally, in family 9, c.601 + 118A>G was revealed heterozygously in a deep intron position together with a truncating variant, c.295C > T, p. Arg99*, in which ptosis, ophthalmoplegia, generalized weakness from birth, and decremental RNS were present in two affected brothers. Co‐segregation has been confirmed within this family, but functional analysis is still needed because no significant splicing motif has yet been revealed in this variant.
+
+Our series revealed a common early onset and the delayed achievement of motor milestones, similar to other reports of CMS.
+1
+, 
+2
+, 
+3
+, 
+5
+, 
+21
+ The frequency of muscle weakness in CMS was different from that of acquired MG, and may therefore be valuable for diagnosing CMS. Lower limb weakness was the most frequent symptom, followed by ptosis and ophthalmoparesis. In a previous study of European patients,
+5
+ mutation detection rates reached 55% when ptosis and ophthalmoparesis were taken together. Isolated ocular symptoms were responsible for only 4% of the identification rate. In patients with limb‐girdle weakness or apnea, mutation rates were 43% and 54%, respectively. Moreover, the distribution of weakness is also indicative of molecular defects. Distal muscle weakness and atrophy in CMS is a strong indicator of AGRN mutations.
+22
+ In the present study, six patients with AGRN mutations from three unrelated families presented symmetric distal weakness, suggesting the need to detect NMJ function and AGRN mutations in patients with distal myopathy. Selective limb‐girdle weakness devoid of ocular muscles was frequently observed in patients with GFPT1 and GMPPB mutations. Such unspecific myopathy in CMS was usually related to defects in the glycosylation pathway
+18
+, 
+23
+, 
+24
+ and the agrin–LRP4–MuSK signaling pathway.
+1
+, 
+2
+, 
+5
+, 
+13
+, 
+22
+ Unlike other patients with CHAT mutations,
+7
+ our case had prominent exercise intolerance and mild lower limb weakness without any episodes of respiratory insufficiency or ptosis, even up to childhood. This benign phenotype might be because there was less involvement of the active sites or the substrate‐binding site in the enzyme. Our patients with GMPPB mutations had a phenotype that was more like Becker muscular dystrophy, with hyperophic calf muscles, Achilles tendon contracture, and very high creatine kinase levels. Previously reported phenotypes of GMPPB mutations vary from adult‐onset limb‐girdle muscular dystrophy or isolated episodes of rhabdomyolysis to congenital muscular dystrophy.
+24
+, 
+25
+, 
+26
+ Calf muscle enlargement, rigid spine bone deformity, pes cavus, and joint contractures have been described in patients with GMPPB mutations.
+14
+ Furthermore, we also found diastolic cardiomyopathy which was not indicated previously further expanding the clinical spectrum of GMPPB mutations. The most prominent effect of COG deficiency is misglycosylation which destroyed the proper function of the NMJ in reducing bouton numbers of larval.
+27
+ However, COG7 gene defects usually caused a variety of development and growth retardation
+28
+ among which NMJ disorder has not been described. We recognized decremental RNS in patient with COG7 mutations and good response to AChEI supporting COG7 as a new CMS‐related gene regulating glycosylation pathway. The mitochondrial citrate carrier SLC25A1 interferes with the development of the brain, eyes, heart, and NMJs. Our patient with SLC25A1 mutation presented with NMJ defects only, which has been demonstrated to be related to presynaptic nerve terminal abnormalities,
+29
+ although it was classified as “other syndromes”.
+2
+
+Unlike acquired MG, AChEI treatment should be avoided in some types of CMS, such as those with COLQ, SCCMS, and DOK7 mutations. This is because of the prolonged AChR opening time in these CMS types.
+1
+, 
+11
+, 
+15
+, 
+30
+, 
+31
+ Our observation suggests a complex modulation of AChR clustering by the agrin–LRP4–MuSK signaling pathway. CMS with DOK7 mutations has been reported to worsen with AChEI treatment,
+31
+ but the patient with DOK7 mutation in our study showed improvements with combination AChEI and albuterol treatment. Patients with DOK7 mutations have also been reported to benefit from fluoxetine treatment.
+12
+ In the follow‐up of our patients with AGRN mutations, we observed diverse therapeutic effects of AChEI, including responsive, nonresponsive, or aggravated effects. Ephedrine and albuterol are alternative and safe treatment options for many CMS subtypes, although the effects of these two agents were attenuated in patients with AGRN mutations over 5 years in the present study. Similar findings have been reported with the use of 3,4‐diaminopyridine and AChEI therapy in patients with GMPPB mutations.
+14
+ Therefore, NMJ‐modulating drugs may facilitate efficient signal transduction at the NMJ more transiently than other therapy, and the long‐term benefits of their use should be evaluated. We did not find any effect of the long‐lived open‐channel blocker fluoxetine in the family with SCCMS, similar to a previous report.
+32
+
+We identified decremental RNS in 93% of our CMS patients. In the group with negative RNS responses, the mutation rate of CMS‐related genes was as high as 18%.
+5
+ In patients with DOK7 mutations, Klein found that RNS and stimulated single‐fiber electromyography results were pathological in 53% and 82% of patients, respectively.
+31
+ Moreover, Fidzianska reported an SCCMS patient whose RNS was normal at the age of 9 years, but became decremental 20 years later.
+17
+ Therefore, we recommend the monitoring of RNS, or of exercise facilitation RNS, during follow‐up in patients that are strongly suspected to have CMS. We found AChR antibodies in three CMS patients, one of whom also had RyR antibodies. Anti‐AChR antibodies
+33
+ in CMS, or even the co‐existence of CMS and acquired MG,
+34
+ have rarely been described.
+
+Muscle pathology in most of our CMS patients was unspecific or unrevealing. However, some pathological features were indicative of molecular defects in CMS. All instances of TA myopathy in the present study were found in patients with GFPT1 mutations; approximately 80% of patients with these mutations were reported to have TAs in a previous study by Senderek.
+19
+ TAs, the membranous tubules derived from the sarcoplasmic reticulum, are considered related to disturbances in calcium regulation and N‐linked glycosylation, and may therefore be linked to mutations of GFPT1, DPAGT1, ALG2, or ALG14.
+19
+, 
+35
+ Besides chronic myopathy, the appearance of grouped angular atrophic fibers and target‐like fibers suggested muscle denervation in the advanced stage of AGRN mutations. Rimmed vacuoles were typical findings in patients with distal limb weakness, such as in GNE myopathy, myofibrillar myopathy, or neutral lipid storage disease with myopathy. Their appearance in patients with AGRN mutations provides a pathological explanation for the distal‐predominant pattern of weakness. Different from other CMS, GMPPB mutations lead to more destructive muscle damage than other CMS. The partially decreased expression of alpha‐dystroglycan supports GMPPB‐related CMS as a member of dystroglycanopathies among which more than 19 genes are involved.
+26
+ We also found evidence of centronuclear myopathy in GMPPB mutation. An overlap between centronuclear myopathy and CMS was described by Liewluck in 2011,
+36
+ and the homozygous mutation of GMPPB in this case was later confirmed. 
+14
+ The coexistence of NMJ dysfunction and myopathy or muscular dystrophy findings on muscle biopsy has also been found in other hereditary muscular disorders, such as with BIN1, DES, DNM2, MTM1, or PLEC mutations.
+18
+
+Above all, we summarized a cohort of Chinese patients which broadened the CMS spectrum especially in clinical and genetic aspects. CMS has distinct clinical patterns and genetic distribution in China, which reflects ethnic disparities. Our results will help to design a specific diagnostic strategy for Chinese CMS patients based on the mutation rates. The weakness distribution and some pathological features in muscles may provide clues of CMS subtypes. The proper identification of underlying genetic defects in CMS will be valuable for the early initiation of NMJ‐modulating drugs, before the development of irreversible endplate myopathy or denervation.
+
+On behalf of all authors, the corresponding author states that there is no conflict of interest.
+
+Y. Zhao wrote the original manuscript. All the authors contributed to the cases diagnosis and data collection. M. Yu contributed to the analysis and interpretation of the genetic data. W. Zhang contributed to the study design, revised and supervised the manuscript. The final manuscript was read and approved by all authors.
+
+The data that support the findings of this study are available from the corresponding author upon reasonable request.
+
+Table S1. The genetic data of 29 families with CMS.
+
+Click here for additional data file.
+
+Table S2. The clinical profiles of 35 patients with CMS.
+
+Click here for additional data file.

@@ -1,0 +1,3 @@
+Total filenames: 4
+Highest adjusted keyword match count: 24
+Total number of selected files: 4

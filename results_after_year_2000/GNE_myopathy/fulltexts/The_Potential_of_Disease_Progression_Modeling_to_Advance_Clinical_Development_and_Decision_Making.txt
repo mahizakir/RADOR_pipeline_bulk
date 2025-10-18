@@ -1,0 +1,630 @@
+The use of modeling and simulation to enable drug development, commonly called model‐informed drug development (MIDD), has been leveraged for decades
+1
+ to inform decision making across the drug development process.
+2
+, 
+3
+ MIDD is maturing, reinforced by advanced analytic and technological capabilities, regulatory strategies such as the Prescription Drug User Fee Act (PDUFA) VI & VII commitments,
+4
+, 
+5
+ and the European Medicines Agency's Regulatory Science to 2025,
+6
+ as well as collaborative frameworks to improve credibility, standardize approaches, and support regulatory evaluation.
+7
+ Within MIDD, the use of certain models such as pharmacokinetic/pharmacodynamic (PKPD)
+8
+ models has matured more than the use of other models.
+9
+ Conversely, the value of disease progression modeling (DPM) in impacting medical product development has yet to be fully realized, and this approach is ripe for advancement.
+
+A disease progression model is a mathematical model that aims to describe the time course or trajectory of a disease.
+10
+ DPM can be used to characterize treatment and placebo effects and can be integrated with other models (i.e., drug models) to inform dose selection and optimization. By predicting patient behavior, such as the decision to drop out of a trial, disease progression models can also enable stochastic modeling and simulation of clinical trials to optimize trial design and inform decision making about study power, study duration, or other trial design enhancements. A disease progression model integrates information from a wide variety of sources, including translational, clinical trial, and real‐world data, along with multidisciplinary clinical and domain knowledge, and occasionally, other models, to inform decision making throughout the medical product development process. For example, disease progression models have been used early in drug development to identify biomarkers for disease modifiers, further downstream to quantify exposure–response, and post‐market to safely extrapolate or support cross‐population dosing (e.g., into a pediatric patient population). As the development of a medical product is not entirely linear, applications are often iteratively leveraged multiple times at different clinical development and evidence generation inflection points.
+
+The full impact of DPM applications and the decisions they inform have yet to be defined and appreciated; yet, momentum exists. During a public MIDD DPM workshop held in 2021, the U.S. Food and Drug Administration (FDA) convened stakeholders and consortia, such as the IQ Consortium
+11
+ to initially highlight applications and the potential value of DPM for drug development.
+12
+, 
+13
+ As clinical trials continue to modernize, many researchers recognize that the use of diverse and representative data in disease progression models can encourage greater trial access through broader eligibility to improve representative evidence generation.
+14
+ DPM can also allow trials to be tailored through the use of precision medicine according to age, race, disease biology, and phenotype.
+
+Realizing the full potential for DPM to improve drug and other medical product development requires awareness and acceptance of its unique value across stakeholders in the clinical trial enterprise. Thus, the Clinical Trials Transformation Initiative (CTTI)—a public–private partnership between Duke University and the FDA—set out in late 2021 to advance the recognition, value, and consistent use of DPM to support decision making in trials. In this article, we provide a summary of the CTTI's work to date and share next steps to further the uptake of DPM in facilitating drug development. By clarifying current applications of DPM and posing critical questions for DPM use in clinical development, we provide an opportunity to advance the broader use of modeling and simulations to bring treatments to patients more efficiently.
+
+The CTTI formed the Disease Progression Modeling Project Team (https://ctti‐clinicaltrials.org/our‐work/novel‐clinical‐trial‐designs/using‐disease‐progression‐modeling‐to‐advance‐trial‐design‐and‐decision‐making/), which includes members from patient advocacy groups, industry, academia, and government.
+
+The project team, together with the CTTI's social science team, conducted a scoping review
+15
+ using the Preferred Reporting Items for Systematic Reviews and Meta‐Analyses (PRISMA) guidelines
+16
+ to explore current applications of DPM in clinical trials. Scoping reviews are a relatively new yet increasingly common approach for synthesizing evidence and identifying knowledge gaps.
+17
+ Our objective was to assess the DPM literature landscape, and in doing so to categorize real‐world applications and case examples to inform the CTTI's recommendations. This review was guided by the question, “What current DPM applications exist that can inform clinical trial design, support regulatory decision‐making, and support U.S. and global trials of drugs, biologics, and devices?”
+
+We searched three scientific databases for original research, consortia materials, and white papers published in English over 10 years, between 2012 and 2022. Our eligibility criteria included studies addressing applications of DPM in humans in any therapeutic area in any clinical phase of the drug development process; we excluded studies not related to the clinical drug development process or not suited to understanding disease progression from a longitudinal or disease etiology perspective. Our search yielded 3,558 articles. Titles and abstracts were screened; 450 entries met our eligibility criteria and were reviewed in full. Three analysts reviewed full‐text articles; final decisions on inclusion were made by consensus among analysts and the CTTI project team. Ninety‐seven articles (n = 97) were evaluated for DPM applications, methodology, involvement with active clinical trials or regulatory design or decision making, and other criteria. See Figure 
+1
+ for details on how studies were selected during the scoping review following PRISMA guidelines.
+
+PRISMA flow chart.
+
+See the 
+Supplemental Materials
+ for a full description of the methods.
+
+We identified 13 specific applications categorized into the four following broad types of DPM applications (Figure 
+2
+).
+Inform patient selection or population sources of variabilityEnhance the trial designIdentify or qualify biomarkers or endpointsCharacterize treatment effects and inform dose selection
+
+Inform patient selection or population sources of variability
+
+Enhance the trial design
+
+Identify or qualify biomarkers or endpoints
+
+Characterize treatment effects and inform dose selection
+
+DPM application thematic groupings and detail.
+
+Within each type, we observed specific applications of disease progression models and techniques for advancing the drug development process. The applications belonging to all four types varied in terms of where they fit into a clinical development process. Here, they are discussed in order of frequency in the literature rather than where they would be applied in a clinical development process.
+
+The use of disease progression models to inform patient selection or population sources of variability was the most frequently observed application in our review (n = 56).
+18
+, 
+19
+, 
+20
+, 
+21
+, 
+22
+, 
+23
+, 
+24
+, 
+25
+, 
+26
+, 
+27
+, 
+28
+, 
+29
+, 
+30
+, 
+31
+, 
+32
+, 
+33
+, 
+34
+, 
+35
+, 
+36
+, 
+37
+, 
+38
+, 
+39
+, 
+40
+, 
+41
+, 
+42
+, 
+43
+, 
+44
+, 
+45
+, 
+46
+, 
+47
+, 
+48
+, 
+49
+, 
+50
+, 
+51
+, 
+52
+, 
+53
+, 
+54
+, 
+55
+, 
+56
+, 
+57
+, 
+58
+, 
+59
+, 
+60
+, 
+61
+, 
+62
+, 
+63
+, 
+64
+, 
+65
+, 
+66
+, 
+67
+, 
+68
+, 
+69
+, 
+70
+, 
+71
+, 
+72
+ Several studies sought to identify patient subtypes depending on differences in predicted disease progression based on genetic, demographic, and other patient characteristics.
+44
+, 
+60
+, 
+61
+ Determining differences among patients and identifying new areas of patient variability were approaches used in many studies to inform trial enrichment recommendations and strategies for refining trial inclusion criteria, sample size, and trial durations.
+24
+, 
+25
+, 
+26
+, 
+27
+ The main application of some of these studies was to inform stratification factors for future trials or to quantify the impact of covariates for patient stratification.
+48
+, 
+71
+ We observed a limited number of studies using disease progression models to support cross‐population extrapolation, as with pediatric trials or for rare diseases with few natural history data.
+32
+
+We identified several studies that used DPM to enhance trial designs (n = 35),
+22
+, 
+24
+, 
+25
+, 
+26
+, 
+27
+, 
+32
+, 
+37
+, 
+41
+, 
+50
+, 
+55
+, 
+56
+, 
+57
+, 
+58
+, 
+59
+, 
+63
+, 
+64
+, 
+65
+, 
+69
+, 
+70
+, 
+72
+, 
+73
+, 
+74
+, 
+75
+, 
+76
+, 
+77
+, 
+78
+, 
+79
+, 
+80
+, 
+81
+, 
+82
+, 
+83
+, 
+84
+, 
+85
+, 
+86
+, 
+87
+ most commonly by using DPM of longitudinal data to increase power or reduce the sample size required to achieve the necessary power.
+73
+, 
+75
+ Particularly for rare diseases, reductions in the number of participants required to investigate therapies or shorten study durations enabled by the application of DPM for model‐informed design and/or analysis had impacts on future trials.
+57
+, 
+79
+ Some modeling studies attempted to predict study dropout rates or patterns to enhance the trial design.
+64
+ Time‐to‐event statistical models using trial data were commonly used to predict or quantify the trajectory of study dropout.
+72
+, 
+74
+ The use of virtual control arms or digital twins was also proposed as a way to increase power or reduce the sample sizes required to achieve the desired power.
+73
+
+Empirical disease progression models were primarily employed to identify or qualify prognostic or predictive biomarkers and clinical endpoints (n = 34).
+18
+, 
+19
+, 
+21
+, 
+23
+, 
+29
+, 
+31
+, 
+35
+, 
+39
+, 
+41
+, 
+43
+, 
+47
+, 
+49
+, 
+52
+, 
+56
+, 
+63
+, 
+66
+, 
+67
+, 
+68
+, 
+71
+, 
+79
+, 
+80
+, 
+88
+, 
+89
+, 
+90
+, 
+91
+, 
+92
+, 
+93
+, 
+94
+, 
+95
+, 
+96
+, 
+97
+, 
+98
+, 
+99
+, 
+100
+ Several studies focused on Alzheimer's disease developed prognostic models for predicting disease progression and survival,
+43
+ predicting the sequence of clinical events and pathophysiology in dementia,
+91
+ and understanding the impact of genes, proteins, or other patient characteristics on the trajectory of disease progression.
+24
+, 
+63
+, 
+67
+, 
+68
+
+We also observed the use of disease progression models to characterize the effects of drug dosing and systemic exposures on disease progress (n = 34).
+19
+, 
+30
+, 
+34
+, 
+38
+, 
+44
+, 
+46
+, 
+50
+, 
+54
+, 
+58
+, 
+62
+, 
+64
+, 
+72
+, 
+74
+, 
+76
+, 
+78
+, 
+81
+, 
+82
+, 
+84
+, 
+85
+, 
+86
+, 
+87
+, 
+101
+, 
+102
+, 
+103
+, 
+104
+, 
+105
+, 
+106
+, 
+107
+, 
+108
+, 
+109
+, 
+110
+, 
+111
+, 
+112
+, 
+113
+ Many of these studies developed empirical models using phase III clinical trial data (including some with potentially statistically nonsignificant or inconclusive results) for informing more precise drug treatment recommendations.
+30
+, 
+105
+, 
+107
+ These applications highlighted the value of DPM for learning from not only successful but also failed clinical trials. Other studies in this category developed models for the prediction of clinical outcomes, including overall survival rates, using patient data from phase III active drug trials
+72
+, 
+81
+ and placebo trials.
+101
+
+Furthermore, most of the studies had at least two or more applications (n = 74, 76%), and a smaller percentage had three or more applications (n = 21, 22%). Twelve studies utilized artificial intelligence (AI)‐enhanced modeling techniques (n = 12, 12%).
+
+See Figure 
+2
+ for the frequency of applications and the 
+Supplemental Materials
+ for additional results reporting.
+
+Following the CTTI's collaborative methodology steps,
+114
+ the project team presented the scoping review findings in March 2023 to a group of experts experienced with DPM and clinical trials (https://ctti‐clinicaltrials.org/disease‐progression‐modeling‐expert‐meeting/) with the aim of unpacking opportunities, barriers, and best practices for advancing DPM use in medical product development decision making. The full‐day, in‐person meeting included 43 representatives from the medical product industry, patients and patient groups, government, academia, data/tech organizations, and trade/professional organizations.
+
+The scoping review thematic results served as a starting point for expert considerations; the scoping review themes are not sequential as part of the clinical development process but rather reflect frequent domains of DPM application within the literature. The experts considered where applications are applied in the clinical development workflow, and they provided case examples of current applications of DPM for clinical development and regulatory submissions, highlighting the ways that DPM has proven valuable for regulators, medical product developers, and data technology providers. Key areas that need to be addressed to incorporate DPM approaches more effectively in medical product development and regulatory decision making were explored in expert breakout and cross‐sector discussions.
+
+Specifically, the experts noted that to realize the full potential of DPM and ensure that a disease model can be applied to support a particular targeted usage, the following are needed:
+A shared understanding of terminology and the definition of the DPM and contexts of use (COUs) to outline the unique role that COUs play in decision making throughout medical product development.Clarity regarding how to engage regulatory agencies.Collaborations that can develop standards and facilitate access to real‐world and clinical trial data.Transparent and accessible resources regarding shared experiences with DPM across the enterprise.Education on the current use, value, and impact of DPM.
+
+A shared understanding of terminology and the definition of the DPM and contexts of use (COUs) to outline the unique role that COUs play in decision making throughout medical product development.
+
+Clarity regarding how to engage regulatory agencies.
+
+Collaborations that can develop standards and facilitate access to real‐world and clinical trial data.
+
+Transparent and accessible resources regarding shared experiences with DPM across the enterprise.
+
+Education on the current use, value, and impact of DPM.
+
+The experts also brainstormed relevant organizational and clinical trial enterprise metrics to monitor and evaluate DPM recognition, value, and consistent use, such as the percentage of programs or submissions using DPM, the amount of devoted staff with DPM expertise, and more efficient, successful trials, and medical product development.
+
+The findings from the scoping review and expert meeting provided a valuable substrate to the CTTI Disease Progression Modeling Project team to create resources that organizations across the clinical trial enterprise can use to appreciate the value and further the uptake of DPM in clinical development decision making. The project team leveraged this substrate to map out three crucial areas along the drug development pathway with which DPM can assist and has assisted in decision making: (i) appreciating the therapeutic context and informing indication selection; (ii) informing clinical development strategy and endpoint selection; and (iii) optimizing clinical development and trial design (Table 
+1
+).
+57
+, 
+102
+, 
+106
+, 
+108
+, 
+115
+, 
+116
+ We include in Table 
+1
+ case studies showcasing examples of successful implementation of DPM in clinical development for decision making in these three areas.
+
+Unlocking the potential of disease progression modeling to advance clinical development and decision making
+
+Is there confidence in the therapeutic hypothesis as it relates to the mechanism of action (MOA)?
+
+What is a suitable target population of interest?
+
+What is a magnitude of treatment effect that will meaningfully impact patient outcomes?
+
+What are the projected therapeutic features (e.g., dosage, treatment duration, adherence) that will meaningfully differentiate the product from other available options?
+
+What is a viable indication that will best position the product?
+
+How can we benchmark candidate compounds to previous compounds and optimize next‐in‐class development?
+
+1. Beck D, Winzenborg I, Gao W, et al. Interdisciplinary model‐informed drug development for extending duration of elagolix treatment in patients with uterine fibroids. Br J Clin Pharmacol. Dec 2022;88(12):5257–5268. doi:10.1111/bcp.15440
+
+2. Feng Y, Wang X, Suryawanshi S, Bello A, Roy A. Linking tumor growth dynamics to survival in ipilimumab‐treated patients with advanced melanoma using mixture tumor growth dynamic modeling. CPT Pharmacometrics Syst Pharmacol. Nov 2019;8(11):825–834. doi:10.1002/psp4.12454
+
+How predictive is a short‐term endpoint (e.g. biomarker‐based, intermediate clinical endpoint, etc.) of a long‐term endpoint?
+
+Can a novel measure of treatment effect (e.g., imaging, wearables, etc.) be qualified for use with confidence to establish proof‐of‐concept (POC)?
+
+Can we efficiently inform dosage selection for market registrational trials?
+
+What is the probability of success of pivotal late‐stage clinical trials based on early‐stage data in POC trials?
+
+Can we bolster or augment the quantum of evidence in support of establishing evidence of effectiveness and safety?
+
+Can we translate learnings from related indications to inform clinical development strategy?
+
+Can we translate learnings from single agent development to streamline evidence generation for combinations (e.g., drug–drug and drug‐device combinations)?
+
+1. Demin I, Hamren B, Luttringer O, Pillai G, Jung T. Longitudinal model‐based meta‐analysis in rheumatoid arthritis: An application toward model‐based drug development. Clin Pharmacol Ther. Sep 2012;92(3):352–9. doi:10.1038/clpt.2012.69
+
+2. Wang Y, Sung C, Dartois C, et al. Elucidation of relationship between tumor size and survival in non‐small‐cell lung cancer patients can aid early decision making in clinical drug development. Clin Pharmacol Ther. Aug 2009;86(2):167–74. doi:10.1038/clpt.2009.64
+
+How can we appropriately broaden the inclusion criteria while safeguarding safety of trial participants?
+
+How do we translate learnings from clinical trials in a reference population to inform and accelerate development in other populations?
+
+How can we inform critical minimum study duration and maximize value of incomplete data in clinical trials?
+
+Can selection and/ or enrichment for specific populations maximize benefit/risk profile?
+
+Will geographical/regional variability impact outcomes?
+
+What are the relevant secondary clinical end points that should be considered?
+
+Can efficiency (i.e. time, cost) of a randomized controlled trial be enhanced by reducing the size of the placebo arm (e.g., by leveraging synthetic controls/ digital twins)?
+
+1. Reetz K, Dogan I, Hilgers RD, et al. Progression characteristics of the European Friederichs's Ataxia Consortium for Translational Studies (EFACTS): A 4‐year cohort study. Lancet Neurol. May 2021;20(5):362–372. doi:10.1016/S1474‐4422(21)00027‐2
+
+2. Fisher CK, Smith AM, Walsh JR, et al. Machine learning for comprehensive forecasting of Alzheimer's disease progression. Sci Rep. Sep 2019;9(1):13622. doi:10.1038/s41598‐019‐49,656‐2
+
+The examples provided in the table may cover a number of the proposed questions within their situated topic category.
+
+The benefits of DPM can be illustrated through practical examples that highlight its successful implementation in clinical development. From the project work described herein, we offer reflections on where we see the potential for DPM to have a high probability of impact. We also reflect on current barriers and provide opportunities to advance its use.
+
+From the scoping review, we highlight two therapeutic areas where there is particular potential for impact from DPM use, neurology and oncology. First, we note a clustering of studies focused on neurodegenerative disease, with attention to population variability in molecular and imaging biomarkers on disease progression dynamics. Our review uncovered a series of studies from the Critical Path Institute (https://c‐path.org/) that discovered and quantified the impact of imaging and other biomarkers in this therapeutic area.
+19
+, 
+24
+, 
+27
+, 
+59
+ In some cases, biomarker‐positive patients had a faster disease progression, highlighting potential opportunities for enrichment designs for proof‐of‐concept studies. Second, a series of studies from our review in the oncology therapeutic area
+72
+, 
+93
+, 
+95
+, 
+115
+ had a common theme of relating the time course of tumor size change (or more recently ctDNA dynamics
+95
+) to longer‐term outcomes such as progression‐free survival or overall survival. The availability of such models allows drug developers to have a “Go/No‐Go” decision‐making process and can inform later‐stage trials with survival outcomes based on earlier (phase I or phase II) trials where only tumor dynamics and shorter‐term response data are available. We also note a cluster of studies across different therapeutic areas that employed longitudinal dose/exposure–response models of drug effect on disease progression, enabling evidence generation in support of dose selection,
+104
+, 
+105
+, 
+107
+, 
+112
+ yet another area of potential impact.
+
+In our expert meeting, we further discussed areas of impact and reflected on current barriers and opportunities to advance DPM uptake. First, we acknowledged that recognition must be given to the critical role that data play in enabling DPM and ensuring high‐quality data sources. Model confidence is often based on the available and reliable preclinical and/or clinical data that can be used to train and validate the model. We see opportunities for the development of accessible data repositories supported by harmonization and management guidelines for accumulated data coming out of consortia, natural history registries, and real‐world data. The goal should be establishing open‐source data repositories for aggregation of data for disease areas where treatments or biomarkers are lacking. Equally important for the sustainable deployment of DPM is the establishment of open‐source repositories for model libraries and modeling codes for the DPM technical practice community. To achieve this goal, we should aim to reduce current barriers, such as privacy and financial concerns, by considering policy gaps and communicating the need for and value of repurposing patient data. In the near term, large, federated research networks can be leveraged, and support should be given to data standardization groups, such as the Clinical Data Interchange Standards Consortium (CDISC) (https://www.cdisc.org/), that are enabling information system interoperability to improve medical research. We can also spread awareness of available data sources, such as patient group registries or natural history studies that include real‐world, clinical, and therapeutic data sources.
+117
+, 
+118
+, 
+119
+ Second, we note that a critical barrier to more widespread utilization of DPM is not a technical consideration but rather communication and coordination considerations. Clear communication about the question of interest, context of DPM use, intended role of DPM within the existing evidence structure, and potential consequences linked to decisions being made is paramount.
+
+Early communication with regulatory authorities is also important. We see opportunities to advance DPM uptake by broadening communication and awareness in professional organizations and communities that go beyond the traditional scopes of clinical pharmacology, pharmacometrics, or statistics societies. Regulators, policy makers, patients and patient advocacy groups, health systems professionals, and the health economics and outcomes research community can be involved in driving the recognition, value, and use of DPM through engagements (symposia, workshops, etc.) that are non‐technical, translational, and focused on strategy and impact. This would allow for the necessary cross‐fertilization between disease area experts and medical practitioners and the modeling community to maximize purpose‐oriented DPM for enhanced impact.
+
+Sessions on DPM and related MIDD frameworks are commonplace in scientific conferences such as the American Society for Clinical Pharmacology and Therapeutics (ASCPT) and the American Conference on Pharmacometrics (ACOP), but these are not the settings where drug development decision makers, therapeutic area clinical development experts, and physicians practicing medicine and serving as investigators on clinical trials engage. The DPM community of practice needs to extend education and present impactful examples at major medical conferences (e.g., American Society of Clinical Oncology (ASCO), American Heart Association (AHA), and American Academy of Neurology (AAN)) and at broader interdisciplinary drug development meetings (e.g., Biotechnology Innovation Organization (BIO) and the Drug Information Association (DIA)). To this end, the CTTI conceptualized and chaired a symposium on DPM at the DIA 2024 meeting in an effort to broaden awareness, enhance adoption, and impact medical product development at large (https://www.diaglobal.org/en/conference‐listing/meetings/2024/06/dia‐2024‐global‐annual‐meeting/agenda/18/the‐promise‐of‐disease‐progression‐modeling‐to‐bring‐treatments‐to‐patients‐sooner?ref=ThePromiseofDiseaseProgressionModelingtoBringTreatmentstoPatientsSooner).
+
+Creating new collaboration opportunities and strengthening existing collaborations will provide clarity for those trying to realize the power of DPM more completely, including for regulatory decision making. Public–private partnerships and alliances, such as BIO, CTTI, Critical Path Institute, Innovative Medicines Initiative, IQ Consortium, PhRMA, and Avicenna Alliance, can foster multi‐stakeholder engagement and communications to advance the use of DPM through unified terminology, resource development, pilot projects, and sharing of best practices. As a common ground, future collaborations should be intent on answering the question, “How can we design more efficient and inclusive trials through the use of DPM?”
+
+Coordination to assess the fit‐for‐purpose use of DPM is also important. We acknowledge that any tool used to support medical product development must be chosen based on its appropriateness. Benefits must be viewed in light of limitations. Medical product developers should assess risk tolerance for using DPM at the selected point(s) in the medical product development lifecycle. The risk bar may be viewed as lower for some applications depending on where a disease progression model is being introduced; for example, the risk bar may be lower when the model is used to determine portfolio entry or is used in early clinical development than when a model is used in a pivotal trial. Having a strategy that accounts for the advantages of DPM over its potential limitations is critical to overcoming implementation barriers.
+
+Last, we should continue to explore the opportunity to use AI in DPM. Most DPM applications currently use multidimensional and multimodal data that deeply and broadly characterize diseases and patient populations. DPM empowered or amplified by AI or machine learning methods provides the opportunity to leverage data in new ways for optimized trial design, patient selection, and inclusivity in clinical development.
+120
+ For example, AI holds promise for DPM use in randomized controlled trials to reduce the size of placebo arms using synthetic controls or digital twins. Patient communities are eager for AI to accelerate the processes and development of models to improve access to investigational products more quickly.
+121
+ AI enhancements to DPM techniques will be an important frontier in optimizing trial designs and reducing participant burden and will require working with regulators early to seek qualification to support reliability.
+
+We note several limitations and considerations for future work. Current applications and uses for DPM may not be captured in our scoping review. This is a fast‐moving field, and the newest applications of DPM may not be yet published. Knowledge gaps exist regarding how DPM may be fully utilized in clinical development; as DPM becomes more widely utilized, continued scientific advancements and accumulated experiences will make DPM performance more predictable. Scientific and mathematical modeling techniques for DPM applications are evolving quickly and may not be reflected in the approach taken in this article or in our expert gatherings or established methodology. Additionally, the presenter perspectives from our expert meeting represent the experts' own organizational and professional experiences with DPM and are not necessarily reflective of the full breadth of experience in DPM.
+
+The CTTI project team will continue to develop resources, including the following, to further the recognition and uptake of DPM to support decision making in trials:
+A survey of executive leadership to appreciate the awareness, experience, feasibility, and perceived value regarding the integration of DPM more routinely into drug development.A glossary that pulls from and aligns with other initiatives and glossaries in the translational medicine, modeling, and clinical trial community.Recommendations that guide decision making about DPM use in clinical trials based on the context of use.
+
+A survey of executive leadership to appreciate the awareness, experience, feasibility, and perceived value regarding the integration of DPM more routinely into drug development.
+
+A glossary that pulls from and aligns with other initiatives and glossaries in the translational medicine, modeling, and clinical trial community.
+
+Recommendations that guide decision making about DPM use in clinical trials based on the context of use.
+
+Once available, the resources will be provided on the CTTI Disease Progression Modeling Project webpage (https://ctti‐clinicaltrials.org/our‐work/novel‐clinical‐trial‐designs/using‐disease‐progression‐modeling‐to‐advance‐trial‐design‐and‐decision‐making).
+
+The authors declared no competing interests for this work.
+
+The research was supported by the Food and Drug Administration (FDA) of the U.S. Department of Health and Human Services (HHS) that included 15% financing from non‐governmental sources. Partial funding was also provided by pooled membership fees from the Clinical Trials Transformation Initiative (CTTI) member organizations. https://ctti‐clinicaltrials.org/who_we_are/funding/.
+
+The contents are those of the author(s) and do not necessarily represent the official views of, nor an endorsement by, the FDA, HHS, or U.S. Government. For more information, please visit FDA.gov.
+
+This article does not contain any studies with human or animal participants, so no ethical approval was required from institutional review boards.
+
+Data S1

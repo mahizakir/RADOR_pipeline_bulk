@@ -1,0 +1,696 @@
+Neurodegeneration is
+a progressive phenomenon at old ages, which
+occurs as a result of neuronal loss or the inability of neurons to
+transmit the signals. Parkinson’s disease (PD) is one such
+age-related progressive neurodegenerative disorder whose prevalence
+accounts for 3% of the population, above 65 years.1 PD is caused by loss of dopaminergic neurons from the substantia
+nigra pars compacta (SNpc), resulting in loss of the neurotransmitter
+dopamine, and leads to the development of motor symptoms. The death
+of dopaminergic neurons is caused as a result of mitochondrial dysfunction,
+endoplasmic reticulum (ER) stress, neuroinflammation, and accumulation
+of protein aggregates.2,3 The management of PD relies on
+the alleviation of the symptoms, and levodopa is one of the most commonly
+prescribed medicines, which is useful in the early stages of the disease.
+However, with prolonged usage, the efficacy of PD medications decline
+and is reported to cause many side effects.4 Thus, there is a need for the use of a sustainable alternative and
+complementary management strategy of PD, which is required not only
+to prevent symptoms of PD but also to address the underlying molecular
+aberrations and improve the quality of life.
+
+The quest for sustainable
+management of the disease led to the
+exploration of complementary and alternative medicines, which employ
+the use of traditional medicines and other forms of alternative treatments,
+including acupuncture, rhythmic therapy, and Reiki.5 The Indian Ayurvedic medicinal system classifies medicinal
+plants with nootropic properties as Medhya Rasayana, which helps in improving memory and brain functions.6−8 The nootropic formulations include Yashtimadhu (Glycyrrhiza
+glabra, licorice), Mandukaparni (Centella
+asiatica, Asiatic pennywort), Ashwagandha (Withania somnifera, Indian ginseng), and Brahmi (Bacopa monnieri, water hyssop).9−11 Yashtimadhu
+choorna is prepared from the dried roots of G. glabra L., commonly known as licorice (http://www.theplantlist.org/; http://www.ayurveda.hu/api/API-Vol-1.pdf). Several studies have reported its effectiveness as a neuroprotectant,
+an antidepressant, an antioxidant, and a memory enhancer.12−18 These studies highlight the neuromodulatory effects of Yashtimadhu;
+however, there exist lacunae in understanding the regulation of protein
+networks and the underlying molecular pathways.
+
+PD is regarded
+as proteinopathy19,20 because of
+the dysregulation of the protein dynamics, resulting in abnormal accumulation
+of protein aggregates. Mass spectrometry (MS)-based proteomics serves
+as an invaluable tool to study the alteration of proteins that drive
+the pathogenesis in experimental models of PD, and the counteracting
+neuroprotective strategies, upon the introduction of a specific drug.
+The experimental models of PD are generated using genetically modified in vivo models such as α-synuclein (SNCA), parkin
+(PRKN), leucine-rich repeat kinases (LRRKs), or use of neurotoxins in vitro and in vivo.21 The commonly used neurotoxic models of PD are generated
+using rotenone, MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine),
+paraquat, and 6-hydroxydopamine.22 The
+establishment of an in vitro cellular model of PD
+offers advantages in monitoring and understanding the cellular mechanisms
+that are responsible for neurodegeneration. These proteins involved
+in the neurodegenerative mechanism can be targeted for efficient neuroprotective
+interventions.23,24 The study of proteins altered
+during the progression of a disease and its recovery helps in discovering
+the proteins associated with a protective pathway conferred by the
+drug.
+
+In this study, we sought to evaluate the neuroprotective
+effects
+of Yashtimadhu choorna extract in an in vitro PD
+model. This model was generated using rotenone (a mitochondrial complex-I
+inhibitor), which triggers oxidative stress and induces apoptosis,25 effectively mimicking the cellular aberrations
+reported in PD. Quantitative proteomics was employed to identify proteins
+altered by rotenone and compared to their restoration by Yashtimadhu
+choorna extract to understand the molecular networks involved in neuroprotection.
+
+We aimed to evaluate the establishment of the rotenone-induced
+PD model and the neuroprotection conferred by Yashtimadhu. To achieve
+this, we used IMR-32 cells that were differentiated with retinoic
+acid to yield dopaminergic neuron population.26−28
+
+IMR-32
+cells were differentiated with retinoic acid, which was confirmed
+with tyrosine hydroxylase (TH) expression (Supporting Information Figure S1A,B) and used to assess the neuroprotection
+conferred by Yashtimadhu choorna extract in a rotenone-induced PD
+model. Cytotoxicity assay was used to test the effective treatment
+doses of rotenone and Yashtimadhu choorna extract. Rotenone-induced
+time- and dose-dependent cell death and the IC50 (50% cell
+death) value was observed at a 100 nM concentration for 48 h, which
+was used for further treatments (Supporting Information Figure S1C). At the same time, treatment with Yashtimadhu choorna
+extract for 48 h showed no cytotoxicity at all tested concentrations
+(Supporting Information Figure S1D). The
+cell death observed at the IC50 rotenone concentration
+of 100 nM was prevented by cotreatment of Yashtimadhu choorna extract
+at a 200 μg/mL concentration, which was used for further treatments
+(Figure 1A). Cell death
+was also ascertained with the live–dead cell staining assay
+(Figure 1B,C). Rotenone
+treatment increased cell death (7.53-fold, p <
+0.001), which was rescued by Yashtimadhu choorna extract cotreatment
+(0.89-fold, p < 0.001), which is in agreement
+with the cytotoxicity analysis.
+
+PD model validation and Yashtimadhu neuroprotection.
+(A) Cytotoxicity
+analysis showing rotenone-induced cell death and prevention of cell
+death by Yashtimadhu choorna extract cotreatment; (B) live–dead
+cell staining assay using propidium iodide (PI) (red) and HOECHST
+(blue) nuclear counterstain; and (C) graphical representation of cell
+death with respect to untreated cell control. Rotenone treatment increases
+cell death, encountered by Yashtimadhu choorna cotreatment, (D) immunoblot
+analysis of p-ERK-1/2 (T202/T204) and cleaved caspase-3
+with β-actin as the loading control across control (C), rotenone
+(R), rotenone + Yashtimadhu choorna cotreatment (RY), and Yashtimadhu
+choorna extract (Y); (E) densitometry graph of cleaved caspase-3 activation,
+normalized with loading control; and (F) densitometry graph of p-ERK-1/2 activation, normalized with loading control, *,
+with respect to control (C) and # with respect to Yashtimadhu choorna
+cotreatment (RY). *,# p < 0.05, **,## p < 0.01, and ***,### p < 0.001.
+Labels: C-untreated cells, R-rotenone treatment, RY—rotenone
++ Yashtimadhu choorna extract cotreatment, and Y—Yashtimadhu
+choorna extract treatment.
+
+ERK-1/2 phosphorylation and cleaved-caspase-3 activation are known
+to be induced by rotenone, which is also implicated in neurodegeneration.29,30 Rotenone induced activation of cleaved caspase-3 (2.22-fold, p < 0.05) and hyperphosphorylation of ERK-1/2 (1.87-fold, p < 0.05) (Figure 1D–F). Yashtimadhu choorna extract cotreatment encountered
+the rotenone-induced caspase-3 activation (0.88-fold, p < 0.05) and p-ERK-1/2 (0.58-fold, p < 0.01). These observations confirm the neuroprotective effects
+of Yashtimadhu against rotenone-induced stress by preventing p-ERK-1/2 activation and subsequent apoptosis.
+
+Quantitative proteomics was carried out to identify
+the altered proteins with rotenone treatment alone and restoration
+of those by cotreatment with Yashtimadhu choorna extract. The data
+were acquired for the biological duplicates, as technical triplicates
+each (Figure 2A). The
+workflow used for filtering proteins based on their identification
+from the independent replicates is outlined in Figure 2B. We obtained around 1.5 million tandem
+mass spectrometry (MS/MS) spectra, which provided 565,008 PSMs upon
+searching the MS/MS data against the database (human RefSeq109). These
+PSMs corresponded to 30,554 nonredundant peptides, identifying 4864
+protein sequences corresponding to 4783 genes. Proteins commonly identified
+in both the biological replicates were considered, resulting in 3762
+proteins. Also, proteins with PSMs < 4 were filtered out, and a
+list of 3720 resultant proteins (corresponding to 3673 gene symbols)
+was used for subsequent analysis (Supporting Information Table S1). The fold change (FC) of these 3720 proteins, along with
+their respective p-values and q-values,
+is deposited in the PRIDE repository.
+
+Summary of proteomics analysis. (A) Schematic
+of workflow employed
+for proteomics data acquisition. Labels: C-untreated cells, R-rotenone
+treatment, RY—rotenone + Yashtimadhu choorna extract cotreatment,
+and Y—Yashtimadhu choorna extract treatment and (B) schematic
+of the workflow used for proteomics data analysis.
+
+Principal component analysis (PCA) was carried out to identify
+the variance across the four groups. The score plot (Figure 3A) shows the clustering of
+the groups based on the biological replicates. Rotenone treatment
+showed the maximal variation in comparison with the untreated cell
+control group. In contrast, the Yashtimadhu choorna extract cotreatment
+group showed a minimum variance compared with the untreated cells,
+indicating the restoration of altered protein dynamics.
+
+Differential
+regulation of proteins. (A) PCA score plot showing
+the variability between the groups and within the biological replicates,
+(B) scatter plot showing rotenone-induced differential expression,
+and (C) Venn diagram showing the restoration of proteins with Yashtimadhu
+choorna cotreatment. Labels: C-untreated cells, R-rotenone treatment,
+RY—rotenone + Yashtimadhu choorna extract cotreatment, and
+Y—Yashtimadhu choorna extract treatment.
+
+The FC of protein expression was calculated with respect to the
+untreated cell control (C) and rotenone (R). A FC cutoff of ≥1.25
+for overexpression and ≤0.8 for the downregulation of proteins
+was selected to be biologically significant, and an adjusted p-value, that is, q ≤ 0.05, was
+selected for statistical significance. A similar range of FCs has
+been previously reported by studies using isobaric labeling.31−35 Rotenone treatment highlighted 421 differentially regulated proteins
+(FC ≥1.25 or ≤0.8), of which 144 were significantly
+altered (q ≤ 0.05, with respect to untreated
+cell control, Figure 3B). Yashtimadhu choorna extract cotreatment was found to significantly
+regulate 88 proteins (q ≤ 0.05, with respect
+to rotenone), which included restoration of 84 proteins that were
+dysregulated by rotenone and an additional regulation of 4 proteins
+(Figure 3C).
+
+Proteins were
+classified based on their intracellular compartmentalization and biological
+processes to understand the relevance of the differentially regulated
+proteins in the context of PD. Proteins were localized in the cytoplasm
+and nucleus, followed by exosomes, mitochondria, lysosomes, and ER.
+The proteins identified were also involved in processes such as cellular
+and protein metabolism, energy pathways, and cell proliferation.
+
+Additionally, proteins were also classified using publicly available
+databases, such as MitoCarta, The Autophagy database, and the E3-ligases
+databases. The proteins regulating mitochondrial processes and energy
+pathways, ER function, autophagy, metabolism of proteins and lipids,
+cell proliferation, DNA repair, and replication were further shortlisted
+to understand the effect of rotenone and rescue by Yashtimadhu choorna
+extract cotreatment.
+
+The extent of cellular damage as a result
+of rotenone was earlier
+ascertained with molecular assays, and the proteomics data were used
+to gain deeper insights into rotenone-induced cellular stress. Rotenone
+treatment resulted in 30 overexpressed (≥1.25, q < 0.05) and 114 downregulated (≤0.8, q < 0.05) proteins (Figure 4A). Mitochondrial dysfunction, ER stress, and autophagy dysregulation
+drive neuronal cell death, leading to the onset and progression of
+PD.36−38 Rotenone treatment altered the proteins involved
+in mitochondrial functions, ER functions, and autophagy. Altered mitochondrial
+proteins include those involved in the tricarboxylic acid (TCA) cycle
+and oxidative phosphorylation (OxPhos), among others (Figure 4B). The expression of these
+classified proteins with respect to control is also depicted in the
+chord diagram (Figure 4B). A heat map showing the expression of the highly overexpressed
+(FC ≥1.5, q ≤ 0.05) and downregulated
+( FC ≤0.67, q ≤ 0.05) proteins with
+rotenone treatment is given in Figure 4C.
+
+Rotenone-induced differential protein expression. (A)
+Volcano plot
+displaying the differentially altered proteins with rotenone treatment,
+with respect to control group (R vs C), (B) chord plot showing the
+classification of differentially regulated proteins and their log
+2FC, (C) heat map showing the differential expression of the highly
+upregulated (FC ≥ 1.5) and downregulated (FC ≤ 0.67)
+proteins, with respect to that of the control group. Labels: C-untreated
+cells and R-rotenone treatment.
+
+OxPhos proteins such as ubiquinol-cytochrome c reductase
+hinge protein (UQCRH), NADH: ubiquinone oxidoreductase
+subunit-AB1 (NDUFAB1), and TCA cycle protein, dihydrolipoamide dehydrogenase
+were downregulated. Rotenone also affected the expression of ER proteins
+such as signal recognition particle 9 (SRP9), calumenin (CALU), eukaryotic
+translation initiation factor 2B subunit delta (EIF2B4), and autophagy
+proteins, 1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase
+eta-1 (PLCH1) and cathepsin D (CTSD). The findings indicate mitochondrial
+dysfunction, autophagy dysregulation, and ER stress, which, as a result
+of rotenone, is reported to be a driving factor in neuronal apoptosis.25,39,40
+
+We have compared the
+Yashtimadhu choorna extract cotreatment group
+with the rotenone treatment group for differentially regulated proteins,
+which have been highlighted in a volcano plot (Figure 5A). The differentially regulated proteins
+are involved in mitochondrial functions, including the proteins in
+OxPhos and TCA cycle, ER and autophagy functions, cell proliferation,
+DNA repair, and DNA replication (Figure 5B). The proteins differentially regulated
+with Yashtimadhu choorna extract cotreatment are listed in Table 1 and heat map (Figure 5C).
+
+Yashtimadhu choorna extract
+cotreatment restores differentially
+regulated proteins. (A) Volcano plot displaying the differentially
+altered proteins with Yashtimadhu choorna extract cotreatment with
+rotenone, with respect to the rotenone group (RY vs R), (B) Sankey
+diagram showing the classification of differentially regulated proteins,
+and (C) heat map showing the differential expression of the proteins
+classified across all four groups, with respect to control. Labels:
+C-untreated cells, R-rotenone treatment, RY—rotenone + Yashtimadhu
+choorna extract cotreatment, and Y—Yashtimadhu choorna extract
+treatment.
+
+*, significance with respect to
+control; #, significance with respect to rotenone. *,#, q ≤ 0.05; **,##, q ≤ 0.01; and ***,###, q ≤ 0.005.
+
+Protein dynamics play a crucial role in the regulation of several
+cellular pathways. From the pathway enrichment analysis using the
+Enrichr and Reactome tools, significant pathways were identified (p < 0.05) and were narrowed down to essential pathways,
+such as essential neuronal functions, metabolism of proteins, and
+metabolism of lipids. The proteins involved in these pathways are
+summarized in Table 2. Regulation of apoptosis, dopaminergic synapse, superoxide removal,
+mitochondrial functions, maintenance of myelin, axonal transport,
+and postsynaptic differentiation was enriched. In addition to this,
+the regulation of lipid and protein metabolism was also enriched.
+
+Mitochondrial
+dysfunction is attributed to increased oxidative stress and loss of
+mitochondrial membrane potential and results in activation of the
+apoptotic cascade in neurons.41 The mitochondrial
+OxPhos complex-III protein, cytochrome b-c1 complex subunit 6 (UQCRH),
+plays a vital role in ATP synthesis and maintenance of mitochondrial
+membrane potential. Gene expression analysis points to the reduction
+of UQCRH in the SNpc dopaminergic neurons of PD patients,42 correlating with the observation from rotenone
+treatment, which was increased with Yashtimadhu choorna cotreatment.
+Yashtimadhu also restored ATP synthase inhibitory factor subunit 1
+(ATP5IF1) and superoxide dismutase-1 (SOD1), which are reported to
+be downregulated with rotenone.43 SOD1
+quenches the reactive oxygen species (ROS) and maintaining redox balance,
+and ATP5IF1 inhibits mitochondrial ATP synthase, that is, complex-V
+and maintains the mitochondrial membrane potential.44,45 The reduction in ATP5IF1 is implicated in mitochondriopathies, while
+its overexpression confers neuroprotection.45,46 Yashtimadhu also countered rotenone-induced increase of chaperonin,
+that is, heat shock protein-10 kDa (HSPE1) that helps in the folding
+of mitochondrial proteins.47 Rotenone-mediated
+increase of HSPE1 is reported to be involved in caspase-3 activation
+and neuron death.48,49 From these observations, it can
+be inferred that Yashtimadhu prevented cleaved caspase-3-mediated
+apoptosis by restoring the mitochondrial proteins involved in redox
+balance, membrane potential, and regulation of apoptosis.
+
+The differentially
+expressed proteins with Yashtimadhu choorna
+extract cotreatment were found to be involved in the metabolism of
+phospholipid, sphingolipid, cytidine diphosphate diacylglycerol (CDP-DAG),
+and cholesterol metabolism. The proteins enriched were cytochrome
+1-acyl-sn-glycerol-3-phosphate acyltransferase 1
+(AGPAT1), P450 family 51 subfamily A member 1, that is, lanosterol
+14-alpha demethylase (CYP51A1), and prosaposin (PSAP). AGPAT1 is a
+lysophosphatidic acid acyltransferase that regulates phospholipid
+and triglyceride levels in the brain, while CYP51A1 is involved in
+cholesterol metabolism.50,51 Dysregulated lipid
+metabolism is associated with the cytoplasmic accumulations of SNCA
+with other proteins and lipids, leading to the formation of protein
+aggregates, that is, Lewy bodies in PD.52 Lipidomic analysis of PD brains has demonstrated an increase in
+cholesterol metabolism and dysregulation of glycerophospholipid (CDP-DAG),53 signifying the classification of PD as a lipidopathy.19 The perturbations of lipid metabolism as a result
+of rotenone exposure in SHSY5Y cells have also been reported.54 The restoration of the proteins regulating lipid
+metabolism highlights the protective effect of Yashtimadhu.
+
+In our analysis, we also enriched the proteins
+involved in protein translation and degradation. ER plays a central
+role in protein dynamics in the cell, regulating the translation,
+protein folding, trafficking, and unfolded protein response (UPR).55 Yashtimadhu restored ER proteins involved in
+translation and protein folding such as eukaryotic translation initiation
+factor (EIF4B) and translational regulator 60S ribosomal protein L37
+(RPL37). Protein folding is a major determinant of its function, and
+with the accumulation of unfolded or misfolded proteins, oxidative
+stress and ER stress are induced. The ER stress results in the activation
+of UPR, which plays an essential role in PD.56,57 In response to the accumulation of unfolded proteins, the UPR regulates
+signals that activate the protein degradation pathways, that is, autophagy
+and ubiquitin-proteasomal system (UPS).57,58
+
+Autophagy
+is a bulk degradation mechanism that degrades proteins and damaged
+cell organelles. Autophagy initiation is controlled primarily by mammalian
+target of rapamycin (mTOR) and 5′ AMP-activated protein kinase
+(AMPK), which in turn regulates the phosphorylation of ULK1/2.59,60 UPS is involved in clearing protein aggregates, which is carried
+out by the 26s proteasomal system and is reported to act in close
+association with the autophagy mechanism.61,62 Proteins that are tagged by the E3-ubiquitin ligases are selected
+for degradation.63 Yashtimadhu regulated
+autophagy proteins such as 1-phosphatidylinositol-4,5-bisphosphate
+phosphodiesterase (PLCH1), clathrins (CTLA and CTLB), and high mobility
+group box 1 (HMGB1). E3-ligase-associated proteins, such as BTB/POZ
+domain-containing adapter for CUL3-mediated RhoA degradation (TNFAIP1),
+galectin-3 binding protein (LGALS3BP), and tripartite motif-containing
+65 (TRIM65), were also restored by Yashtimadhu.
+
+The enrichment
+analysis identified selective protein degradation
+pathways such as autophagy and neddylation. Neddylation is a degradation
+process similar to ubiquitination that involves the addition of a
+NEDD8, whose activation has been proven to be protective in PD.64 Aggrephagy is a form of selective autophagy
+process that takes over the degradation of the accumulated proteins
+when the cellular UPS fails.65,66 The dysregulation of
+the protein degradation mechanism leads to the accumulation of protein
+aggregates, which induce apoptosis as a result of oxidative and ER
+stress in PD. The regulation of the proteins involved in the translation
+and degradation processes makes Yashtimadhu an attractive candidate
+for neuroprotection.
+
+We enriched the transcription factors (TFs)
+that control the expression
+of the differentially altered proteins to understand the regulation
+of expression at the level of transcription (Supporting Information Tables S2 and S3). The proteins altered by rotenone
+treatment were found to be regulated by 169 TFs. Similarly, the proteins
+restored by Yashtimadhu were found to be regulated by 149 TFs. A list
+of the top enriched TFs and the proteins regulated by them is displayed
+in Table 3, which includes
+specificity proteins-1 and 4 (SP1 and SP4), early growth response-1
+(EGR1), nuclear respiratory factor-1 (NRF1), and Kruppel-like factor
+7 (KLF7), to name a few. Some of the enriched TFs were previously
+reported to be dysregulated in PD pathogenesis, such as EGR1,67,68 NRF1,69 and ELK1.70 These TFs were found to regulate proteins involved in autophagy,
+energy pathways, and metabolism of proteins and lipids. The findings
+show that Yashtimadhu helps in the regulation of TFs, which in turn
+restores the proteins impacted by rotenone.
+
+The functional significance of the proteins
+regulated by Yashtimadhu cotreatment and their cellular functions
+were established, and the protein–protein interaction (PPI)
+network was constructed with STRING (confidence score ≥ 0.7).
+The PPI analysis showed the interactions between 31 out of the 84
+proteins differentially regulated by Yashtimadhu (Supporting Information Table S4). We manually curated the
+molecular pathways that are governed by the 31 proteins and rebuilt
+the interaction network, highlighting the PPI and their interconnected
+pathways (Figure 6).
+
+Molecular
+network of Yashtimadhu-mediated neuroprotection. The
+interaction network of Yashtimadhu-regulated proteins and interlinking
+pathways.
+
+The pathways regulated by the
+PPI were maintenance of neuronal
+functions, protein translation, cellular signaling (receptor tyrosine
+kinases, G-protein signaling, PI3K-AKT, and mTOR signaling), ROS degradation,
+RNA metabolism, energy pathway, autophagy, and apoptosis regulation,
+while the proteins regulating lipid mechanism formed a unique cluster.
+The network provides a snapshot of the proteins and their functions,
+modulating the neuroprotective of Yashtimadhu, against the rotenone-induced in vitro model of PD.
+
+The MS-based analysis highlighted
+the proteins and pathways regulated
+by Yashtimadhu, which were predominantly involved in mitochondrial
+functions. As stated earlier, mitochondria regulate several cellular
+functions such as energy production (TCA and OxPhos), maintenance
+of cellular redox, and apoptosis. We validated some of the proteins
+and pathways regulated by Yashtimadhu, which are involved in mitochondrial
+homeostasis.
+
+We selected enzymes that are involved in the regulation
+of cellular redox (SOD1), TCA cycle [pyruvate dehydrogenase E1 subunit
+α 1 (PDHA1), citrate synthase (CS), and isocitrate dehydrogenase
+1 (IDH1)], and apoptosis [voltage-dependent anion-selective channel
+protein 1 (VDAC1) and apoptosis-inducing factor mitochondrial 1 (AIFM1)].
+The abundance of these proteins from the MS-based proteomics is given
+in Figure 7A. Immunoblotting
+analysis correlated with the proteomics analysis and showed a decrease
+in SOD1 with rotenone, which was subsequently restored by Yashtimadhu.
+PDHA1, AIFM1, and VDAC1 were also increased in rotenone that was restored
+by Yashtimadhu (Figure 7B,C). CS and IDH1 did not show significant changes in their expression
+patterns across the treatment conditions. VDAC is located on the mitochondrial
+outer membrane, forming channels for the transport of metabolites.
+It also plays a prime role in apoptosis by facilitating the release
+of proapoptotic proteins such as cytochrome-C and AIFM1, initiating
+apoptosis.71 Rotenone-mediated increase
+in VDAC and AIFM1 suggests activation of apoptosis as a result of
+mitochondrial dysfunction, which is prevented by Yashtimadhu.
+
+Validation
+of proteins and pathways regulated by Yashtimadhu. (A)
+Heat map showing the FC abundances of selected proteins from MS data,
+(B) immunoblotting analysis of proteins involved in mitochondrial
+health, (C) densitometry analysis showing the expression of the proteins,
+(D) cellular ROS staining using DCFDA (green) and counterstain HOECHST
+(blue), and (E) graphical representation of ROS production in the
+cells. *, significant with respect to control; #, significant with
+respect to rotenone. *,#, p ≤ 0.05; **,##, p ≤ 0.01. Labels: C-untreated cells, R-rotenone treatment,
+RY—rotenone + Yashtimadhu choorna extract cotreatment, and
+Y—Yashtimadhu choorna extract treatment.
+
+Rotenone-induced reduction in SOD1 levels was reported earlier,
+which also led to increased oxidative stress.43 Our pathway analysis also pointed to the regulation of cellular
+ROS degradation. We used 2′,7′-DCFDA (2′,7′-dichlorofluorescein
+diacetate) staining dye to observe the cellular ROS, which was increased
+with rotenone decreased with Yashtimadhu choorna extract cotreatment.
+Also, alteration in PDHA1 is implicated in ER stress before induction
+of mitochondrial dysfunction,72 and an
+increase in PDHA1 is also associated with increased ROS production.73 Our observations of ROS correlated with the
+reduced SOD1 levels with rotenone, indicating that the action of Yashtimadhu
+is by modulating SOD1 and PDHA1 levels and regulating cellular ROS
+degradation. The Yashtimadhu-mediated reduction in cellular ROS prevents
+cell death by preventing mitochondrial dysfunction and subsequent
+release of apoptotic factors.
+
+This
+study provides invaluable information on the neuroprotective
+properties of Yashtimadhu choorna against rotenone-induced PD model
+using quantitative proteomics. Yashtimadhu restored functions that
+are dysregulated in PD, such as mitochondrial function, ER health,
+protein, and lipid metabolism. The findings of this study enabled
+us to understand the proteins involved in rotenone-induced neurotoxicity
+that was counteracted by Yashtimadhu. Analysis of the restored proteins
+enabled the identification of molecular networks involved in the neuroprotective
+functions of Yashtimadhu. Validation of the proteins and pathways
+regulated by Yashtimadhu shows that it confers neuroprotection by
+the restoration of cellular redox potential and maintaining mitochondrial
+health, thereby preventing subsequent neuronal apoptosis. The identified
+proteins can be developed as molecular targets for neuroprotection
+against PD.
+
+Our study opens new avenues in understanding and
+deciphering the
+molecular mechanisms of traditional medicine in combating neurodegenerative
+disorders. This omics-aided approach can be envisaged for molecularization
+of Indian Ayurvedic formulation-based therapeutic interventions.
+
+Rotenone (Cat# R8875), retinoic
+acid (Cat# R2625), collagen (Cat# C9791), thiazolyl blue tetrazolium
+bromide (MTT, Cat# M5655), bisBenzimide H 33342 (HOECHST, Cat# B2261),
+2′,7′-dichlorodihydrofluorescein (DCFDA, Cat# D6883),
+iodoacetamide (Cat# I6125), and DL-dithiothreitol (Cat# D9779) were
+procured from Sigma-Aldrich, St. Louis, USA. Dulbecco’s modified
+Eagle medium (DMEM) high glucose (Cat#12100046), fetal bovine serum
+(FBS), and 100× antibiotic/antimycotic solution (Cat# 15240062)
+were purchased from Gibco. Pierce BCA protein estimation assay kit
+(Cat# 23225), Pierce Peptide estimation assay kit (Cat# 23275), and
+TMT 10plex kit (Cat# 90110) were procured from Thermo Fisher Scientific
+USA. Antibodies were purchased from Cell Signaling Technology, Danvers,
+USA, and Sigma-Aldrich, St. Louis, USA. Nitrocellulose membrane (Cat#
+1620115) and Clarity ECL Substrate (Cat# 170-5061) were purchased
+from BioRad Laboratories, California, USA, and X-ray films from Carestream,
+USA. TPCK-treated trypsin (Cat# LS003741) was from Worthington Biochemical
+Corporation, USA. Solid-phase extraction disks, C-18 (Cat# 66883-U),
+and SCX (Cat# 66889-U) were procured from Empore, USA.
+
+Yashtimadhu choorna
+(lot no.64) was procured from the SDP Remedies and Research Centre,
+Puttur, Karnataka, India (http://sdpayurveda.com/products/choorna/yastimadhu-choorna/), a GMP-certified manufacturer of Ayurvedic formulations, and a
+specimen is maintained at the center with the identification number
+SDP/YM/001-2017. The industrial process includes shade-net drying
+and vacuum drum drying of Yashtimadhu roots, followed by pulverization
+of the dried roots and sieving, resulting in the fine powder, with
+a yield of 90%. Yashtimadhu choorna was procured, and the presence
+of lead molecules, glabridin (specific for G. glabra), glycyrrhizic acid, and licoricesaponin-G2 was confirmed using
+liquid chromatography–MS/MS (LC–MS/MS) analysis using
+QTRAP-6500, ABSCIEX. The compounds were identified based on the MS/MS
+fragment spectra, matched to the theoretical spectra generated using
+CFM-ID,74 and detailed in Supporting Information Table S5.
+
+Yashtimadhu choorna
+extract for cell culture treatment was prepared
+using an aqueous (water) extraction method. Yashtimadhu choorna, 1
+g, was suspended in 10 mL of Milli-Q water (concentration, 0.1 g/mL)
+and incubated overnight at room temperature with continuous rotation.
+The extraction mixture was then centrifuged at 5000g for 10 min. The centrifugation was repeated for complete aspiration
+of the supernatant and transferred to a fresh tube. The aqueous extract
+was then dried using SpeedVac (Savant, Thermo Fisher Scientific, USA)
+and stored at −20 °C until further use. The dried extract
+was resuspended in serum-free cell culture media before treatment.
+
+IMR-32 cells (ATCC CCL-127)
+were procured from National Centre for Cell Science (NCCS), Pune,
+India. The cells were maintained in DMEM-high glucose supplemented
+with 10% FBS and 1× antibiotic/antimycotic solution and were
+incubated at 37 °C with 5% CO2. Differentiation of
+cells was carried out in a collagen-coated 6-well plate, wherein the
+cells were seeded at a density of 3 × 104 cells/well.
+The cells were treated with 10 μM retinoic acid supplemented
+in 2% FBS-containing medium, for 9 days, for yielding a dopaminergic
+population. Differentiation was confirmed with TH expression (Supporting Information Figure S1A,B).
+
+For
+MTT assay, 5000 cells/well were seeded in a 96-well plate and treated
+with different concentrations of rotenone (0.25, 0.5, 1, 10, 100,
+200, 500, 1000, and 10000 nM) and Yashtimadhu choorna extract (50,
+100, 200, 500, 1000, and 1500 μg/mL) for 48 h. MTT dye was added
+to the cells and incubated for 4 h. The resultant formazan crystals
+were dissolved using 50:50 of ethanol/dimethyl sulfoxide (DMSO) solution
+and read at 570 nm and background subtraction at 650 nm. Cell viability
+was calculated and represented as a percentage with respect to the
+untreated cells. The concentrations of rotenone and Yashtimadhu were
+determined from the results of the cytotoxicity assay. The differentiated
+cells were treated with (i) 100 nM rotenone (dissolved in DMSO), (ii)
+200 μg/mL Yashtimadhu choorna extract, and (iii) 100 nM rotenone
++ 200 μg/mL Yashtimadhu choorna extract for 48 h, and untreated
+cells were taken as a control.
+
+IMR-32 cells were seeded at 1
+× 104 cells/well in 12-well plates, differentiated,
+and treated with rotenone (100 nM), Yashtimadhu choorna extract (200
+μg/mL), 100 nM rotenone + Yashtimadhu choorna extract cotreatment
+for 48 h. The untreated cells were taken as a control. Post-treatment,
+the medium was aspirated, and the cells were washed with 1× phosphate-buffered
+saline (PBS) and treated with 20 μg/mL of PI for dead cells
+and 5 μg/mL of HOECHST as a counter nuclear stain in serum-free
+media for 15 min.75 For staining of the
+intracellular ROS productions, the cells were stained with DCFDA post-treatment
+with rotenone, Yashtimadhu alone, and Yashtimadhu choorna extract
+cotreatment. The cells were washed with 1× PBS and stained with
+25 μM of DCFDA and 5 μg/mL of HOECHST in serum-free media
+and stained for 15 min in the dark. Imaging was done with Zoe Imager,
+BioRad. The images were processed, and analysis of live–dead
+staining and ROS staining was measured using the ImageJ tool, NIH,
+USA.76 Cell viability was calculated with
+respect to untreated cells, and % ROS was calculated with respect
+to nuclear counterstained cells.
+
+IMR-32 cells were seeded at
+3 × 104 cells/well in collagen-coated 6-well plates
+and differentiated with retinoic acid. Rotenone (100 nM), Yashtimadhu
+choorna extract (200 μg/mL), and 100 nM of rotenone + Yashtimadhu
+choorna extract cotreatment was done for 48 h, while untreated cells
+were taken as a control. Post-treatment, the medium was removed, and
+the cells were washed with ice-cold 1× PBS. The cells were scraped
+and harvested in a lysis buffer containing 4% sodium dodecyl sulfate
+(SDS) in 50 mM triethylammonium bicarbonate (TEABC), with sodium orthovanadate
+(1 mM), sodium pyrophosphatase (2.5 mM), and beta-glycerophosphate
+(1 mM). The lysates were probe-sonicated on ice using Q-Sonica (Cole-Parmer,
+India) and heated at 95 °C on a dry bath for 10 min, followed
+by centrifugation at 12,000g for 20 min. The supernatant
+was aspirated into a new tube, and the protein concentration was estimated
+using the BCA protein estimation assay kit.
+
+Immunoblotting was
+performed as described previously.77 Briefly,
+an equal amount of protein was loaded across all treatments, electrophoretically
+resolved, and transferred onto the nitrocellulose membrane. The membranes
+were probed for the following proteins, with their dilution factors
+used for analysis, cleaved caspase-3 (1:1000), p-ERK1/2
+(T202/Y204, 1:1000), TH (1:1000), SOD1 (1:1000), VDAC1 (1:1000), AIFM1
+(1:1000), PDHA1 (1:1000), CS (1:1000), and IDH1 (1:1000), while β-actin
+(HRP-conjugated, 1:50,000) was used as a loading control. The blots
+were then incubated with the respective secondary antibodies (1:3000
+dilution) and washed prior to imaging. Immunoreactive protein bands
+were visualized with Clarity ECL Substrate and captured onto X-ray
+films. The X-ray films were scanned, and densitometry analysis was
+carried out with ImageJ software, NIH, USA.76 The area under the curve was used to calculate protein expression,
+normalized with β-actin, and expressed as FC with respect to
+control.
+
+IMR-32 cells were seeded
+at 1 × 105 cells/plate in 10 cm collagen-coated plates
+and differentiated with retinoic acid. Differentiated IMR-32 cells
+were treated with rotenone (100 nM), rotenone (100 nM) + Yashtimadhu
+choorna extract (200 μg/mL) cotreatment, and Yashtimadhu choorna
+extract (200 μg/mL) alone. The untreated cells were taken as
+a control. The cells were treated as independent biological duplicates
+and harvested. Briefly, the cells were washed thrice in ice-cold 1×
+PBS and scraped-off with lysis buffer [4% SDS in 50 mM TEABC with
+sodium pyrophosphate (2.5 mM), sodium orthovanadate (1 mM), and β-glycerophosphate
+(1 mM)], and the lysate was prepared as mentioned above. Protein concentration
+was estimated using the BCA assay, and the same was confirmed visually
+resolving on a 10% SDS-polyacrylamide gel electrophoresis (PAGE) gel.
+Based on the protein concentrations, 300 μg of protein from
+each treatment was taken, reduced with dithiothreitol, and alkylated
+with iodoacetamide. The proteins were then precipitated with ice-cold
+acetone overnight at −20 °C. Precipitated proteins were
+reconstituted in 50 mM of TEABC and digested with TPCK-trypsin overnight
+at a ratio of 1:20 of enzyme/protein at 37 °C.32 Digestion efficiency was evaluated by resolving the samples
+on 10% SDS-PAGE. The peptides were dried overnight in SpeedVac and
+stored at −20 °C until labeling.
+
+Peptide samples were reconstituted
+in 50 mM of TEABC, and their concentrations were estimated with the
+Pierce Peptide estimation kit. The peptide sample (50 μg) from
+each condition was used for labeling, with labels from the TMT 10plex
+kit. Peptides from the four different samples were labeled as follows:
+(i) untreated cells (C), (ii) 100 nM rotenone (R), (iii) 100 nM rotenone
++ 200 μg/mL Yashtimadhu choorna extract (RY), and (iv) 200 μg/mL
+Yashtimadhu choorna extract (Y), with four labels from the TMT 10plex
+kit, viz., 126 for C, 127N for R, 128C for RY, and 129N for Y. Both
+the biological replicates were independently labeled using the manufacturers’
+protocol. The TMT labels were reconstituted in anhydrous acetonitrile
+(ACN) and vortexed for dissolution. The respective TMT tags were added
+to both the replicates and incubated at room temperature for 1 h and
+quenched by adding 8 μL of 5% hydroxylamine. The samples were
+pooled and dried overnight using SpeedVac. The dried samples were
+stored at −20 °C until peptide fractionation.
+
+Peptide fractionation
+was carried out using a strong cation exchange (SCX) Stage Tip protocol
+as previously described.78 Briefly, the
+SCX material was stacked onto 200 μL tips and activated with
+100% ACN, followed by equilibration with 2% trifluoroacetic acid (TFA).
+Peptides were reconstituted in 2% TFA and loaded onto the Stage Tips.
+The flow-through was passed twice, followed by washing with 0.2% TFA.
+Elution was carried out with different concentrations of ammonium
+acetate in ACN (50, 75, 125, 200, and 300 mM) into five separate fractions,
+and the sixth fraction was collected in 5% ammonium hydroxide with
+80% ACN. The six fractions were collected in individual tubes and
+dried.
+
+Peptide desalting was carried out with the C-18 Stage
+Tip method, as described previously.79 The
+C-18 material was stacked onto 200 μL tips, activated with 100%
+ACN, and equilibrated with 0.1% formic acid. Fractionated peptide
+samples were reconstituted in 0.1% formic acid and loaded onto the
+C-18 material, and the flow-through was passed twice, followed by
+washing with 0.1% formic acid and elution with 40% ACN in 0.1% formic
+acid. The dried fractions were stored at −20 °C until
+MS analysis.
+
+LC–MS/MS
+analysis was
+carried out using an Orbitrap Fusion Tribrid mass spectrometer (Thermo
+Fisher Scientific, Bremen, Germany) coupled with an Easy-nl C1200
+nanoflow UHPLC (Thermo Scientific, Odense, Denmark). The fractionated
+and dried peptides were reconstituted using 0.1% formic acid and introduced
+into the nanoViper trap column (75 μm × 2 cm and 3 μm,
+C18) (Thermo Fisher Scientific). Peptides were resolved on an EASY-Spray
+C18 Column (75 μm × 50 cm, 275 μm, 100 Å) maintained
+at a temperature of 40 °C. A gradient of 5–35% solvent
+B (0.1% formic acid in 80% ACN) at a flow rate of 300 nL/min for 110
+min was used for peptide resolution. A total run time of 140 min,
+inclusive of the column conditioning and sample loading, was used
+for the LC–MS/MS analysis.
+
+The data-dependent acquisition
+was carried out within a mass range of 400-1600 m/z in the Orbitrap mass analyzer at a resolution
+of 120,000 at 200 m/z. Most intense
+precursor ions were selected for MS/MS fragmentation at a top speed
+data-dependent mode with a maximum cycle time of 3 s. Higher collision
+energy dissociation (HCD) fragmentation mode with a normalized collision
+energy of 35% was used in a scan range of 400–1600 m/z at a resolution of 60,000 at 200 m/z using the Orbitrap mass analyzer. Peptide
+charge states were set to 2–6, and a dynamic exclusion at 30
+s, with a 10 ppm mass window, was used. Data acquisition was carried
+out in technical triplicates for both the biological replicates.
+
+MS
+raw data files were processed using Proteome Discoverer, version
+2.2 (Thermo Fisher Scientific, Bremen, Germany). The data were searched
+against the human protein database RefSeq109 along with known contaminants
+(containing 81,096 entries and 116 contaminants), using SequestHT
+and MASCOT search algorithms. The search parameters were used as follows:
+a minimum peptide length of seven amino acids, with trypsin as the
+proteolytic enzyme and one missed cleavage. Precursor and fragment
+level mass tolerances were set at 10 ppm and 0.05 Da, respectively.
+TMT-modification at the peptide N-terminus and lysine residues and
+carbamidomethylation of cysteine were set as fixed modifications.
+Oxidation of methionine, protein N-terminal acetylation, was set as
+a dynamic modification. The percolator node in the consensus workflow
+was used to compute the false discovery rate (FDR), applied at 1%
+at the peptide and PSM level. Data normalization was carried out on
+the total peptide amount using Proteome Discoverer.
+
+The results file from Proteome Discoverer
+was used for further analysis. Perseus80 was used for PCA, computing the FC, and its respective logarithmic
+value at base-2 (log2 FC), which was used for calculating the p-value and Benjamini–Hochberg FDR-corrected p-value, that is, the q-value. Morpheus,
+Broad Institute (https://software.broadinstitute.org/morpheus/), was used for generating heat maps. Sankey diagram was generated
+using an online Sankey generator (http://sankey-diagram-generator.acquireprocure.com/). Proteins were classified and categorized based on Gene Ontology
+analysis using FunRich81 and pathway analysis
+using Enrichr (https://amp.pharm.mssm.edu/Enrichr/)82 and Reactome83 online tools. The proteins identified were also classified based
+on comparison with databases such as MitoCarta, version 2.0,84 The Autophagy Database,85 and the E3-ligases Database.63 PPI network
+analysis was carried out with STRING.86
+
+The MS raw data and the Proteome Discoverer-searched
+data were submitted to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE repository87 with the
+data set identifier PXD019672.
