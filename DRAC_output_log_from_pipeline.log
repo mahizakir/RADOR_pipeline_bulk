@@ -12,3 +12,9 @@ Processing disease: GNE_myopathy
 ✅ Created 35268 chunks (sentence-safe for large paragraphs).
 ✅ 26050 chunks remaining after dropping small ones (<35 chars).
 Number of chunks matched with keywords: 14730 out of 26050 from a set of 30 papers.
+Number of simple sentences in LLM response: 104705
+Number of unique sentences found in final output: 102226
+Number of triples in the whole dataset that was generate by llm from simple sentences: 161008
+The number of unique metadata items (papers used) is: 30 for  GNE_myopathy
+Time taken: 372.02 minutes for  GNE_myopathy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
