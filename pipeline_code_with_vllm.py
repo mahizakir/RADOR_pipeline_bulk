@@ -166,6 +166,7 @@ extra_keywords = [
 
 # Find the row matching the disease name exactly
 disease_row = df[df['Disease Name'].str.strip().str.lower() == disease_name_lookup]
+combined_keywords = extra_keywords.copy() # Default fallback
 
 if not disease_row.empty:
     # Get keywords from CSV
