@@ -21,105 +21,106 @@ def log_to_file(*args, file_path="DRAC_output_log_from_pipeline.log"):
 
 
 # Settings
-base_dir = "results_after_year_2000"
+base_dir = "data"
 disease_name = sys.argv[1]
-csv_file = os.path.join(base_dir, disease_name, "output_final_file_selection.csv")
-fulltexts_dir = os.path.join(base_dir, disease_name, "fulltexts")
+# csv_file = os.path.join(base_dir, disease_name, "output_final_file_selection.csv")
+# fulltexts_dir = os.path.join(base_dir, disease_name, "fulltexts")
 log_to_file("Processing disease: " + disease_name)
 
-# Tokenizer (OpenAI embeddings)
-enc = tiktoken.get_encoding("cl100k_base")
-max_tokens = 300  # max tokens per chunk
+# # Tokenizer (OpenAI embeddings)
+# enc = tiktoken.get_encoding("cl100k_base")
+# max_tokens = 300  # max tokens per chunk
 
-# Load CSV
-df = pd.read_csv(csv_file)
-# df = pd.read_csv(csv_file, nrows=1) # do this if you want to test with just one article
-
-
-chunks_list = []
-metadata_list = []
-sizes_list = []
-
-for _, row in df.iterrows():
-    fname = row["Filename"]
-    txt_path = os.path.join(fulltexts_dir, fname)
-    if not txt_path.endswith(".txt"):
-        txt_path += ".txt"
-
-    if not os.path.exists(txt_path):
-        print(f"⚠️ File missing: {txt_path}")
-        continue
-
-    with open(txt_path, "r", encoding="utf-8", errors="ignore") as f:
-        text = f.read()
-
-    # Split into paragraphs first
-    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-    meta = ". ".join([
-        str(row["title"]),
-        str(row["authors"]),
-        str(row["journal"]),
-        str(row["pubdate"]),
-        str(row["pmc_id"])
-    ])
-
-    for para in paragraphs:
-        para_tokens = enc.encode(para)
-        if len(para_tokens) <= max_tokens:
-            # Keep paragraph as single chunk
-            chunks_list.append(para)
-            metadata_list.append(meta)
-            sizes_list.append({"tokens": len(para_tokens), "chars": len(para)})
-        else:
-            # Paragraph too big → split by sentences
-            sentences = sent_tokenize(para)
-            current_tokens = []
-            for sent in sentences:
-                sent_tokens = enc.encode(sent)
-                if len(current_tokens) + len(sent_tokens) > max_tokens:
-                    # finalize current chunk
-                    chunk_text = enc.decode(current_tokens)
-                    chunks_list.append(chunk_text)
-                    metadata_list.append(meta)
-                    sizes_list.append({"tokens": len(current_tokens), "chars": len(chunk_text)})
-                    # start new chunk
-                    current_tokens = sent_tokens
-                else:
-                    current_tokens.extend(sent_tokens)
-
-            # Add any leftover tokens
-            if current_tokens:
-                chunk_text = enc.decode(current_tokens)
-                chunks_list.append(chunk_text)
-                metadata_list.append(meta)
-                sizes_list.append({"tokens": len(current_tokens), "chars": len(chunk_text)})
-
-log_to_file(f"✅ Created {len(chunks_list)} chunks (sentence-safe for large paragraphs).")
+# # Load CSV
+# df = pd.read_csv(csv_file)
+# # df = pd.read_csv(csv_file, nrows=1) # do this if you want to test with just one article
 
 
-# Filter out small chunks (<35 chars)
-filtered_chunks_list = []
-filtered_metadata_list = []
-filtered_sizes_list = []
+# chunks_list = []
+# metadata_list = []
+# sizes_list = []
 
-for chunk, meta, size in zip(chunks_list, metadata_list, sizes_list):
-    if size["chars"] >= 35:
-        filtered_chunks_list.append(chunk)
-        filtered_metadata_list.append(meta)
-        filtered_sizes_list.append(size)
+# for _, row in df.iterrows():
+#     fname = row["Filename"]
+#     txt_path = os.path.join(fulltexts_dir, fname)
+#     if not txt_path.endswith(".txt"):
+#         txt_path += ".txt"
 
-# Replace old lists with filtered ones
-chunks_list = filtered_chunks_list
-metadata_list = filtered_metadata_list
-sizes_list = filtered_sizes_list
+#     if not os.path.exists(txt_path):
+#         print(f"⚠️ File missing: {txt_path}")
+#         continue
 
-log_to_file(f"✅ {len(chunks_list)} chunks remaining after dropping small ones (<35 chars).")
+#     with open(txt_path, "r", encoding="utf-8", errors="ignore") as f:
+#         text = f.read()
+
+#     # Split into paragraphs first
+#     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+#     meta = ". ".join([
+#         str(row["title"]),
+#         str(row["authors"]),
+#         str(row["journal"]),
+#         str(row["pubdate"]),
+#         str(row["pmc_id"])
+#     ])
+
+#     for para in paragraphs:
+#         para_tokens = enc.encode(para)
+#         if len(para_tokens) <= max_tokens:
+#             # Keep paragraph as single chunk
+#             chunks_list.append(para)
+#             metadata_list.append(meta)
+#             sizes_list.append({"tokens": len(para_tokens), "chars": len(para)})
+#         else:
+#             # Paragraph too big → split by sentences
+#             sentences = sent_tokenize(para)
+#             current_tokens = []
+#             for sent in sentences:
+#                 sent_tokens = enc.encode(sent)
+#                 if len(current_tokens) + len(sent_tokens) > max_tokens:
+#                     # finalize current chunk
+#                     chunk_text = enc.decode(current_tokens)
+#                     chunks_list.append(chunk_text)
+#                     metadata_list.append(meta)
+#                     sizes_list.append({"tokens": len(current_tokens), "chars": len(chunk_text)})
+#                     # start new chunk
+#                     current_tokens = sent_tokens
+#                 else:
+#                     current_tokens.extend(sent_tokens)
+
+#             # Add any leftover tokens
+#             if current_tokens:
+#                 chunk_text = enc.decode(current_tokens)
+#                 chunks_list.append(chunk_text)
+#                 metadata_list.append(meta)
+#                 sizes_list.append({"tokens": len(current_tokens), "chars": len(chunk_text)})
+
+# log_to_file(f"✅ Created {len(chunks_list)} chunks (sentence-safe for large paragraphs).")
 
 
+# # Filter out small chunks (<35 chars)
+# filtered_chunks_list = []
+# filtered_metadata_list = []
+# filtered_sizes_list = []
+
+# for chunk, meta, size in zip(chunks_list, metadata_list, sizes_list):
+#     if size["chars"] >= 35:
+#         filtered_chunks_list.append(chunk)
+#         filtered_metadata_list.append(meta)
+#         filtered_sizes_list.append(size)
+
+# # Replace old lists with filtered ones
+# chunks_list = filtered_chunks_list
+# metadata_list = filtered_metadata_list
+# sizes_list = filtered_sizes_list
+
+# log_to_file(f"✅ {len(chunks_list)} chunks remaining after dropping small ones (<35 chars).")
 
 
 
-
+csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
+df_loaded = pd.read_csv(csv_filename)
+filtered_chunks_list = df_loaded["Filtered_Chunks"].tolist()  # same as filtered_chunks_with_keywords
+filtered_metadata_list = df_loaded["Filtered_Metadata"].tolist()
 
 
 import pandas as pd
@@ -360,7 +361,7 @@ for res, meta in zip(responses_list, list_of_meta_data):
 log_to_file("Number of simple sentences in LLM response:", number_of_cleaned_sentences)
 log_to_file("Number of unique sentences found in final output:", number_of_unique_sentences)
 
-output_file = 'results_after_year_2000/' + disease_name + '/generated_simple_sentences_' + disease_name + '.csv' 
+output_file = 'data/' + disease_name + '/generated_simple_sentences_' + disease_name + '.csv' 
 with open(output_file, mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Relevant Text', 'Simple Sentences', 'MetaData'])
@@ -450,7 +451,7 @@ df["Metadata"] = [list_of_formatted_meta_data[i] if i < len(list_of_formatted_me
 
 
 # Save to CSV
-df.to_csv('results_after_year_2000/' + disease_name + '/triples_' + disease_name + '.csv', index=False)
+df.to_csv('data/' + disease_name + '/triples_' + disease_name + '.csv', index=False)
 
 
 

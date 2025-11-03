@@ -26,8 +26,9 @@ print(f"Selected {len(disease_names)} diseases (rows {start_index} to {end_index
 
 # # TEST CASE: List of disease names as example
 # disease_names = [
-#     "1q44_microdeletion_syndrome",
-#     "GNE_myopathy",
+#     "mosaic_trisomy_4",
+#     # "1q44_microdeletion_syndrome",
+#     # "GNE_myopathy",
 # ]
 
 # Path to your pipeline script
