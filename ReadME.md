@@ -8,14 +8,14 @@
 
 The pipeline processes disease-specific text data stored in the folders:
 
-`results_after_year_2000/<disease_name>/`
+`data/<disease_name>/`
 
-For each disease, it generates two output CSV files and stores them inside the same disease specific data folder:
+For each disease, it generates two output CSV files and stores them inside the same disease specific folder inside the data folder:
 
 - `generated_simple_sentences_<disease_name>.csv` — contains simplified sentences extracted from the text.
 - `triples_<disease_name>.csv` — contains structured triples derived from the simplified sentences.
 
-The goal is to process all 5000+ rare diseases found inside the `results_after_year_2000` folder.
+The goal is to process all 5000+ rare diseases found inside the `data` folder.
 
 
 
@@ -31,12 +31,12 @@ Inside the run_driver.py file:
 - `start_index = 1000`  # starts at the 1000th disease (eg. start_index = 11 processes 12th row of csv)
 - `end_index = 1100`    # (eg. end_index = 15 stop processing after processing 15th row of csv)
 
-- Full dataset inside results_after_year_2000 folder has 5094 diseases.
+- Full dataset inside data folder has 5094 diseases.
 
 
 # Typical GPU runtime:
-  - ~20–25 diseases per day on high-end GPUs (e.g., A6000).
-  - Running disease from index 1000–1100 may take ~5 days.
+  - ~30–35 diseases per day on high-end GPUs (e.g., A6000).
+  - Running disease from index 1000–1100 may take ~3-4 days.
 - You can adjust start_index and end_index to split the workload across multiple sessions or machines.
 
 
