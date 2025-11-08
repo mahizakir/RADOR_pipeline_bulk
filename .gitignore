@@ -2,3 +2,6 @@ __pycache__/
 vllm_venv/
 vllm_env2/
 data/
+apptainer/*.sif
+logs/
+apptainer/tmp/
