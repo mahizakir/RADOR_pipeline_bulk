@@ -1,6 +1,5 @@
 """
 RADOR Pipeline - Medical Text Processing with vLLM
-Reorganized with imports at top, functions in middle, main execution at bottom
 """
 
 # ============================================================================
@@ -40,10 +39,45 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.t
 
 
 # ============================================================================
+# CONFIGURATION / CONSTANTS
+# ============================================================================
+
+# Model configuration
+LLM_MODEL_NAME = "unsloth/gemma-3-27b-it-unsloth-bnb-4bit"
+MAX_MODEL_LEN = 90000
+QUANTIZATION = "bitsandbytes"
+GPU_MEMORY_UTILIZATION = 0.90
+TENSOR_PARALLEL_SIZE = 1
+
+# Processing configuration
+BATCH_SIZE = 45
+SIMILARITY_THRESHOLD = 0.95
+
+# Model names
+SENTENCE_TRANSFORMER_MODEL = "paraphrase-MiniLM-L6-v2"
+
+# File paths
+LOG_FILE = "DRAC_output_log_from_pipeline.log"
+KEYWORDS_CSV = "static_data/overall_keywords.csv"
+
+# Alpaca prompt template
+ALPACA_PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{}
+
+### Input:
+{}
+
+### Response:
+{}"""
+
+
+# ============================================================================
 # ALL FUNCTIONS
 # ============================================================================
 
-def log_to_file(*args, file_path="DRAC_output_log_from_pipeline.log"):
+def log_to_file(*args, file_path=LOG_FILE):
     """Function to print and append only selected messages."""
     with open(file_path, "a") as f:
         old_stdout = sys.stdout
@@ -83,14 +117,13 @@ def find_unique_sentences(list_of_sentences_here, model_to_find_unique_sentences
         embeddings_to_find_unique_sentences
     )
     added = set()
-    threshold = 0.95
 
     for i in range(len(list_of_sentences_here)):
         if i in added:
             continue
         unique_sentences.append(list_of_sentences_here[i])
         for j in range(i + 1, len(list_of_sentences_here)):
-            if cosine_scores[i][j] > threshold:
+            if cosine_scores[i][j] > SIMILARITY_THRESHOLD:
                 added.add(j)
     return unique_sentences
 
@@ -135,8 +168,7 @@ def load_keywords(disease_name):
         "endocrine", "renal", "hepatic"
     ]
     
-    keywords_csv = "static_data/overall_keywords.csv"
-    df = pd.read_csv(keywords_csv)
+    df = pd.read_csv(KEYWORDS_CSV)
     df.columns = df.columns.str.strip()
     
     disease_name_lookup = disease_name.replace("_", " ").lower()
@@ -177,8 +209,7 @@ def main():
     """Main pipeline execution."""
     start_time = time.time()
     
-    # Settings
-    base_dir = "data"
+    # Get disease name from command line
     disease_name = sys.argv[1]
     log_to_file("Processing disease: " + disease_name)
     
@@ -204,47 +235,29 @@ def main():
         "papers."
     )
     
-    # Configuration
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    max_seq_length = global_output_max_new_tokens
-    dtype = None
-    load_in_4bit = True
-    use_gpu = True
-    
     # Load model
-    if use_gpu:
+    if torch.cuda.is_available():
         model = LLM(
-            model='unsloth/gemma-3-27b-it-unsloth-bnb-4bit',
-            max_model_len=90000,
-            quantization="bitsandbytes",
-            gpu_memory_utilization=0.90,
-            tensor_parallel_size=1,
+            model=LLM_MODEL_NAME,
+            max_model_len=MAX_MODEL_LEN,
+            quantization=QUANTIZATION,
+            gpu_memory_utilization=GPU_MEMORY_UTILIZATION,
+            tensor_parallel_size=TENSOR_PARALLEL_SIZE,
         )
-    
-    # Alpaca prompt template
-    alpaca_prompt = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
-
-### Instruction:
-{}
-
-### Input:
-{}
-
-### Response:
-{}"""
+    else:
+        raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
     
     # Generate simple sentences
     list_of_inputs = filtered_chunks_with_keywords
     list_of_meta_data = filtered_metadata_with_keywords
     
-    batch_size = 45
     responses_list = []
     given_prompt = simple_sentence_prompt
     
     # Process in batches
-    for i in range(0, len(list_of_inputs), batch_size):
-        batch_inputs = list_of_inputs[i:i+batch_size]
-        batch_prompts = make_prompts(batch_inputs, given_prompt, alpaca_prompt)
+    for i in range(0, len(list_of_inputs), BATCH_SIZE):
+        batch_inputs = list_of_inputs[i:i+BATCH_SIZE]
+        batch_prompts = make_prompts(batch_inputs, given_prompt, ALPACA_PROMPT_TEMPLATE)
         
         sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
         outputs = model.generate(batch_prompts, sampling_params)
@@ -256,13 +269,12 @@ def main():
             responses_list.append(res)
     
     # Load sentence transformer model for deduplication
-    model_to_find_unique_sentences = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+    model_to_find_unique_sentences = SentenceTransformer(SENTENCE_TRANSFORMER_MODEL)
     
     # Process and deduplicate simple sentences
     number_of_cleaned_sentences = 0
     number_of_unique_sentences = 0
     new_response_list = []
-    all_unique_sentences = []
     unique_sentences_list = []
     unique_sentences_metadata_list = []
     
@@ -280,7 +292,6 @@ def main():
         
         number_of_cleaned_sentences += len(cleaned_sentences)
         unique_sentences = find_unique_sentences(cleaned_sentences, model_to_find_unique_sentences)
-        all_unique_sentences.append(unique_sentences)
         number_of_unique_sentences += len(unique_sentences)
         
         for us in unique_sentences:
@@ -314,7 +325,7 @@ def main():
     
     for i in range(0, len(input_for_triplet_generation)):
         input_here = input_for_triplet_generation[i]
-        prompts.append(alpaca_prompt.format(given_prompt, input_here, ""))
+        prompts.append(ALPACA_PROMPT_TEMPLATE.format(given_prompt, input_here, ""))
     
     sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
     outputs = model.generate(prompts, sampling_params)
