@@ -1,7 +1,6 @@
 """
 RADOR Pipeline - Medical Text Processing with vLLM
 """
-
 # ============================================================================
 # ALL IMPORTS
 # ============================================================================
@@ -15,7 +14,6 @@ import warnings
 import pandas as pd
 import torch
 import nltk
-import tiktoken
 from nltk.tokenize import sent_tokenize
 from sentence_transformers import SentenceTransformer, util
 from transformers import TextStreamer
@@ -135,6 +133,9 @@ def make_prompts(chunks, given_prompt, alpaca_prompt):
 
 def load_keywords(disease_name):
     """Load disease-specific and general keywords."""
+    # Base set of general medical and disease-related keywords used to filter chunks.
+    # These are combined with any disease-specific keywords found in the CSV for a
+    # stronger, wider matching set used by `filter_chunks_by_keywords`.
     extra_keywords = [
         # Original List
         "drug", "therapy", "symptom", "medication", "treat", "alleviate", "relief", "remedy", "prevalence",
@@ -206,36 +207,40 @@ def filter_chunks_by_keywords(chunks_list, metadata_list, keywords):
 # ============================================================================
 
 def main():
-    """Main pipeline execution."""
+    """Main pipeline execution.
+
+    The body below is divided into labeled steps for readability. The behavior
+    is unchanged; comments only document the flow.
+    """
+
+    # Step 1: Start timer and parse command-line argument (disease name)
     start_time = time.time()
-    
-    # Get disease name from command line
     disease_name = sys.argv[1]
     log_to_file("Processing disease: " + disease_name)
-    
-    # Load chunks and metadata
+
+    # Step 2: Load precomputed chunks and their metadata from CSV
     csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
     df_loaded = pd.read_csv(csv_filename)
     filtered_chunks_list = df_loaded["Filtered_Chunks"].tolist()
     filtered_metadata_list = df_loaded["Filtered_Metadata"].tolist()
-    
-    # Load keywords and filter chunks
+
+    # Step 3: Load keywords (general + disease-specific) and filter chunks
     combined_keywords = load_keywords(disease_name)
     filtered_chunks_with_keywords, filtered_metadata_with_keywords = filter_chunks_by_keywords(
         filtered_chunks_list, filtered_metadata_list, combined_keywords
     )
-    
+
     log_to_file(
-        "Number of chunks matched with keywords:", 
-        len(filtered_chunks_with_keywords), 
-        "out of", 
-        len(filtered_chunks_list), 
-        "from a set of", 
-        len(set(filtered_metadata_with_keywords)), 
+        "Number of chunks matched with keywords:",
+        len(filtered_chunks_with_keywords),
+        "out of",
+        len(filtered_chunks_list),
+        "from a set of",
+        len(set(filtered_metadata_with_keywords)),
         "papers."
     )
-    
-    # Load model
+
+    # Step 4: Load the LLM model (GPU required)
     if torch.cuda.is_available():
         model = LLM(
             model=LLM_MODEL_NAME,
@@ -246,38 +251,35 @@ def main():
         )
     else:
         raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
-    
-    # Generate simple sentences
+
+    # Step 5: Prepare prompts and generate simple sentences with the LLM (batched)
     list_of_inputs = filtered_chunks_with_keywords
     list_of_meta_data = filtered_metadata_with_keywords
-    
     responses_list = []
     given_prompt = simple_sentence_prompt
-    
-    # Process in batches
+
     for i in range(0, len(list_of_inputs), BATCH_SIZE):
-        batch_inputs = list_of_inputs[i:i+BATCH_SIZE]
+        batch_inputs = list_of_inputs[i:i + BATCH_SIZE]
         batch_prompts = make_prompts(batch_inputs, given_prompt, ALPACA_PROMPT_TEMPLATE)
-        
+
         sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
         outputs = model.generate(batch_prompts, sampling_params)
-        
-        # Extract responses
+
+        # Extract responses from model outputs
         for output in outputs:
             full_text = output.prompt + output.outputs[0].text
             res = extract_response(full_text)
             responses_list.append(res)
-    
-    # Load sentence transformer model for deduplication
+
+    # Step 6: Deduplicate simple sentences using a sentence-transformer
     model_to_find_unique_sentences = SentenceTransformer(SENTENCE_TRANSFORMER_MODEL)
-    
-    # Process and deduplicate simple sentences
+
     number_of_cleaned_sentences = 0
     number_of_unique_sentences = 0
     new_response_list = []
     unique_sentences_list = []
     unique_sentences_metadata_list = []
-    
+
     for res, meta in zip(responses_list, list_of_meta_data):
         cleaned_sentences = []
         for line in res.splitlines():
@@ -289,63 +291,61 @@ def main():
             sentence = remove_gibberish(line)
             if sentence:
                 cleaned_sentences.append(sentence)
-        
+
         number_of_cleaned_sentences += len(cleaned_sentences)
         unique_sentences = find_unique_sentences(cleaned_sentences, model_to_find_unique_sentences)
         number_of_unique_sentences += len(unique_sentences)
-        
+
         for us in unique_sentences:
             unique_sentences_list.append(us)
             unique_sentences_metadata_list.append(meta)
-        
+
         formatted_string = "\n".join(f'("{sen}")' for sen in unique_sentences)
         new_response_list.append(formatted_string)
-    
+
     log_to_file("Number of simple sentences in LLM response:", number_of_cleaned_sentences)
     log_to_file("Number of unique sentences found in final output:", number_of_unique_sentences)
-    
-    # Save simple sentences to CSV
+
+    # Step 7: Save the generated simple sentences to CSV
     output_file = f'data/{disease_name}/generated_simple_sentences_{disease_name}.csv'
     with open(output_file, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Relevant Text', 'Simple Sentences', 'MetaData'])
         for item1, item2, item3 in zip(list_of_inputs, new_response_list, list_of_meta_data):
             writer.writerow([item1, item2, item3])
-    
+
     print(f'CSV file "{output_file}" created successfully.')
-    
-    # Generate triplets
+
+    # Step 8: Generate triplets from unique simple sentences
     input_for_triplet_generation = unique_sentences_list
     metadata_for_triplet_generation = unique_sentences_metadata_list
     print(f"Total unique simple sentences for triplet generation: {len(input_for_triplet_generation)}, {len(metadata_for_triplet_generation)}")
-    
+
     given_prompt = triplets_from_simple_sentence_prompt
-    responses_list = [None for _ in input_for_triplet_generation]
     prompts = []
-    
     for i in range(0, len(input_for_triplet_generation)):
         input_here = input_for_triplet_generation[i]
         prompts.append(ALPACA_PROMPT_TEMPLATE.format(given_prompt, input_here, ""))
-    
+
     sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
     outputs = model.generate(prompts, sampling_params)
-    
-    # Process the outputs
+
+    # Extract triplet responses
     responses_list = []
     for i, output in enumerate(outputs):
         full_text = output.prompt + output.outputs[0].text
         res = extract_response(full_text)
         responses_list.append(res)
-    
-    # Format triplets
+
+    # Step 9: Format triplets and create DataFrame
     list_of_unformatted_simple_sentences = input_for_triplet_generation
     list_of_unformatted_triples = responses_list
     list_of_unformatted_meta_data = metadata_for_triplet_generation
-    
+
     list_of_formatted_simple_sentences = []
     list_of_formatted_triples = []
     list_of_formatted_meta_data = []
-    
+
     for i in range(0, len(list_of_unformatted_triples)):
         lines = list_of_unformatted_triples[i].splitlines()
         cleaned_triples = []
@@ -362,12 +362,11 @@ def main():
             list_of_formatted_simple_sentences.extend([list_of_unformatted_simple_sentences[i]] * clean_length)
             list_of_formatted_triples.extend(cleaned_triples)
             list_of_formatted_meta_data.extend([list_of_unformatted_meta_data[i]] * clean_length)
-    
+
     print("Number of triples in the whole dataset that was generate by llm from simple sentences:")
     log_to_file("Number of triples in the whole dataset that was generate by llm from simple sentences:", len(list_of_formatted_triples))
     print(len(list_of_formatted_simple_sentences), len(list_of_formatted_triples), len(list_of_formatted_meta_data))
-    
-    # Create DataFrame
+
     df = pd.DataFrame({
         "Simple_Sentence": list_of_formatted_simple_sentences,
         "Triple": list_of_formatted_triples
@@ -376,14 +375,13 @@ def main():
         list_of_formatted_meta_data[i] if i < len(list_of_formatted_meta_data) else None
         for i in range(len(df))
     ]
-    
-    # Save to CSV
+
+    # Step 10: Save triples and log final statistics
     df.to_csv(f'data/{disease_name}/triples_{disease_name}.csv', index=False)
-    
-    # Final statistics
+
     end_time = time.time()
     elapsed = (end_time - start_time) / 60
-    
+
     log_to_file(f"The number of unique metadata items (papers used) is: {len(set(df['Metadata']))} for ", disease_name)
     log_to_file(f"Time taken: {elapsed:.2f} minutes for ", disease_name)
     log_to_file("~" * 100)
