@@ -25,11 +25,27 @@ from global_prompts import (
     triplets_from_simple_sentence_prompt
 )
 
-# Download NLTK data if needed
+# Configure NLTK to prefer a project-local data directory (populated by
+# download_all_models.sh -> models/nltk_data). This keeps the repo
+# self-contained and avoids re-downloading data when present.
+PROJECT_NLTK_DIR = os.path.join(os.getcwd(), "models", "nltk_data")
+if os.path.isdir(PROJECT_NLTK_DIR):
+    # Ensure NLTK will search the project-local directory first
+    if PROJECT_NLTK_DIR not in nltk.data.path:
+        nltk.data.path.insert(0, PROJECT_NLTK_DIR)
+    # Also export NLTK_DATA for subprocesses/tools that read the env var
+    os.environ.setdefault("NLTK_DATA", PROJECT_NLTK_DIR)
+
+# Download punkt tokenizer if it's not present in any configured NLTK path
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt')
+    # Attempt to download into the project-local directory so files are
+    # colocated with other assets; falls back to NLTK's default if that fails.
+    try:
+        nltk.download('punkt', download_dir=PROJECT_NLTK_DIR)
+    except Exception:
+        nltk.download('punkt')
 
 # Suppress warnings
 warnings.filterwarnings("ignore", message=".*Using a slow image processor.*")
@@ -53,6 +69,27 @@ SIMILARITY_THRESHOLD = 0.95
 
 # Model names
 SENTENCE_TRANSFORMER_MODEL = "paraphrase-MiniLM-L6-v2"
+# Local path where the sentence-transformers repo is cloned by the download script
+SENTENCE_TRANSFORMERS_LOCAL = os.path.join(os.getcwd(), "models", "huggingface", "sentence-transformers", "paraphrase-MiniLM-L6-v2")
+
+# Project-local gemma vLLM path (created by download_all_models.sh)
+LOCAL_GEMMA_DIR = os.path.join(os.getcwd(), "models", "huggingface", "unsloth", "gemma-3-27b-it-unsloth-bnb-4bit")
+
+def resolve_llm_model_source():
+    """Prefer the local gemma repo if present, otherwise return the HF model id."""
+    if os.path.isdir(LOCAL_GEMMA_DIR):
+        print(f"Using local vLLM model directory: {LOCAL_GEMMA_DIR}")
+        return LOCAL_GEMMA_DIR
+    return LLM_MODEL_NAME
+
+def resolve_sentence_transformer_model():
+    """Return a local path for the sentence-transformer model if present,
+    otherwise return the HF model id string.
+    """
+    if os.path.isdir(SENTENCE_TRANSFORMERS_LOCAL):
+        print(f"Using local SentenceTransformer at: {SENTENCE_TRANSFORMERS_LOCAL}")
+        return SENTENCE_TRANSFORMERS_LOCAL
+    return SENTENCE_TRANSFORMER_MODEL
 
 # File paths
 LOG_FILE = "DRAC_output_log_from_pipeline.log"
@@ -241,16 +278,18 @@ def main():
     )
 
     # Step 4: Load the LLM model (GPU required)
-    if torch.cuda.is_available():
-        model = LLM(
-            model=LLM_MODEL_NAME,
-            max_model_len=MAX_MODEL_LEN,
-            quantization=QUANTIZATION,
-            gpu_memory_utilization=GPU_MEMORY_UTILIZATION,
-            tensor_parallel_size=TENSOR_PARALLEL_SIZE,
-        )
-    else:
+    if not torch.cuda.is_available():
         raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
+
+    # Prefer a local gemma clone if it exists (downloaded into models/huggingface/...)
+    model_source = resolve_llm_model_source()
+    model = LLM(
+        model=model_source,
+        max_model_len=MAX_MODEL_LEN,
+        quantization=QUANTIZATION,
+        gpu_memory_utilization=GPU_MEMORY_UTILIZATION,
+        tensor_parallel_size=TENSOR_PARALLEL_SIZE,
+    )
 
     # Step 5: Prepare prompts and generate simple sentences with the LLM (batched)
     list_of_inputs = filtered_chunks_with_keywords
@@ -272,7 +311,8 @@ def main():
             responses_list.append(res)
 
     # Step 6: Deduplicate simple sentences using a sentence-transformer
-    model_to_find_unique_sentences = SentenceTransformer(SENTENCE_TRANSFORMER_MODEL)
+    model_choice = resolve_sentence_transformer_model()
+    model_to_find_unique_sentences = SentenceTransformer(model_choice)
 
     number_of_cleaned_sentences = 0
     number_of_unique_sentences = 0

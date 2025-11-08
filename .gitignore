@@ -5,3 +5,4 @@ data/
 apptainer/*.sif
 logs/
 apptainer/tmp/
+models
