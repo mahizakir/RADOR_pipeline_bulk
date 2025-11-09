@@ -37,7 +37,7 @@ echo ""
 # ============================================================================
 # Step 1: Download Sentence Transformer Model
 # ============================================================================
-echo -e "${YELLOW}[2/3] Downloading Sentence Transformer model...${NC}"
+echo -e "${YELLOW}[1/2] Downloading Sentence Transformer model...${NC}"
 SENTENCE_MODEL="sentence-transformers/paraphrase-MiniLM-L6-v2"
 
 # Use git clone exclusively for the sentence-transformer model so the project
@@ -67,7 +67,7 @@ echo ""
 # ============================================================================
 # Step 2: Download vLLM Model
 # ============================================================================
-echo -e "${YELLOW}[3/3] Downloading vLLM model (this will take time, ~50GB)...${NC}"
+echo -e "${YELLOW}[2/2] Downloading vLLM model (this will take time, ~50GB)...${NC}"
 VLLM_MODEL="unsloth/gemma-3-27b-it-unsloth-bnb-4bit"
 
 echo "Model: $VLLM_MODEL"
