@@ -13,10 +13,7 @@ import warnings
 
 import pandas as pd
 import torch
-import nltk
-from nltk.tokenize import sent_tokenize
 from sentence_transformers import SentenceTransformer, util
-from transformers import TextStreamer
 from vllm import LLM, SamplingParams
 
 from global_prompts import (
@@ -24,29 +21,6 @@ from global_prompts import (
     global_output_max_new_tokens,
     triplets_from_simple_sentence_prompt
 )
-
-# Configure NLTK to prefer a project-local data directory (populated by
-# download_all_models.sh -> models/nltk_data). This keeps the repo
-# self-contained and avoids re-downloading data when present.
-PROJECT_NLTK_DIR = os.path.join(os.getcwd(), "models", "nltk_data")
-if os.path.isdir(PROJECT_NLTK_DIR):
-    # Ensure NLTK will search the project-local directory first
-    if PROJECT_NLTK_DIR not in nltk.data.path:
-        nltk.data.path.insert(0, PROJECT_NLTK_DIR)
-    # Also export NLTK_DATA for subprocesses/tools that read the env var
-    os.environ.setdefault("NLTK_DATA", PROJECT_NLTK_DIR)
-
-# Download punkt tokenizer if it's not present in any configured NLTK path
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    # Attempt to download into the project-local directory so files are
-    # colocated with other assets; falls back to NLTK's default if that fails.
-    try:
-        nltk.download('punkt', download_dir=PROJECT_NLTK_DIR)
-    except Exception:
-        nltk.download('punkt')
-
 # Suppress warnings
 warnings.filterwarnings("ignore", message=".*Using a slow image processor.*")
 warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.tokenization_utils_base")
@@ -57,6 +31,9 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.t
 # ============================================================================
 
 # Model configuration
+HF_BASE_DIR = os.path.join(os.getcwd(), "models", "huggingface")
+
+# GEMMA model configuration
 LLM_MODEL_NAME = "unsloth/gemma-3-27b-it-unsloth-bnb-4bit"
 MAX_MODEL_LEN = 90000
 QUANTIZATION = "bitsandbytes"
@@ -67,29 +44,9 @@ TENSOR_PARALLEL_SIZE = 1
 BATCH_SIZE = 45
 SIMILARITY_THRESHOLD = 0.95
 
-# Model names
-SENTENCE_TRANSFORMER_MODEL = "paraphrase-MiniLM-L6-v2"
+# sentence transformer model name
+SENTENCE_TRANSFORMER_MODEL = "sentence-transformers/paraphrase-MiniLM-L6-v2"
 # Local path where the sentence-transformers repo is cloned by the download script
-SENTENCE_TRANSFORMERS_LOCAL = os.path.join(os.getcwd(), "models", "huggingface", "sentence-transformers", "paraphrase-MiniLM-L6-v2")
-
-# Project-local gemma vLLM path (created by download_all_models.sh)
-LOCAL_GEMMA_DIR = os.path.join(os.getcwd(), "models", "huggingface", "unsloth", "gemma-3-27b-it-unsloth-bnb-4bit")
-
-def resolve_llm_model_source():
-    """Prefer the local gemma repo if present, otherwise return the HF model id."""
-    if os.path.isdir(LOCAL_GEMMA_DIR):
-        print(f"Using local vLLM model directory: {LOCAL_GEMMA_DIR}")
-        return LOCAL_GEMMA_DIR
-    return LLM_MODEL_NAME
-
-def resolve_sentence_transformer_model():
-    """Return a local path for the sentence-transformer model if present,
-    otherwise return the HF model id string.
-    """
-    if os.path.isdir(SENTENCE_TRANSFORMERS_LOCAL):
-        print(f"Using local SentenceTransformer at: {SENTENCE_TRANSFORMERS_LOCAL}")
-        return SENTENCE_TRANSFORMERS_LOCAL
-    return SENTENCE_TRANSFORMER_MODEL
 
 # File paths
 LOG_FILE = "DRAC_output_log_from_pipeline.log"
@@ -111,6 +68,20 @@ ALPACA_PROMPT_TEMPLATE = """Below is an instruction that describes a task, paire
 # ============================================================================
 # ALL FUNCTIONS
 # ============================================================================
+def has_checkpoint_files(path):
+    """Return True if the given path contains likely model checkpoint files."""
+    if not os.path.isdir(path):
+        return False
+    filenames = os.listdir(path)
+    # Common HF weight filenames or safe tensor names
+    for name in filenames:
+        if name.endswith('.bin') or name.endswith('.safetensors') or name.endswith('.gguf'):
+            return True
+    # Also accept directories that may contain shard files
+    for name in filenames:
+        if re.match(r'pytorch_model-\d{4}-of-\d{4}\.bin', name):
+            return True
+    return False
 
 def log_to_file(*args, file_path=LOG_FILE):
     """Function to print and append only selected messages."""
@@ -239,6 +210,25 @@ def filter_chunks_by_keywords(chunks_list, metadata_list, keywords):
     return filtered_chunks, filtered_metadata
 
 
+def get_hf_model_source(model_base_dir, model_name):
+    """determine model source: local path or Hugging Face name.
+
+    Args:
+        model_base_dir (_type_): _description_
+        model_name (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    model_source = model_name
+    model_local_path = os.path.join(model_base_dir, model_name)
+    if has_checkpoint_files(model_local_path):
+        model_source = model_local_path
+    else:
+        print(f"No local model found at {model_local_path}, using  model name {model_name} from Hugging Face.")
+        model_source = model_name
+    return model_source
+    
 # ============================================================================
 # MAIN EXECUTION
 # ============================================================================
@@ -282,9 +272,10 @@ def main():
         raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
 
     # Prefer a local gemma clone if it exists (downloaded into models/huggingface/...)
-    model_source = resolve_llm_model_source()
-    model = LLM(
-        model=model_source,
+    gemma_model_source = get_hf_model_source(HF_BASE_DIR, LLM_MODEL_NAME)
+    # Initialize the vLLM model
+    llm_model = LLM(
+        model=gemma_model_source,
         max_model_len=MAX_MODEL_LEN,
         quantization=QUANTIZATION,
         gpu_memory_utilization=GPU_MEMORY_UTILIZATION,
@@ -302,7 +293,7 @@ def main():
         batch_prompts = make_prompts(batch_inputs, given_prompt, ALPACA_PROMPT_TEMPLATE)
 
         sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
-        outputs = model.generate(batch_prompts, sampling_params)
+        outputs = llm_model.generate(batch_prompts, sampling_params)
 
         # Extract responses from model outputs
         for output in outputs:
@@ -311,8 +302,8 @@ def main():
             responses_list.append(res)
 
     # Step 6: Deduplicate simple sentences using a sentence-transformer
-    model_choice = resolve_sentence_transformer_model()
-    model_to_find_unique_sentences = SentenceTransformer(model_choice)
+    sentnce_model_source = get_hf_model_source(HF_BASE_DIR, SENTENCE_TRANSFORMER_MODEL)
+    model_to_find_unique_sentences = SentenceTransformer(sentnce_model_source)
 
     number_of_cleaned_sentences = 0
     number_of_unique_sentences = 0
@@ -368,7 +359,7 @@ def main():
         prompts.append(ALPACA_PROMPT_TEMPLATE.format(given_prompt, input_here, ""))
 
     sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
-    outputs = model.generate(prompts, sampling_params)
+    outputs = llm_model.generate(prompts, sampling_params)
 
     # Extract triplet responses
     responses_list = []

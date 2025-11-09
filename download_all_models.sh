@@ -28,50 +28,14 @@ echo -e "${BLUE}RADOR Pipeline - Complete Setup${NC}"
 echo "================================================================"
 echo ""
 echo "This script will download:"
-echo "  1. NLTK punkt tokenizer"
-echo "  2. Sentence Transformer model (paraphrase-MiniLM-L6-v2)"
-echo "  3. vLLM model (unsloth/gemma-3-27b-it-unsloth-bnb-4bit) ~19GB"
+echo "  1. Sentence Transformer model (paraphrase-MiniLM-L6-v2)"
+echo "  2. vLLM model (unsloth/gemma-3-27b-it-unsloth-bnb-4bit) ~19GB"
 echo ""
 echo "================================================================"
 echo ""
 
 # ============================================================================
-# Step 1: Download NLTK Data
-# ============================================================================
-echo -e "${YELLOW}[1/3] Downloading NLTK punkt tokenizer to project-local ./nltk_data...${NC}"
-# Use project-local NLTK data directory under models so the repo keeps all
-# downloads in the same `models/` area managed by the script.
-NLTK_ROOT="$MODELS_DIR/nltk_data"
-export NLTK_DATA="$NLTK_ROOT"
-NLTK_DIR="$NLTK_ROOT/tokenizers"
-mkdir -p "$NLTK_DIR"
-
-if [ -d "$NLTK_DIR/punkt" ]; then
-    echo -e "${GREEN}✓ NLTK punkt already exists, skipping...${NC}"
-else
-    echo "Downloading punkt tokenizer..."
-    wget -q --show-progress https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/tokenizers/punkt.zip -O /tmp/punkt.zip
-    unzip -q /tmp/punkt.zip -d "$NLTK_DIR"
-    rm /tmp/punkt.zip
-    echo -e "${GREEN}✓ NLTK punkt downloaded successfully${NC}"
-fi
-
-# Download punkt_tab (optional, for newer NLTK versions)
-if [ -d "$NLTK_DIR/punkt_tab" ]; then
-    echo -e "${GREEN}✓ NLTK punkt_tab already exists, skipping...${NC}"
-else
-    echo "Downloading punkt_tab tokenizer (optional)..."
-    wget -q --show-progress https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/tokenizers/punkt_tab.zip -O /tmp/punkt_tab.zip 2>/dev/null || echo "punkt_tab not available (optional, skipping)"
-    if [ -f /tmp/punkt_tab.zip ]; then
-        unzip -q /tmp/punkt_tab.zip -d "$NLTK_DIR"
-        rm /tmp/punkt_tab.zip
-        echo -e "${GREEN}✓ NLTK punkt_tab downloaded${NC}"
-    fi
-fi
-echo ""
-
-# ============================================================================
-# Step 2: Download Sentence Transformer Model
+# Step 1: Download Sentence Transformer Model
 # ============================================================================
 echo -e "${YELLOW}[2/3] Downloading Sentence Transformer model...${NC}"
 SENTENCE_MODEL="sentence-transformers/paraphrase-MiniLM-L6-v2"
@@ -101,7 +65,7 @@ fi
 echo ""
 
 # ============================================================================
-# Step 3: Download vLLM Model
+# Step 2: Download vLLM Model
 # ============================================================================
 echo -e "${YELLOW}[3/3] Downloading vLLM model (this will take time, ~50GB)...${NC}"
 VLLM_MODEL="unsloth/gemma-3-27b-it-unsloth-bnb-4bit"

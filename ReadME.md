@@ -159,6 +159,14 @@ export LLM_LOCAL_PATH=/absolute/path/to/local/gemma
 python pipeline_code_with_vllm.py <disease_name>
 ```
 
+## Additional resources
+
+Helpful external documentation related to model downloads and container setup:
+
+- HuggingFace usage and best practices: https://docs.alliancecan.ca/wiki/Huggingface
+- Apptainer (Singularity) documentation: https://docs.alliancecan.ca/wiki/Apptainer
+
+
 ## Contact / next steps
 
 If you'd like, I can:
