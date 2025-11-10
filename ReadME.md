@@ -150,6 +150,14 @@ cd models/huggingface/<repo>
 git lfs pull
 ```
 
+If you run this repository on Compute Canada or other HPC systems that use Environment Modules, load the git-lfs module before pulling LFS objects:
+
+```bash
+module load git-lfs/3.4.0
+git lfs install
+git lfs pull
+```
+
 - If the pipeline cannot find NLTK data, ensure you ran `download_all_models.sh` or set `NLTK_DATA` to
   point at `models/nltk_data`.
 - To explicitly point the pipeline at a different vLLM model directory, set `LLM_LOCAL_PATH`:
