@@ -11,9 +11,9 @@ From: nvcr.io/nvidia/vllm:25.09-py3
     # Add this directory to the container's dynamic linker cache
     echo "/usr/local/cuda/compat/lib" > /etc/ld.so.conf.d/cuda-compat.conf
     ldconfig
+    pip install pandas numpy scikit-learn tqdm transformers datasets bitsandbytes>=0.46.1
 
 %environment
-    pip install sentence-transformers pandas numpy scikit-learn nltk tqdm transformers datasets bitsandbytes>=0.46.1
     # Prevent Python from using user site-packages from /home/<user>/.local
     export PYTHONNOUSERSITE=1
     # Suppress FutureWarning for pynvml

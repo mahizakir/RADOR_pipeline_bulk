@@ -18,10 +18,6 @@ For each disease, it generates two output CSV files and stores them inside the s
 The goal is to process all 5000+ rare diseases found inside the `data` folder.
 
 
-
-
-  
-
 # Indexing the number of disease folders for run: 
 To manage large-scale processing, diseases should be run in ranges because we cannot process 5000+ disease data at once (GPU Time for 1 diseases is between 6 to 200+ minutes):
 
@@ -57,35 +53,6 @@ Create a Python environment and install required packages:
 pip install -r requirements.txt
 ```
 
-## Download required models and tokenizers (recommended)
-
-This project provides `download_all_models.sh` which organizes downloads under `./models/`:
-
-- HuggingFace models: `./models/huggingface/...`
-- NLTK data (punkt tokenizer): `./models/nltk_data/tokenizers/punkt`
-
-Run the script from the repository root:
-
-```bash
-bash download_all_models.sh
-```
-
-Notes:
-- The script uses `git clone --depth 1` to fetch HuggingFace repos into `models/huggingface/...`.
-  Many model repositories use Git LFS for large weight files. After cloning a repo you may
-  need to run `git lfs pull` inside the model directory (and have `git-lfs` installed).
-- The script places NLTK data under `models/nltk_data` and exports `NLTK_DATA` when run.
-
-## How the pipeline finds models/tokenizers
-
-- Sentence Transformer: the code prefers the local clone at
-  `models/huggingface/sentence-transformers/paraphrase-MiniLM-L6-v2` if present; otherwise it falls back
-  to the HF model id and will download into your HF cache on first use.
-- vLLM model (Gemma): the pipeline prefers a local clone at
-  `models/huggingface/unsloth/gemma-3-27b-it-unsloth-bnb-4bit` if present. You can also specify a custom
-  local path using the environment variable `LLM_LOCAL_PATH` or by creating the file
-  `models/llm_local_path.txt` containing the path.
-
 ## Run the pipeline (host)
 
 Run the driver which iterates over a range of disease folders. Edit `run_driver.py` to set
@@ -99,22 +66,26 @@ Log output is appended to `DRAC_output_log_from_pipeline.log`.
 
 ---
 
-## Using Apptainer (recommended for reproducible environments)
+## Using Apptainer
 
 This repository includes Apptainer artifacts in the `apptainer/` directory:
 
 - `vllm_apptainer.def` — definition file to build an image from scratch
-- `vllm_apptainer_no_docker.def` — alternate definition
 - `vllm_apptainer.sif` — pre-built Apptainer image (if present)
 
 Build the SIF from the definition (requires root or fakeroot support):
 
 ```bash
 # As root (or with sudo) on systems that support it
-apptainer build vllm_apptainer.sif apptainer/vllm_apptainer.def
+apptainer build apptainer/vllm_apptainer.sif apptainer/vllm_apptainer.def
 
 # Or, if your system supports fakeroot builds with apptainer:
 apptainer build --fakeroot vllm_apptainer.sif apptainer/vllm_apptainer.def
+```
+
+In case tmp folder size is limited and you incounter  `no space left on device` error,  use following command
+```bash
+apptainer build --tmpdir $(pwd)/apptainer/tmp  apptainer/vllm_apptainer.sif apptainer/vllm_apptainer.def 
 ```
 
 If a pre-built `vllm_apptainer.sif` is already present in `apptainer/`, you can use it directly.
@@ -137,53 +108,37 @@ apptainer exec --nv --bind $(pwd):/workspace apptainer/vllm_apptainer.sif \
 Notes for Apptainer:
 - Use `--nv` to enable NVIDIA GPU support (requires NVIDIA drivers and apptainer compiled with GPU support).
 - The `--bind $(pwd):/workspace` makes your project available inside the container at `/workspace`.
-- If your model clones used Git LFS on the host, ensure the model directory contains actual weight files before running inside the container, or run `git lfs pull` inside the container in the model directory.
 
-## Recommendations & troubleshooting
+# Run on DREC
 
-- If `git clone` fails due to Git LFS, install `git-lfs` and run `git lfs pull` inside the cloned repo:
-
-```bash
-sudo apt-get install git-lfs   # or use your distro's package manager
-git lfs install
-cd models/huggingface/<repo>
-git lfs pull
-```
-
-If you run this repository on Compute Canada or other HPC systems that use Environment Modules, load the git-lfs module before pulling LFS objects:
+## Download Model Files
+As most of HPCs doess not allow internet acccess on compute node, it is requried to pre-download model weight on the login node
 
 ```bash
-module load git-lfs/3.4.0
-git lfs install
-git lfs pull
+bash download_all_models_cc.sh
 ```
 
-- If the pipeline cannot find NLTK data, ensure you ran `download_all_models.sh` or set `NLTK_DATA` to
-  point at `models/nltk_data`.
-- To explicitly point the pipeline at a different vLLM model directory, set `LLM_LOCAL_PATH`:
+## Update configs
+Change path to model snapshot in `model_config.json`
+A example model config looks like following
+```json
+{
+  "llm_model_name": "unsloth/gemma-3-27b-it-unsloth-bnb-4bit",
+  "llm_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1",
+  "llm_max_model_len": 90000,
+  "quantization": "bitsandbytes",
+  "gpu_memory_utilization": 0.9,
+  "tensor_parallel_size": 1,
+  "batch_size": 45,
+  "similarity_threshold": 0.95,
+  "sentence_transformer_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+  "sentence_transformer_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1"
+}
 
-```bash
-export LLM_LOCAL_PATH=/absolute/path/to/local/gemma
-python pipeline_code_with_vllm.py <disease_name>
 ```
-
 ## Additional resources
 
 Helpful external documentation related to model downloads and container setup:
 
 - HuggingFace usage and best practices: https://docs.alliancecan.ca/wiki/Huggingface
 - Apptainer (Singularity) documentation: https://docs.alliancecan.ca/wiki/Apptainer
-
-
-## Contact / next steps
-
-If you'd like, I can:
-
-- add a small self-test mode to `run_driver.py` that runs a single file end-to-end with dummy inputs,
-- add `git-lfs` detection to the download script and automatically run `git lfs pull` where available,
-- or add flags to `download_all_models.sh` to select which models to download.
-
----
-
-Happy running — tell me if you want any of the optional improvements added.
-
