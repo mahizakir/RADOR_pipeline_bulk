@@ -96,17 +96,12 @@ def init_logger(log_file, level=logging.INFO):
     fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
     sh = logging.StreamHandler()
     sh.setFormatter(fmt)
-    fh = logging.FileHandler(log_file)
-    fh.setFormatter(fmt)
     logger.addHandler(sh)
-    logger.addHandler(fh)
+    if log_file is not None:
+        fh = logging.FileHandler(log_file)
+        fh.setFormatter(fmt)
+        logger.addHandler(fh)
     logger.propagate = False
-    return logger
-
-
-# create module-level logger instance
-logger = init_logger()
-
 
 def extract_response(input_string):
     """Extract response from alpaca formatted output."""
@@ -280,12 +275,16 @@ def main():
     sentence_transformer_model_path = model_config["sentence_transformer_model_path"]
     # Local path where the sentence-transformers repo is cloned by the download script
 
+    log_file_fp = model_config["log_file"]
+    keywords_csv_fp = model_config["keywords_csv_fp"]
+    
+    # Initialize logger
+    init_logger(log_file_fp, level=logging.INFO)
+    
     # File paths
-    log_files = "DRAC_output_log_from_pipeline.log"
-    keywords_csv_fp = "static_data/overall_keywords.csv"
-
+    logger = logging.getLogger("rador")
     logger.info("Processing disease: %s", disease_name)
-
+    exit()
     # Step 2: Load precomputed chunks and their metadata from CSV
     csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
     df_loaded = pd.read_csv(csv_filename)
