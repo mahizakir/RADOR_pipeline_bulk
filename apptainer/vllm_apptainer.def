@@ -7,11 +7,11 @@ From: nvcr.io/nvidia/vllm:25.09-py3
     mkdir -p /usr/local/cuda/compat/lib
     ln -sf /usr/lib64/libcuda.so /usr/local/cuda/compat/lib/libcuda.so.1
     ln -sf libcuda.so.1 /usr/local/cuda/compat/lib/libcuda.so
-    
+
     # Add this directory to the container's dynamic linker cache
-    echo "/usr/local/cuda/compat/lib" > /etc/ld.so.conf.d/cuda-compat.conf
+    #echo "/usr/local/cuda/compat/lib" > /etc/ld.so.conf.d/cuda-compat.conf
     ldconfig
-    pip install pandas numpy scikit-learn tqdm transformers datasets bitsandbytes>=0.46.1
+    pip install pandas numpy sentence_transformers tqdm transformers datasets bitsandbytes>=0.46.1
 
 %environment
     # Prevent Python from using user site-packages from /home/<user>/.local
