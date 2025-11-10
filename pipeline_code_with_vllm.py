@@ -276,7 +276,7 @@ def main():
     # Local path where the sentence-transformers repo is cloned by the download script
 
     log_file_fp = model_config["log_file"]
-    keywords_csv_fp = model_config["keywords_csv_fp"]
+    keywords_csv_fp = model_config["keywords_csv"]
     
     # Initialize logger
     init_logger(log_file_fp, level=logging.INFO)
@@ -284,7 +284,7 @@ def main():
     # File paths
     logger = logging.getLogger("rador")
     logger.info("Processing disease: %s", disease_name)
-    exit()
+    # exit()
     # Step 2: Load precomputed chunks and their metadata from CSV
     csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
     df_loaded = pd.read_csv(csv_filename)
