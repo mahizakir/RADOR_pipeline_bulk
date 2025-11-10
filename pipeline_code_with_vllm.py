@@ -11,6 +11,7 @@ import re
 import time
 import warnings
 import json
+import logging
 
 import pandas as pd
 import torch
@@ -43,10 +44,11 @@ def load_model_config(path):
     try:
         with open(path, "r") as f:
             cfg = json.load(f)
-        print(f"Loaded model config from {path}")
+        # defer to module logger if available
+        logging.getLogger(__name__).info("Loaded model config from %s", path)
         return cfg
     except Exception as e:
-        print(f"Warning: could not load model config from {path}: {e}")
+        logging.getLogger(__name__).warning("Could not load model config from %s: %s", path, e)
         return {}
 
 # Alpaca prompt template
@@ -80,13 +82,30 @@ def has_checkpoint_files(path):
             return True
     return False
 
-def log_to_file(*args, file_path=LOG_FILE):
-    """Function to print and append only selected messages."""
-    with open(file_path, "a") as f:
-        old_stdout = sys.stdout
-        sys.stdout = f
-        print(*args)
-        sys.stdout = old_stdout
+def init_logger(log_file, level=logging.INFO):
+    """Initialize and return a logger for the pipeline.
+
+    Writes logs to stdout and to `log_file`. Safe to call multiple times.
+    """
+    logger = logging.getLogger("rador")
+    logger.setLevel(level)
+    # remove existing handlers to avoid duplicate logs
+    if logger.handlers:
+        for h in list(logger.handlers):
+            logger.removeHandler(h)
+    fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+    sh = logging.StreamHandler()
+    sh.setFormatter(fmt)
+    fh = logging.FileHandler(log_file)
+    fh.setFormatter(fmt)
+    logger.addHandler(sh)
+    logger.addHandler(fh)
+    logger.propagate = False
+    return logger
+
+
+# create module-level logger instance
+logger = init_logger()
 
 
 def extract_response(input_string):
@@ -136,7 +155,7 @@ def make_prompts(chunks, given_prompt, alpaca_prompt):
     return [alpaca_prompt.format(given_prompt, chunk, "") for chunk in chunks]
 
 
-def load_keywords(disease_name):
+def load_keywords(keyword_csv, disease_name):
     """Load disease-specific and general keywords."""
     # Base set of general medical and disease-related keywords used to filter chunks.
     # These are combined with any disease-specific keywords found in the CSV for a
@@ -174,7 +193,7 @@ def load_keywords(disease_name):
         "endocrine", "renal", "hepatic"
     ]
     
-    df = pd.read_csv(KEYWORDS_CSV)
+    df = pd.read_csv(keyword_csv)
     df.columns = df.columns.str.strip()
     
     disease_name_lookup = disease_name.replace("_", " ").lower()
@@ -185,9 +204,9 @@ def load_keywords(disease_name):
         csv_keywords = disease_row['Keywords'].values[0]
         csv_keywords_list = [kw.strip().lower() for kw in csv_keywords.split(',')]
         combined_keywords = list(set(csv_keywords_list + extra_keywords))
-        print("Keywords:", combined_keywords)
+        logger.info("Keywords: %s", combined_keywords)
     else:
-        print(f"No keywords found for disease: {disease_name_lookup}")
+        logger.warning("No keywords found for disease: %s", disease_name_lookup)
     
     return combined_keywords
 
@@ -220,7 +239,7 @@ def get_hf_model_source(model_name, model_local_path):
     if has_checkpoint_files(model_local_path):
         model_source = model_local_path
     else:
-        print(f"No local model found at {model_local_path}, using  model name {model_name} from Hugging Face.")
+        logger.info("No local model found at %s, using model name %s from Hugging Face.", model_local_path, model_name)
         model_source = model_name
     return model_source
     
@@ -239,7 +258,7 @@ def main():
     start_time = time.time()
     disease_name = sys.argv[1]
     
-    # Load config 
+    # Load config
     # Path to optional JSON file containing model configuration overrides.
     MODEL_CONFIG_PATH = os.path.join(os.getcwd(), "model_config.json")
     model_config = load_model_config(MODEL_CONFIG_PATH)
@@ -262,10 +281,10 @@ def main():
     # Local path where the sentence-transformers repo is cloned by the download script
 
     # File paths
-    LOG_FILE = "DRAC_output_log_from_pipeline.log"
-    KEYWORDS_CSV = "static_data/overall_keywords.csv"
+    log_files = "DRAC_output_log_from_pipeline.log"
+    keywords_csv_fp = "static_data/overall_keywords.csv"
 
-    log_to_file("Processing disease: " + disease_name)
+    logger.info("Processing disease: %s", disease_name)
 
     # Step 2: Load precomputed chunks and their metadata from CSV
     csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
@@ -274,19 +293,16 @@ def main():
     filtered_metadata_list = df_loaded["Filtered_Metadata"].tolist()
 
     # Step 3: Load keywords (general + disease-specific) and filter chunks
-    combined_keywords = load_keywords(disease_name)
+    combined_keywords = load_keywords(keywords_csv_fp, disease_name)
     filtered_chunks_with_keywords, filtered_metadata_with_keywords = filter_chunks_by_keywords(
         filtered_chunks_list, filtered_metadata_list, combined_keywords
     )
 
-    log_to_file(
-        "Number of chunks matched with keywords:",
+    logger.info(
+        "Number of chunks matched with keywords: %d out of %d from a set of %d papers.",
         len(filtered_chunks_with_keywords),
-        "out of",
         len(filtered_chunks_list),
-        "from a set of",
         len(set(filtered_metadata_with_keywords)),
-        "papers."
     )
 
     # Step 4: Load the LLM model (GPU required)
@@ -356,8 +372,8 @@ def main():
         formatted_string = "\n".join(f'("{sen}")' for sen in unique_sentences)
         new_response_list.append(formatted_string)
 
-    log_to_file("Number of simple sentences in LLM response:", number_of_cleaned_sentences)
-    log_to_file("Number of unique sentences found in final output:", number_of_unique_sentences)
+    logger.info("Number of simple sentences in LLM response: %d", number_of_cleaned_sentences)
+    logger.info("Number of unique sentences found in final output: %d", number_of_unique_sentences)
 
     # Step 7: Save the generated simple sentences to CSV
     output_file = f'data/{disease_name}/generated_simple_sentences_{disease_name}.csv'
@@ -367,12 +383,12 @@ def main():
         for item1, item2, item3 in zip(list_of_inputs, new_response_list, list_of_meta_data):
             writer.writerow([item1, item2, item3])
 
-    print(f'CSV file "{output_file}" created successfully.')
+    logger.info('CSV file "%s" created successfully.', output_file)
 
     # Step 8: Generate triplets from unique simple sentences
     input_for_triplet_generation = unique_sentences_list
     metadata_for_triplet_generation = unique_sentences_metadata_list
-    print(f"Total unique simple sentences for triplet generation: {len(input_for_triplet_generation)}, {len(metadata_for_triplet_generation)}")
+    logger.info("Total unique simple sentences for triplet generation: %d, %d", len(input_for_triplet_generation), len(metadata_for_triplet_generation))
 
     given_prompt = triplets_from_simple_sentence_prompt
     prompts = []
@@ -416,9 +432,8 @@ def main():
             list_of_formatted_triples.extend(cleaned_triples)
             list_of_formatted_meta_data.extend([list_of_unformatted_meta_data[i]] * clean_length)
 
-    print("Number of triples in the whole dataset that was generate by llm from simple sentences:")
-    log_to_file("Number of triples in the whole dataset that was generate by llm from simple sentences:", len(list_of_formatted_triples))
-    print(len(list_of_formatted_simple_sentences), len(list_of_formatted_triples), len(list_of_formatted_meta_data))
+    logger.info("Number of triples in the whole dataset that was generated by llm from simple sentences: %d", len(list_of_formatted_triples))
+    logger.info("Triples / simple_sentences / metadata counts: %d %d %d", len(list_of_formatted_simple_sentences), len(list_of_formatted_triples), len(list_of_formatted_meta_data))
 
     df = pd.DataFrame({
         "Simple_Sentence": list_of_formatted_simple_sentences,
@@ -435,9 +450,9 @@ def main():
     end_time = time.time()
     elapsed = (end_time - start_time) / 60
 
-    log_to_file(f"The number of unique metadata items (papers used) is: {len(set(df['Metadata']))} for ", disease_name)
-    log_to_file(f"Time taken: {elapsed:.2f} minutes for ", disease_name)
-    log_to_file("~" * 100)
+    logger.info("The number of unique metadata items (papers used) is: %d for %s", len(set(df['Metadata'])), disease_name)
+    logger.info("Time taken: %.2f minutes for %s", elapsed, disease_name)
+    logger.info("%s", "~" * 100)
 
 
 if __name__ == "__main__":
