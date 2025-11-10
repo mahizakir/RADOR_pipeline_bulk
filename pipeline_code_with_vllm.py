@@ -10,6 +10,7 @@ import csv
 import re
 import time
 import warnings
+import json
 
 import pandas as pd
 import torch
@@ -30,27 +31,23 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.t
 # CONFIGURATION / CONSTANTS
 # ============================================================================
 
-# Model configuration
-HF_BASE_DIR = os.path.join(os.getcwd(), "models", "huggingface")
+def load_model_config(path):
+    """Load model configuration from a JSON file.
 
-# GEMMA model configuration
-LLM_MODEL_NAME = "unsloth/gemma-3-27b-it-unsloth-bnb-4bit"
-MAX_MODEL_LEN = 90000
-QUANTIZATION = "bitsandbytes"
-GPU_MEMORY_UTILIZATION = 0.90
-TENSOR_PARALLEL_SIZE = 1
-
-# Processing configuration
-BATCH_SIZE = 45
-SIMILARITY_THRESHOLD = 0.95
-
-# sentence transformer model name
-SENTENCE_TRANSFORMER_MODEL = "sentence-transformers/paraphrase-MiniLM-L6-v2"
-# Local path where the sentence-transformers repo is cloned by the download script
-
-# File paths
-LOG_FILE = "DRAC_output_log_from_pipeline.log"
-KEYWORDS_CSV = "static_data/overall_keywords.csv"
+    Returns a dict with configuration values. If the file does not exist or
+    cannot be parsed the function returns an empty dict and the code using
+    it will fall back to built-in defaults.
+    """
+    if not os.path.isfile(path):
+        return {}
+    try:
+        with open(path, "r") as f:
+            cfg = json.load(f)
+        print(f"Loaded model config from {path}")
+        return cfg
+    except Exception as e:
+        print(f"Warning: could not load model config from {path}: {e}")
+        return {}
 
 # Alpaca prompt template
 ALPACA_PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
@@ -112,7 +109,7 @@ def remove_gibberish(text):
     return text if len(text) >= 5 else None
 
 
-def find_unique_sentences(list_of_sentences_here, model_to_find_unique_sentences):
+def find_unique_sentences(list_of_sentences_here, model_to_find_unique_sentences, similarity_threshold):
     """Find unique sentences using cosine similarity."""
     embeddings_to_find_unique_sentences = model_to_find_unique_sentences.encode(
         list_of_sentences_here, convert_to_tensor=True
@@ -129,7 +126,7 @@ def find_unique_sentences(list_of_sentences_here, model_to_find_unique_sentences
             continue
         unique_sentences.append(list_of_sentences_here[i])
         for j in range(i + 1, len(list_of_sentences_here)):
-            if cosine_scores[i][j] > SIMILARITY_THRESHOLD:
+            if cosine_scores[i][j] > similarity_threshold:
                 added.add(j)
     return unique_sentences
 
@@ -210,18 +207,16 @@ def filter_chunks_by_keywords(chunks_list, metadata_list, keywords):
     return filtered_chunks, filtered_metadata
 
 
-def get_hf_model_source(model_base_dir, model_name):
+def get_hf_model_source(model_name, model_local_path):
     """determine model source: local path or Hugging Face name.
 
     Args:
-        model_base_dir (_type_): _description_
         model_name (_type_): _description_
-
+        model_local_path (_type_): _description_
     Returns:
         _type_: _description_
     """
     model_source = model_name
-    model_local_path = os.path.join(model_base_dir, model_name)
     if has_checkpoint_files(model_local_path):
         model_source = model_local_path
     else:
@@ -243,6 +238,33 @@ def main():
     # Step 1: Start timer and parse command-line argument (disease name)
     start_time = time.time()
     disease_name = sys.argv[1]
+    
+    # Load config 
+    # Path to optional JSON file containing model configuration overrides.
+    MODEL_CONFIG_PATH = os.path.join(os.getcwd(), "model_config.json")
+    model_config = load_model_config(MODEL_CONFIG_PATH)
+
+    # GEMMA model configuration (defaults may be overridden by models/model_config.json)
+    llm_model_name = model_config['llm_model_name']
+    llm_model_path = model_config['llm_model_path']
+    llm_max_model_len = model_config['llm_max_model_len']
+    quantization = model_config["quantization"]
+    gpu_memory_utilization = model_config["gpu_memory_utilization"]
+    tensor_parallel_size = model_config["tensor_parallel_size"]
+
+    # Processing configuration
+    batch_size = model_config["batch_size"]
+    similarity_threshold = model_config["similarity_threshold"]
+
+    # sentence transformer model name
+    sentence_transformer_model = model_config["sentence_transformer_model"]
+    sentence_transformer_model_path = model_config["sentence_transformer_model_path"]
+    # Local path where the sentence-transformers repo is cloned by the download script
+
+    # File paths
+    LOG_FILE = "DRAC_output_log_from_pipeline.log"
+    KEYWORDS_CSV = "static_data/overall_keywords.csv"
+
     log_to_file("Processing disease: " + disease_name)
 
     # Step 2: Load precomputed chunks and their metadata from CSV
@@ -272,14 +294,14 @@ def main():
         raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
 
     # Prefer a local gemma clone if it exists (downloaded into models/huggingface/...)
-    gemma_model_source = get_hf_model_source(HF_BASE_DIR, LLM_MODEL_NAME)
-    # Initialize the vLLM model
+    gemma_model_source = get_hf_model_source(llm_model_name, llm_model_path)
+    # Initialize the vLLM models
     llm_model = LLM(
         model=gemma_model_source,
-        max_model_len=MAX_MODEL_LEN,
-        quantization=QUANTIZATION,
-        gpu_memory_utilization=GPU_MEMORY_UTILIZATION,
-        tensor_parallel_size=TENSOR_PARALLEL_SIZE,
+        max_model_len=llm_max_model_len,
+        quantization=quantization,
+        gpu_memory_utilization=gpu_memory_utilization,
+        tensor_parallel_size=tensor_parallel_size,
     )
 
     # Step 5: Prepare prompts and generate simple sentences with the LLM (batched)
@@ -288,8 +310,8 @@ def main():
     responses_list = []
     given_prompt = simple_sentence_prompt
 
-    for i in range(0, len(list_of_inputs), BATCH_SIZE):
-        batch_inputs = list_of_inputs[i:i + BATCH_SIZE]
+    for i in range(0, len(list_of_inputs), batch_size):
+        batch_inputs = list_of_inputs[i:i + batch_size]
         batch_prompts = make_prompts(batch_inputs, given_prompt, ALPACA_PROMPT_TEMPLATE)
 
         sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
@@ -302,7 +324,7 @@ def main():
             responses_list.append(res)
 
     # Step 6: Deduplicate simple sentences using a sentence-transformer
-    sentnce_model_source = get_hf_model_source(HF_BASE_DIR, SENTENCE_TRANSFORMER_MODEL)
+    sentnce_model_source = get_hf_model_source(sentence_transformer_model, sentence_transformer_model_path)
     model_to_find_unique_sentences = SentenceTransformer(sentnce_model_source)
 
     number_of_cleaned_sentences = 0
@@ -324,7 +346,7 @@ def main():
                 cleaned_sentences.append(sentence)
 
         number_of_cleaned_sentences += len(cleaned_sentences)
-        unique_sentences = find_unique_sentences(cleaned_sentences, model_to_find_unique_sentences)
+        unique_sentences = find_unique_sentences(cleaned_sentences, model_to_find_unique_sentences, similarity_threshold)
         number_of_unique_sentences += len(unique_sentences)
 
         for us in unique_sentences:

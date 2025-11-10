@@ -1,0 +1,12 @@
+{
+  "llm_model_name": "unsloth/gemma-3-27b-it-unsloth-bnb-4bit",
+  "llm_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1",
+  "llm_max_model_len": 90000,
+  "quantization": "bitsandbytes",
+  "gpu_memory_utilization": 0.9,
+  "tensor_parallel_size": 1,
+  "batch_size": 45,
+  "similarity_threshold": 0.95,
+  "sentence_transformer_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+  "sentence_transformer_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1"
+}
