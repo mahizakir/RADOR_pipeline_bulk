@@ -187,7 +187,7 @@ def load_keywords(keyword_csv, disease_name):
         "cardiovascular", "respiratory", "neurological", "gastrointestinal", "musculoskeletal", 
         "endocrine", "renal", "hepatic"
     ]
-    
+    logger = logging.getLogger("rador")
     df = pd.read_csv(keyword_csv)
     df.columns = df.columns.str.strip()
     
@@ -230,6 +230,7 @@ def get_hf_model_source(model_name, model_local_path):
     Returns:
         _type_: _description_
     """
+    logger = logging.getLogger("rador")
     model_source = model_name
     if has_checkpoint_files(model_local_path):
         model_source = model_local_path
