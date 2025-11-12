@@ -314,12 +314,11 @@ def main():
 
     # Initialize the vLLM model
     # Construct vLLM LLM with explicit generate runner. Some model repos expose only
-    # embedding/encoding tasks; forcing runner="generate" makes the intent explicit.
     # If the model truly does not support generation (e.g., it's a sentence-transformer),
     # vLLM will raise a ValueError when `.generate()` is called and we handle it below.
+    logger.info("Loading LLM model from source: %s", gemma_model_source)
     llm_model = LLM(
         model=gemma_model_source,
-        runner="generate",
         max_model_len=llm_max_model_len,
         quantization=quantization,
         gpu_memory_utilization=gpu_memory_utilization,
