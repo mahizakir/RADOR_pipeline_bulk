@@ -1,6 +1,6 @@
 {
   "llm_model_name": "unsloth/gemma-3-27b-it-unsloth-bnb-4bit",
-  "llm_model_path": "odels/hub/models--unsloth--gemma-3-27b-it-unsloth-bnb-4bit/snapshots/6ffe669a86fe697aef8ee7b46f5a77477d2a1ddd",
+  "llm_model_path": "models/hub/models--unsloth--gemma-3-27b-it-unsloth-bnb-4bit/snapshots/6ffe669a86fe697aef8ee7b46f5a77477d2a1ddd",
   "llm_max_model_len": null,
   "quantization": "bitsandbytes",
   "gpu_memory_utilization": 0.9,
