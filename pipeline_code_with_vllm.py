@@ -319,6 +319,7 @@ def main():
     logger.info("Loading LLM model from source: %s", gemma_model_source)
     llm_model = LLM(
         model=gemma_model_source,
+        runner="generate", 
         max_model_len=llm_max_model_len,
         quantization=quantization,
         gpu_memory_utilization=gpu_memory_utilization,
