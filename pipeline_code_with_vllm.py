@@ -281,6 +281,11 @@ def main():
     
     # Initialize logger
     init_logger(log_file_fp, level=logging.INFO)
+    # Disable vLLM compile cache to avoid permission/compatibility issues in some environments.
+    # This is safe: vLLM will skip using the compiled cache and fall back to runtime compilation.
+    if os.environ.get("VLLM_DISABLE_COMPILE_CACHE") != "1":
+        os.environ["VLLM_DISABLE_COMPILE_CACHE"] = "1"
+        logging.getLogger("rador").info("Set VLLM_DISABLE_COMPILE_CACHE=1 to disable vLLM compile cache")
     
     # File paths
     logger = logging.getLogger("rador")
