@@ -313,8 +313,13 @@ def main():
     gemma_model_source = get_hf_model_source(llm_model_name, llm_model_path)
 
     # Initialize the vLLM model
+    # Construct vLLM LLM with explicit generate runner. Some model repos expose only
+    # embedding/encoding tasks; forcing runner="generate" makes the intent explicit.
+    # If the model truly does not support generation (e.g., it's a sentence-transformer),
+    # vLLM will raise a ValueError when `.generate()` is called and we handle it below.
     llm_model = LLM(
         model=gemma_model_source,
+        runner="generate",
         max_model_len=llm_max_model_len,
         quantization=quantization,
         gpu_memory_utilization=gpu_memory_utilization,
@@ -332,7 +337,16 @@ def main():
         batch_prompts = make_prompts(batch_inputs, given_prompt, ALPACA_PROMPT_TEMPLATE)
 
         sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
-        outputs = llm_model.generate(batch_prompts, sampling_params)
+        try:
+            outputs = llm_model.generate(batch_prompts, sampling_params)
+        except ValueError as e:
+            logger.error("vLLM generate() failed: %s", e)
+            logger.error(
+                "This model may not support generation (it could be an embedding-only repo or missing weights). "
+                "Check that `%s` points to a generative model and that git-lfs objects are present."
+                , gemma_model_source
+            )
+            raise
 
         # Extract responses from model outputs
         for output in outputs:
