@@ -238,7 +238,7 @@ def get_hf_model_source(model_name, model_local_path):
         logger.info("No local model found at %s, using model name %s from Hugging Face.", model_local_path, model_name)
         model_source = model_name
     return model_source
-    
+
 # ============================================================================
 # MAIN EXECUTION
 # ============================================================================
@@ -311,7 +311,8 @@ def main():
 
     # Prefer a local gemma clone if it exists (downloaded into models/huggingface/...)
     gemma_model_source = get_hf_model_source(llm_model_name, llm_model_path)
-    # Initialize the vLLM models
+
+    # Initialize the vLLM model
     llm_model = LLM(
         model=gemma_model_source,
         max_model_len=llm_max_model_len,
