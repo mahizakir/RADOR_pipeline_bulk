@@ -6,6 +6,7 @@ RADOR Pipeline - Medical Text Processing with vLLM
 # ============================================================================
 import os
 import sys
+import argparse
 import csv
 import re
 import time
@@ -250,9 +251,32 @@ def main():
     is unchanged; comments only document the flow.
     """
 
-    # Step 1: Start timer and parse command-line argument (disease name)
+    # Step 1: Start timer and parse command-line arguments
+    parser = argparse.ArgumentParser(description="RADOR pipeline: generate triples from disease documents")
+    parser.add_argument(
+        "-d", "--disease_name",
+        dest="disease_name",
+        required=True,
+        help="Name of the disease to process (e.g., alzheimers_disease)"
+    )
+    parser.add_argument(
+        "-i", "--input_csv",
+        dest="input_csv",
+        default=None,
+        help="Path to input CSV containing precomputed chunks and metadata. Defaults to data/<disease_name>/<disease_name>_input_chunks_and_metadata.csv"
+    )
+    parser.add_argument(
+        "-o", "--triples_out",
+        dest="triples_out",
+        default=None,
+        help="Path to save triples CSV. Defaults to data/<disease_name>/triples_<disease_name>.csv"
+    )
+
+    args = parser.parse_args()
+
     start_time = time.time()
-    disease_name = sys.argv[1]
+    disease_name = args.disease_name
+    triples_out_path = args.triples_out or f"data/{disease_name}/triples_{disease_name}.csv"
     
     # Load config
     # Path to optional JSON file containing model configuration overrides.
@@ -292,7 +316,11 @@ def main():
     logger.info("Processing disease: %s", disease_name)
     # exit()
     # Step 2: Load precomputed chunks and their metadata from CSV
-    csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
+    csv_filename = args.input_csv or f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
+    logger.info("Reading input CSV from %s", csv_filename)
+    if not os.path.isfile(csv_filename):
+        logger.error("Input CSV not found: %s", csv_filename)
+        raise FileNotFoundError(f"Input CSV not found: {csv_filename}")
     df_loaded = pd.read_csv(csv_filename)
     filtered_chunks_list = df_loaded["Filtered_Chunks"].tolist()
     filtered_metadata_list = df_loaded["Filtered_Metadata"].tolist()
@@ -465,7 +493,12 @@ def main():
     ]
 
     # Step 10: Save triples and log final statistics
-    df.to_csv(f'data/{disease_name}/triples_{disease_name}.csv', index=False)
+    # Ensure output directory exists
+    out_dir = os.path.dirname(triples_out_path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    logger.info("Saving triples to %s", triples_out_path)
+    df.to_csv(triples_out_path, index=False)
 
     end_time = time.time()
     elapsed = (end_time - start_time) / 60

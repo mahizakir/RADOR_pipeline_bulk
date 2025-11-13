@@ -90,26 +90,7 @@ apptainer build --tmpdir $(pwd)/apptainer/tmp  apptainer/vllm_apptainer.sif appt
 
 If a pre-built `vllm_apptainer.sif` is already present in `apptainer/`, you can use it directly.
 
-Run the pipeline inside the container (GPU-enabled):
-
-```bash
-# from repo root, bind the repo so the container can access code and the models folder
-apptainer exec --nv --bind $(pwd):/workspace apptainer/vllm_apptainer.sif \
-    bash -lc "cd /workspace && bash download_all_models.sh && python pipeline_code_with_vllm.py <disease_name>"
-```
-
-Or if you already downloaded models on the host and just want to run the pipeline inside the container:
-
-```bash
-apptainer exec --nv --bind $(pwd):/workspace apptainer/vllm_apptainer.sif \
-    bash -lc "cd /workspace && python pipeline_code_with_vllm.py <disease_name>"
-```
-
-Notes for Apptainer:
-- Use `--nv` to enable NVIDIA GPU support (requires NVIDIA drivers and apptainer compiled with GPU support).
-- The `--bind $(pwd):/workspace` makes your project available inside the container at `/workspace`.
-
-# Run on DREC
+# Run on DRAC
 
 ## Download Model Files
 As most of HPCs doess not allow internet acccess on compute node, it is requried to pre-download model weight on the login node
@@ -136,6 +117,21 @@ A example model config looks like following
 }
 
 ```
+## Run the pipeline inside the container (GPU-enabled):
+Make sure your models are already downloaded to model diretory, and config file is up-to-data.
+
+```bash
+apptainer exec -C --nv -B ${SLURM_TMPDIR}:/workspace \
+    -B ${SLURM_TMPDIR}/working_dir/cache:/root/.cache \
+    -B ${SLURM_TMPDIR}/working_dir/tmp:/tmp \
+    apptainer/vllm_apptainer.sif \
+    bash -lc "cd /workspace && python pipeline_code_with_vllm.py -d <disease_name>"
+```
+
+Notes for Apptainer:
+- Use `--nv` to enable NVIDIA GPU support (requires NVIDIA drivers and apptainer compiled with GPU support).
+- The `--bind $(pwd):/workspace` makes your project available inside the container at `/workspace`.
+
 ## Additional resources
 
 Helpful external documentation related to model downloads and container setup:
