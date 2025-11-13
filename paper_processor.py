@@ -507,6 +507,5 @@ def main():
     logger.info("Time taken: %.2f minutes for %s", elapsed, disease_name)
     logger.info("%s", "~" * 100)
 
-
 if __name__ == "__main__":
     main()

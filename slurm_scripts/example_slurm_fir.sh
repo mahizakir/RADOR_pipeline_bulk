@@ -2,8 +2,10 @@
 #SBATCH --account=rrg-dwishart
 #SBATCH --nodes=1
 #SBATCH --job-name=vllm_rador_example
-#SBATCH --mem=90G
-#SBATCH --cpus-per-task=8s
+#SBATCH --mem=144G
+# https://docs.alliancecan.ca/wiki/Allocations_and_compute_scheduling#Ratios_in_bundles
+#SBATCH --cpus-per-task=6 
+#SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb
 #SBATCH --time=0-1:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
@@ -41,24 +43,11 @@ rsync -av *.py ${SLURM_TMPDIR}/
 rsync -av static_data ${SLURM_TMPDIR}/
 rsync -av model_config.json ${SLURM_TMPDIR}/
 
-# run dag gen
-echo running dag gen
+# run paper_processo
+echo running paper_processor
 
-apptainer exec -C --nv -B ${SLURM_TMPDIR}:/workspace \
+apptainer exec -C --nv -B ${SLURM_TMPDIR}:$HOME \
     -B ${SLURM_TMPDIR}/working_dir/cache:/root/.cache \
     -B ${SLURM_TMPDIR}/working_dir/tmp:/tmp \
     apptainer/vllm_apptainer.sif \
-    python pipeline_code_with_vllm.py yellow_fever
-        
-# go to frag directory
-cd ${SLURM_TMPDIR}/frag/
-tar -cf ${SAVE_NAME}.tar ${SAVE_NAME}
-
-# copy tar to scratch
-echo create dir at ${DEST_DP}
-mkdir -p ${DEST_DP}
-echo copy tar: ${SAVE_NAME}.tar to ${DEST_DP}
-cp ${SAVE_NAME}.tar ${DEST_DP}
-
-# record ending
-echo `date`: Job ${SLURM_JOB_ID} finished running
+    python paper_processor.py -d yellow_fever

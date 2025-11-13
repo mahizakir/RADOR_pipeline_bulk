@@ -23,18 +23,10 @@ print("Driver will generate triples for ", len(disease_names), "diseases.")
 
 print(f"Selected {len(disease_names)} diseases (rows {start_index} to {end_index-1}):")
 
-
-# # TEST CASE: List of disease names as example
-# disease_names = [
-#     "mosaic_trisomy_4",
-#     # "1q44_microdeletion_syndrome",
-#     # "GNE_myopathy",
-# ]
-
 # Path to your pipeline script
-pipeline_script = "pipeline_code_with_vllm.py"
+pipeline_script = "paper_processor.py"
 
 for disease in disease_names:
     print(f"\n=== Running pipeline for: {disease} ===\n")
     # Run the pipeline script as a subprocess and pass disease_name as an argument
-    subprocess.run(["python3", pipeline_script, disease], check=True)
+    subprocess.run(["python3", pipeline_script, "-d", disease], check=True)

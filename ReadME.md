@@ -1,6 +1,6 @@
 # Rare Disease Oracle (RaDOr) Triple Extraction Pipeline
 
-`run_driver.py` is the driver script to automate the execution of the pipeline_code_with_vllm.py pipeline, which generates simplified sentences and structured triples from rare disease literature. The outputs will be used later for building knowledge graphs.
+`run_driver.py` is the driver script to automate the execution of the paper_processor.py pipeline, which generates simplified sentences and structured triples from rare disease literature. The outputs will be used later for building knowledge graphs.
 
 
 
@@ -32,7 +32,7 @@ Inside the run_driver.py file:
 
 # Rare Disease Oracle (RaDOr) Triple Extraction Pipeline
 
-`run_driver.py` is the driver that orchestrates the pipeline in `pipeline_code_with_vllm.py`.
+`run_driver.py` is the driver that orchestrates the pipeline in `paper_processor.py`.
 The pipeline processes disease-specific text found under `data/<disease_name>/`, producing simplified
 sentences and structured triples used for downstream knowledge-graph work.
 
@@ -125,7 +125,7 @@ apptainer exec -C --nv -B ${SLURM_TMPDIR}:/workspace \
     -B ${SLURM_TMPDIR}/working_dir/cache:/root/.cache \
     -B ${SLURM_TMPDIR}/working_dir/tmp:/tmp \
     apptainer/vllm_apptainer.sif \
-    bash -lc "cd /workspace && python pipeline_code_with_vllm.py -d <disease_name>"
+    bash -lc "cd /workspace && python paper_processor.py -d <disease_name>"
 ```
 
 Notes for Apptainer:
