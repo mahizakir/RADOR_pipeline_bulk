@@ -6,3 +6,4 @@ apptainer/*.sif
 logs/
 apptainer/tmp/
 models
+jobs # slurm job output files
