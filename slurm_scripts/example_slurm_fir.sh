@@ -61,11 +61,12 @@ ln -s ${RADOR_DP}/data ${WORKING_DIR}/data
 
 # run dag gen
 echo running dag gen
-cd ${WORKING_DIR}
+
 for d in ${DISEASE_LIST}; do
-    apptainer exec -C --nv -B ${WORKING_DIR}:/workspace \
-    -B ${WORKING_DIR}/working_dir/cache:/root/.cache \
-    -B ${WORKING_DIR}/working_dir/tmp:/tmp \
-    apptainer/vllm_apptainer.sif \
-    python paper_processor.py ${d}
+    echo processing diseasse: ${d}
+    apptainer exec -C --nv --bind ${WORKING_DIR}:/workspace \
+    --bind ${WORKING_DIR}/working_dir/cache:/root/.cache \
+    --bind ${WORKING_DIR}/working_dir/tmp:/tmp \
+    ${WORKING_DIR}/vllm_apptainer.sif \
+    python workspace/paper_processor.py ${d}
 done
