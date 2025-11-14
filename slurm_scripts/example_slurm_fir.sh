@@ -36,10 +36,8 @@ done
 # DEST_DP=/scratch/feiw/rador_data/
 # echo DEST_DP: ${DEST_DP}
 
-# create local dir
-echo create local data dir: ${WORKING_DIR}/data
-ln -s ${WORKING_DIR}/data
-
+# prepare working directory on the node
+echo create working dir: ${WORKING_DIR}
 mkdir -p ${WORKING_DIR}/working_dir/cache
 mkdir -p ${WORKING_DIR}/working_dir/tmp
 

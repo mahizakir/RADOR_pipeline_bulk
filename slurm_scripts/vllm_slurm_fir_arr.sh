@@ -38,9 +38,8 @@ done
 # echo DEST_DP: ${DEST_DP}
 
 # create local dir
-echo create local data dir: ${WORKING_DIR}/data
-ln -s ${WORKING_DIR}/data
-
+# echo create local data dir: ${WORKING_DIR}/data
+# ln -s ${WORKING_DIR}/data
 mkdir -p ${WORKING_DIR}/working_dir/cache
 mkdir -p ${WORKING_DIR}/working_dir/tmp
 
