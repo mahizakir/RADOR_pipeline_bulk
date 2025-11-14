@@ -514,4 +514,10 @@ if __name__ == "__main__":
     torch.backends.cuda.enable_flash_sdp(False)
     torch.backends.cuda.enable_mem_efficient_sdp(False)
     torch.backends.cuda.enable_math_sdp(True)
+    
+    print("Torch version:", torch.__version__)
+    print("CUDA version seen by torch:", torch.version.cuda)
+    print("Device:", torch.cuda.get_device_name(0))
+    print("Capability:", torch.cuda.get_device_capability(0))
+
     main()
