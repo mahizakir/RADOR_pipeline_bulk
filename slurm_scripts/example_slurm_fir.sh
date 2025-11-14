@@ -54,19 +54,17 @@ rsync -av ${RADOR_DP}/*.py ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/static_data ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
 # copy data to slurm local dir
-# echo copy data to slurm local dir
-# rsync -av ${RADOR_DP}/data ${WORKING_DIR}/ 
-# soft link data dir
-ln -s ${RADOR_DP}/data ${WORKING_DIR}/data
 
-# run dag gen
-echo running dag gen
+# run paper_processor
+echo running paper_processor
 
+cd ${WORKING_DIR}
 for d in ${DISEASE_LIST}; do
-    echo processing diseasse: ${d}
+    echo processing disease: ${d}
     apptainer exec -C --nv --bind ${WORKING_DIR}:/workspace \
+    --bind ${RADOR_DP}/data:/workspace/data \
     --bind ${WORKING_DIR}/working_dir/cache:/root/.cache \
     --bind ${WORKING_DIR}/working_dir/tmp:/tmp \
     ${WORKING_DIR}/vllm_apptainer.sif \
-    python workspace/paper_processor.py ${d}
+   sh -c "cd /workspace && python paper_processor.py -d ${d}"
 done
