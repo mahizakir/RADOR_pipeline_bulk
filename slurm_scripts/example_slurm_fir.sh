@@ -55,8 +55,9 @@ rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
 
 # check GPU visibility
 echo "Checking GPU visibility..."
-nvidia-smi -L          # should show 1 device
 echo cuda_visible_devices=$CUDA_VISIBLE_DEVICES
+nvidia-smi             # check memory of the MIG slice you were assigned
+nvidia-smi -L          # should show 1 device
 
 # export PYTORCH_SDP_BACKEND=math
 # export CUDA_LAUNCH_BLOCKING=1

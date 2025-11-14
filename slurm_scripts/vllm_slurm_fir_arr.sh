@@ -56,8 +56,12 @@ rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
 # echo copy data to slurm local dir
 # rsync -av ${RADOR_DP}/data ${WORKING_DIR}/ 
 
-nvidia-smi
+# check GPU visibility
+echo "Checking GPU visibility..."
 echo cuda_visible_devices=$CUDA_VISIBLE_DEVICES
+nvidia-smi             # check memory of the MIG slice you were assigned
+nvidia-smi -L          # should show 1 device
+
 # run paper_processor
 echo running paper_processor
 cd ${WORKING_DIR}
