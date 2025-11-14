@@ -19,7 +19,7 @@ echo `date`: Job ${SLURM_JOB_ID} is allocated resources
 #load modules
 module load StdEnv/2023
 
-RADOR_DP=/home/feiw/project/feiw/frag-gnn
+RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # set variables
