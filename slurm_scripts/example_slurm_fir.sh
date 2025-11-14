@@ -5,7 +5,8 @@
 #SBATCH --mem=144G
 # https://docs.alliancecan.ca/wiki/Allocations_and_compute_scheduling#Ratios_in_bundles
 #SBATCH --cpus-per-task=6 
-#SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb:1
+# https://docs.alliancecan.ca/wiki/Fir
+#SBATCH --gpus=--gpus=h100:1
 #SBATCH --time=0-3:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
@@ -54,6 +55,10 @@ rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
 
 # run paper_processor
 echo running paper_processor
+
+# check GPU visibility
+nvidia-smi -L          # should show 1 device
+echo $CUDA_VISIBLE_DEVICES
 
 cd ${WORKING_DIR}
 for d in ${DISEASE_LIST}; do
