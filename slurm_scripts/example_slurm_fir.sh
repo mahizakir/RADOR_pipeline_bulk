@@ -9,8 +9,8 @@
 #SBATCH --time=0-3:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
-#SBATCH --output=./jobs/rador_vllm_%A_%a.out
-#SBATCH --error=./jobs/rador_vllm_%A_%a.err
+#SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
+#SBATCH --error=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.err
 #SBATCH --open-mode=append
 
 # record start
@@ -18,11 +18,13 @@ echo `date`: Job ${SLURM_JOB_ID} is allocated resources
 
 #load modules
 module load StdEnv/2023
+module load apptainer/1.2.4
 
+# set variables
 RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
-# set variables
+# get disease list
 N=10
 DISEASE_LIST_FILE=static_data/5094_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "1,${N}p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
@@ -31,19 +33,14 @@ for d in ${DISEASE_LIST}; do
     echo " ${d}"
 done
 
-# set save dir and name
-# we can get away with this for 5094 files I hopes
-# DEST_DP=/scratch/feiw/rador_data/
-# echo DEST_DP: ${DEST_DP}
-
 # prepare working directory on the node
 echo create working dir: ${WORKING_DIR}
+mkdir -p ${WORKING_DIR}
 mkdir -p ${WORKING_DIR}/working_dir/cache
 mkdir -p ${WORKING_DIR}/working_dir/tmp
 
 # copy apptainer container (use vLLM image)
-module load apptainer/1.2.4
-cp apptainer/vllm_apptainer.sif ${WORKING_DIR}/vllm_apptainer.sif
+cp ${RADOR_DP}/apptainer/vllm_apptainer.sif ${WORKING_DIR}/
 
 # copy model ckpts to slurm local dir
 echo copy model ckpts to slurm local dir
