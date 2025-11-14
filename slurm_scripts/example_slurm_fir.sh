@@ -5,7 +5,7 @@
 #SBATCH --mem=144G
 # https://docs.alliancecan.ca/wiki/Allocations_and_compute_scheduling#Ratios_in_bundles
 #SBATCH --cpus-per-task=6 
-#SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb
+#SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb:1
 #SBATCH --time=0-3:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
