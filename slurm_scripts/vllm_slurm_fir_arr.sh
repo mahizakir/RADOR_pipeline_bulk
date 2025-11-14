@@ -6,7 +6,7 @@
 # https://docs.alliancecan.ca/wiki/Allocations_and_compute_scheduling#Ratios_in_bundles
 #SBATCH --cpus-per-task=6 
 # https://docs.alliancecan.ca/wiki/Fir
-#SBATCH --gpus=--gpus=h100:1
+#SBATCH --gpus=h100:1
 #SBATCH --time=0-3:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
