@@ -7,7 +7,7 @@
 #SBATCH --cpus-per-task=6 
 # https://docs.alliancecan.ca/wiki/Firs
 #SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb:1
-#SBATCH --time=0-3:00
+#SBATCH --time=0-0:15
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
@@ -26,7 +26,7 @@ RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
-N=10
+N=1
 DISEASE_LIST_FILE=${RADOR_DP}/static_data/5094_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "1,${N}p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
@@ -64,6 +64,8 @@ nvidia-smi -L          # should show 1 device
 
 # run paper_processor
 echo running paper_processor
+
+export CUDA_LAUNCH_BLOCKING=1
 
 cd ${WORKING_DIR}
 for d in ${DISEASE_LIST}; do

@@ -5,6 +5,10 @@ RADOR Pipeline - Medical Text Processing with vLLM
 # ALL IMPORTS
 # ============================================================================
 import os
+# Ensure CUDA operations are synchronous for easier debugging
+# this needs to happen before importing torch
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
 import sys
 import argparse
 import csv
@@ -519,5 +523,6 @@ if __name__ == "__main__":
     print("CUDA version seen by torch:", torch.version.cuda)
     print("Device:", torch.cuda.get_device_name(0))
     print("Capability:", torch.cuda.get_device_capability(0))
+    print("CUDA_LAUNCH_BLOCKING =", os.environ.get("CUDA_LAUNCH_BLOCKING"))
 
     main()
