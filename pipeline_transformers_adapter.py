@@ -28,18 +28,8 @@ from typing import List
 import pandas as pd
 import torch
 from sentence_transformers import SentenceTransformer, util
-
-try:
-    from transformers import AutoTokenizer, AutoModelForCausalLM
-    from transformers import GenerationConfig
-except Exception:
-    raise RuntimeError("Please install transformers (pip install 'transformers[torch]') to use this adapter")
-
-try:
-    from bitsandbytes import __version__ as bnb_version  # type: ignore
-    BNB_AVAILABLE = True
-except Exception:
-    BNB_AVAILABLE = False
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import GenerationConfig
 
 # Configuration
 HF_MODEL_NAME = "unsloth/gemma-3-27b-it-unsloth-bnb-4bit"

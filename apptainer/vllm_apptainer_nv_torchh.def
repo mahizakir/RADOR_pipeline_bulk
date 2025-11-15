@@ -1,0 +1,43 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:25.02-py3
+
+%post
+    set -ex
+
+    # Basic tools
+    apt-get update && apt-get install -y --no-install-recommends \
+        git wget vim ca-certificates && \
+        rm -rf /var/lib/apt/lists/*
+
+    # Make sure we use the system Python in the image
+    python -m pip install --upgrade pip
+
+    # vLLM 0.10.1 + common extras you were using
+    pip install \
+        "vllm==0.10.1" \
+        pandas numpy tqdm datasets \
+        transformers \
+        "bitsandbytes>=0.46.1" \
+        sentence_transformers
+
+    # (Optional) If you still want the CUDA compat hack for Triton-like behavior:
+    #mkdir -p /usr/local/cuda/compat/lib
+    #if [ -f /usr/lib64/libcuda.so ]; then
+    #    ln -sf /usr/lib64/libcuda.so /usr/local/cuda/compat/lib/libcuda.so.1 || true
+    #    ln -sf libcuda.so.1 /usr/local/cuda/compat/lib/libcuda.so || true
+    #fi
+    ldconfig
+
+%environment
+    export PYTHONNOUSERSITE=1
+    export PYTHONWARNINGS="ignore::FutureWarning"
+    export LD_PRELOAD=
+    export CUDA_DEVICE_MAX_CONNECTIONS=1
+
+%help
+    To run vLLM 0.10.1:
+
+      apptainer exec --nv vllm_0_10_1.sif \
+        vllm serve <model_name_or_path> \
+          --dtype auto \
+          --tensor-parallel-size 1
