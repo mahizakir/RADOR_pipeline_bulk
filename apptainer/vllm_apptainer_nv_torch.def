@@ -1,24 +1,23 @@
 Bootstrap: docker
-From: nvcr.io/nvidia/pytorch:25.02-py3
-
+From: nvcr.io/nvidia/pytorch:25.05-py3
+# https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-25-05.html
 %post
-    set -ex
-
     # Basic tools
-    apt-get update && apt-get install -y --no-install-recommends \
-        git wget vim ca-certificates && \
-        rm -rf /var/lib/apt/lists/*
-
-    # Make sure we use the system Python in the image
-    python -m pip install --upgrade pip
+    # apt-get update && apt-get install -y --no-install-recommends \
+    #    git wget vim ca-certificates && \
+    #    rm -rf /var/lib/apt/lists/*
 
     # vLLM 0.10.1 + common extras you were using
-    pip install \
-        "vllm==0.10.1" \
+    # Use the interpreter's pip and avoid caching to reduce disk usage during image build.
+    python -m pip install --upgrade pip setuptools wheel
+    python -m pip install --no-cache-dir \
+        "vllm==0.11.0" \
         pandas numpy tqdm datasets \
         transformers \
         "bitsandbytes>=0.46.1" \
         sentence_transformers
+    # Remove any pip cache left behind to keep the image small
+    rm -rf /root/.cache/pip
 
     # (Optional) If you still want the CUDA compat hack for Triton-like behavior:
     #mkdir -p /usr/local/cuda/compat/lib
