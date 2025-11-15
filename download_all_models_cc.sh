@@ -20,5 +20,6 @@ else
     source huggingface_hub_venv/bin/activate
     # https://github.com/huggingface_hub/huggingface_hub/issues/2423
 fi
-HF_HUB_DISABLE_XET=1 hf download --max-workers=1 unsloth/gemma-3-27b-it-unsloth-bnb-4bit
+# HF_HUB_DISABLE_XET=1 hf download --max-workers=1 unsloth/gemma-3-27b-it-unsloth-bnb-4bit
 HF_HUB_DISABLE_XET=1 hf download --max-workers=1 sentence-transformers/paraphrase-MiniLM-L6-v2
+HF_HUB_DISABLE_XET=1 hf download --max-workers=1 unsloth/gemma-3-27b-it-bnb-4bit
