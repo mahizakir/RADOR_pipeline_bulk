@@ -48,6 +48,10 @@ echo "VLLM_CACHE_ROOT=${VLLM_CACHE_ROOT}"
 export FLASHINFER_WORKSPACE_BASE=${WORKING_DIR}/cache
 echo "FLASHINFER_WORKSPACE_BASE=${FLASHINFER_WORKSPACE_BASE}"
 
+# Ensure CUDA operations are synchronous for easier debugging
+# export CUDA_LAUNCH_BLOCKING=1
+# echo "CUDA_LAUNCH_BLOCKING=${CUDA_LAUNCH_BLOCKING}"
+
 # copy model ckpts to slurm local dir
 echo copy model ckpts to slurm local dir
 rsync -av --exclude=".*" ${RADOR_DP}/models ${WORKING_DIR}/

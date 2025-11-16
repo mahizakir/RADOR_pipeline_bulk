@@ -5,10 +5,6 @@ RADOR Pipeline - Medical Text Processing with vLLM
 # ALL IMPORTS
 # ============================================================================
 import os
-# Ensure CUDA operations are synchronous for easier debugging
-# this needs to happen before importing torch
-os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
-
 import sys
 import argparse
 import csv
@@ -515,9 +511,9 @@ if __name__ == "__main__":
     
     import torch
     # disable flash and memory efficient sdp to avoid potential OOM issues
-    torch.backends.cuda.enable_flash_sdp(False)
-    torch.backends.cuda.enable_mem_efficient_sdp(False)
-    torch.backends.cuda.enable_math_sdp(True)
+    # torch.backends.cuda.enable_flash_sdp(False)
+    # torch.backends.cuda.enable_mem_efficient_sdp(False)
+    # torch.backends.cuda.enable_math_sdp(True)
     
     print("Torch version:", torch.__version__)
     print("CUDA version seen by torch:", torch.version.cuda)
