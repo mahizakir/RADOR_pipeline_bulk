@@ -1,8 +1,0 @@
---> Create a venv using source vllm_env2/bin/activate
-
-Version of these packages can be found in requirements.txt
-Python 3.12.5 and vllm 0.11.0 and torch 2.8.0 and transformers 4.57.1
-
-However, These commands seems to load the default ones and works for python 3.12 as of 21 October 2025
-
-pip install vllm sentence-transformers pandas numpy scikit-learn tqdm tqdm transformers bitsandbytes>=0.46.1

@@ -5,7 +5,6 @@ RADOR Pipeline - Medical Text Processing with vLLM
 # ALL IMPORTS
 # ============================================================================
 import os
-import sys
 import argparse
 import csv
 import re

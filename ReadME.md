@@ -50,11 +50,43 @@ The repository contains helper scripts to download models and prepare a containe
 Create a Python environment and install required packages:
 
 ```bash
-pip install -r requirements.txt
+pip install vllm==0.10.1.1 \
+    pandas \
+    sentence_transformers \
+    bitsandbytes==0.48.2 \
+    flashinfer_python==0.4.1 
 ```
+Note `flashinfer_python` is not require, without this vllm will fallback to the PyTorch-native implementation of top-p & top-k sampling. If you are running into trouble with `flashinfer_python`, leave without it
 
 ## Run the pipeline (host)
+Config Pipeline
 
+## Update configs
+Change path to model snapshot in `model_config.json`
+A example model config looks like following
+```json
+{
+  "llm_model_name": "unsloth/gemma-3-27b-it-bnb-4bit",
+  "llm_model_path": "models/hub/models--unsloth--gemma-3-27b-it-bnb-4bit/snapshots/c08b2ba63738aa8cfc60f06741d6356ef4e60b3f",
+  "llm_max_model_len": null,
+  "quantization": "bitsandbytes",
+  "gpu_memory_utilization": 0.9,
+  "tensor_parallel_size": 1,
+  "batch_size": 45,
+  "similarity_threshold": 0.95,
+  "sentence_transformer_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+  "sentence_transformer_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1",
+  "keywords_csv": "static_data/overall_keywords.csv",
+  "log_file": null
+}
+```
+
+Run  `paper_processor.py` directly 
+```bash
+python paper_processor.py -d <disease_name>
+```
+
+Use `run_driver.py`
 Run the driver which iterates over a range of disease folders. Edit `run_driver.py` to set
 `start_index` / `end_index`, or pass arguments as implemented by the driver.
 
@@ -62,10 +94,7 @@ Run the driver which iterates over a range of disease folders. Edit `run_driver.
 python run_driver.py
 ```
 
-Log output is appended to `DRAC_output_log_from_pipeline.log`.
-
 ---
-
 ## Using Apptainer
 
 This repository includes Apptainer artifacts in the `apptainer/` directory:
@@ -89,6 +118,21 @@ apptainer build --tmpdir $(pwd)/apptainer/tmp  apptainer/vllm_apptainer.sif appt
 ```
 
 If a pre-built `vllm_apptainer.sif` is already present in `apptainer/`, you can use it directly.
+
+## Run the pipeline inside the container (GPU-enabled):
+Make sure your models are already downloaded to model diretory, and config file is up-to-data.
+
+```bash
+apptainer exec -C --nv -B ${SLURM_TMPDIR}:/workspace \
+    -B ${SLURM_TMPDIR}/working_dir/cache:/root/.cache \
+    -B ${SLURM_TMPDIR}/working_dir/tmp:/tmp \
+    apptainer/vllm_apptainer.sif \
+    bash -lc "cd /workspace && python paper_processor.py -d <disease_name>"
+```
+
+Notes for Apptainer:
+- Use `--nv` to enable NVIDIA GPU support (requires NVIDIA drivers and apptainer compiled with GPU support).
+- The `--bind $(pwd):/workspace` makes your project available inside the container at `/workspace`.
 
 # Run on DRAC
 
@@ -115,22 +159,12 @@ A example model config looks like following
   "sentence_transformer_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
   "sentence_transformer_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1"
 }
-
 ```
-## Run the pipeline inside the container (GPU-enabled):
-Make sure your models are already downloaded to model diretory, and config file is up-to-data.
+## use slrum
+use `slurm_scripts/example_slurm_fir.sh`
 
-```bash
-apptainer exec -C --nv -B ${SLURM_TMPDIR}:/workspace \
-    -B ${SLURM_TMPDIR}/working_dir/cache:/root/.cache \
-    -B ${SLURM_TMPDIR}/working_dir/tmp:/tmp \
-    apptainer/vllm_apptainer.sif \
-    bash -lc "cd /workspace && python paper_processor.py -d <disease_name>"
-```
-
-Notes for Apptainer:
-- Use `--nv` to enable NVIDIA GPU support (requires NVIDIA drivers and apptainer compiled with GPU support).
-- The `--bind $(pwd):/workspace` makes your project available inside the container at `/workspace`.
+## Notes
+As for 11/16/2025 - appatiner image build based on `nvcr.io/nvidia/vllm:25.09-py3` use `apptainer/vllm_apptainer_nv_vllm.def` on works on A6000 and L40s, not H100
 
 ## Additional resources
 
