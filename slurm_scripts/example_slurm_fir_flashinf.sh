@@ -73,11 +73,11 @@ nvidia-smi -L          # should show 1 device
 cd  ${WORKING_DIR}
 virtualenv RADOR_env
 source RADOR_env/bin/activate
-pip install --no-index --dry-run vllm==0.10.1.1 \
+pip install --no-index vllm==0.10.1.1 \
     pandas \
     sentence_transformers \
     bitsandbytes==0.48.2 \
-    flashinfer_python==0.2.6 # this is not required but good to have, without this vllm will fallback to the PyTorch-native implementation of top-p & top-k sampling.
+    flashinfer_python # this is not required but good to have, without this vllm will fallback to the PyTorch-native implementation of top-p & top-k sampling.
 
 # run paper_processor
 echo running paper_processor

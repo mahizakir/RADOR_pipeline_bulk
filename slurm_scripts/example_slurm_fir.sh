@@ -73,7 +73,7 @@ nvidia-smi -L          # should show 1 device
 cd  ${WORKING_DIR}
 virtualenv RADOR_env
 source RADOR_env/bin/activate
-pip install --no-index --dry-run vllm==0.10.1.1 \
+pip install --no-index vllm==0.10.1.1 \
     pandas \
     sentence_transformers \
     bitsandbytes==0.48.2 
