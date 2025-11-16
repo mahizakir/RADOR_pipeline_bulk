@@ -1,49 +1,68 @@
-#!/usr/bin/env python3
 """
-pipeline_transformers_adapter.py
-
-An adapter pipeline that mirrors the vLLM-based pipeline but uses
-Hugging Face `transformers` for generation. This is provided as a
-separate file so you can switch without modifying the original vLLM
-implementation.
-
-Usage:
-    python pipeline_transformers_adapter.py <disease_name>
-
-Notes:
-- By default the adapter will try to use 4-bit quantization via
-  `bitsandbytes` if available. If bitsandbytes is not installed the
-  script will fall back to a full-precision load (may require lots of GPU
-  memory).
-- The script expects the same CSV layout as `pipeline_code_with_vllm.py`:
-  `data/<disease>/..._input_chunks_and_metadata.csv` with columns
-  `Filtered_Chunks` and `Filtered_Metadata`.
+RADOR Pipeline - Medical Text Processing with vLLM
 """
+# ============================================================================
+# ALL IMPORTS
+# ============================================================================
+import os
+# Ensure CUDA operations are synchronous for easier debugging
+# this needs to happen before importing torch
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
 import sys
+import argparse
 import csv
 import re
 import time
-from typing import List
+import warnings
+import json
+import logging
 
 import pandas as pd
 import torch
+print("Torch version:", torch.__version__)
+print("CUDA version seen by torch:", torch.version.cuda)
+print("Device:", torch.cuda.get_device_name(0))
+print("Capability:", torch.cuda.get_device_capability(0))
+print("CUDA_LAUNCH_BLOCKING =", os.environ.get("CUDA_LAUNCH_BLOCKING"))
+
 from sentence_transformers import SentenceTransformer, util
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from transformers import GenerationConfig
 
-# Configuration
-HF_MODEL_NAME = "unsloth/gemma-3-27b-it-unsloth-bnb-4bit"
-SENTENCE_TRANSFORMER_MODEL = "paraphrase-MiniLM-L6-v2"
-MAX_NEW_TOKENS = 256
-TEMPERATURE = 0.0
-TOP_P = 0.95
-BATCH_SIZE = 8
-SIMILARITY_THRESHOLD = 0.95
+from global_prompts import (
+    simple_sentence_prompt,
+    global_output_max_new_tokens,
+    triplets_from_simple_sentence_prompt
+)
+# Suppress warnings
+warnings.filterwarnings("ignore", message=".*Using a slow image processor.*")
+warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.tokenization_utils_base")
 
-# File paths
-LOG_FILE = "DRAC_output_log_from_pipeline.log"
-KEYWORDS_CSV = "static_data/overall_keywords.csv"
 
+# ============================================================================
+# CONFIGURATION / CONSTANTS
+# ============================================================================
+
+def load_model_config(path):
+    """Load model configuration from a JSON file.
+
+    Returns a dict with configuration values. If the file does not exist or
+    cannot be parsed the function returns an empty dict and the code using
+    it will fall back to built-in defaults.
+    """
+    if not os.path.isfile(path):
+        return {}
+    try:
+        with open(path, "r") as f:
+            cfg = json.load(f)
+        # defer to module logger if available
+        logging.getLogger(__name__).info("Loaded model config from %s", path)
+        return cfg
+    except Exception as e:
+        logging.getLogger(__name__).warning("Could not load model config from %s: %s", path, e)
+        return {}
+
+# Alpaca prompt template
 ALPACA_PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
 ### Instruction:
@@ -56,191 +75,360 @@ ALPACA_PROMPT_TEMPLATE = """Below is an instruction that describes a task, paire
 {}"""
 
 
-def log_to_file(*args, file_path=LOG_FILE):
-    with open(file_path, "a") as f:
-        old_stdout = sys.stdout
-        sys.stdout = f
-        print(*args)
-        sys.stdout = old_stdout
+# ============================================================================
+# ALL FUNCTIONS
+# ============================================================================
+def has_checkpoint_files(path):
+    """Return True if the given path contains likely model checkpoint files."""
+    if not os.path.isdir(path):
+        return False
+    filenames = os.listdir(path)
+    # Common HF weight filenames or safe tensor names
+    for name in filenames:
+        if name.endswith('.bin') or name.endswith('.safetensors') or name.endswith('.gguf'):
+            return True
+    # Also accept directories that may contain shard files
+    for name in filenames:
+        if re.match(r'pytorch_model-\d{4}-of-\d{4}\.bin', name):
+            return True
+    return False
 
+def init_logger(log_file, level=logging.INFO):
+    """Initialize and return a logger for the pipeline.
 
-def extract_response(input_string: str) -> str:
-    pattern = r"### Response:\n(.*?)(?=\n###|$)"
+    Writes logs to stdout and to `log_file`. Safe to call multiple times.
+    """
+    logger = logging.getLogger("rador")
+    logger.setLevel(level)
+    # remove existing handlers to avoid duplicate logs
+    if logger.handlers:
+        for h in list(logger.handlers):
+            logger.removeHandler(h)
+    fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+    sh = logging.StreamHandler()
+    sh.setFormatter(fmt)
+    logger.addHandler(sh)
+    if log_file is not None:
+        fh = logging.FileHandler(log_file)
+        fh.setFormatter(fmt)
+        logger.addHandler(fh)
+    logger.propagate = False
+
+def extract_response(input_string):
+    """Extract response from alpaca formatted output."""
+    pattern = r'### Response:\n(.*?)(?=\n###|$)'
     match = re.search(pattern, input_string, re.DOTALL)
     if match:
-        return match.group(1).strip()
-    return input_string
+        response = match.group(1).strip()
+        return response
+    return None
 
 
-def remove_gibberish(text: str) -> str:
-    text = re.sub(r'["“”]+', '', text)
+def remove_gibberish(text):
+    """Remove unwanted patterns from text."""
+    text = re.sub(r'["""]+', '', text)
     text = re.sub(r'Progress in understanding.*', '', text, flags=re.IGNORECASE)
     text = re.sub(r'PMC\d+', '', text)
     text = re.sub(r'\([^)]*\d[^)]*\)', '', text)
-    text = text.strip(' ,.;')
+    text = text.strip(" ,.;")
     return text if len(text) >= 5 else None
 
 
-def find_unique_sentences(list_of_sentences_here: List[str], model_to_find_unique_sentences):
-    if not list_of_sentences_here:
-        return []
-    embeddings = model_to_find_unique_sentences.encode(list_of_sentences_here, convert_to_tensor=True)
+def find_unique_sentences(list_of_sentences_here, model_to_find_unique_sentences, similarity_threshold):
+    """Find unique sentences using cosine similarity."""
+    embeddings_to_find_unique_sentences = model_to_find_unique_sentences.encode(
+        list_of_sentences_here, convert_to_tensor=True
+    )
     unique_sentences = []
-    cosine_scores = util.pytorch_cos_sim(embeddings, embeddings)
+    cosine_scores = util.pytorch_cos_sim(
+        embeddings_to_find_unique_sentences, 
+        embeddings_to_find_unique_sentences
+    )
     added = set()
+
     for i in range(len(list_of_sentences_here)):
         if i in added:
             continue
         unique_sentences.append(list_of_sentences_here[i])
         for j in range(i + 1, len(list_of_sentences_here)):
-            if cosine_scores[i][j] > SIMILARITY_THRESHOLD:
+            if cosine_scores[i][j] > similarity_threshold:
                 added.add(j)
     return unique_sentences
 
 
-def make_prompts(chunks: List[str], given_prompt: str) -> List[str]:
-    return [ALPACA_PROMPT_TEMPLATE.format(given_prompt, chunk, "") for chunk in chunks]
+def make_prompts(chunks, given_prompt, alpaca_prompt):
+    """Create alpaca formatted prompts from chunks."""
+    return [alpaca_prompt.format(given_prompt, chunk, "") for chunk in chunks]
 
 
-def init_generation_model(model_name: str, load_in_4bit: bool = True):
-    """Initialize tokenizer and model for generation.
-
-    Returns (tokenizer, model, device)
-    """
-    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
-    if tokenizer.pad_token_id is None:
-        tokenizer.pad_token_id = tokenizer.eos_token_id
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-    if load_in_4bit and BNB_AVAILABLE:
-        # Use bitsandbytes 4-bit loading via transformers if available.
-        # This requires a compatible bitsandbytes + CUDA setup in the environment.
-        try:
-            model = AutoModelForCausalLM.from_pretrained(
-                model_name,
-                load_in_4bit=True,
-                device_map="auto",
-                trust_remote_code=True,
-            )
-            return tokenizer, model, device
-        except Exception as e:
-            print("Warning: failed to load in 4-bit mode, falling back to full precision:", e)
-
-    # Fallback: full precision load (may require large GPU RAM)
-    model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", trust_remote_code=True)
-    return tokenizer, model, device
-
-
-def generate_with_transformers(tokenizer, model, prompts: List[str], max_new_tokens: int = MAX_NEW_TOKENS,
-                               temperature: float = TEMPERATURE, top_p: float = TOP_P):
-    outputs = []
-    model.eval()
-    for i in range(0, len(prompts), BATCH_SIZE):
-        batch = prompts[i:i + BATCH_SIZE]
-        inputs = tokenizer(batch, return_tensors='pt', padding=True, truncation=True).to(model.device)
-        with torch.no_grad():
-            gen = model.generate(
-                **inputs,
-                max_new_tokens=max_new_tokens,
-                do_sample=(temperature > 0.0),
-                temperature=temperature,
-                top_p=top_p,
-                pad_token_id=tokenizer.pad_token_id,
-                eos_token_id=tokenizer.eos_token_id,
-            )
-        texts = [tokenizer.decode(g, skip_special_tokens=True) for g in gen]
-        outputs.extend(texts)
-    return outputs
-
-
-def load_keywords(disease_name: str):
+def load_keywords(keyword_csv, disease_name):
+    """Load disease-specific and general keywords."""
+    # Base set of general medical and disease-related keywords used to filter chunks.
+    # These are combined with any disease-specific keywords found in the CSV for a
+    # stronger, wider matching set used by `filter_chunks_by_keywords`.
     extra_keywords = [
+        # Original List
         "drug", "therapy", "symptom", "medication", "treat", "alleviate", "relief", "remedy", "prevalence",
+        
+        # Core Disease & Medical Condition Terms
         "disease", "illness", "sickness", "disorder", "syndrome", "condition", "ailment",
+        
+        # Types and Nature of Diseases
         "infectious", "viral", "bacterial", "fungal", "parasitic", "chronic", "acute", "terminal",
         "progressive", "degenerative", "autoimmune", "inflammatory", "deficiency", "genetic", "hereditary",
         "malignant", "benign", "metastatic", "outbreak", "epidemic", "pandemic",
+        
+        # Symptoms and Clinical Presentation
         "sign", "manifestation", "pain", "fever", "fatigue", "nausea", "vomiting", "diarrhea", "rash",
         "swelling", "inflammation", "diagnosis", "prognosis", "screening",
+        
+        # Causes and Origins
         "cause", "etiology", "pathogen", "virus", "bacteria", "fungus", "parasite", "congenital",
         "environmental", "lifestyle",
+        
+        # Treatment and Management
         "treatment", "pharmaceutical", "prescription", "cure", "vaccine", "vaccination", "immunization",
         "surgery", "operation", "procedure", "intervention", "dose", "dosage", "administration",
         "manage", "control", "ease", "mitigate", "prevent",
+        
+        # Measurement and Statistics
         "incidence", "morbidity", "mortality", "fatality rate", "risk factor", "comorbidity", "complication",
-        "cardiovascular", "respiratory", "neurological", "gastrointestinal", "musculoskeletal",
+        
+        # Body Systems and Anatomy
+        "cardiovascular", "respiratory", "neurological", "gastrointestinal", "musculoskeletal", 
+        "endocrine", "renal", "hepatic"
     ]
-    df = pd.read_csv(KEYWORDS_CSV)
+    logger = logging.getLogger("rador")
+    df = pd.read_csv(keyword_csv)
     df.columns = df.columns.str.strip()
+    
     disease_name_lookup = disease_name.replace("_", " ").lower()
     disease_row = df[df['Disease Name'].str.strip().str.lower() == disease_name_lookup]
     combined_keywords = extra_keywords.copy()
+    
     if not disease_row.empty:
         csv_keywords = disease_row['Keywords'].values[0]
         csv_keywords_list = [kw.strip().lower() for kw in csv_keywords.split(',')]
         combined_keywords = list(set(csv_keywords_list + extra_keywords))
+        logger.info("Keywords: %s", combined_keywords)
+    else:
+        logger.warning("No keywords found for disease: %s", disease_name_lookup)
+    
     return combined_keywords
 
 
-def filter_chunks_by_keywords(chunks_list: List[str], metadata_list: List[str], keywords: List[str]):
+def filter_chunks_by_keywords(chunks_list, metadata_list, keywords):
+    """Filter chunks that contain any of the keywords."""
     filtered_chunks = []
     filtered_metadata = []
     keywords_lower = [kw.lower() for kw in keywords]
+    
     for chunk, meta in zip(chunks_list, metadata_list):
         chunk_lower = chunk.lower()
         if any(kw in chunk_lower for kw in keywords_lower):
             filtered_chunks.append(chunk)
             filtered_metadata.append(meta)
+    
     return filtered_chunks, filtered_metadata
 
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python pipeline_transformers_adapter.py <disease_name>")
-        sys.exit(1)
-    disease_name = sys.argv[1]
-    start_time = time.time()
-    log_to_file("Processing disease: " + disease_name)
+def get_hf_model_source(model_name, model_local_path):
+    """determine model source: local path or Hugging Face name.
 
-    csv_filename = f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
+    Args:
+        model_name (_type_): _description_
+        model_local_path (_type_): _description_
+    Returns:
+        _type_: _description_
+    """
+    logger = logging.getLogger("rador")
+    model_source = model_name
+    if has_checkpoint_files(model_local_path):
+        model_source = model_local_path
+    else:
+        logger.info("No local model found at %s, using model name %s from Hugging Face.", model_local_path, model_name)
+        model_source = model_name
+    return model_source
+
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+def main():
+    """Main pipeline execution.
+
+    The body below is divided into labeled steps for readability. The behavior
+    is unchanged; comments only document the flow.
+    """
+
+    # Step 1: Start timer and parse command-line arguments
+    parser = argparse.ArgumentParser(description="RADOR pipeline: generate triples from disease documents")
+    parser.add_argument(
+        "-d", "--disease_name",
+        dest="disease_name",
+        required=True,
+        help="Name of the disease to process (e.g., alzheimers_disease)"
+    )
+    parser.add_argument(
+        "-i", "--input_csv",
+        dest="input_csv",
+        default=None,
+        help="Path to input CSV containing precomputed chunks and metadata. Defaults to data/<disease_name>/<disease_name>_input_chunks_and_metadata.csv"
+    )
+    parser.add_argument(
+        "-o", "--triples_out",
+        dest="triples_out",
+        default=None,
+        help="Path to save triples CSV. Defaults to data/<disease_name>/triples_<disease_name>.csv"
+    )
+
+    args = parser.parse_args()
+
+    start_time = time.time()
+    disease_name = args.disease_name
+    triples_out_path = args.triples_out or f"data/{disease_name}/triples_{disease_name}.csv"
+    
+    # Load config
+    # Path to optional JSON file containing model configuration overrides.
+    MODEL_CONFIG_PATH = os.path.join(os.getcwd(), "model_config.json")
+    model_config = load_model_config(MODEL_CONFIG_PATH)
+
+    # GEMMA model configuration (defaults may be overridden by models/model_config.json)
+    llm_model_name = model_config['llm_model_name']
+    llm_model_path = model_config['llm_model_path']
+    llm_max_model_len = model_config['llm_max_model_len']
+    quantization = model_config["quantization"]
+    gpu_memory_utilization = model_config["gpu_memory_utilization"]
+    tensor_parallel_size = model_config["tensor_parallel_size"]
+
+    # Processing configuration
+    batch_size = model_config["batch_size"]
+    similarity_threshold = model_config["similarity_threshold"]
+
+    # sentence transformer model name
+    sentence_transformer_model = model_config["sentence_transformer_model"]
+    sentence_transformer_model_path = model_config["sentence_transformer_model_path"]
+    # Local path where the sentence-transformers repo is cloned by the download script
+
+    log_file_fp = model_config["log_file"]
+    keywords_csv_fp = model_config["keywords_csv"]
+    
+    # Initialize logger
+    init_logger(log_file_fp, level=logging.INFO)
+    # Disable vLLM compile cache to avoid permission/compatibility issues in some environments.
+    # This is safe: vLLM will skip using the compiled cache and fall back to runtime compilation.
+    #if os.environ.get("VLLM_DISABLE_COMPILE_CACHE") != "1":
+    #    os.environ["VLLM_DISABLE_COMPILE_CACHE"] = "1"
+    #    logging.getLogger("rador").info("Set VLLM_DISABLE_COMPILE_CACHE=1 to disable vLLM compile cache")
+    
+    # File paths
+    logger = logging.getLogger("rador")
+    logger.info("Processing disease: %s", disease_name)
+    # exit()
+    # Step 2: Load precomputed chunks and their metadata from CSV
+    csv_filename = args.input_csv or f"data/{disease_name}/{disease_name}_input_chunks_and_metadata.csv"
+    logger.info("Reading input CSV from %s", csv_filename)
+    if not os.path.isfile(csv_filename):
+        logger.error("Input CSV not found: %s", csv_filename)
+        raise FileNotFoundError(f"Input CSV not found: {csv_filename}")
     df_loaded = pd.read_csv(csv_filename)
     filtered_chunks_list = df_loaded["Filtered_Chunks"].tolist()
     filtered_metadata_list = df_loaded["Filtered_Metadata"].tolist()
 
-    combined_keywords = load_keywords(disease_name)
+    # Step 3: Load keywords (general + disease-specific) and filter chunks
+    combined_keywords = load_keywords(keywords_csv_fp, disease_name)
     filtered_chunks_with_keywords, filtered_metadata_with_keywords = filter_chunks_by_keywords(
         filtered_chunks_list, filtered_metadata_list, combined_keywords
     )
 
-    log_to_file(
-        "Number of chunks matched with keywords:",
+    logger.info(
+        "Number of chunks matched with keywords: %d out of %d from a set of %d papers.",
         len(filtered_chunks_with_keywords),
-        "out of",
         len(filtered_chunks_list),
+        len(set(filtered_metadata_with_keywords)),
     )
 
-    # Initialize generation model
-    tokenizer, model, device = init_generation_model(HF_MODEL_NAME, load_in_4bit=BNB_AVAILABLE)
+    # Step 4: Load the LLM model (GPU required)
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
 
-    # Prepare prompts and generate
-    given_prompt = "Simplify the following text into short, informative sentences."
-    prompts = make_prompts(filtered_chunks_with_keywords, given_prompt)
-    generated_texts = generate_with_transformers(tokenizer, model, prompts)
+    # Prefer a local gemma clone if it exists (downloaded into models/huggingface/...)
+    gemma_model_source = get_hf_model_source(llm_model_name, llm_model_path)
 
-    # Extract responses and deduplicate
-    responses_list = [extract_response(t) for t in generated_texts]
+    # Initialize a standard Hugging Face transformers causal LM and tokenizer
+    logger.info("Loading HF transformers model from source: %s", gemma_model_source)
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(gemma_model_source, use_fast=True)
+        # Prefer loading to GPU with automatic device map if available; fall back to .to('cuda')
+        model = AutoModelForCausalLM.from_pretrained(gemma_model_source, torch_dtype=torch.float16)
+        model.to('cuda')
+    except Exception as e:
+        logger.error("Failed to load HF transformers model from %s: %s", gemma_model_source, e)
+        raise
 
-    sent_model = SentenceTransformer(SENTENCE_TRANSFORMER_MODEL)
+    def hf_generate(prompts, max_new_tokens):
+        """Batch-generate texts for a list of prompts using the HF model.
+
+        Returns a list of generated strings (the continuation only).
+        """
+        # Tokenize with padding so we can batch; track original lengths from attention mask
+        encoded = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
+        input_ids = encoded["input_ids"].to(model.device)
+        attention_mask = encoded.get("attention_mask")
+        if attention_mask is not None:
+            attention_mask = attention_mask.to(model.device)
+
+        # record lengths for each prompt so we can slice generated outputs
+        seq_lens = (attention_mask.sum(dim=1) if attention_mask is not None else (input_ids != tokenizer.pad_token_id).sum(dim=1)).cpu().tolist()
+
+        # Generate
+        gen_outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=max_new_tokens, do_sample=True, top_k=50)
+
+        results = []
+        for i, out_ids in enumerate(gen_outputs):
+            # slice off the prompt tokens using original length
+            start = seq_lens[i]
+            gen_ids = out_ids[start:]
+            text = tokenizer.decode(gen_ids, skip_special_tokens=True)
+            results.append(text)
+        return results
+
+    # Step 5: Prepare prompts and generate simple sentences with the LLM (batched)
+    list_of_inputs = filtered_chunks_with_keywords
+    list_of_meta_data = filtered_metadata_with_keywords
+    responses_list = []
+    given_prompt = simple_sentence_prompt
+
+    for i in range(0, len(list_of_inputs), batch_size):
+        batch_inputs = list_of_inputs[i:i + batch_size]
+        batch_prompts = make_prompts(batch_inputs, given_prompt, ALPACA_PROMPT_TEMPLATE)
+
+       # sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
+        try:
+            gen_texts = hf_generate(batch_prompts, global_output_max_new_tokens)
+        except Exception as e:
+            logger.error("HF generate() failed: %s", e)
+            raise
+
+        # Extract responses from model outputs (we concatenate prompt + generated continuation)
+        for prompt, gen in zip(batch_prompts, gen_texts):
+            full_text = prompt + gen
+            res = extract_response(full_text)
+            responses_list.append(res)
+
+    # Step 6: Deduplicate simple sentences using a sentence-transformer
+    sentnce_model_source = get_hf_model_source(sentence_transformer_model, sentence_transformer_model_path)
+    model_to_find_unique_sentences = SentenceTransformer(sentnce_model_source)
+
     number_of_cleaned_sentences = 0
     number_of_unique_sentences = 0
     new_response_list = []
     unique_sentences_list = []
     unique_sentences_metadata_list = []
 
-    for res, meta in zip(responses_list, filtered_metadata_with_keywords):
+    for res, meta in zip(responses_list, list_of_meta_data):
         cleaned_sentences = []
-        for line in (res or "").splitlines():
+        for line in res.splitlines():
             line = line.strip()
             if line.startswith('(') and line.endswith(')'):
                 line = line[1:-1].strip()
@@ -251,37 +439,61 @@ def main():
                 cleaned_sentences.append(sentence)
 
         number_of_cleaned_sentences += len(cleaned_sentences)
-        unique_sentences = find_unique_sentences(cleaned_sentences, sent_model)
+        unique_sentences = find_unique_sentences(cleaned_sentences, model_to_find_unique_sentences, similarity_threshold)
         number_of_unique_sentences += len(unique_sentences)
+
         for us in unique_sentences:
             unique_sentences_list.append(us)
             unique_sentences_metadata_list.append(meta)
-        formatted_string = "\n".join(f'(\"{sen}\")' for sen in unique_sentences)
+
+        formatted_string = "\n".join(f'("{sen}")' for sen in unique_sentences)
         new_response_list.append(formatted_string)
 
-    log_to_file("Number of simple sentences in LLM response:", number_of_cleaned_sentences)
-    log_to_file("Number of unique sentences found in final output:", number_of_unique_sentences)
+    logger.info("Number of simple sentences in LLM response: %d", number_of_cleaned_sentences)
+    logger.info("Number of unique sentences found in final output: %d", number_of_unique_sentences)
 
-    # Save simple sentences
+    # Step 7: Save the generated simple sentences to CSV
     output_file = f'data/{disease_name}/generated_simple_sentences_{disease_name}.csv'
     with open(output_file, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Relevant Text', 'Simple Sentences', 'MetaData'])
-        for item1, item2, item3 in zip(filtered_chunks_with_keywords, new_response_list, filtered_metadata_with_keywords):
+        for item1, item2, item3 in zip(list_of_inputs, new_response_list, list_of_meta_data):
             writer.writerow([item1, item2, item3])
 
-    # Generate triplets from unique sentences
-    given_triplet_prompt = "Extract structured triples (subject, predicate, object) from the sentence."
-    triplet_prompts = [ALPACA_PROMPT_TEMPLATE.format(given_triplet_prompt, s, "") for s in unique_sentences_list]
-    triplet_texts = generate_with_transformers(tokenizer, model, triplet_prompts)
-    triplet_responses = [extract_response(t) for t in triplet_texts]
+    logger.info('CSV file "%s" created successfully.', output_file)
+
+    # Step 8: Generate triplets from unique simple sentences
+    input_for_triplet_generation = unique_sentences_list
+    metadata_for_triplet_generation = unique_sentences_metadata_list
+    logger.info("Total unique simple sentences for triplet generation: %d, %d", len(input_for_triplet_generation), len(metadata_for_triplet_generation))
+
+    given_prompt = triplets_from_simple_sentence_prompt
+    prompts = []
+    for i in range(0, len(input_for_triplet_generation)):
+        input_here = input_for_triplet_generation[i]
+        prompts.append(ALPACA_PROMPT_TEMPLATE.format(given_prompt, input_here, ""))
+
+    # Use HF generate for triplet prompts as well
+    gen_texts = hf_generate(prompts, global_output_max_new_tokens)
+
+    # Extract triplet responses
+    responses_list = []
+    for prompt, gen in zip(prompts, gen_texts):
+        full_text = prompt + gen
+        res = extract_response(full_text)
+        responses_list.append(res)
+
+    # Step 9: Format triplets and create DataFrame
+    list_of_unformatted_simple_sentences = input_for_triplet_generation
+    list_of_unformatted_triples = responses_list
+    list_of_unformatted_meta_data = metadata_for_triplet_generation
 
     list_of_formatted_simple_sentences = []
     list_of_formatted_triples = []
     list_of_formatted_meta_data = []
 
-    for i in range(len(triplet_responses)):
-        lines = (triplet_responses[i] or "").splitlines()
+    for i in range(0, len(list_of_unformatted_triples)):
+        lines = list_of_unformatted_triples[i].splitlines()
         cleaned_triples = []
         for line in lines:
             sentence = line.strip()
@@ -291,24 +503,47 @@ def main():
                 sentence = sentence[1:-1].strip()
             if sentence:
                 cleaned_triples.append(sentence)
-        if cleaned_triples:
+        if len(cleaned_triples) > 0:
             clean_length = len(cleaned_triples)
-            list_of_formatted_simple_sentences.extend([unique_sentences_list[i]] * clean_length)
+            list_of_formatted_simple_sentences.extend([list_of_unformatted_simple_sentences[i]] * clean_length)
             list_of_formatted_triples.extend(cleaned_triples)
-            list_of_formatted_meta_data.extend([unique_sentences_metadata_list[i]] * clean_length)
+            list_of_formatted_meta_data.extend([list_of_unformatted_meta_data[i]] * clean_length)
+
+    logger.info("Number of triples in the whole dataset that was generated by llm from simple sentences: %d", len(list_of_formatted_triples))
+    logger.info("Triples / simple_sentences / metadata counts: %d %d %d", len(list_of_formatted_simple_sentences), len(list_of_formatted_triples), len(list_of_formatted_meta_data))
 
     df = pd.DataFrame({
         "Simple_Sentence": list_of_formatted_simple_sentences,
         "Triple": list_of_formatted_triples
     })
-    df["Metadata"] = [list_of_formatted_meta_data[i] if i < len(list_of_formatted_meta_data) else None for i in range(len(df))]
-    df.to_csv(f'data/{disease_name}/triples_{disease_name}.csv', index=False)
+    df["Metadata"] = [
+        list_of_formatted_meta_data[i] if i < len(list_of_formatted_meta_data) else None
+        for i in range(len(df))
+    ]
+
+    # Step 10: Save triples and log final statistics
+    # Ensure output directory exists
+    out_dir = os.path.dirname(triples_out_path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    logger.info("Saving triples to %s", triples_out_path)
+    df.to_csv(triples_out_path, index=False)
 
     end_time = time.time()
     elapsed = (end_time - start_time) / 60
-    log_to_file(f"Time taken: {elapsed:.2f} minutes for ", disease_name)
-    log_to_file("~" * 100)
+
+    logger.info("The number of unique metadata items (papers used) is: %d for %s", len(set(df['Metadata'])), disease_name)
+    logger.info("Time taken: %.2f minutes for %s", elapsed, disease_name)
+    logger.info("%s", "~" * 100)
+
+if __name__ == "__main__":
+    
+    #import torch
+    # disable flash and memory efficient sdp to avoid potential OOM issues
+    #torch.backends.cuda.enable_flash_sdp(False)
+    #torch.backends.cuda.enable_mem_efficient_sdp(False)
+    #torch.backends.cuda.enable_math_sdp(True)
+    
 
 
-if __name__ == '__main__':
     main()
