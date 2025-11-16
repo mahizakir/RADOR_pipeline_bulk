@@ -1,8 +1,8 @@
-pip install \
-    torch==2.9.0 \
-    transformers==4.57.1 \
-    bitsandbytes==0.48.2 \
-    sentence-transformers==5.1.1 \
-    huggingface-hub==0.35.3 \
-    pandas
-    
+module load StdEnv/2023
+module load opencv/4.12
+pip install --no-index --dry-run vllm==0.10.1.1 \
+    pandas \
+    sentence_transformers \
+    bitsandbytes 
+
+

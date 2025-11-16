@@ -361,6 +361,10 @@ def main():
         tokenizer = AutoTokenizer.from_pretrained(gemma_model_source, use_fast=True)
         # Prefer loading to GPU with automatic device map if available; fall back to .to('cuda')
         model = AutoModelForCausalLM.from_pretrained(gemma_model_source, torch_dtype=torch.float16)
+        # ensure pad token exists for batching
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+        model.config.use_cache = True
         model.to('cuda')
     except Exception as e:
         logger.error("Failed to load HF transformers model from %s: %s", gemma_model_source, e)
@@ -371,27 +375,81 @@ def main():
 
         Returns a list of generated strings (the continuation only).
         """
-        # Tokenize with padding so we can batch; track original lengths from attention mask
+        # Default batched generation using HF generate (uses internal KV cache)
         encoded = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
         input_ids = encoded["input_ids"].to(model.device)
         attention_mask = encoded.get("attention_mask")
         if attention_mask is not None:
             attention_mask = attention_mask.to(model.device)
 
-        # record lengths for each prompt so we can slice generated outputs
         seq_lens = (attention_mask.sum(dim=1) if attention_mask is not None else (input_ids != tokenizer.pad_token_id).sum(dim=1)).cpu().tolist()
 
-        # Generate
-        gen_outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=max_new_tokens, do_sample=True, top_k=50)
+        gen_outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=max_new_tokens, do_sample=True, top_k=50, use_cache=True)
 
         results = []
         for i, out_ids in enumerate(gen_outputs):
-            # slice off the prompt tokens using original length
             start = seq_lens[i]
             gen_ids = out_ids[start:]
             text = tokenizer.decode(gen_ids, skip_special_tokens=True)
             results.append(text)
         return results
+
+
+    def top_k_top_p_filtering(logits, top_k=0, top_p=0.0, filter_value=-float('Inf')):
+        # From HuggingFace's sample code: filter logits using top-k and/or nucleus (top-p)
+        top_k = min(max(int(top_k), 0), logits.size(-1))  # Safety
+        if top_k > 0:
+            # Remove all tokens with a probability less than the top-k tokens
+            indices_to_remove = logits < torch.topk(logits, top_k)[0][..., -1, None]
+            logits[indices_to_remove] = filter_value
+
+        if top_p > 0.0:
+            sorted_logits, sorted_indices = torch.sort(logits, descending=True)
+            cumulative_probs = torch.softmax(sorted_logits, dim=-1).cumsum(dim=-1)
+            # Remove tokens with cumulative probability above the threshold
+            sorted_indices_to_remove = cumulative_probs > top_p
+            # Shift the indices to the right to keep at least one token
+            sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
+            sorted_indices_to_remove[..., 0] = 0
+            indices_to_remove = sorted_indices[sorted_indices_to_remove]
+            logits[indices_to_remove] = filter_value
+        return logits
+
+
+    def hf_generate_stream(prompt, max_new_tokens, temperature=1.0, top_k=50, top_p=0.0, do_sample=True):
+        """Generate tokens incrementally for a single prompt, returning the generated continuation."""
+        enc = tokenizer(prompt, return_tensors="pt").to(model.device)
+        input_ids = enc["input_ids"]
+        attention_mask = enc.get("attention_mask")
+
+        past = None
+        generated_ids = []
+
+        # First forward with full prompt to get past_key_values
+        with torch.no_grad():
+            out = model(input_ids=input_ids, attention_mask=attention_mask, use_cache=True, return_dict=True)
+        past = out.past_key_values
+
+        cur_input = torch.tensor([[tokenizer.eos_token_id]], device=model.device)
+        for _ in range(max_new_tokens):
+            with torch.no_grad():
+                out = model(input_ids=cur_input, past_key_values=past, use_cache=True, return_dict=True)
+            logits = out.logits[:, -1, :]
+            logits = logits / max(temperature, 1e-8)
+            if do_sample:
+                filtered_logits = top_k_top_p_filtering(logits.clone(), top_k=top_k, top_p=top_p)
+                probs = torch.softmax(filtered_logits, dim=-1)
+                next_token = torch.multinomial(probs, num_samples=1)
+            else:
+                next_token = torch.argmax(logits, dim=-1, keepdim=True)
+            generated_ids.append(next_token.item())
+            past = out.past_key_values
+            cur_input = next_token
+            if next_token.item() == tokenizer.eos_token_id:
+                break
+
+        gen_text = tokenizer.decode(torch.tensor(generated_ids, device=model.device).unsqueeze(0), skip_special_tokens=True)
+        return gen_text
 
     # Step 5: Prepare prompts and generate simple sentences with the LLM (batched)
     list_of_inputs = filtered_chunks_with_keywords
@@ -405,9 +463,10 @@ def main():
 
        # sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
         try:
-            gen_texts = hf_generate(batch_prompts, global_output_max_new_tokens)
+            # Use the streaming generator per-prompt to enable KV-cache incremental generation
+            gen_texts = [hf_generate_stream(p, global_output_max_new_tokens) for p in batch_prompts]
         except Exception as e:
-            logger.error("HF generate() failed: %s", e)
+            logger.error("HF streaming generate() failed: %s", e)
             raise
 
         # Extract responses from model outputs (we concatenate prompt + generated continuation)
@@ -473,8 +532,8 @@ def main():
         input_here = input_for_triplet_generation[i]
         prompts.append(ALPACA_PROMPT_TEMPLATE.format(given_prompt, input_here, ""))
 
-    # Use HF generate for triplet prompts as well
-    gen_texts = hf_generate(prompts, global_output_max_new_tokens)
+    # Use HF streaming generate for triplet prompts as well
+    gen_texts = [hf_generate_stream(p, global_output_max_new_tokens) for p in prompts]
 
     # Extract triplet responses
     responses_list = []

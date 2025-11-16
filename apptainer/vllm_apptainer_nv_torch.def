@@ -11,7 +11,7 @@ From: nvcr.io/nvidia/pytorch:25.05-py3
     # Use the interpreter's pip and avoid caching to reduce disk usage during image build.
     python -m pip install --upgrade pip setuptools wheel
     python -m pip install --no-cache-dir \
-        "vllm==0.11.0" \
+        "vllm==0.10.1" \
         pandas numpy tqdm datasets \
         transformers \
         "bitsandbytes>=0.46.1" \
