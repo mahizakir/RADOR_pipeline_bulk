@@ -45,8 +45,8 @@ mkdir -p ${WORKING_DIR}/cache
 export VLLM_CACHE_ROOT=${WORKING_DIR}/cache
 echo "VLLM_CACHE_ROOT=${VLLM_CACHE_ROOT}"
 # Point flashinfer's cache root to the job-local cache directory we just created.
-export FLASHINFER_WORKSPACE_BASE=${WORKING_DIR}/cache
-echo "FLASHINFER_WORKSPACE_BASE=${FLASHINFER_WORKSPACE_BASE}"
+# export FLASHINFER_WORKSPACE_BASE=${WORKING_DIR}/cache
+# echo "FLASHINFER_WORKSPACE_BASE=${FLASHINFER_WORKSPACE_BASE}"
 
 # Ensure CUDA operations are synchronous for easier debugging
 # export CUDA_LAUNCH_BLOCKING=1
@@ -73,11 +73,11 @@ nvidia-smi -L          # should show 1 device
 cd  ${WORKING_DIR}
 virtualenv RADOR_env
 source RADOR_env/bin/activate
-pip install --no-index vllm==0.10.1.1 \
+pip install --no-index --dry-run vllm==0.10.1.1 \
     pandas \
     sentence_transformers \
-    bitsandbytes==0.48.2 \
-    flashinfer_python==0.4.1 # this is not required but good to have, without this vllm will fallback to the PyTorch-native implementation of top-p & top-k sampling.
+    bitsandbytes==0.48.2 
+    # flashinfer_python==0.2.6 # this is not required but good to have, without this vllm will fallback to the PyTorch-native implementation of top-p & top-k sampling.
 
 # run paper_processor
 echo running paper_processor
