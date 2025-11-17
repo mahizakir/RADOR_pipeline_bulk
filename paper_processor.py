@@ -509,11 +509,7 @@ def main():
 if __name__ == "__main__":
     
     import torch
-    # disable flash and memory efficient sdp to avoid potential OOM issues
-    # torch.backends.cuda.enable_flash_sdp(False)
-    # torch.backends.cuda.enable_mem_efficient_sdp(False)
-    # torch.backends.cuda.enable_math_sdp(True)
-    
+
     print("Torch version:", torch.__version__)
     print("CUDA version seen by torch:", torch.version.cuda)
     print("Device:", torch.cuda.get_device_name(0))

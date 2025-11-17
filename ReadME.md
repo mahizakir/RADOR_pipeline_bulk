@@ -146,23 +146,17 @@ bash download_all_models_cc.sh
 ## Update configs
 Change path to model snapshot in `model_config.json`
 A example model config looks like following
-```json
+
+other tried model
+```
 {
-  "llm_model_name": "unsloth/gemma-3-27b-it-unsloth-bnb-4bit",
-  "llm_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1",
-  "llm_max_model_len": 90000,
-  "quantization": "bitsandbytes",
-  "gpu_memory_utilization": 0.9,
-  "tensor_parallel_size": 1,
-  "batch_size": 45,
-  "similarity_threshold": 0.95,
-  "sentence_transformer_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
-  "sentence_transformer_model_path": "models/hub/models--sentence-transformers--paraphrase-MiniLM-L6-v2/snapshots/c9a2bfebc254878aee8c3aca9e6844d5bbb102d1"
+  "llm_model_name": "unsloth/gemma-3-27b-it-bnb-4bit",
+  "llm_model_path": "models/hub/models--unsloth--gemma-3-27b-it-bnb-4bit/snapshots/c08b2ba63738aa8cfc60f06741d6356ef4e60b3f",
 }
 ```
 ## use slrum
 use `slurm_scripts/example_slurm_fir.sh`
-
+s
 ## Notes
 As for 11/16/2025 - appatiner image build based on `nvcr.io/nvidia/vllm:25.09-py3` use `apptainer/vllm_apptainer_nv_vllm.def` on works on A6000 and L40s, not H100
 
