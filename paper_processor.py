@@ -507,13 +507,18 @@ def main():
     logger.info("%s", "~" * 100)
 
 if __name__ == "__main__":
-    
-    import torch
 
-    print("Torch version:", torch.__version__)
-    print("CUDA version seen by torch:", torch.version.cuda)
-    print("Device:", torch.cuda.get_device_name(0))
-    print("Capability:", torch.cuda.get_device_capability(0))
-    print("CUDA_LAUNCH_BLOCKING =", os.environ.get("CUDA_LAUNCH_BLOCKING"))
+    logger = logging.getLogger("rador")
+    logger.info("Torch version: %s", torch.__version__)
+    logger.info("CUDA version seen by torch: %s", torch.version.cuda)
+    if torch.cuda.is_available():
+        try:
+            logger.info("Device: %s", torch.cuda.get_device_name(0))
+            logger.info("Capability: %s", torch.cuda.get_device_capability(0))
+        except Exception:
+            logger.exception("Failed to query CUDA device properties")
+    else:
+        logger.info("No CUDA device available")
+    logger.info("CUDA_LAUNCH_BLOCKING = %s", os.environ.get("CUDA_LAUNCH_BLOCKING"))
 
     main()
