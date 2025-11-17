@@ -20,7 +20,8 @@ echo `date`: Job ${SLURM_JOB_ID} is allocated resources
 #load modules
 module load StdEnv/2023
 module load opencv/4.12
-module load cudacore/.12.6.3
+module load nvhpc/25.1
+module load cuda/12.6
 
 # set variablesss
 RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
