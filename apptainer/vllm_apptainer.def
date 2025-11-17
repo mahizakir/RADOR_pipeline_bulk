@@ -3,7 +3,7 @@ From: verlai/verl:app-verl0.5-transformers4.55.4-vllm0.10.0-mcore0.13.0-te2.2
 
 %post
     pip install --no-cache-dir pandas sentence_transformers bitsandbytes>=0.46.1 
-    # todo : install flashinfer
+    #flashinfer_python
 %environment
     # Prevent Python from using user site-packages from /home/<user>/.local
     export PYTHONNOUSERSITE=1
