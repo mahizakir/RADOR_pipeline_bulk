@@ -7,7 +7,7 @@ From: verlai/verl:app-verl0.5-transformers4.55.4-vllm0.10.0-mcore0.13.0-te2.2
     # flashinfer_python does not seemns I can find a good flashinfer package for vllm apptainer image
     # these are for GPU and CPU monitoring
     pip install --no-cache-dir psutil
-    pip install --no-cache-dir GPUtil
+    pip install --no-cache-dir pynvml
 %environment
     # Prevent Python from using user site-packages from /home/<user>/.local
     export PYTHONNOUSERSITE=1
