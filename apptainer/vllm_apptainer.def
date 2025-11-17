@@ -2,17 +2,8 @@ Bootstrap: docker
 From: verlai/verl:app-verl0.5-transformers4.55.4-vllm0.10.0-mcore0.13.0-te2.2
 
 %post
-    # Create the directory Triton expects and point it to the host driver
-    # because Triton requires /usr/local/cuda/compat/lib/libcuda.so.1 to exist for GPU runtime
-    # mkdir -p /usr/local/cuda/compat/lib
-    # ln -sf /usr/lib64/libcuda.so /usr/local/cuda/compat/lib/libcuda.so.1
-    # ln -sf libcuda.so.1 /usr/local/cuda/compat/lib/libcuda.so
-
-    # Add this directory to the container's dynamic linker cache
-    #echo "/usr/local/cuda/compat/lib" > /etc/ld.so.conf.d/cuda-compat.conf
-    #ldconfigs
-    pip install pandas sentence_transformers bitsandbytes>=0.46.1
-
+    pip install --no-cache-dir pandas sentence_transformers bitsandbytes>=0.46.1 
+    # todo : install flashinfer
 %environment
     # Prevent Python from using user site-packages from /home/<user>/.local
     export PYTHONNOUSERSITE=1
