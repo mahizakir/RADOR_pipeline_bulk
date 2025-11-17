@@ -3,7 +3,7 @@
   "llm_model_path": "models/hub/models--unsloth--gemma-3-27b-it-unsloth-bnb-4bit/snapshots/6ffe669a86fe697aef8ee7b46f5a77477d2a1ddd",
   "llm_max_model_len": 10000,
   "quantization": "bitsandbytes",
-  "gpu_memory_utilization": 0.97,
+  "gpu_memory_utilization": 0.95,
   "tensor_parallel_size": 1,
   "batch_size": 45,
   "similarity_threshold": 0.95,
