@@ -7,7 +7,7 @@
 #SBATCH --cpus-per-task=6 
 # https://docs.alliancecan.ca/wiki/Firss
 #SBATCH --gpus=h100:1
-#SBATCH --time=0-1:100
+#SBATCH --time=0-1:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
@@ -19,14 +19,14 @@ echo `date`: Job ${SLURM_JOB_ID} is allocated resources
 
 #load modules
 module load StdEnv/2023
-module load apptainer/1.2.4
+module load apptainer/1.3.5
 
-# set variablesss
+# set variables
 RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
-N=1
+N=3
 DISEASE_LIST_FILE=${RADOR_DP}/static_data/5094_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "1,${N}p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
