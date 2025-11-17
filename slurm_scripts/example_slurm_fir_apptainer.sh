@@ -65,8 +65,7 @@ nvidia-smi -L          # should show 1 device
 # run paper_processor
 echo running paper_processor
 
-export CUDA_LAUNCH_BLOCKING=1
-
+#export CUDA_LAUNCH_BLOCKING=1
 cd ${WORKING_DIR}
 for d in ${DISEASE_LIST}; do
     echo processing disease: ${d}
