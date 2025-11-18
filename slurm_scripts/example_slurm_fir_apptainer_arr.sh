@@ -7,19 +7,20 @@
 #SBATCH --cpus-per-task=6 
 # https://docs.alliancecan.ca/wiki/Fir
 #SBATCH --gpus=h100:1
+#SBATCH --time=0-3:00
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
 #SBATCH --error=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.err
 #SBATCH --open-mode=append
-#SBATCH --array=1-50%10
+#SBATCH --array=1-50%10:10 # 10 tasks at a time, each task process 10 diseases
 
 # record start
 echo `date`: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} is allocated resources
 
 #load modules
 module load StdEnv/2023
-module load apptainer/1.2.4
+module load apptainer/1.3.5
 
 # set variables
 RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
