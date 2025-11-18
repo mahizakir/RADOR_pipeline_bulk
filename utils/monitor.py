@@ -105,6 +105,7 @@ def _get_gpu_stats():
 					"util_percent": util.gpu,
 					"mem_used": mem.used,
 					"mem_total": mem.total,
+					"mem_percent": (float(mem.used) / float(mem.total) * 100.0) if getattr(mem, 'total', None) else None,
 					"temperature": temp,
 				})
 		except Exception:
@@ -127,6 +128,7 @@ def _get_gpu_stats():
 						'util_percent': float(util),
 						'mem_used': int(float(mem_used)) * 1024 * 1024,
 						'mem_total': int(float(mem_total)) * 1024 * 1024,
+						'mem_percent': (int(float(mem_used)) / max(1.0, int(float(mem_total)))) * 100.0 if float(mem_total) else None,
 						'temperature': float(temp),
 					})
 			return gpus
@@ -177,13 +179,22 @@ class SystemMonitor:
 				'gpus': gpus,
 			}
 			# Log a concise single-line message
-			gpu_summary = ', '.join([f"gpu{g['index']}:util={g.get('util_percent')}% mem={g.get('mem_used')//1024//1024}MiB" for g in gpus]) if gpus else 'no-gpu'
+			# Build a readable GPU summary including utilization, used memory (MiB) and memory percent
+			parts = []
+			for g in gpus:
+				idx = g.get('index')
+				util = g.get('util_percent')
+				mem_mb = (g.get('mem_used') // 1024 // 1024) if g.get('mem_used') is not None else 'NA'
+				mem_pct = g.get('mem_percent')
+				mem_pct_s = f"{mem_pct:.1f}%" if isinstance(mem_pct, (int, float)) else 'NA'
+				parts.append(f"gpu{idx}:util={util}% mem={mem_mb}MiB({mem_pct_s})")
+			gpu_summary = ', '.join(parts) if parts else 'no-gpu'
 			self.logger.info('[%s] CPU=%s%% MEM=%s%% GPU=%s', ts, msg['cpu_percent'], msg['mem_percent'], gpu_summary)
 			time.sleep(self.interval)
 
 if __name__ == '__main__':
 	ap = argparse.ArgumentParser(description='Simple CPU/GPU monitor')
-	ap.add_argument('--interval', '-i', type=int, default=5, help='Interval in seconds')
+	ap.add_argument('--interval', '-i', type=int, default=60, help='Interval in seconds')
 	ap.add_argument('--logfile', '-l', default=None, help='Optional logfile to write logs')
 	args = ap.parse_args()
 

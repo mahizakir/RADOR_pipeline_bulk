@@ -51,16 +51,17 @@ rsync -av --exclude=".*" ${RADOR_DP}/models ${WORKING_DIR}/
 echo copy pipeline code to slurm local dir
 rsync -av ${RADOR_DP}/*.py ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/static_data ${WORKING_DIR}/
+rsync -av ${RADOR_DP}/utils ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
-# copy data to slurm local dir
-# echo copy data to slurm local dir
-# rsync -av ${RADOR_DP}/data ${WORKING_DIR}/ 
 
 # check GPU visibility
 echo "Checking GPU visibility..."
 echo cuda_visible_devices=$CUDA_VISIBLE_DEVICES
 nvidia-smi             # check memory of the MIG slice you were assigned
 nvidia-smi -L          # should show 1 device
+
+python ${WORKING_DIR}/utils/monitor.py --interval 5 --logfile ${WORKING_DIR}/monitor_host.log &
+MON_PID=$!
 
 # run paper_processor
 echo running paper_processor

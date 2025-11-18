@@ -520,4 +520,6 @@ if __name__ == "__main__":
         logger.info("No CUDA device available")
     logger.info("CUDA_LAUNCH_BLOCKING = %s", os.environ.get("CUDA_LAUNCH_BLOCKING"))
 
+    import tqdm
+    tqdm.tqdm.disable = True
     main()

@@ -50,8 +50,8 @@ rsync -av --exclude=".*" ${RADOR_DP}/models ${WORKING_DIR}/
 echo copy pipeline code to slurm local dir
 rsync -av ${RADOR_DP}/*.py ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/static_data ${WORKING_DIR}/
+rsync -av ${RADOR_DP}/utils ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
-# copy data to slurm local dir
 
 # check GPU visibility
 echo "Checking GPU visibility..."
@@ -62,12 +62,13 @@ nvidia-smi -L          # should show 1 device
 # export PYTORCH_SDP_BACKEND=math
 # export CUDA_LAUNCH_BLOCKING=1
 #export CUDA_LAUNCH_BLOCKING=1
-export TQDM_DISABLE=true
-echo "TQDM_DISABLE=${TQDM_DISABLE}"
+export DISABLE_TQDM=1
+echo "DISABLE_TQDM=${DISABLE_TQDM}"
 
 # run paper_processor
 echo running paper_processor
 
+# sh -c "cd /workspace && python paper_processor.py -d ${d}"
 cd ${WORKING_DIR}
 for d in ${DISEASE_LIST}; do
     echo processing disease: ${d}
@@ -76,5 +77,6 @@ for d in ${DISEASE_LIST}; do
     --bind ${WORKING_DIR}/working_dir/cache:/root/.cache \
     --bind ${WORKING_DIR}/working_dir/tmp:/tmp \
     ${WORKING_DIR}/vllm_apptainer.sif \
-   sh -c "cd /workspace && python paper_processor.py -d ${d}"
+   sh -c "cd /workspace && python /workspace/utils/monitor.py & python paper_processor.py -d ${d}"
 done
+
