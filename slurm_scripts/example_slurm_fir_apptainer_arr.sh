@@ -30,7 +30,7 @@ WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
 N=5
-DISEASE_LIST_FILE=${RADOR_DP}/need_compute_disease_folders_names.csv
+DISEASE_LIST_FILE=${RADOR_DP}/need_compute_disease.csv
 DISEASE_LIST=$(sed -n "${SLURM_ARRAY_TASK_ID},$(($SLURM_ARRAY_TASK_ID+$N-1))p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
 for d in ${DISEASE_LIST}; do
