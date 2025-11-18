@@ -21,10 +21,15 @@ if __name__ == "__main__":
     need_compute_fp = args.need_compute_file
     finished_fp = args.finished_file
     need_scan = True
-    if os.path.exists(need_compute_fp):
+    
+    if os.path.exists(need_compute_fp) and os.path.exists(finished_fp):
         with open(need_compute_fp, 'r') as f:
             need_compute = [line.strip() for line in f.readlines()]
         print(f'Number of diseases needing processing (from file): {len(need_compute)}')
+        
+        with open(finished_fp, 'r') as f:
+            finished = [line.strip() for line in f.readlines()]
+        print(f'Number of diseases already finished (from file): {len(finished)}')
     else:
         need_compute = []
         finished = []
@@ -38,11 +43,6 @@ if __name__ == "__main__":
         print(f'Number of diseases finished (scanned): {len(finished)}')
         need_scan = False
         os.remove(need_compute_fp) if os.path.exists(need_compute_fp) else None
-
-    if os.path.exists(finished_fp):
-        with open(finished_fp, 'r') as f:
-            finished = [line.strip() for line in f.readlines()]
-        print(f'Number of diseases already finished (from file): {len(finished)}')
     
     # Append newly finished diseases
     if need_scan:
