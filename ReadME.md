@@ -154,9 +154,13 @@ other tried model
   "llm_model_path": "models/hub/models--unsloth--gemma-3-27b-it-bnb-4bit/snapshots/c08b2ba63738aa8cfc60f06741d6356ef4e60b3f",
 }
 ```
+## create csv for input
+```bash 
+python check_complete.py
+```
+
 ## use slrum
 use `slurm_scripts/example_slurm_fir.sh`
-s
 ## Notes
 As for 11/16/2025 - appatiner image build based on `nvcr.io/nvidia/vllm:25.09-py3` use `apptainer/vllm_apptainer_nv_vllm.def` on works on A6000 and L40s, not H100
 
