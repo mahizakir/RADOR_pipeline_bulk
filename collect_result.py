@@ -5,7 +5,7 @@ if __name__ == "__main__":
     argparser = argparse.ArgumentParser()
     argparser.add_argument("-d", "--data_dir", type=str, default="data",
                             help="Directory containing disease data folders")
-    argparser.add_argument("-o", "--output_dir", type=str, default="output",
+    argparser.add_argument("-o", "--output_dir", type=str, default="collected_results",
                             help="Directory to store output results")
     argparser.add_argument("-f", "--finished_file", type=str, default="finished_disease.csv",
                             help="File to record finished diseases")
