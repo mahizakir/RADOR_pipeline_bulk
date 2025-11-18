@@ -26,8 +26,8 @@ RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
-N=5
-DISEASE_LIST_FILE=${RADOR_DP}/static_data/5094_disease_folders_names.csv
+N=10
+DISEASE_LIST_FILE=${RADOR_DP}/need_compute_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "1,${N}p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
 for d in ${DISEASE_LIST}; do

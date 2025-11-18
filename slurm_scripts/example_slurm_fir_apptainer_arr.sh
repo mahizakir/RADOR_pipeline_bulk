@@ -6,14 +6,13 @@
 # https://docs.alliancecan.ca/wiki/Allocations_and_compute_scheduling#Ratios_in_bundles
 #SBATCH --cpus-per-task=6 
 # https://docs.alliancecan.ca/wiki/Fir
-#SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb:1
-#SBATCH --time=0-0:20
+#SBATCH --gpus=h100:1
 #SBATCH --mail-user=fw4@ualberta.ca
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
 #SBATCH --error=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.err
 #SBATCH --open-mode=append
-#SBATCH --array=1000-5094%3
+#SBATCH --array=1-50%10
 
 # record start
 echo `date`: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} is allocated resources
@@ -28,7 +27,7 @@ WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
 N=10
-DISEASE_LIST_FILE=${RADOR_DP}/static_data/5094_disease_folders_names.csv
+DISEASE_LIST_FILE=${RADOR_DP}/need_compute_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "${SLURM_ARRAY_TASK_ID},$(($SLURM_ARRAY_TASK_ID+$N-1))p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
 for d in ${DISEASE_LIST}; do
