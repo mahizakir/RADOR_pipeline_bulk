@@ -289,7 +289,8 @@ def main():
     quantization = model_config["quantization"]
     gpu_memory_utilization = model_config["gpu_memory_utilization"]
     tensor_parallel_size = model_config["tensor_parallel_size"]
-
+    use_tqdm = model_config['use_tqdm']
+    
     # Processing configuration
     batch_size = model_config["batch_size"]
     similarity_threshold = model_config["similarity_threshold"]
@@ -386,7 +387,7 @@ def main():
 
         sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
         try:
-            outputs = llm_model.generate(batch_prompts, sampling_params)
+            outputs = llm_model.generate(batch_prompts, sampling_params, use_tqdm =use_tqdm)
         except ValueError as e:
             logger.error("vLLM generate() failed: %s", e)
             logger.error(
@@ -460,7 +461,7 @@ def main():
         prompts.append(ALPACA_PROMPT_TEMPLATE.format(given_prompt, input_here, ""))
 
     sampling_params = SamplingParams(max_tokens=global_output_max_new_tokens)
-    outputs = llm_model.generate(prompts, sampling_params)
+    outputs = llm_model.generate(prompts, sampling_params, use_tqdm=use_tqdm)
 
     # Extract triplet responses
     responses_list = []

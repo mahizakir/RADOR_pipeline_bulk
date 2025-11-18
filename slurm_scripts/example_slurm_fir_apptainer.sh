@@ -62,8 +62,8 @@ nvidia-smi -L          # should show 1 device
 # export PYTORCH_SDP_BACKEND=math
 # export CUDA_LAUNCH_BLOCKING=1
 #export CUDA_LAUNCH_BLOCKING=1
-export DISABLE_TQDM=1
-echo "DISABLE_TQDM=${DISABLE_TQDM}"
+# export DISABLE_TQDM=1
+# echo "DISABLE_TQDM=${DISABLE_TQDM}"
 
 # run paper_processor
 echo running paper_processor
@@ -77,6 +77,6 @@ for d in ${DISEASE_LIST}; do
     --bind ${WORKING_DIR}/working_dir/cache:/root/.cache \
     --bind ${WORKING_DIR}/working_dir/tmp:/tmp \
     ${WORKING_DIR}/vllm_apptainer.sif \
-   sh -c "cd /workspace && python /workspace/utils/monitor.py & python paper_processor.py -d ${d}"
+   sh -c "cd /workspace && python paper_processor.py -d ${d}"
 done
 
