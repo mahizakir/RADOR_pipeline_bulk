@@ -59,6 +59,14 @@ echo "Checking GPU visibility..."
 echo cuda_visible_devices=$CUDA_VISIBLE_DEVICES
 nvidia-smi             # check memory of the MIG slice you were assigned
 
+# export PYTORCH_SDP_BACKEND=math
+# export CUDA_LAUNCH_BLOCKING=1
+#export CUDA_LAUNCH_BLOCKING=1
+# export DISABLE_TQDM=1
+# echo "DISABLE_TQDM=${DISABLE_TQDM}"
+export VLLM_DISABLE_FLASHINFER=1
+# export VLLM_ATTENTION_BACKEND=FLASH_ATTN
+
 # run paper_processor
 echo running paper_processor
 cd ${WORKING_DIR}
