@@ -42,8 +42,6 @@ if __name__ == "__main__":
         with open(finished_fp, 'r') as f:
             finished = [line.strip() for line in f.readlines()]
         print(f'Number of diseases already finished (from file): {len(finished)}')
-    else:
-        finished = []
     
     # Append newly finished diseases
     if need_scan:
