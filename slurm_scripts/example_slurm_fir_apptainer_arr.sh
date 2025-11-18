@@ -13,7 +13,7 @@
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
 #SBATCH --error=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.err
 #SBATCH --open-mode=append
-#SBATCH --array=1-50%10:10 # 10 tasks at a time, each task process 10 diseases
+#SBATCH --array=1-50%10:5 # 10 tasks at a time, each task process 5 diseases
 
 # record start
 echo `date`: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} is allocated resources
@@ -27,7 +27,7 @@ RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
-N=10
+N=5
 DISEASE_LIST_FILE=${RADOR_DP}/need_compute_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "${SLURM_ARRAY_TASK_ID},$(($SLURM_ARRAY_TASK_ID+$N-1))p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
