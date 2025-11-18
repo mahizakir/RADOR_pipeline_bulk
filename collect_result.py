@@ -35,6 +35,7 @@ if __name__ == "__main__":
             else:
                 need_compute.append(disease_name)
         print(f'Number of diseases needing processing (scanned): {len(need_compute)}')
+        print(f'Number of diseases finished (scanned): {len(finished)}')
         need_scan = False
         os.remove(need_compute_fp) if os.path.exists(need_compute_fp) else None
 
