@@ -7,3 +7,4 @@ logs/
 apptainer/tmp/
 models
 jobs # slurm job output files
+need_compute_disease_folders_names.csv
