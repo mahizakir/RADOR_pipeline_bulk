@@ -16,6 +16,8 @@
 
 # record start
 echo `date`: Job ${SLURM_JOB_ID} is allocated resources
+# record epoch start for elapsed time calculation
+START_TIME=$(date +%s)
 
 #load modules
 module load StdEnv/2023
@@ -81,3 +83,10 @@ for d in ${DISEASE_LIST}; do
    sh -c "cd /workspace && python paper_processor.py -d ${d}"
 done
 
+# record end time and compute elapsed duration
+END_TIME=$(date +%s)
+ELAPSED=$((END_TIME-START_TIME))
+hours=$((ELAPSED/3600))
+mins=$(((ELAPSED%3600)/60))
+secs=$((ELAPSED%60))
+echo `date`: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} has completed

@@ -13,10 +13,12 @@
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
 #SBATCH --error=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.err
 #SBATCH --open-mode=append
-#SBATCH --array=1-1000:5%10 # 10 tasks at a time, each task process 5 diseases
+#SBATCH --array=1-10:5%10 # 10 tasks at a time, each task process 5 diseases
 
 # record start
 echo `date`: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} is allocated resources
+# record epoch start for elapsed time calculation
+START_TIME=$(date +%s)
 
 #load modules
 module load StdEnv/2023
@@ -79,3 +81,11 @@ for d in ${DISEASE_LIST}; do
     ${WORKING_DIR}/vllm_apptainer.sif \
    sh -c "cd /workspace && python paper_processor.py -d ${d}"
 done
+
+# record end time and compute elapsed duration
+END_TIME=$(date +%s)
+ELAPSED=$((END_TIME-START_TIME))
+hours=$((ELAPSED/3600))
+mins=$(((ELAPSED%3600)/60))
+secs=$((ELAPSED%60))
+printf "%s: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} has completed (elapsed %02d:%02d:%02d)\n" "$(date)" "$hours" "$mins" "$secs"
