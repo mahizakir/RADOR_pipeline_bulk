@@ -26,7 +26,7 @@ RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
-N=3
+N=5
 DISEASE_LIST_FILE=${RADOR_DP}/static_data/5094_disease_folders_names.csv
 DISEASE_LIST=$(sed -n "1,${N}p" ${DISEASE_LIST_FILE} | tr '\n' ' ')
 echo "DISEASE_LIST:"
@@ -57,7 +57,6 @@ rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
 echo "Checking GPU visibility..."
 echo cuda_visible_devices=$CUDA_VISIBLE_DEVICES
 nvidia-smi             # check memory of the MIG slice you were assigned
-nvidia-smi -L          # should show 1 device
 
 # export PYTORCH_SDP_BACKEND=math
 # export CUDA_LAUNCH_BLOCKING=1

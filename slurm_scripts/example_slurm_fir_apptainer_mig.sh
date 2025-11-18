@@ -50,6 +50,7 @@ rsync -av --exclude=".*" ${RADOR_DP}/models ${WORKING_DIR}/
 echo copy pipeline code to slurm local dir
 rsync -av ${RADOR_DP}/*.py ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/static_data ${WORKING_DIR}/
+rsync -av ${RADOR_DP}/utils ${WORKING_DIR}/
 rsync -av ${RADOR_DP}/model_config.json ${WORKING_DIR}/
 # copy data to slurm local dir
 
