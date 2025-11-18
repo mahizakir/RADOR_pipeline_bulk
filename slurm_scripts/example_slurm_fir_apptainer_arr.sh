@@ -64,7 +64,7 @@ nvidia-smi             # check memory of the MIG slice you were assigned
 #export CUDA_LAUNCH_BLOCKING=1
 # export DISABLE_TQDM=1
 # echo "DISABLE_TQDM=${DISABLE_TQDM}"
-export VLLM_DISABLE_FLASHINFER=1
+# export VLLM_DISABLE_FLASHINFER=1
 # export VLLM_ATTENTION_BACKEND=FLASH_ATTN
 
 # run paper_processor
