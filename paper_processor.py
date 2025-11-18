@@ -17,6 +17,7 @@ import pandas as pd
 import torch
 from sentence_transformers import SentenceTransformer, util
 from vllm import LLM, SamplingParams
+import utils.monitor
 
 from global_prompts import (
     simple_sentence_prompt,
@@ -248,7 +249,7 @@ def main():
     The body below is divided into labeled steps for readability. The behavior
     is unchanged; comments only document the flow.
     """
-
+    
     # Step 1: Start timer and parse command-line arguments
     parser = argparse.ArgumentParser(description="RADOR pipeline: generate triples from disease documents")
     parser.add_argument(
@@ -309,8 +310,24 @@ def main():
     #    os.environ["VLLM_DISABLE_COMPILE_CACHE"] = "1"
     #    logging.getLogger("rador").info("Set VLLM_DISABLE_COMPILE_CACHE=1 to disable vLLM compile cache")
     
-    # File paths
+    # Log system and CUDA information
     logger = logging.getLogger("rador")
+    logger.info("Torch version: %s", torch.__version__)
+    logger.info("CUDA version seen by torch: %s", torch.version.cuda)
+    if torch.cuda.is_available():
+        try:
+            logger.info("Device: %s", torch.cuda.get_device_name(0))
+            logger.info("Capability: %s", torch.cuda.get_device_capability(0))
+        except Exception:
+            logger.exception("Failed to query CUDA device properties")
+    else:
+        logger.info("No CUDA device available")
+    logger.info("CUDA_LAUNCH_BLOCKING = %s", os.environ.get("CUDA_LAUNCH_BLOCKING"))
+    
+    # Setup resource monitoring
+    res_monitor = utils.monitor.SystemMonitor(interval=30, logger=logger)
+    res_monitor.start()
+    # File paths
     logger.info("Processing disease: %s", disease_name)
     # exit()
     # Step 2: Load precomputed chunks and their metadata from CSV
@@ -500,26 +517,10 @@ def main():
 
     end_time = time.time()
     elapsed = (end_time - start_time) / 60
-
+    res_monitor.stop()
     logger.info("The number of unique metadata items (papers used) is: %d for %s", len(set(df['Metadata'])), disease_name)
     logger.info("Time taken: %.2f minutes for %s", elapsed, disease_name)
     logger.info("%s", "~" * 100)
 
-if __name__ == "__main__":
-
-    logger = logging.getLogger("rador")
-    logger.info("Torch version: %s", torch.__version__)
-    logger.info("CUDA version seen by torch: %s", torch.version.cuda)
-    if torch.cuda.is_available():
-        try:
-            logger.info("Device: %s", torch.cuda.get_device_name(0))
-            logger.info("Capability: %s", torch.cuda.get_device_capability(0))
-        except Exception:
-            logger.exception("Failed to query CUDA device properties")
-    else:
-        logger.info("No CUDA device available")
-    logger.info("CUDA_LAUNCH_BLOCKING = %s", os.environ.get("CUDA_LAUNCH_BLOCKING"))
-
-    import tqdm
-    tqdm.tqdm.disable = True
+if __name__ == "__main__":    
     main()
