@@ -34,8 +34,9 @@ if __name__ == "__main__":
     else:
         need_compute = []
         finished = []
-        for disease_name in os.listdir('data'):
-            file_path = os.path.join('data', disease_name, f'generated_simple_sentences_{disease_name}.csv')
+        for i, disease_name in enumerate(os.listdir(args.data_dir)):
+            print(f'\rChecking for diseases in data: {i+1}/{len(need_compute)}', end='', flush=True)
+            file_path = os.path.join(args.data_dir, disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(file_path):
                 finished.append(disease_name)
             else:
@@ -47,8 +48,8 @@ if __name__ == "__main__":
     
     # Append newly finished diseases
     if need_scan:
-        print('Checking for newly finished diseases...')
-        for disease_name in need_compute:
+        for i, disease_name in enumerate(need_compute):
+            print(f'\rChecking for newly finished diseases...: {i+1}/{len(need_compute)}', end='', flush=True)
             file_path = os.path.join('data', disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(file_path) and disease_name not in finished:
                 finished.append(disease_name)
@@ -73,10 +74,18 @@ if __name__ == "__main__":
     if args.collect:
         print('Collecting data to output directory...')
         os.makedirs(args.output_dir, exist_ok=True)
-        for disease_name in finished:
+        for i, disease_name in enumerate(finished):
+            # generated_simple_sentences
+            print(f'\r Copying: {i+1}/{len(finished)}', end='', flush=True)
             src_file = os.path.join(args.data_dir, disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(src_file):
                 dest_file = os.path.join(args.output_dir, f'generated_simple_sentences_{disease_name}.csv')
-                with open(src_file, 'r') as sf, open(dest_file, 'w') as df:
-                    df.write(sf.read())
+                os.system(f'cp {src_file} {dest_file}')
+            
+            # triples_disease_names
+            src_file = os.path.join(args.data_dir, disease_name, f'triples_disease_names_{disease_name}.csv')
+            if os.path.isfile(src_file):
+                dest_file = os.path.join(args.output_dir, f'triples_disease_names_{disease_name}.csv')
+                os.system(f'cp {src_file} {dest_file}')
+                
         print('Data collection completed.')
