@@ -55,7 +55,7 @@ if __name__ == "__main__":
                 finished.append(disease_name)
         print('')
         for i, disease_name in enumerate(finished):
-            print(f'\rRemoving finished diseases from need_compute list: {i+1}/{len(need_compute)}', end='', flush=True)
+            print(f'\rRemoving finished diseases from need_compute list: {i+1}/{len(finished)}', end='', flush=True)
             if disease_name in need_compute:
                 need_compute.remove(disease_name)
         print('')
