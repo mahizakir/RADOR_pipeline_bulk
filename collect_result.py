@@ -49,12 +49,15 @@ if __name__ == "__main__":
     # Append newly finished diseases
     if need_scan:
         for i, disease_name in enumerate(need_compute):
-            print(f'\rChecking for newly finished diseases...: {i+1}/{len(need_compute)}', end='', flush=True)
-            file_path = os.path.join('data', disease_name, f'generated_simple_sentences_{disease_name}.csv')
+            print(f'\rChecking for newly finished diseases...: {i+1}/{len(need_compute)}', end='\n', flush=True)
+            file_path = os.path.join(args.data_dir, disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(file_path) and disease_name not in finished:
                 finished.append(disease_name)
-                if disease_name in need_compute:
-                    need_compute.remove(disease_name)
+
+        for disease_name in finished:
+            print(f'\rRemoving finished diseases from need_compute list...: {disease_name}', end='\n', flush=True)
+            if disease_name in need_compute:
+                need_compute.remove(disease_name)
     else:
         print('no need to rescan for finished diseases.')
         
