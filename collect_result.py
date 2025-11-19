@@ -53,11 +53,12 @@ if __name__ == "__main__":
             file_path = os.path.join(args.data_dir, disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(file_path) and disease_name not in finished:
                 finished.append(disease_name)
-
+        print('')
         for disease_name in finished:
-            print(f'\n\rRemoving finished diseases from need_compute list...: {disease_name}', end='', flush=True)
+            print(f'\rRemoving finished diseases from need_compute list...: {disease_name}', end='', flush=True)
             if disease_name in need_compute:
                 need_compute.remove(disease_name)
+        print('')
     else:
         print('no need to rescan for finished diseases.')
         
