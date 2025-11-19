@@ -80,7 +80,7 @@ if __name__ == "__main__":
         os.makedirs(args.output_dir, exist_ok=True)
         for i, disease_name in enumerate(finished):
             # generated_simple_sentences
-            print(f'\r Copying: {i+1}/{len(finished)}', end='', flush=True)
+            print(f'\rCopying: {i+1}/{len(finished)}', end='', flush=True)
             src_file = os.path.join(args.data_dir, disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(src_file):
                 dest_file = os.path.join(args.output_dir, f'generated_simple_sentences_{disease_name}.csv')
