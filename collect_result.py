@@ -13,7 +13,8 @@ if __name__ == "__main__":
                             help="File to record diseases needing computation")
     argparser.add_argument("-c", "--collect", action='store_true',
                             help="Enable data collection to output_dir")
-    
+    argparser.add_argument("-u", "--update_csv", action='store_true',
+                        help="Enable data update for CSV files")
     args = argparser.parse_args()
     print('Collecting results and identifying unprocessed diseases...')
 
@@ -57,13 +58,14 @@ if __name__ == "__main__":
         print('no need to rescan for finished diseases.')
         
     # save the lists back to files
-    finished = list(set(finished))
-    need_compute = list(set(need_compute))
-    for data_list, file_path in [(finished, finished_fp), (need_compute, need_compute_fp)]:
-        print(f'Saving to {file_path}...')
-        with open(file_path, 'w') as f:
-            for name in data_list:
-                f.write(f'{name}\n')
+    if args.update_csv:
+        finished = list(set(finished))
+        need_compute = list(set(need_compute))
+        for data_list, file_path in [(finished, finished_fp), (need_compute, need_compute_fp)]:
+            print(f'Saving to {file_path}...')
+            with open(file_path, 'w') as f:
+                for name in data_list:
+                    f.write(f'{name}\n')
 
     print(f'Number Finished diseases: {len(finished)}')
     print(f'Number of diseases needing processing: {len(need_compute)}')

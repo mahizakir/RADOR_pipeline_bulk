@@ -156,7 +156,17 @@ other tried model
 ```
 ## create csv for input
 ```bash 
-python check_complete.py
+python collect_result.py -u
+```
+
+## check pogress
+```bash 
+python collect_result.py
+```
+
+## collect data
+```bash 
+python collect_result.py -c
 ```
 
 ## use slrum
