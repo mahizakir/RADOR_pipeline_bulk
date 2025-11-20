@@ -86,10 +86,11 @@ if __name__ == "__main__":
                 dest_file = os.path.join(args.output_dir, f'generated_simple_sentences_{disease_name}.csv')
                 os.system(f'cp {src_file} {dest_file}')
             
-            # triples_disease_names
-            src_file = os.path.join(args.data_dir, disease_name, f'triples_disease_names_{disease_name}.csv')
+            # triples
+            src_file = os.path.join(args.data_dir, disease_name, f'triples_{disease_name}.csv')
             if os.path.isfile(src_file):
-                dest_file = os.path.join(args.output_dir, f'triples_disease_names_{disease_name}.csv')
+                dest_file = os.path.join(args.output_dir, f'triples_{disease_name}.csv')
                 os.system(f'cp {src_file} {dest_file}')
+                
         print('')        
         print('Data collection completed.')
