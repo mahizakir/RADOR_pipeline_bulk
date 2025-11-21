@@ -35,6 +35,8 @@ if __name__ == "__main__":
         need_compute = []
         finished = []
         for i, disease_name in enumerate(os.listdir(args.data_dir)):
+            if not os.path.isdir(os.path.join(args.data_dir, disease_name)):
+                continue
             print(f'\rChecking for diseases in data: {i+1}/{len(need_compute)}', end='', flush=True)
             file_path = os.path.join(args.data_dir, disease_name, f'generated_simple_sentences_{disease_name}.csv')
             if os.path.isfile(file_path):
