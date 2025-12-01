@@ -13,7 +13,7 @@
 #SBATCH --output=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.out
 #SBATCH --error=/home/feiw/project/feiw/RADOR_pipeline_bulk/jobs/rador_vllm_%A_%a.err
 #SBATCH --open-mode=append
-#SBATCH --array=1800-2806:6%30 # 6 tasks at a time, each task process 6 diseases
+#SBATCH --array=2802-4212:6%30 # 6 tasks at a time, each task process 6 diseases
 
 # record start
 echo `date`: Job ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} is allocated resources
