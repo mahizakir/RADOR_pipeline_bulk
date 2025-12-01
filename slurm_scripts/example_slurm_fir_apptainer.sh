@@ -25,6 +25,7 @@ module load apptainer/1.3.5
 
 # set variables
 RADOR_DP=/home/feiw/project/feiw/RADOR_pipeline_bulk
+INPUT_DP=${RADOR_DP}/data/
 WORKING_DIR=${SLURM_TMPDIR}/${SLURM_JOB_ID}
 
 # get disease list
@@ -76,7 +77,7 @@ cd ${WORKING_DIR}
 for d in ${DISEASE_LIST}; do
     echo processing disease: ${d}
     apptainer exec -C --nv --bind ${WORKING_DIR}:/workspace \
-    --bind ${RADOR_DP}/data:/workspace/data \
+    --bind ${INPUT_DP}:/workspace/data \
     --bind ${WORKING_DIR}/working_dir/cache:/root/.cache \
     --bind ${WORKING_DIR}/working_dir/tmp:/tmp \
     ${WORKING_DIR}/vllm_apptainer.sif \
