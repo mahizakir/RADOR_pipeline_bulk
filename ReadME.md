@@ -180,3 +180,6 @@ Helpful external documentation related to model downloads and container setup:
 
 - HuggingFace usage and best practices: https://docs.alliancecan.ca/wiki/Huggingface
 - Apptainer (Singularity) documentation: https://docs.alliancecan.ca/wiki/Apptainer
+
+# TODO 
+we need better data handling here, now we are assume data will be in the `data` folder. we should have data as a path in each slurm script and also has collect_results script to create tracking file for each task in a working dir.
