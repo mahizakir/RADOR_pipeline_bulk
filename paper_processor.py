@@ -4,14 +4,15 @@ RADOR Pipeline - Medical Text Processing with vLLM
 # ============================================================================
 # ALL IMPORTS
 # ============================================================================
+
 import os
 import argparse
 import csv
 import re
 import time
 import warnings
-import json
 import logging
+from utils.model_utils import load_model_config, load_gemma_from_config
 
 import pandas as pd
 import torch
@@ -32,24 +33,7 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.t
 # CONFIGURATION / CONSTANTS
 # ============================================================================
 
-def load_model_config(path):
-    """Load model configuration from a JSON file.
-
-    Returns a dict with configuration values. If the file does not exist or
-    cannot be parsed the function returns an empty dict and the code using
-    it will fall back to built-in defaults.
-    """
-    if not os.path.isfile(path):
-        return {}
-    try:
-        with open(path, "r") as f:
-            cfg = json.load(f)
-        # defer to module logger if available
-        logging.getLogger(__name__).info("Loaded model config from %s", path)
-        return cfg
-    except Exception as e:
-        logging.getLogger(__name__).warning("Could not load model config from %s: %s", path, e)
-        return {}
+## Model config loading now handled via utils/model_utils
 
 # Alpaca prompt template
 ALPACA_PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
@@ -358,22 +342,8 @@ def main():
     if not torch.cuda.is_available():
         raise RuntimeError("CUDA not available. GPU is required for this pipeline.")
 
-    # Prefer a local gemma clone if it exists (downloaded into models/huggingface/...)
-    gemma_model_source = get_hf_model_source(llm_model_name, llm_model_path)
-
-    # Initialize the vLLM model
-    # Construct vLLM LLM with explicit generate runner. Some model repos expose only
-    # If the model truly does not support generation (e.g., it's a sentence-transformer),
-    # vLLM will raise a ValueError when `.generate()` is called and we handle it below.
-    logger.info("Loading LLM model from source: %s", gemma_model_source)
-    llm_model = LLM(
-        model=gemma_model_source,
-        #runner="generate", 
-        max_model_len=llm_max_model_len,
-        quantization=quantization,
-        gpu_memory_utilization=gpu_memory_utilization,
-        tensor_parallel_size=tensor_parallel_size,
-    )
+    # Initialize the vLLM model using shared config loader
+    llm_model = load_gemma_from_config(model_config)
 
     # Step 5: Prepare prompts and generate simple sentences with the LLM (batched)
     list_of_inputs = filtered_chunks_with_keywords
