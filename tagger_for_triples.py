@@ -7,14 +7,28 @@ from sentence_transformers import util
 import warnings
 from global_prompts import global_output_max_new_tokens, tagging_triples_prompt_with_relevant_sentences
 from utils.model_utils import load_gemma_from_config, load_model_sentence_transformer, load_model_config
+import logging
 
-# Function to print and append only selected messages
-def log_to_file(*args, file_path="tagger_log.log"):
-	with open(file_path, "a") as f:
-		old_stdout = sys.stdout
-		sys.stdout = f
-		print(*args)  # handle multiple arguments like print()
-		sys.stdout = old_stdout
+
+# Logger initialization (similar to paper_processor)
+def init_logger(log_file, level=logging.INFO):
+	"""Initialize and return a logger for the tagger."""
+	logger = logging.getLogger("tagger")
+	logger.setLevel(level)
+	# remove existing handlers to avoid duplicate logs
+	if logger.handlers:
+		for h in list(logger.handlers):
+			logger.removeHandler(h)
+	fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+	sh = logging.StreamHandler()
+	sh.setFormatter(fmt)
+	logger.addHandler(sh)
+	if log_file is not None:
+		fh = logging.FileHandler(log_file)
+		fh.setFormatter(fmt)
+		logger.addHandler(fh)
+	logger.propagate = False
+	return logger
 
 def categorize_relation(rel):
 	rel_embed = model_sentence_transformers.encode(rel)
@@ -89,6 +103,7 @@ def main(disease_csv, triples_folder, start, limit=None):
 	stats_list = []
 	parsed_data = {}
 
+	logger = logging.getLogger("tagger")
 	for disease in disease_names:
 		triples_file = os.path.join(triples_folder, f"triples_{disease}.csv")
 		parsed_lists, total_before, total_after, nan_count, malformed_count = process_triples_file(triples_file)
@@ -114,7 +129,7 @@ def main(disease_csv, triples_folder, start, limit=None):
 			'malformed_count': malformed_count
 		})
 
-		print(f"done for {disease}, dropped {total_dropped} triples ({nan_count} NaN + {malformed_count} malformed)")
+		logger.info(f"done for {disease}, dropped {total_dropped} triples ({nan_count} NaN + {malformed_count} malformed)")
 
 	# Save statistics CSV
 	stats_df = pd.DataFrame(stats_list)
@@ -168,13 +183,14 @@ def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
 	disease_names = read_disease_names(disease_csv, start, limit)
 	all_results = {}
 
+	logger = logging.getLogger("tagger")
 	for d_name in disease_names:
 		responses_list = []
 		if d_name not in parsed_data:
-			print(f"Warning: Disease {d_name} not found in parsed data.")
+			logger.warning(f"Disease {d_name} not found in parsed data.")
 			continue
 
-		print(f"\nProcessing disease: {d_name}")
+		logger.info(f"Processing disease: {d_name}")
 
 		# Extract the lists for this disease
 		parsed_lists = parsed_data[d_name]
@@ -186,7 +202,7 @@ def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
 
 		# Skip if there are no triples to process
 		if len(entities1) == 0:
-			print(f"Skipping {d_name}: no triples to process.")
+			logger.info(f"Skipping {d_name}: no triples to process.")
 			continue
 
 		disease_results = []
@@ -242,7 +258,7 @@ def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
 		# Save to CSV
 		output_file = os.path.join("tagged_results_1", f"{d_name}_tagged_triples.csv")
 		df.to_csv(output_file, index=False, encoding="utf-8")
-		log_to_file("Processed disease: " + d_name)
+		logger.info(f"Processed disease: {d_name}")
 
 	return all_results
 
@@ -280,14 +296,18 @@ if __name__ == "__main__":
 	triples_folder = args.triples_folder or model_config.get("triples_folder", "collected_results_1")
 	global_batch_size = args.batch_size or model_config.get("batch_size", 100)
 
-	# Step 4: Parse and clean triples for all diseases, collecting statistics
+	# Step 4: Initialize logger
+	log_file = model_config.get("log_file", "tagger_log.log")
+	init_logger(log_file, level=logging.INFO)
+
+	# Step 5: Parse and clean triples for all diseases, collecting statistics
 	parsed_data, stats_df = main(disease_csv, triples_folder, start=0, limit=None)
 
-	# Step 5: Load the LLM model (Gemma or compatible) using config
+	# Step 6: Load the LLM model (Gemma or compatible) using config
 	model = load_gemma_from_config(model_config)
 
-	# Step 6: Load the sentence transformer and precompute category embeddings
+	# Step 7: Load the sentence transformer and precompute category embeddings
 	model_sentence_transformers, category_embeddings = load_model_sentence_transformer(model_config)
 
-	# Step 7: Run the tagging pipeline for all diseases
+	# Step 8: Run the tagging pipeline for all diseases
 	tagged_data = tagger_for_triples(disease_csv, parsed_data, start=0, limit=None)
