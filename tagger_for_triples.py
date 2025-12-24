@@ -1,7 +1,6 @@
 
 import pandas as pd
-import torch
-import re, csv, os, sys
+import re, os
 from vllm import SamplingParams
 from sentence_transformers import util
 import warnings
