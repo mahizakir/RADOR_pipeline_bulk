@@ -12,12 +12,12 @@ import re
 import time
 import warnings
 import logging
-from utils.model_utils import load_model_config, load_gemma_from_config
+from utils.model_utils import load_model_config, load_gemma_from_config, load_sentence_transformer
 
 import pandas as pd
 import torch
 from sentence_transformers import util
-from utils.model_utils import load_sentence_transformer
+
 from vllm import LLM, SamplingParams
 import utils.monitor
 

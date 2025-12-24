@@ -32,7 +32,7 @@ def load_gemma_from_config(model_config):
 		tensor_parallel_size=model_config.get('tensor_parallel_size', 1),
 	)
 
-def load_model_sentence_transformers(model_config):
+def load_model_sentence_transformer(model_config):
 	"""Load sentence transformer and precompute category embeddings."""
 	model_name = model_config.get("sentence_transformer_model", "sentence-transformers/all-MiniLM-L6-v2")
 	model = SentenceTransformer(model_name)
