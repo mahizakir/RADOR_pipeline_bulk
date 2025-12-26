@@ -169,18 +169,22 @@ def extract_tags(triple_str):
 	if len(parts) != 3:
 		return None, None 
 	e1, _, e2 = [p.strip() for p in parts]
-	tag1 = re.search(r'\((.*?)\)', e1).group(1) if re.search(r'\((.*?)\)', e1) else None
-	tag2 = re.search(r'\((.*?)\)', e2).group(1) if re.search(r'\((.*?)\)', e2) else None
+	match1 = re.search(r'\((.*?)\)', e1)
+	tag1 = match1.group(1) if match1 else None
+	match2 = re.search(r'\((.*?)\)', e2)
+	tag2 = match2.group(1) if match2 else None
 
 	return tag1, tag2
 
-def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
+def tagger_for_triples(disease_csv, parsed_data, start, limit=None, output_dir="tagged_results_1"):
 	"""
 	For each disease, run tagging on triples (Entity1, Entity2, Sentence)
 	using a vLLM backend, while preserving metadata and handling errors.
 	"""
 	disease_names = read_disease_names(disease_csv, start, limit)
-	all_results = {}
+	# Ensure output directory exists
+	if not os.path.exists(output_dir):
+		os.makedirs(output_dir)
 
 	logger = logging.getLogger("tagger")
 	for d_name in disease_names:
@@ -223,7 +227,7 @@ def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
 				full_text = output.prompt + output.outputs[0].text
 				res = extract_response(full_text)
 				responses_list.append(res)
-		
+        
 		for i in range(len(responses_list)):
 			tag1, tag2 = extract_tags(responses_list[i]) 
 			result_entry = {
@@ -237,10 +241,7 @@ def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
 				'Entity2_tag': tag2,
 				'Relation_tag': categorize_relation(relations[i])
 			}
-			# print(result_entry)
 			disease_results.append(result_entry)
-
-		all_results[d_name] = disease_results
 
 		# Specify the columns you want in order
 		columns = [
@@ -255,11 +256,11 @@ def tagger_for_triples(disease_csv, parsed_data, start, limit=None):
 		df = df[columns]
 
 		# Save to CSV
-		output_file = os.path.join("tagged_results_1", f"{d_name}_tagged_triples.csv")
+		output_file = os.path.join(output_dir, f"{d_name}_tagged_triples.csv")
 		df.to_csv(output_file, index=False, encoding="utf-8")
 		logger.info(f"Processed disease: {d_name}")
 
-	return all_results
+	# No return value
 
 
 if __name__ == "__main__":
@@ -285,15 +286,29 @@ if __name__ == "__main__":
 		default=None,
 		help="Batch size for LLM inference (default from config or 100)"
 	)
+	parser.add_argument(
+		"-o", "--output_dir",
+		dest="output_dir",
+		default=None,
+		help="Directory to save tagged triples CSVs (default from config or tagged_results_1)"
+	)
+	parser.add_argument(
+		"-m", "--model_config",
+		dest="model_config_path",
+		default=None,
+		help="Path to model_config.json (default: ./model_config.json)"
+	)
 	args = parser.parse_args()
 
-	# Step 2: Load configuration from model_config.json
-	model_config = load_model_config(os.path.join(os.getcwd(), "model_config.json"))
+	# Step 2: Load configuration from model_config.json (argument or default)
+	model_config_path = args.model_config_path or os.path.join(os.getcwd(), "model_config.json")
+	model_config = load_model_config(model_config_path)
 
-	# Step 3: Set file paths and batch size from args, config, or defaults
+	# Step 3: Set file paths, batch size, and output dir from args, config, or defaults
 	disease_csv = args.disease_csv or model_config.get("disease_csv", "5094_disease_folders_names.csv")
 	triples_folder = args.triples_folder or model_config.get("triples_folder", "collected_results_1")
 	global_batch_size = args.batch_size or model_config.get("batch_size", 100)
+	output_dir = args.output_dir or model_config.get("output_dir", "tagged_results_1")
 
 	# Step 4: Initialize logger
 	log_file = model_config.get("log_file", "tagger_log.log")
@@ -309,4 +324,4 @@ if __name__ == "__main__":
 	model_sentence_transformers, category_embeddings = load_model_sentence_transformer(model_config)
 
 	# Step 8: Run the tagging pipeline for all diseases
-	tagged_data = tagger_for_triples(disease_csv, parsed_data, start=0, limit=None)
+	tagger_for_triples(disease_csv, parsed_data, start=0, limit=None, output_dir=output_dir)

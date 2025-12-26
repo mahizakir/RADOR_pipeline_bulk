@@ -264,8 +264,8 @@ def main():
 	
 	# Load config
 	# Path to optional JSON file containing model configuration overrides.
-	MODEL_CONFIG_PATH = os.path.join(os.getcwd(), "model_config.json")
-	model_config = load_model_config(MODEL_CONFIG_PATH)
+	model_config_path = os.path.join(os.getcwd(), "model_config.json")
+	model_config = load_model_config(model_config_path)
 
 	# GEMMA model configuration (defaults may be overridden by models/model_config.json)
 	use_tqdm = model_config['use_tqdm']
